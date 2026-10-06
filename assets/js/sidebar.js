@@ -3,7 +3,7 @@
 {id:'guide',label:'راهنما و معماری',href:'architecture.html',icon:'۰۲',children:[
 {id:'philosophy',label:'فلسفه و روش',href:'philosophy.html',icon:'۰۲-۱'},
 {id:'architecture',label:'معماری مخزن',href:'architecture.html',icon:'۰۲-۲'},
-{id:'development',label:'قواعد توسعه',href:'docs/development-rules.md',icon:'۰۲-۳'}
+{id:'development',label:'قواعد توسعه',href:'development.html',icon:'۰۲-۳'}
 ]},
 {id:'plans',label:'طرح‌ها',href:'index.html#plans',icon:'۰۳',children:[
 {id:'national',label:'ملی و راهبردی',href:'categories.html#national',icon:'۰۳-۱',children:[
