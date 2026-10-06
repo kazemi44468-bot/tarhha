@@ -35,6 +35,7 @@
 - docs/architecture.md — مرجع متنی معماری
 - docs/development-rules.md — قواعد توسعه
 - docs/plan-template.md — الگوی استاندارد تدوین طرح
+- docs/project-integration.md — قرارداد اتصال پروژه‌های مستقل
 
 ## هر طرح چه می‌تواند داشته باشد؟
 
