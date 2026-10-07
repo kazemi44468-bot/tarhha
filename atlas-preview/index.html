@@ -156,7 +156,7 @@ function showDetail(p){
     '<div class="row">وضعیت: '+p.status+'</div>' +
     '<div class="row">منبع: '+p.source+'</div>' +
     '<p style="font-size:12px;color:#43514e">'+p.desc+'</p>' +
-    '<div class="row" style="margin-top:6px"><a href="../pages/atlas-shohada-tarh.html#record">ساختار پرونده مکان در سند طرح</a></div>';
+    '<div class="row" style="margin-top:6px"><a href="../pages/atlas-shohada-tarh.html#record">ساختار پرونده مکان</a> · <a href="https://kazemi44468-bot.github.io/shahidtaghvim/places.html" target="_blank">مکان‌های مرتبط در تقویم شهدا</a> · <a href="https://kazemi44468-bot.github.io/shahidtaghvim/events.html" target="_blank">رویدادهای مرتبط</a></div>';
   document.getElementById('dClose').onclick = function(){ d.style.display='none'; };
 }
 var provs = []; PLACES.forEach(function(p){ if(provs.indexOf(p.province)===-1) provs.push(p.province); });
