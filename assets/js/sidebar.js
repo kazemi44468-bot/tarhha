@@ -4,25 +4,26 @@ const d=document,b=d.body;
 const nav=[
 {id:'home',label:'نخست',href:'index.html',icon:'۰۱'},
 {id:'plans',label:'معرفی',href:'pages/plans.html',icon:'۰۲'},
-{id:'shahidportal',label:'شهیدپورتال',href:'pages/shahidportal-tarh.html',icon:'۰۳',children:[
-{id:'shahidbank',label:'بانک شهدا',href:'pages/shahidbank-tarh.html',icon:'۰۳-۱'},
-{id:'will-bank',label:'بانک وصیت‌نامه',href:'pages/will-bank-tarh.html',icon:'۰۳-۲'},
-{id:'patogh',label:'پاتوق شهدا',href:'pages/patugh-tarh.html',icon:'۰۳-۳',children:[
-{id:'wdja',label:'ودجا',href:'pages/wdja-tarh.html',icon:'۰۳-۳-۱'}
+{id:'plan-catalog',label:'طرح‌ها',href:'pages/plans.html',icon:'۰۳',children:[
+{id:'shahidportal',label:'شهیدپورتال',href:'pages/shahidportal-tarh.html',icon:'۰۳-۱'},
+{id:'shahidbank',label:'بانک شهدا',href:'pages/shahidbank-tarh.html',icon:'۰۳-۲'},
+{id:'will-bank',label:'بانک وصیت‌نامه',href:'pages/will-bank-tarh.html',icon:'۰۳-۳'},
+{id:'patogh',label:'پاتوق شهدا',href:'pages/patugh-tarh.html',icon:'۰۳-۴',children:[
+{id:'wdja',label:'ودجا',href:'pages/wdja-tarh.html',icon:'۰۳-۴-۱'}
 ]},
-{id:'narrative-bank',label:'بانک روایت',href:'pages/narrative-bank-tarh.html',icon:'۰۳-۴'},
-{id:'calendar',label:'تقویم شهدا',href:'pages/calendar-tarh.html',icon:'۰۳-۵'},
-{id:'atlas-melli',label:'اطلس شهدا',href:'pages/atlas-shohada-tarh.html',icon:'۰۳-۶'},
-{id:'operations-bank',label:'بانک عملیات‌ها',href:'pages/operations-bank-tarh.html',icon:'۰۳-۷'},
-{id:'services-welfare',label:'خدمات و رفاهیات',href:'pages/services-welfare-tarh.html',icon:'۰۳-۸'},
-{id:'followup-response',label:'پیگیری و پاسخگویی',href:'pages/followup-response-tarh.html',icon:'۰۳-۹'},
-{id:'family-market',label:'بازار خانواده شهدا',href:'pages/family-market-tarh.html',icon:'۰۳-۱۰'},
-{id:'multimedia',label:'چندرسانه‌ای شهدا',href:'pages/multimedia-tarh.html',icon:'۰۳-۱۱'},
-{id:'treasure',label:'گنجینه شهدا',href:'pages/treasure-tarh.html',icon:'۰۳-۱۲'},
-{id:'khadem-shohada',label:'خادم شهدا',href:'pages/khadem-shohada-tarh.html',icon:'۰۳-۱۳'},
-{id:'cyber-shohada',label:'شبکه سایبری شهدا',href:'pages/cyber-shohada-tarh.html',icon:'۰۳-۱۴'}
+{id:'narrative-bank',label:'بانک روایت',href:'pages/narrative-bank-tarh.html',icon:'۰۳-۵'},
+{id:'calendar',label:'تقویم شهدا',href:'pages/calendar-tarh.html',icon:'۰۳-۶'},
+{id:'atlas-melli',label:'اطلس شهدا',href:'pages/atlas-shohada-tarh.html',icon:'۰۳-۷'},
+{id:'operations-bank',label:'بانک عملیات‌ها',href:'pages/operations-bank-tarh.html',icon:'۰۳-۸'},
+{id:'services-welfare',label:'خدمات و رفاهیات',href:'pages/services-welfare-tarh.html',icon:'۰۳-۹'},
+{id:'followup-response',label:'پیگیری و پاسخگویی',href:'pages/followup-response-tarh.html',icon:'۰۳-۱۰'},
+{id:'family-market',label:'بازار خانواده شهدا',href:'pages/family-market-tarh.html',icon:'۰۳-۱۱'},
+{id:'multimedia',label:'چندرسانه‌ای شهدا',href:'pages/multimedia-tarh.html',icon:'۰۳-۱۲'},
+{id:'treasure',label:'گنجینه شهدا',href:'pages/treasure-tarh.html',icon:'۰۳-۱۳'},
+{id:'khadem-shohada',label:'خادم شهدا',href:'pages/khadem-shohada-tarh.html',icon:'۰۳-۱۴'},
+{id:'cyber-shohada',label:'شبکه سایبری شهدا',href:'pages/cyber-shohada-tarh.html',icon:'۰۳-۱۵'}
 ]};
-const defaultOpen=new Set(['shahidportal']);
+const defaultOpen=new Set(['plan-catalog']);
 const current=b.dataset.sidebarPage||'home';
 const pathname=location.pathname;
 const pagesAt=pathname.indexOf('/pages/');
