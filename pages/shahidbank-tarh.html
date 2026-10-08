@@ -1,67 +1,434 @@
-<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>بانک شهدا | طرح جامع</title><style>@font-face{font-family:TarhhaBody;src:url('../assets/fonts/Vazirmatn-Regular.woff2') format('woff2');font-weight:400}@font-face{font-family:TarhhaBody;src:url('../assets/fonts/Vazirmatn-Medium.woff2') format('woff2');font-weight:500}@font-face{font-family:TarhhaBody;src:url('../assets/fonts/Vazirmatn-SemiBold.woff2') format('woff2');font-weight:600}@font-face{font-family:TarhhaBody;src:url('../assets/fonts/Vazirmatn-Bold.woff2') format('woff2');font-weight:700}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f5f7f6;color:#17241f;font-family:TarhhaBody;line-height:2}.wrap{max-width:1220px;margin:auto;padding:30px 22px 70px}.hero{background:linear-gradient(135deg,#173f36,#286b5a 58%,#4b8467);color:#fff;border-radius:25px;padding:44px 42px;margin-bottom:20px;box-shadow:0 18px 50px #173f3622}.hero h1{margin:0 0 9px;font-size:35px}.hero p{margin:4px 0;opacity:.95}.badge{display:inline-block;margin-top:14px;padding:4px 13px;border:1px solid #ffffff3a;background:#ffffff12;border-radius:999px;font-size:12px}.card{background:#fff;border:1px solid #dfe8e2;border-radius:20px;padding:27px;margin:17px 0;box-shadow:0 8px 25px #17241f08}.card h2{margin:0 0 13px;color:#185343;font-size:23px}.card h3{margin:0 0 6px;color:#26705d;font-size:16px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.grid.three{grid-template-columns:repeat(3,1fr)}.mini{background:#f7faf8;border:1px solid #e2ebe5;border-radius:15px;padding:17px}.mini p{margin:2px 0;color:#586b63;font-size:13px;line-height:1.95}.quote{border-right:4px solid #3a806a;background:#f0f7f3;padding:14px 18px;border-radius:11px;margin:15px 0}.flow{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin:15px 0}.flow div{padding:12px 7px;text-align:center;border-radius:13px;background:#edf5f0;border:1px solid #dce9e1;color:#1d5d4b;font-size:12px;font-weight:700}table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px}th,td{border:1px solid #dfe7e2;padding:10px;text-align:right;vertical-align:top}th{background:#edf5f0;color:#174b3e}.tag{display:inline-block;background:#eaf4ee;color:#1e624f;border-radius:999px;padding:3px 10px;margin:3px;font-size:11px}.tree{background:#f7faf8;border:1px solid #e0e9e3;border-radius:14px;padding:20px;white-space:pre-wrap;font-size:12.5px;color:#315a4c}.footer{text-align:center;color:#65756e;padding-top:24px}.back-top{position:fixed;left:20px;bottom:20px;width:42px;height:42px;border:1px solid #d7e2dc;border-radius:12px;background:#ffffffee;color:#1d5b4a;text-decoration:none;display:flex;align-items:center;justify-content:center;font-size:20px}@media(max-width:900px){.grid.three{grid-template-columns:repeat(2,1fr)}.flow{grid-template-columns:repeat(4,1fr)}}@media(max-width:760px){.grid,.grid.three{grid-template-columns:1fr}.hero{padding:30px 22px}.hero h1{font-size:28px}.card{padding:21px;overflow-x:auto}.flow{grid-template-columns:repeat(2,1fr)}table{min-width:680px}}</style><link rel="stylesheet" href="../assets/css/sidebar.css?v=20261008-3"><link rel="stylesheet" href="../assets/css/page-nav.css?v=20261008-3"></head><body data-sidebar-page="shahidbank" class="sp-main" id="top"><div class="wrap">
-<section class="hero"><h1>بانک شهدا | طرح جامع</h1><p>بانک جامع و مرجع هویتی ـ دانشی شهدای اسلام و ایران؛ با محوریت <strong>خود شهید و پرونده جامع شهید</strong>.</p><p>محصولی مستقل در اجرا و یکی از ستون‌های اصلی اکوسیستم شهیدپورتال.</p><span class="badge">طرح جامع، معماری داده و نقشه راه توسعه</span></section>
-<nav class="page-nav"><a class="nav-home" href="#summary">خلاصه</a><details><summary>کلیات</summary><div class="page-subnav"><a href="#position">جایگاه</a><a href="#problem">مسئله</a><a href="#mission">مأموریت</a><a href="#principles">اصول</a></div></details><details><summary>پرونده شهید</summary><div class="page-subnav"><a href="#identity">هویت</a><a href="#profile">پروفایل</a><a href="#life">زندگی</a><a href="#martyrdom">شهادت</a><a href="#unknown">گمنام</a></div></details><details><summary>داده و دانش</summary><div class="page-subnav"><a href="#relations">روابط</a><a href="#sources">منابع</a><a href="#quality">اعتبار</a><a href="#search">جست‌وجو</a><a href="#data">مدل داده</a></div></details><details><summary>محصول</summary><div class="page-subnav"><a href="#sitemap">ساختار</a><a href="#ux">UX</a><a href="#api">API</a></div></details><details><summary>اکوسیستم</summary><div class="page-subnav"><a href="#ecosystem">اتصال</a><a href="#independence">استقلال</a><a href="#governance">حکمرانی</a></div></details><details><summary>توسعه</summary><div class="page-subnav"><a href="#roadmap">نقشه راه</a><a href="#kpi">شاخص‌ها</a><a href="#final">جمع‌بندی</a></div></details></nav>
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>بانک شهدا | طرح جامع، معماری داده و نقشه راه توسعه</title>
+<meta name="description" content="طرح جامع بانک شهدا؛ مرجع هویتی و دانشی شهدا با محوریت پرونده جامع، داده مستند، روابط و اتصال به اکوسیستم شهیدپورتال.">
+<style>
+@font-face{font-family:TarhhaBody;src:url('../assets/fonts/Vazirmatn-Regular.woff2') format('woff2');font-weight:400}
+@font-face{font-family:TarhhaBody;src:url('../assets/fonts/Vazirmatn-Medium.woff2') format('woff2');font-weight:500}
+@font-face{font-family:TarhhaBody;src:url('../assets/fonts/Vazirmatn-SemiBold.woff2') format('woff2');font-weight:600}
+@font-face{font-family:TarhhaBody;src:url('../assets/fonts/Vazirmatn-Bold.woff2') format('woff2');font-weight:700}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f5f7f6;color:#17241f;font-family:TarhhaBody;line-height:2}.wrap{max-width:1220px;margin:auto;padding:30px 22px 70px}
+.hero{background:linear-gradient(135deg,#173f36,#286b5a 58%,#4b8467);color:#fff;border-radius:25px;padding:44px 42px;margin-bottom:20px;box-shadow:0 18px 50px #173f3622}.hero h1{margin:0 0 9px;font-size:35px}.hero p{margin:4px 0;opacity:.95}.badge{display:inline-block;margin-top:14px;padding:4px 13px;border:1px solid #ffffff3a;background:#ffffff12;border-radius:999px;font-size:12px}
+.card{background:#fff;border:1px solid #dfe8e2;border-radius:20px;padding:27px;margin:17px 0;box-shadow:0 8px 25px #17241f08}.card h2{margin:0 0 13px;color:#185343;font-size:23px}.card h3{margin:20px 0 7px;color:#26705d;font-size:16px}.card h4{margin:16px 0 7px;color:#315f51;font-size:14px}.card p,.card li{font-size:13.5px}.card ul,.card ol{padding-right:23px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.grid.three{grid-template-columns:repeat(3,1fr)}.grid.four{grid-template-columns:repeat(4,1fr)}
+.mini{background:#f7faf8;border:1px solid #e2ebe5;border-radius:15px;padding:17px}.mini h3{margin:0 0 7px;font-size:15px}.mini p{margin:2px 0;color:#586b63;font-size:12.8px;line-height:1.95}.quote{border-right:4px solid #3a806a;background:#f0f7f3;padding:14px 18px;border-radius:11px;margin:15px 0;font-size:13.5px}.flow{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin:15px 0}.flow div{padding:12px 7px;text-align:center;border-radius:13px;background:#edf5f0;border:1px solid #dce9e1;color:#1d5d4b;font-size:12px;font-weight:700}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:12.5px}th,td{border:1px solid #dfe7e2;padding:10px;text-align:right;vertical-align:top;line-height:1.8}th{background:#edf5f0;color:#174b3e;font-weight:700}.tag{display:inline-block;background:#eaf4ee;color:#1e624f;border-radius:999px;padding:3px 10px;margin:3px;font-size:11px}.tree,.code{background:#f7faf8;border:1px solid #e0e9e3;border-radius:14px;padding:20px;white-space:pre-wrap;font-size:12.2px;color:#315a4c;overflow:auto;direction:ltr;text-align:left}.code{background:#173f36;color:#e2eee9;border-color:#285d50}.footer{text-align:center;color:#65756e;padding-top:24px}.note{background:#fff9eb;border:1px solid #ead9a9;border-radius:12px;padding:12px 15px;font-size:12.5px}.appendix-marker{display:inline-block;background:#185343;color:#fff;border-radius:999px;padding:5px 13px;font-size:12px;font-weight:700;margin:20px 0 8px}
+@media(max-width:900px){.grid.three,.grid.four{grid-template-columns:repeat(2,1fr)}.flow{grid-template-columns:repeat(4,1fr)}}@media(max-width:760px){.grid,.grid.three,.grid.four{grid-template-columns:1fr}.hero{padding:30px 22px}.hero h1{font-size:28px}.card{padding:21px;overflow-x:auto}.flow{grid-template-columns:repeat(2,1fr)}table{min-width:680px}}
+</style>
+<link rel="stylesheet" href="../assets/css/sidebar.css?v=20261008-3">
+<link rel="stylesheet" href="../assets/css/page-nav.css?v=20261008-3">
+</head>
+<body data-sidebar-page="shahidbank" class="sp-main" id="top">
+<div class="wrap">
+<section class="hero">
+<h1>بانک شهدا</h1>
+<p>بانک جامع و مرجع هویتی ـ دانشی شهدای اسلام و ایران؛ با محوریت <strong>خود شهید و پرونده جامع شهید</strong>.</p>
+<p>محصولی مستقل در اجرا و یکی از ستون‌های اصلی اکوسیستم شهیدپورتال؛ با مرجعیت مشخص برای هویت، زندگی، روابط، منابع و دانش مربوط به شهید.</p>
+<span class="badge">طرح جامع، معماری داده و نقشه راه توسعه | نسخه ۲.۰ — سند مادر محصول</span>
+</section>
 
-<section class="card" id="summary"><h2>۱. خلاصه مدیریتی</h2><p>بانک شهدا مرجع تخصصی <strong>هویت و دانش مربوط به خود شهید</strong> است. اگر اطلس شهدا محور «مکان» و تقویم شهدا محور «زمان و رویداد» است، بانک شهدا محور <strong>«چه کسی؟»</strong> است.</p><div class="quote"><strong>تعریف مرکزی:</strong> سامانه‌ای برای ثبت، نگهداری، اعتبارسنجی، تکمیل، جست‌وجو و ارائه پرونده جامع شهدا؛ با شناسه پایدار برای هر شهید و پیوند ساختاریافته با مکان، زمان، روایت، سند، اشخاص و رویدادها.</div><p>این پروژه فقط «لیست شهدا» نیست؛ یک <strong>مرجع هویتی و دانشنامه‌ای</strong> و پایه بسیاری از خدمات و پروژه‌های تخصصی اکوسیستم است.</p></section>
+<nav class="page-nav" aria-label="ناوبری این صفحه">
+<a class="nav-home" href="#summary">خلاصه</a>
+<details><summary>کلیات</summary><div class="page-subnav"><a href="#position">جایگاه</a><a href="#problem">مسئله</a><a href="#mission">مأموریت</a><a href="#principles">اصول</a></div></details>
+<details><summary>پرونده شهید</summary><div class="page-subnav"><a href="#identity">هویت</a><a href="#profile">پروفایل</a><a href="#life">زندگی</a><a href="#martyrdom">شهادت</a><a href="#unknown">گمنام</a><a href="#legacy">میراث</a></div></details>
+<details><summary>داده و دانش</summary><div class="page-subnav"><a href="#relations">روابط</a><a href="#sources">منابع</a><a href="#quality">اعتبار</a><a href="#search">جست‌وجو</a><a href="#data">مدل داده</a><a href="#provenance">تبار داده</a></div></details>
+<details><summary>محصول</summary><div class="page-subnav"><a href="#sitemap">ساختار</a><a href="#ux">UX</a><a href="#participation">مشارکت</a><a href="#api">API</a></div></details>
+<details><summary>اکوسیستم</summary><div class="page-subnav"><a href="#ecosystem">اتصال</a><a href="#independence">استقلال</a><a href="#governance">حکمرانی</a></div></details>
+<details><summary>توسعه</summary><div class="page-subnav"><a href="#architecture">معماری</a><a href="#roadmap">نقشه راه</a><a href="#kpi">شاخص‌ها</a><a href="#final">جمع‌بندی</a></div></details>
+</nav>
 
-<section class="card" id="position"><h2>۲. جایگاه در اکوسیستم</h2><div class="grid three"><div class="mini"><h3>بانک شهدا</h3><p><strong>چه کسی؟</strong> مرجع هویت و پرونده اصلی شهید.</p></div><div class="mini"><h3>اطلس شهدا</h3><p><strong>کجا؟</strong> مرجع مکان و لایه‌های مکانی در طول زمان.</p></div><div class="mini"><h3>تقویم شهدا</h3><p><strong>چه زمانی؟</strong> مرجع زمان، رویداد و مناسبت.</p></div><div class="mini"><h3>بانک روایت</h3><p><strong>چه روایتی؟</strong> مرجع خاطرات و تاریخ شفاهی.</p></div><div class="mini"><h3>پاتوق شهدا</h3><p><strong>چگونه تعامل کنیم؟</strong> شبکه انسانی، برنامه و مشارکت.</p></div><div class="mini"><h3>ودجا</h3><p><strong>خدمات و ارتباط سازمانی</strong> در حدود قراردادها و نقش‌های مشخص.</p></div></div><div class="quote"><strong>اصل مالکیت:</strong> بانک شهدا مالک «هویت و پرونده شهید» است؛ مکان نزد اطلس، زمان و رویداد نزد تقویم و روایت نزد بانک روایت باقی می‌ماند.</div></section>
+<section class="card" id="summary"><h2>۱. خلاصه مدیریتی</h2>
+<p>بانک شهدا مرجع تخصصی <strong>هویت و دانش مربوط به خود شهید</strong> است. اگر اطلس شهدا محور «مکان» و تقویم شهدا محور «زمان و رویداد» است، بانک شهدا محور <strong>«چه کسی؟»</strong> است.</p>
+<div class="quote"><strong>تعریف مرکزی:</strong> سامانه‌ای برای ثبت، نگهداری، اعتبارسنجی، تکمیل، جست‌وجو و ارائه پرونده جامع شهدا؛ با شناسه پایدار برای هر شهید و پیوند ساختاریافته با مکان، زمان، روایت، سند، اشخاص و رویدادها.</div>
+<p>این پروژه فقط «لیست شهدا» نیست؛ یک <strong>مرجع هویتی و دانشنامه‌ای</strong> است که باید بتواند هم برای کاربر عمومی قابل فهم باشد و هم برای پژوهشگر و سامانه‌های دیگر به‌عنوان منبع ساختاریافته عمل کند.</p>
+<table><tr><th>تصمیم معماری</th><th>قاعده</th><th>نتیجه</th></tr>
+<tr><td>هویت یکتا</td><td>هر شهید یک شناسه پایدار دارد؛ نام و رکورد منبعی از هویت جداست.</td><td>کاهش تکثیر و خطای تطبیق</td></tr>
+<tr><td>داده و ادعا</td><td>هر گزاره مهم می‌تواند ادعایی با منبع، وضعیت و سابقه بررسی باشد.</td><td>پژوهش‌پذیری</td></tr>
+<tr><td>گمنامی</td><td>گمنامی وضعیت هویتی است، نه نبود پرونده.</td><td>حفظ پرونده پیش از احراز</td></tr>
+<tr><td>اختلاف منابع</td><td>تعارض حذف نمی‌شود؛ ثبت، مقایسه و مدیریت می‌شود.</td><td>صداقت تاریخی</td></tr>
+<tr><td>اتصال</td><td>ارجاع بین پروژه‌ها با شناسه پایدار انجام می‌شود.</td><td>یکپارچگی بدون تکثیر</td></tr>
+<tr><td>تاریخچه</td><td>ویرایش، ادغام، تفکیک و تغییر وضعیت قابل ردیابی است.</td><td>قابلیت حسابرسی</td></tr></table>
+<div class="quote"><strong>جمله محوری:</strong> «هر شهید، یک هویت پایدار؛ هر هویت، یک پرونده جامع؛ هر پرونده، یک شبکه از مکان، زمان، روایت، سند و رابطه.»</div>
+</section>
 
-<section class="card" id="problem"><h2>۳. مسئله اصلی</h2><div class="grid three"><div class="mini"><h3>پراکندگی</h3><p>اطلاعات میان پرونده‌ها، گلزارها، کتاب‌ها، اسناد و آرشیوهای مختلف پراکنده است.</p></div><div class="mini"><h3>تکرار رکورد</h3><p>یک شهید ممکن است با شکل‌های مختلف نام و اطلاعات ثبت شده باشد.</p></div><div class="mini"><h3>نبود شناسه</h3><p>بدون شناسه پایدار اتصال پروژه‌ها و منابع دشوار است.</p></div><div class="mini"><h3>پرونده ناقص</h3><p>فهرست نام، زندگی و هویت چندلایه شهید را پوشش نمی‌دهد.</p></div><div class="mini"><h3>اختلاف منابع</h3><p>تفاوت اطلاعات باید ثبت و بررسی شود، نه پنهان.</p></div><div class="mini"><h3>پژوهش دشوار</h3><p>باید از یک پرونده به خانواده، مکان، زمان، عملیات، سند و روایت رسید.</p></div></div></section>
+<section class="card" id="position"><h2>۲. جایگاه در اکوسیستم</h2>
+<div class="grid three"><div class="mini"><h3>بانک شهدا</h3><p><strong>چه کسی؟</strong> مرجع هویت، پرونده، زندگی و روابط شهید.</p></div>
+<div class="mini"><h3>اطلس شهدا</h3><p><strong>کجا؟</strong> مرجع مکان، موقعیت، مسیر و لایه‌های مکانی در طول زمان.</p></div>
+<div class="mini"><h3>تقویم شهدا</h3><p><strong>چه زمانی؟</strong> مرجع زمان، رویداد و مناسبت.</p></div>
+<div class="mini"><h3>بانک روایت</h3><p><strong>چه روایتی؟</strong> مرجع روایت، راوی، تاریخ شفاهی و ادعاهای روایی.</p></div>
+<div class="mini"><h3>پاتوق شهدا</h3><p><strong>چگونه تعامل کنیم؟</strong> مرجع تعامل، جامعه، برنامه و مشارکت.</p></div>
+<div class="mini"><h3>ودجا</h3><p><strong>خدمات و ارتباط سازمانی</strong> در حدود قراردادها و نقش‌های تعریف‌شده.</p></div></div>
+<div class="quote"><strong>اصل مالکیت:</strong> بانک شهدا مالک «هویت و پرونده شهید» است؛ مکان نزد اطلس، زمان و رویداد نزد تقویم، روایت نزد بانک روایت و تعامل نزد پاتوق باقی می‌ماند. هیچ پروژه‌ای برای نمایش داده، نباید بی‌دلیل نسخه مالکیتی دیگری از آن بسازد.</div>
+<table><tr><th>پروژه</th><th>نوع اتصال</th><th>مالکیت داده تخصصی</th></tr>
+<tr><td>اطلس شهدا</td><td>شناسه‌های Location و رابطه‌های مکانی</td><td>مکان نزد اطلس</td></tr>
+<tr><td>تقویم شهدا</td><td>شناسه‌های Event و رابطه‌های زمانی</td><td>زمان/رویداد نزد تقویم</td></tr>
+<tr><td>بانک روایت</td><td>شناسه Narrative و منابع روایی</td><td>روایت نزد بانک روایت</td></tr>
+<tr><td>پاتوق شهدا</td><td>مصرف پرونده و خدمات تعاملی</td><td>تعامل نزد پاتوق</td></tr>
+<tr><td>شهیدپورتال</td><td>کشف، استاندارد و اتصال اکوسیستم</td><td>لایه مادر، نه جایگزین محصول</td></tr></table>
+</section>
 
-<section class="card" id="mission"><h2>۴. مأموریت و چشم‌انداز</h2><div class="grid"><div class="mini"><h3>مأموریت</h3><p>ساخت مرجعی جامع، پایدار، مستند و قابل توسعه برای شناخت هر شهید به‌عنوان یک موجودیت یکتا.</p></div><div class="mini"><h3>چشم‌انداز</h3><p>مرجع هویتی و دانشی شهدا برای خانواده، پژوهشگر، پروژه‌های اکوسیستم و کاربر عمومی.</p></div></div><div class="quote"><strong>محور اصلی:</strong> «هر شهید، یک هویت پایدار؛ هر هویت، یک پرونده جامع؛ هر پرونده، یک شبکه از مکان، زمان، روایت، سند و رابطه.»</div></section>
+<section class="card" id="problem"><h2>۳. مسئله اصلی</h2>
+<div class="grid three"><div class="mini"><h3>پراکندگی</h3><p>اطلاعات میان پرونده‌ها، گلزارها، کتاب‌ها، اسناد و آرشیوهای مختلف پراکنده است.</p></div>
+<div class="mini"><h3>تکرار رکورد</h3><p>یک شهید ممکن است با شکل‌های مختلف نام، تاریخ یا مکان ثبت شده باشد.</p></div>
+<div class="mini"><h3>نبود شناسه</h3><p>بدون شناسه پایدار اتصال پروژه‌ها، منابع و خدمات دشوار است.</p></div>
+<div class="mini"><h3>پرونده ناقص</h3><p>فهرست نام، زندگی چندلایه و روابط انسانی شهید را پوشش نمی‌دهد.</p></div>
+<div class="mini"><h3>اختلاف منابع</h3><p>تفاوت منابع باید به‌صورت صریح ثبت و بررسی شود، نه اینکه به یک مقدار ظاهراً قطعی تبدیل شود.</p></div>
+<div class="mini"><h3>پژوهش دشوار</h3><p>باید از پرونده به خانواده، مکان، زمان، عملیات، سند، روایت و اشخاص مرتبط رسید.</p></div></div>
+<div class="quote"><strong>خطر معماری:</strong> اگر «هویت شهید» از «رکوردهای منبع» جدا نشود، هر پروژه نسخه خودش را می‌سازد و در بلندمدت چند مرجع متناقض هویتی ایجاد می‌شود.</div>
+</section>
 
-<section class="card" id="principles"><h2>۵. اصول بنیادین</h2><div class="grid three"><div class="mini"><h3>هویت یکتا</h3><p>هر شهید یک شناسه پایدار و یک موجودیت اصلی دارد.</p></div><div class="mini"><h3>منبع‌مندی</h3><p>اطلاعات مهم پرونده باید منشأ و وضعیت اعتبار داشته باشد.</p></div><div class="mini"><h3>داده ≠ ادعا</h3><p>داده، ادعای منبع و نتیجه اعتبارسنجی جدا نگهداری شوند.</p></div><div class="mini"><h3>تاریخچه‌پذیری</h3><p>اصلاح اطلاعات نباید سابقه تغییر را از بین ببرد.</p></div><div class="mini"><h3>کرامت</h3><p>پرونده رسمی، محترمانه و دور از نمایش سطحی باشد.</p></div><div class="mini"><h3>اتصال بدون تکثیر</h3><p>پروژه‌ها به شناسه شهید ارجاع دهند، نه اینکه داده مالکیتی را کپی کنند.</p></div></div></section>
+<section class="card" id="mission"><h2>۴. مأموریت، چشم‌انداز و دامنه</h2>
+<div class="grid"><div class="mini"><h3>مأموریت</h3><p>ساخت مرجعی جامع، پایدار، مستند و قابل توسعه برای شناخت هر شهید به‌عنوان یک موجودیت یکتا، با حفظ تنوع منابع و احترام به کرامت شهید و خانواده.</p></div>
+<div class="mini"><h3>چشم‌انداز</h3><p>تبدیل شدن به مرجع هویتی و دانشی شهدا برای خانواده، پژوهشگر، تولیدکننده محتوا، پروژه‌های اکوسیستم و کاربر عمومی.</p></div></div>
+<h3>دامنه اصلی</h3><div><span class="tag">هویت</span><span class="tag">زندگی</span><span class="tag">خانواده</span><span class="tag">جهاد</span><span class="tag">شهادت</span><span class="tag">میراث</span><span class="tag">روابط</span><span class="tag">منابع</span><span class="tag">اعتبار</span><span class="tag">جست‌وجو</span><span class="tag">API</span></div>
+<div class="quote"><strong>مرز دامنه:</strong> بانک شهدا مرجع «خود شهید» است؛ قرار نیست مدل تخصصی مکان، تقویم، روایت یا تعامل را در خود بازتولید کند.</div>
+</section>
 
-<section class="card" id="identity"><h2>۶. هویت شهید؛ هسته مرکزی</h2><p>نام، رکورد و هویت شخص باید از هم تفکیک شوند. چند شکل نام یا چند منبع می‌توانند به یک موجودیت اصلی متصل باشند.</p><table><tr><th>حوزه</th><th>نمونه</th></tr><tr><td>شناسه</td><td>شناسه پایدار داخلی و شناسه‌های منابع</td></tr><tr><td>مشخصات</td><td>نام، نام خانوادگی، نام پدر، نام‌های دیگر و اطلاعات هویتی</td></tr><tr><td>تولد</td><td>تاریخ و محل تولد با وضعیت اعتبار</td></tr><tr><td>خانواده</td><td>روابط خانوادگی و اشخاص مرتبط</td></tr><tr><td>تحصیل و شغل</td><td>سوابق تحصیلی، حرفه‌ای و اجتماعی</td></tr><tr><td>سوابق جهاد</td><td>یگان، مسئولیت، حضور، عملیات و مأموریت</td></tr><tr><td>شهادت</td><td>تاریخ، محل، عملیات/رویداد و اطلاعات مربوط</td></tr><tr><td>پس از شهادت</td><td>انتقال پیکر، مزار، یادمان و رویدادهای مرتبط</td></tr></table></section>
+<section class="card" id="principles"><h2>۵. اصول بنیادین</h2>
+<div class="grid three">
+<div class="mini"><h3>هویت یکتا</h3><p>هر شهید یک شناسه پایدار و یک موجودیت اصلی دارد.</p></div>
+<div class="mini"><h3>منبع‌مندی</h3><p>اطلاعات مهم باید منشأ، تاریخ دریافت و وضعیت اعتبار داشته باشد.</p></div>
+<div class="mini"><h3>داده ≠ ادعا</h3><p>داده نمایشی، ادعای منبع و نتیجه اعتبارسنجی از هم قابل تفکیک‌اند.</p></div>
+<div class="mini"><h3>تاریخچه‌پذیری</h3><p>اصلاح، ادغام و تفکیک نباید سابقه تغییر را از بین ببرد.</p></div>
+<div class="mini"><h3>کرامت</h3><p>پرونده رسمی، محترمانه و دور از نمایش سطحی و مصرف‌زدگی باشد.</p></div>
+<div class="mini"><h3>اتصال بدون تکثیر</h3><p>پروژه‌ها از شناسه پایدار و قرارداد API استفاده کنند.</p></div>
+<div class="mini"><h3>حفظ اختلاف</h3><p>تعارض منابع یک داده پژوهشی است و باید قابل مشاهده و مدیریت باشد.</p></div>
+<div class="mini"><h3>گمنامی ≠ نبود</h3><p>شهید گمنام نیز شناسه و پرونده دارد؛ وضعیت هویت ناشناخته است.</p></div>
+<div class="mini"><h3>کمینه‌سازی افشا</h3><p>اطلاعات خانوادگی و حساس فقط در سطح مجاز منتشر شود.</p></div>
+<div class="mini"><h3>قابل استناد بودن</h3><p>کاربر باید بتواند بفهمد یک گزاره از کجا آمده و چه وضعیتی دارد.</p></div>
+<div class="mini"><h3>دسترس‌پذیری</h3><p>پرونده برای موبایل، صفحه‌خوان، صفحه‌کلید و چاپ مناسب باشد.</p></div>
+<div class="mini"><h3>استقلال محصول</h3><p>توسعه و چرخه عمر مستقل با اتصال استاندارد به اکوسیستم.</p></div>
+</div></section>
 
-<section class="card" id="profile"><h2>۷. پروفایل و پرونده جامع شهید</h2><p>صفحه پروفایل قلب محصول است. نمونه اولیه این رویکرد در مخزن مستقل <strong>shahidbank</strong> پیاده‌سازی شده و در نسخه جامع باید به یک پرونده دانش‌محور ارتقا یابد.</p><div class="grid three"><div class="mini"><h3>سربرگ</h3><p>تصویر، نام، شناسه و خلاصه پرونده.</p></div><div class="mini"><h3>زندگی‌نامه</h3><p>کودکی، خانواده، تحصیل، شغل و فعالیت‌ها.</p></div><div class="mini"><h3>سوابق جهاد</h3><p>یگان، مسئولیت، عملیات و مأموریت.</p></div><div class="mini"><h3>شهادت</h3><p>پرونده زمانی و مکانی شهادت.</p></div><div class="mini"><h3>آثار و اسناد</h3><p>عکس، نامه، وصیت‌نامه، کتاب و رسانه.</p></div><div class="mini"><h3>روایت‌ها</h3><p>ارجاع به روایت‌های بانک روایت.</p></div></div></section>
+<section class="card" id="identity"><h2>۶. هویت شهید؛ هسته مرکزی</h2>
+<p>سه مفهوم باید از هم جدا باشند: <strong>هویت</strong>، <strong>رکورد منبع</strong> و <strong>نمایش فعلی پرونده</strong>. چند نام یا چند سند می‌توانند به یک هویت متصل شوند؛ و یک هویت می‌تواند در طول زمان چند وضعیت پژوهشی داشته باشد.</p>
+<table><tr><th>حوزه</th><th>نمونه</th><th>وضعیت</th></tr>
+<tr><td>شناسه</td><td>شناسه پایدار داخلی و شناسه‌های مرجع خارجی</td><td>الزامی</td></tr>
+<tr><td>مشخصات</td><td>نام، نام خانوادگی، نام پدر، نام‌های دیگر</td><td>الزامی/قابل تکمیل</td></tr>
+<tr><td>تولد</td><td>تاریخ، دقت تاریخ، مکان تولد</td><td>مستند و قابل اختلاف</td></tr>
+<tr><td>خانواده</td><td>والدین، همسر، فرزندان، خواهر و برادر</td><td>سطح دسترسی</td></tr>
+<tr><td>تحصیل و شغل</td><td>سوابق تحصیلی، حرفه‌ای و اجتماعی</td><td>قابل توسعه</td></tr>
+<tr><td>جهاد</td><td>یگان، مسئولیت، حضور، عملیات و مأموریت</td><td>قابل توسعه</td></tr>
+<tr><td>شهادت</td><td>تاریخ، مکان، عملیات/رویداد و نحوه شهادت</td><td>هسته‌ای</td></tr>
+<tr><td>پس از شهادت</td><td>انتقال پیکر، تشییع، مزار و یادمان</td><td>قابل توسعه</td></tr></table>
+<h3>وضعیت هویت</h3>
+<table><tr><th>وضعیت</th><th>معنا</th></tr><tr><td>تأییدشده</td><td>هویت بر پایه فرآیند و منابع معتبر احراز شده است.</td></tr><tr><td>در بررسی</td><td>پرونده یا بخشی از هویت نیازمند بررسی است.</td></tr><tr><td>متعارض</td><td>منابع معتبر درباره بخشی از هویت اختلاف دارند.</td></tr><tr><td>ناشناخته</td><td>موجودیت ثبت شده ولی هویت قطعی نیست.</td></tr><tr><td>احتمالی</td><td>فرضیه هویتی دارای شواهد، اما هنوز قطعی نشده است.</td></tr></table>
+</section>
 
-<section class="card" id="life"><h2>۸. خط زندگی و سیر حیات</h2><div class="flow"><div>تولد</div><div>کودکی</div><div>تحصیل</div><div>کار</div><div>خانواده</div><div>جهاد</div><div>شهادت</div></div><p>هر نقطه می‌تواند به رویداد تقویم شهدا و مکان اطلس شهدا متصل شود. پرونده از فهرست فیلدها به یک روایت زمانی ساختاریافته تبدیل می‌شود.</p></section>
+<section class="card" id="profile"><h2>۷. پروفایل و پرونده جامع شهید</h2>
+<p>صفحه پروفایل قلب محصول است. نمونه اولیه این رویکرد در مخزن مستقل <strong>shahidbank</strong> وجود دارد؛ نسخه جامع باید آن را از یک پروفایل ساده به <strong>پرونده دانش‌محور و مستند</strong> ارتقا دهد.</p>
+<div class="grid three"><div class="mini"><h3>سربرگ</h3><p>تصویر، نام، شناسه، وضعیت هویت و خلاصه پرونده.</p></div><div class="mini"><h3>زندگی‌نامه</h3><p>کودکی، خانواده، تحصیل، شغل و فعالیت‌ها.</p></div><div class="mini"><h3>سوابق جهاد</h3><p>یگان، مسئولیت، عملیات و مأموریت.</p></div><div class="mini"><h3>شهادت</h3><p>زمان، مکان، عملیات و شواهد مرتبط.</p></div><div class="mini"><h3>آثار و اسناد</h3><p>عکس، نامه، وصیت‌نامه، کتاب و رسانه با وضعیت حقوق انتشار.</p></div><div class="mini"><h3>روایت‌ها</h3><p>ارجاع ساختاریافته به روایت‌های بانک روایت.</p></div><div class="mini"><h3>مکان‌ها</h3><p>ارجاع به پرونده‌های مکانی اطلس شهدا.</p></div><div class="mini"><h3>رویدادها</h3><p>ارجاع به رویدادهای تقویم شهدا.</p></div><div class="mini"><h3>منابع و اعتبار</h3><p>منبع هر گزاره، وضعیت بررسی و تاریخچه.</p></div></div>
+<div class="tree">سربرگ پرونده
+├── تصویر/رسانه اصلی
+├── نام اصلی + نام‌های دیگر
+├── شناسه پایدار
+├── وضعیت هویت
+├── خلاصه پرونده
+└── اقدامات: اصلاح | مشارکت | اشتراک | چاپ
 
-<section class="card" id="martyrdom"><h2>۹. شهادت و پس از شهادت</h2><div class="grid three"><div class="mini"><h3>واقعه شهادت</h3><p>زمان، محل، عملیات/رویداد و منبع.</p></div><div class="mini"><h3>نحوه شهادت</h3><p>اطلاعات توصیفی بر پایه منابع معتبر.</p></div><div class="mini"><h3>انتقال پیکر</h3><p>مسیر و نقاط انتقال در صورت ثبت.</p></div><div class="mini"><h3>تشییع</h3><p>رویدادهای تشییع و بزرگداشت.</p></div><div class="mini"><h3>مزار</h3><p>ارجاع به مکان دفن در اطلس.</p></div><div class="mini"><h3>یادمان</h3><p>یادمان‌ها و مکان‌های مرتبط در طول زمان.</p></div></div></section>
+بدنه
+├── معرفی و زندگی‌نامه
+├── خط زندگی
+├── سوابق جهاد
+├── شهادت و پس از شهادت
+├── خانواده و روابط
+├── مکان‌ها
+├── رویدادها
+├── روایت‌ها
+├── اسناد و آثار
+└── منابع، ادعاها و اعتبار</div>
+</section>
 
-<section class="card" id="unknown"><h2>۱۰. شهدای گمنام و هویت‌های ناقص</h2><p>گمنام بودن نباید به معنی نبود پرونده باشد. یک موجودیت می‌تواند با اطلاعات قطعی موجود ثبت شود و در صورت کشف هویت، بدون از بین رفتن سابقه قبلی تکمیل شود.</p><table><tr><th>وضعیت</th><th>رویکرد</th></tr><tr><td>ناشناخته</td><td>شناسه پایدار و اطلاعات قطعی موجود.</td></tr><tr><td>احتمالی</td><td>ثبت فرضیه و منابع بدون تبدیل به هویت قطعی.</td></tr><tr><td>احرازشده</td><td>ارتقا پس از فرآیند قانونی و مستند.</td></tr><tr><td>متعارض</td><td>حفظ منابع و اختلاف تا نتیجه بررسی.</td></tr></table></section>
+<section class="card" id="life"><h2>۸. خط زندگی و سیر حیات</h2>
+<div class="flow"><div>تولد</div><div>کودکی</div><div>تحصیل</div><div>کار</div><div>خانواده</div><div>جهاد</div><div>شهادت</div></div>
+<p>پرونده از مجموعه‌ای از فیلدها به یک <strong>روایت زمانی ساختاریافته</strong> تبدیل می‌شود. هر نقطه می‌تواند هم‌زمان به یک مکان در اطلس و یک رویداد در تقویم ارجاع دهد.</p>
+<table><tr><th>مرحله</th><th>زمان</th><th>مکان</th><th>رابطه</th></tr>
+<tr><td>تولد</td><td>تاریخ/بازه</td><td>Location</td><td>رویداد تولد</td></tr>
+<tr><td>تحصیل</td><td>بازه</td><td>مدرسه/دانشگاه</td><td>رویداد زندگی</td></tr>
+<tr><td>کار و فعالیت</td><td>بازه</td><td>محل کار/فعالیت</td><td>رویداد اجتماعی</td></tr>
+<tr><td>جهاد</td><td>بازه</td><td>جبهه/عملیات</td><td>رویدادهای جهادی</td></tr>
+<tr><td>شهادت</td><td>تاریخ/بازه</td><td>محل شهادت</td><td>رویداد شهادت</td></tr>
+<tr><td>پس از شهادت</td><td>تاریخ/بازه</td><td>مسیر/مزار/یادمان</td><td>رویدادهای پس از شهادت</td></tr></table>
+</section>
 
-<section class="card" id="relations"><h2>۱۱. شبکه روابط شهید</h2><div class="grid three"><div class="mini"><h3>اشخاص</h3><p>خانواده، همرزم، فرمانده، دوست و سایر اشخاص.</p></div><div class="mini"><h3>مکان‌ها</h3><p>تولد، خانه، مدرسه، جبهه، شهادت و مزار.</p></div><div class="mini"><h3>زمان و رویداد</h3><p>تولد، اعزام، عملیات، شهادت و سالگرد.</p></div><div class="mini"><h3>روایت‌ها</h3><p>خاطرات و تاریخ شفاهی مرتبط.</p></div><div class="mini"><h3>اسناد و آثار</h3><p>نامه، عکس، وصیت‌نامه، کتاب و فیلم.</p></div><div class="mini"><h3>موضوعات</h3><p>عملیات، یگان، شهر، دوره تاریخی و موضوع پژوهش.</p></div></div><div class="quote"><strong>مدل محوری:</strong> شهید ← مکان + زمان + اشخاص + روایت + سند + رویداد + اثر.</div></section>
+<section class="card" id="martyrdom"><h2>۹. شهادت و پس از شهادت</h2>
+<div class="grid three"><div class="mini"><h3>واقعه شهادت</h3><p>زمان، مکان، عملیات/رویداد و منابع.</p></div><div class="mini"><h3>نحوه شهادت</h3><p>اطلاعات توصیفی بر پایه منابع معتبر و با رعایت کرامت.</p></div><div class="mini"><h3>انتقال پیکر</h3><p>مسیر و نقاط انتقال در صورت ثبت و امکان انتشار.</p></div><div class="mini"><h3>تشییع</h3><p>رویدادهای تشییع و بزرگداشت.</p></div><div class="mini"><h3>مزار</h3><p>ارجاع به Location مرجع در اطلس شهدا.</p></div><div class="mini"><h3>یادمان</h3><p>یادمان‌ها و مکان‌های مرتبط در طول زمان.</p></div></div>
+<h3>دقت زمانی</h3><table><tr><th>حالت</th><th>مدل</th><th>نمایش</th></tr><tr><td>دقیق</td><td>روز/ماه/سال</td><td>تاریخ کامل</td></tr><tr><td>بازه</td><td>حد پایین و بالا</td><td>بازه زمانی</td></tr><tr><td>تقریبی</td><td>مقدار + precision</td><td>«حدود» + نشان عدم قطعیت</td></tr><tr><td>نامعلوم</td><td>بدون تاریخ قطعی</td><td>در انتظار پژوهش</td></tr></table>
+</section>
 
-<section class="card" id="sources"><h2>۱۲. منابع و شواهد</h2><table><tr><th>نوع</th><th>نمونه</th><th>کارکرد</th></tr><tr><td>رسمی</td><td>پرونده‌ها و مراجع سازمانی/قانونی</td><td>اطلاعات هویتی و رسمی</td></tr><tr><td>خانواده</td><td>اسناد، عکس و اطلاعات خانوادگی</td><td>تکمیل زندگی و میراث شخصی</td></tr><tr><td>پژوهشی</td><td>کتاب، مقاله و پایان‌نامه</td><td>شواهد و تحلیل</td></tr><tr><td>رسانه‌ای</td><td>مصاحبه، فیلم و گزارش</td><td>مستندات رسانه‌ای</td></tr><tr><td>مشارکتی</td><td>پیشنهاد کاربران و پژوهشگران</td><td>کشف و تکمیل با وضعیت بررسی</td></tr></table><div class="quote"><strong>اصل:</strong> ثبت شدن مساوی تأیید شدن نیست؛ منشأ، تاریخ دریافت و وضعیت بررسی باید قابل ردیابی باشد.</div></section>
+<section class="card" id="unknown"><h2>۱۰. شهدای گمنام و هویت‌های ناقص</h2>
+<p>گمنام بودن نباید به معنی نبود پرونده باشد. موجودیت از همان ابتدا شناسه پایدار می‌گیرد و اطلاعات قطعی موجود، منابع و فرضیه‌های هویتی جدا ثبت می‌شوند. اگر هویت بعداً احراز شود، پرونده تکمیل یا به هویت مرجع متصل می‌شود و تاریخچه وضعیت قبلی باقی می‌ماند.</p>
+<table><tr><th>وضعیت</th><th>رویکرد</th></tr><tr><td>ناشناخته</td><td>ثبت موجودیت، شناسه و اطلاعات قطعی موجود.</td></tr><tr><td>احتمالی</td><td>ثبت فرضیه، شواهد و درجه اطمینان بدون قطعی‌سازی.</td></tr><tr><td>احرازشده</td><td>اتصال به هویت پس از فرآیند مستند و مجاز.</td></tr><tr><td>متعارض</td><td>حفظ اختلاف منابع تا رسیدن به تصمیم.</td></tr></table>
+<div class="quote"><strong>اصل:</strong> «گمنامی» یک وضعیت هویتی است، نه یک رکورد ناقص یا حذف‌شدنی.</div>
+</section>
 
-<section class="card" id="quality"><h2>۱۳. اعتبارسنجی و کیفیت</h2><div class="flow"><div>دریافت</div><div>منشأ</div><div>بررسی</div><div>مقایسه</div><div>اعتبارسنجی</div><div>تصمیم</div><div>بازبینی</div></div><div class="grid"><div class="mini"><h3>تأییدشده</h3><p>اطلاعات پذیرفته‌شده مطابق فرآیند.</p></div><div class="mini"><h3>در حال بررسی</h3><p>اطلاعات نیازمند تکمیل یا بررسی.</p></div><div class="mini"><h3>متعارض</h3><p>منابع مهم اطلاعات متفاوت دارند.</p></div><div class="mini"><h3>پیشنهادشده</h3><p>داده مشارکتی هنوز قطعی نشده است.</p></div></div></section>
+<section class="card" id="legacy"><h2>۱۱. میراث، آثار و پس از شهادت</h2>
+<p>بانک شهدا نباید پرونده را در لحظه شهادت متوقف کند. میراث مادی و معنوی، آثار منتشرشده، وصیت‌نامه، نامه‌ها، تصاویر، مصاحبه‌ها، یادمان‌ها و رخدادهای پس از شهادت باید در قالب ارجاع‌های مستند قابل پیگیری باشند.</p>
+<div class="grid three"><div class="mini"><h3>آثار مکتوب</h3><p>وصیت‌نامه، نامه، دست‌نوشته، کتاب و مقاله.</p></div><div class="mini"><h3>رسانه</h3><p>عکس، صوت، ویدئو و مصاحبه با منبع و حقوق انتشار.</p></div><div class="mini"><h3>میراث</h3><p>یادمان، نام‌گذاری، برنامه‌ها و آثار مرتبط پس از شهادت.</p></div></div>
+<div class="note">اطلاعات مربوط به اشخاص زنده و اسناد دارای محدودیت انتشار باید بر اساس سطح دسترسی، رضایت/مجوز و ضرورت نگهداری مدیریت شود.</div>
+</section>
 
-<section class="card" id="search"><h2>۱۴. جست‌وجو و کشف شهید</h2><p>جست‌وجو باید ترکیبی باشد:</p><div><span class="tag">نام</span><span class="tag">نام پدر</span><span class="tag">شهر</span><span class="tag">استان</span><span class="tag">تولد</span><span class="tag">شهادت</span><span class="tag">عملیات</span><span class="tag">یگان</span><span class="tag">مزار</span><span class="tag">موضوع</span></div><div class="quote">در آینده: تشخیص نام‌های مشابه، رفع خطای نگارشی، جست‌وجوی معنایی و کشف رابطه‌ها با نمایش منبع و دلیل نتیجه.</div></section>
+<section class="card" id="relations"><h2>۱۲. شبکه روابط شهید</h2>
+<p>مدل محوری: <strong>شهید ← مکان + زمان + اشخاص + روایت + سند + رویداد + اثر</strong>. هر رابطه یک موجودیت مستقل و قابل استناد است، نه یک فیلد ساده.</p>
+<table><tr><th>رابطه</th><th>نمونه</th><th>ویژگی‌های رابطه</th></tr>
+<tr><td>اشخاص</td><td>خانواده، همرزم، فرمانده، دوست</td><td>نوع، بازه، منبع، وضعیت</td></tr>
+<tr><td>مکان‌ها</td><td>تولد، خانه، مدرسه، جبهه، شهادت، مزار</td><td>شناسه Location + نقش + بازه</td></tr>
+<tr><td>زمان/رویداد</td><td>تولد، اعزام، عملیات، شهادت، سالگرد</td><td>شناسه Event + نوع رابطه</td></tr>
+<tr><td>روایت‌ها</td><td>خاطره و تاریخ شفاهی</td><td>شناسه Narrative + منبع + ارتباط</td></tr>
+<tr><td>اسناد</td><td>نامه، عکس، وصیت‌نامه، کتاب</td><td>شناسه رسانه/سند + حقوق</td></tr>
+<tr><td>موضوعات</td><td>عملیات، یگان، شهر، دوره تاریخی</td><td>شناسه موضوع/Taxonomy</td></tr></table>
+</section>
 
-<section class="card" id="sitemap"><h2>۱۵. ساختار محصول</h2><div class="tree">بانک شهدا
-├── خانه و جست‌وجوی شهید
+<section class="card" id="sources"><h2>۱۳. منابع و شواهد</h2>
+<table><tr><th>نوع منبع</th><th>نمونه</th><th>کارکرد</th><th>قاعده</th></tr>
+<tr><td>رسمی</td><td>پرونده‌ها و مراجع سازمانی/قانونی</td><td>اطلاعات هویتی و رسمی</td><td>ثبت مرجع و تاریخ دسترسی</td></tr>
+<tr><td>خانواده</td><td>اسناد، عکس و اطلاعات خانوادگی</td><td>تکمیل زندگی و میراث شخصی</td><td>سطح دسترسی و مجوز</td></tr>
+<tr><td>پژوهشی</td><td>کتاب، مقاله، پایان‌نامه</td><td>شواهد و تحلیل</td><td>ارجاع کتابشناختی</td></tr>
+<tr><td>رسانه‌ای</td><td>مصاحبه، فیلم و گزارش</td><td>مستندات رسانه‌ای</td><td>منبع و حقوق انتشار</td></tr>
+<tr><td>مشارکتی</td><td>پیشنهاد کاربر/پژوهشگر</td><td>کشف و تکمیل</td><td>تا تأیید، غیرقطعی</td></tr></table>
+<div class="quote"><strong>اصل:</strong> ثبت شدن مساوی تأیید شدن نیست؛ منشأ، تاریخ دریافت، نسخه منبع و وضعیت بررسی باید قابل ردیابی باشد.</div>
+</section>
+
+<section class="card" id="quality"><h2>۱۴. اعتبارسنجی و کیفیت</h2>
+<div class="flow"><div>دریافت</div><div>منشأ</div><div>بررسی</div><div>مقایسه</div><div>اعتبارسنجی</div><div>تصمیم</div><div>بازبینی</div></div>
+<table><tr><th>وضعیت</th><th>معنا</th></tr><tr><td>تأییدشده</td><td>ادعا مطابق فرآیند پذیرفته شده است.</td></tr><tr><td>در حال بررسی</td><td>نیازمند تکمیل یا بررسی بیشتر.</td></tr><tr><td>متعارض</td><td>منابع مهم اطلاعات متفاوت دارند.</td></tr><tr><td>پیشنهادشده</td><td>داده مشارکتی هنوز قطعی نشده است.</td></tr><tr><td>ردشده</td><td>ادعا با شواهد معتبر رد شده است.</td></tr></table>
+<div class="quote"><strong>قاعده مهم:</strong> وضعیت اعتبار «ادعا» مستقل از وضعیت اعتبار «پرونده» است. یک پرونده می‌تواند معتبر باشد ولی یک تاریخ یا رابطه خاص همچنان در وضعیت بررسی یا تعارض قرار داشته باشد.</div>
+</section>
+
+<section class="card" id="search"><h2>۱۵. جست‌وجو و کشف شهید</h2>
+<p>جست‌وجوی بانک باید هم برای کاربر عمومی ساده باشد و هم برای پژوهشگر ابزار کشف دقیق فراهم کند.</p>
+<div><span class="tag">نام</span><span class="tag">نام پدر</span><span class="tag">نام‌های دیگر</span><span class="tag">شهر</span><span class="tag">استان</span><span class="tag">تولد</span><span class="tag">شهادت</span><span class="tag">عملیات</span><span class="tag">یگان</span><span class="tag">مزار</span><span class="tag">موضوع</span><span class="tag">وضعیت هویت</span></div>
+<h3>جست‌وجوی پیشرفته</h3><ul><li>فیلتر چندگانه و بازه زمانی.</li><li>رفع خطای نگارشی و نرمال‌سازی فارسی/عربی.</li><li>تشخیص نام‌های مشابه و پیشنهاد تطبیق با توضیح دلیل.</li><li>جست‌وجوی معنایی در نسخه‌های آینده، بدون حذف نتایج دقیق.</li><li>نمایش منبع و وضعیت اعتبار برای نتایج پژوهشی.</li></ul>
+</section>
+
+<section class="card" id="sitemap"><h2>۱۶. ساختار محصول</h2>
+<div class="tree">بانک شهدا
+├── خانه
+│   ├── جست‌وجوی سریع
+│   ├── شهید/پرونده روز
+│   └── دسترسی به مسیرهای پژوهشی
 ├── شهدا
-│   ├── فهرست شهدا
+│   ├── فهرست و فیلترها
 │   ├── پرونده شهید
 │   ├── شهدای گمنام
-│   └── دسته‌بندی‌ها
-├── عملیات و سوابق
-├── نقشه و مکان‌های مرتبط
+│   └── دسته‌بندی‌ها و موضوعات
+├── خط زندگی و سوابق
+├── مکان‌های مرتبط
+├── رویدادها و عملیات
+├── خانواده و روابط
 ├── اسناد و آثار
 ├── روایت‌ها
 ├── جست‌وجوی پیشرفته
 ├── پژوهش و داده
 ├── مشارکت و اصلاح اطلاعات
-├── درباره پروژه
-└── API و مستندات</div></section>
+├── درباره و راهنمای استفاده
+└── API و مستندات</div>
+</section>
 
-<section class="card" id="ux"><h2>۱۶. تجربه کاربری</h2><div class="grid three"><div class="mini"><h3>هویت در نگاه اول</h3><p>نام، تصویر، شناسه و اطلاعات اصلی خوانا و سریع.</p></div><div class="mini"><h3>خط زمانی</h3><p>نمایش سیر زندگی و رویدادهای مهم.</p></div><div class="mini"><h3>نقشه</h3><p>نمایش مکان‌های مهم از طریق اطلس.</p></div><div class="mini"><h3>شبکه روابط</h3><p>کشف اشخاص، مکان‌ها، روایت‌ها و اسناد مرتبط.</p></div><div class="mini"><h3>منابع</h3><p>نمایش منشأ و وضعیت اعتبار اطلاعات.</p></div><div class="mini"><h3>دسترس‌پذیری</h3><p>موبایل، صفحه‌کلید، خوانایی و متن جایگزین.</p></div></div></section>
+<section class="card" id="ux"><h2>۱۷. تجربه کاربری و معماری صفحه پرونده</h2>
+<div class="grid three"><div class="mini"><h3>هویت در نگاه اول</h3><p>نام، تصویر، شناسه و وضعیت هویت واضح و سریع.</p></div><div class="mini"><h3>خط زمانی</h3><p>سیر زندگی به‌عنوان ستون فقرات پرونده.</p></div><div class="mini"><h3>منبع‌محوری</h3><p>وضعیت اعتبار هر داده مهم قابل مشاهده باشد.</p></div><div class="mini"><h3>شبکه روابط</h3><p>کشف اشخاص، مکان‌ها، روایت‌ها و اسناد.</p></div><div class="mini"><h3>دسترس‌پذیری</h3><p>موبایل، صفحه‌کلید، خوانایی، متن جایگزین و چاپ.</p></div><div class="mini"><h3>کرامت بصری</h3><p>طراحی آرام، رسمی و بدون شلوغی یا عناصر کودکانه.</p></div></div>
+<div class="tree">خانه › شهدا › [نام شهید]
 
-<section class="card" id="data"><h2>۱۷. مدل داده پیشنهادی</h2><table><tr><th>موجودیت</th><th>نقش</th></tr><tr><td><code>Martyr</code></td><td>هویت پایدار شهید.</td></tr><tr><td><code>Identity</code></td><td>نام‌ها و مشخصات هویتی.</td></tr><tr><td><code>FamilyRelation</code></td><td>روابط خانوادگی.</td></tr><tr><td><code>LifeEvent</code></td><td>رویدادهای زندگی.</td></tr><tr><td><code>MilitaryRecord</code></td><td>یگان و سوابق جهاد.</td></tr><tr><td><code>MartyrdomRecord</code></td><td>پرونده شهادت.</td></tr><tr><td><code>PlaceReference</code></td><td>ارجاع به اطلس.</td></tr><tr><td><code>EventReference</code></td><td>ارجاع به تقویم.</td></tr><tr><td><code>NarrativeReference</code></td><td>ارجاع به بانک روایت.</td></tr><tr><td><code>Source</code></td><td>منشأ اطلاعات.</td></tr><tr><td><code>Claim</code></td><td>گزاره قابل بررسی.</td></tr><tr><td><code>Verification</code></td><td>نتیجه اعتبارسنجی.</td></tr><tr><td><code>ChangeLog</code></td><td>تاریخچه تغییرات.</td></tr></table></section>
+┌──────────────────────────────────────────────┐
+│ تصویر | نام شهید                            │
+│       | شناسه + وضعیت هویت + خلاصه          │
+│       | تولد | شهادت | محل                  │
+└──────────────────────────────────────────────┘
+[معرفی] [خط زندگی] [جهاد] [شهادت] [مکان‌ها]
+[روایت‌ها] [اسناد] [روابط] [منابع و اعتبار]
 
-<section class="card" id="api"><h2>۱۸. API و اتصال فنی</h2><table><tr><th>نمونه</th><th>کارکرد</th></tr><tr><td><code>GET /v1/martyrs</code></td><td>فهرست و جست‌وجو.</td></tr><tr><td><code>GET /v1/martyrs/{id}</code></td><td>پرونده جامع.</td></tr><tr><td><code>GET /v1/martyrs/{id}/timeline</code></td><td>خط زمانی.</td></tr><tr><td><code>GET /v1/martyrs/{id}/relations</code></td><td>روابط پرونده.</td></tr><tr><td><code>GET /v1/martyrs/{id}/places</code></td><td>مکان‌های مرتبط.</td></tr><tr><td><code>GET /v1/martyrs/{id}/events</code></td><td>رویدادهای مرتبط.</td></tr><tr><td><code>GET /v1/martyrs/{id}/narratives</code></td><td>روایت‌های مرتبط.</td></tr></table><p>اینها نمونه قرارداد معماری‌اند و قرارداد نهایی پس از طراحی API مادر تعیین می‌شود.</p></section>
+محتوای اصلی                         ستون کناری
+├── بخش فعال                        ├── روابط
+├── منابع همان بخش                  ├── مکان‌ها
+└── ادعاهای مرتبط                   ├── رویدادها
+                                    └── پرونده‌های مشابه
 
-<section class="card" id="ecosystem"><h2>۱۹. ارتباط با پروژه‌ها</h2><table><tr><th>پروژه</th><th>رابطه</th><th>مالکیت</th></tr><tr><td>اطلس شهدا</td><td>مکان‌های زندگی، جبهه، شهادت، مزار و یادمان</td><td>مکان نزد اطلس</td></tr><tr><td>تقویم شهدا</td><td>تولد، شهادت، عملیات و مناسبت</td><td>زمان/رویداد نزد تقویم</td></tr><tr><td>بانک روایت</td><td>خاطرات و تاریخ شفاهی</td><td>روایت نزد بانک روایت</td></tr><tr><td>پاتوق شهدا</td><td>تعامل، جامعه و فعالیت</td><td>تعامل نزد پاتوق</td></tr><tr><td>ودجا</td><td>مسیرهای خدماتی و سازمانی</td><td>خدمت نزد سامانه مربوط</td></tr><tr><td>شهیدپورتال</td><td>هویت، استاندارد و اتصال</td><td>لایه مادر</td></tr></table><div class="quote"><strong>فرمول اکوسیستم:</strong> بانک شهدا = چه کسی؟ | اطلس شهدا = کجا؟ | تقویم شهدا = چه زمانی؟ | بانک روایت = چه روایتی؟ | پاتوق شهدا = چگونه تعامل کنیم؟</div></section>
+اقدام‌ها: اصلاح | مشارکت | اشتراک | چاپ</div>
+</section>
 
-<section class="card" id="independence"><h2>۲۰. استقلال و مرز مسئولیت</h2><p>بانک شهدا محصولی مستقل است؛ توسعه، رابط کاربری، داده و چرخه عمر خودش را دارد. ارتباط با شهیدپورتال از طریق هویت، استاندارد و API است، نه تبدیل شدن به یک صفحه از پورتال.</p></section>
+<section class="card" id="participation"><h2>۱۸. مشارکت، اصلاح و چرخه بررسی</h2>
+<p>مشارکت عمومی باید «منبع ورود داده» باشد، نه «مرجع تأیید داده». هر پیشنهاد وارد صف بررسی می‌شود و اثر آن بر پرونده قابل ردیابی است.</p>
+<div class="flow"><div>پیشنهاد</div><div>ثبت منبع</div><div>غربال</div><div>بررسی</div><div>مقایسه</div><div>تصمیم</div><div>ثبت تاریخچه</div></div>
+<table><tr><th>نقش</th><th>اختیار</th></tr><tr><td>کاربر عمومی</td><td>پیشنهاد اصلاح، افزودن منبع یا گزارش خطا.</td></tr><tr><td>خانواده</td><td>ارائه اسناد و درخواست اصلاح اطلاعات مرتبط، با سازوکار احراز.</td></tr><tr><td>پژوهشگر</td><td>ثبت منابع، پیشنهاد رابطه و گزارش تعارض.</td></tr><tr><td>ویراستار</td><td>بررسی، تطبیق، اصلاح و ارجاع به منبع.</td></tr><tr><td>داور/کارشناس</td><td>تصمیم درباره ادعاهای حساس یا متعارض.</td></tr><tr><td>مدیر داده</td><td>حکمرانی schema، merge/split و قواعد کیفیت.</td></tr></table>
+</section>
 
-<section class="card" id="governance"><h2>۲۱. حکمرانی و حریم خصوصی</h2><div class="grid three"><div class="mini"><h3>عمومی</h3><p>اطلاعات دارای مجوز انتشار عمومی.</p></div><div class="mini"><h3>محدود</h3><p>اطلاعات خانوادگی یا پژوهشی با دسترسی کنترل‌شده.</p></div><div class="mini"><h3>حساس</h3><p>اطلاعات نیازمند تصمیم و کنترل ویژه.</p></div><div class="mini"><h3>ثبت تغییر</h3><p>تاریخ و مسئول تغییرهای مهم.</p></div><div class="mini"><h3>حق اصلاح</h3><p>مسیر پیشنهاد اصلاح برای خانواده و مراجع ذی‌صلاح.</p></div><div class="mini"><h3>حفاظت</h3><p>دسترسی، پشتیبان‌گیری، رخدادنگاری و امنیت.</p></div></div></section>
+<section class="card" id="data"><h2>۱۹. مدل داده پیشنهادی</h2>
+<table><tr><th>موجودیت</th><th>نقش</th><th>قاعده کلیدی</th></tr>
+<tr><td><code>Martyr</code></td><td>هویت پایدار شهید</td><td>شناسه تغییرناپذیر</td></tr>
+<tr><td><code>Identity</code></td><td>نام‌ها و مشخصات هویتی</td><td>تفکیک از هویت مرجع</td></tr>
+<tr><td><code>FamilyRelation</code></td><td>روابط خانوادگی</td><td>نوع رابطه + شخص + منبع</td></tr>
+<tr><td><code>LifeEvent</code></td><td>رویدادهای زندگی</td><td>زمان + دقت زمانی + مکان + منبع</td></tr>
+<tr><td><code>MilitaryRecord</code></td><td>سوابق جهاد</td><td>یگان + نقش + بازه + عملیات</td></tr>
+<tr><td><code>MartyrdomRecord</code></td><td>پرونده شهادت</td><td>زمان + مکان + رویداد + شواهد</td></tr>
+<tr><td><code>PlaceReference</code></td><td>ارجاع به اطلس</td><td>Location ID + نقش + بازه</td></tr>
+<tr><td><code>EventReference</code></td><td>ارجاع به تقویم</td><td>Event ID + نوع رابطه</td></tr>
+<tr><td><code>NarrativeReference</code></td><td>ارجاع به بانک روایت</td><td>Narrative ID + رابطه</td></tr>
+<tr><td><code>Source</code></td><td>منشأ اطلاعات</td><td>نوع، مرجع، نسخه، دسترسی</td></tr>
+<tr><td><code>Claim</code></td><td>گزاره قابل بررسی</td><td>ادعا + منبع + وضعیت</td></tr>
+<tr><td><code>Verification</code></td><td>نتیجه اعتبارسنجی</td><td>داور + زمان + نتیجه</td></tr>
+<tr><td><code>ChangeLog</code></td><td>تاریخچه</td><td>فاعل + تغییر + زمان</td></tr>
+<tr><td><code>MediaAsset</code></td><td>رسانه و سند</td><td>مالکیت/مجوز + checksum + منبع</td></tr>
+<tr><td><code>EntityMatch</code></td><td>تطبیق رکوردهای مشابه</td><td>امتیاز + دلیل + تصمیم</td></tr></table>
+</section>
 
-<section class="card" id="roadmap"><h2>۲۲. نقشه راه توسعه</h2><table><tr><th>فاز</th><th>تمرکز</th><th>خروجی</th></tr><tr><td>۰</td><td>مدل هویت</td><td>واژه‌نامه، شناسه و قواعد تشخیص تکرار.</td></tr><tr><td>۱</td><td>هسته بانک</td><td>فهرست، جست‌وجو و پرونده جامع.</td></tr><tr><td>۲</td><td>کیفیت</td><td>منبع، اعتبارسنجی، نسخه‌بندی و اختلاف.</td></tr><tr><td>۳</td><td>شبکه روابط</td><td>خانواده، مکان، زمان، عملیات، سند و روایت.</td></tr><tr><td>۴</td><td>اتصال اکوسیستم</td><td>API نسخه‌دار و اتصال عملی به پروژه‌ها.</td></tr><tr><td>۵</td><td>مشارکت و پژوهش</td><td>اصلاح داده، پیشنهاد و ابزار تحلیل.</td></tr><tr><td>۶</td><td>هوشمندسازی</td><td>تشخیص مشابهت، جست‌وجوی معنایی و دانش‌گراف.</td></tr></table></section>
+<section class="card" id="provenance"><h2>۲۰. تبار داده، نسخه‌بندی و تطبیق هویت</h2>
+<p>سه قابلیت باید از ابتدا در مدل دیده شوند: <strong>provenance</strong> برای دانستن منشأ داده، <strong>versioning</strong> برای تاریخچه، و <strong>entity resolution</strong> برای تشخیص اینکه چند رکورد به یک شهید مربوط‌اند یا نه.</p>
+<div class="grid three"><div class="mini"><h3>تبار داده</h3><p>هر مقدار مهم می‌تواند به Source و Claim متصل باشد؛ زمان دریافت و نسخه منبع ثبت شود.</p></div><div class="mini"><h3>نسخه‌بندی</h3><p>ویرایش‌ها، ادغام‌ها، تفکیک‌ها و تغییر وضعیت قابل بازگشت و حسابرسی باشند.</p></div><div class="mini"><h3>تطبیق موجودیت</h3><p>نام، تاریخ، پدر، مکان و منابع برای پیشنهاد تطبیق استفاده شوند؛ تصمیم نهایی انسانی باقی بماند.</p></div></div>
+<div class="quote"><strong>قاعده Merge/Split:</strong> ادغام دو رکورد به معنی حذف سابقه آنها نیست؛ هر دو شناسه قبلی باید به یک رویداد ادغام و هویت مرجع جدید/قدیمی قابل ردیابی متصل شوند. تفکیک نیز باید تاریخچه و دلیل داشته باشد.</div>
+</section>
 
-<section class="card" id="kpi"><h2>۲۳. شاخص‌های موفقیت</h2><table><tr><th>حوزه</th><th>شاخص</th></tr><tr><td>پوشش</td><td>تعداد پرونده‌های دارای شناسه پایدار و پوشش منابع هدف.</td></tr><tr><td>کیفیت</td><td>درصد رکوردهای دارای منبع و وضعیت اعتبار.</td></tr><tr><td>هویت</td><td>کاهش رکوردهای تکراری و موفقیت تطبیق موجودیت‌ها.</td></tr><tr><td>اتصال</td><td>پیوندهای معتبر با مکان، رویداد، روایت و سند.</td></tr><tr><td>کاربرد</td><td>زمان رسیدن کاربر به پرونده و استفاده پژوهشی.</td></tr><tr><td>پایداری</td><td>دسترس‌پذیری، بازیابی و امنیت.</td></tr></table></section>
+<section class="card" id="api"><h2>۲۱. API و اتصال فنی</h2>
+<table><tr><th>Endpoint</th><th>روش</th><th>کارکرد</th></tr>
+<tr><td><code>/v1/martyrs</code></td><td>GET</td><td>فهرست و جست‌وجوی شهدا</td></tr>
+<tr><td><code>/v1/martyrs/{id}</code></td><td>GET</td><td>پرونده جامع</td></tr>
+<tr><td><code>/v1/martyrs/{id}/timeline</code></td><td>GET</td><td>خط زندگی</td></tr>
+<tr><td><code>/v1/martyrs/{id}/relations</code></td><td>GET</td><td>روابط</td></tr>
+<tr><td><code>/v1/martyrs/{id}/places</code></td><td>GET</td><td>مکان‌های مرتبط</td></tr>
+<tr><td><code>/v1/martyrs/{id}/events</code></td><td>GET</td><td>رویدادهای مرتبط</td></tr>
+<tr><td><code>/v1/martyrs/{id}/narratives</code></td><td>GET</td><td>روایت‌های مرتبط</td></tr>
+<tr><td><code>/v1/martyrs/{id}/sources</code></td><td>GET</td><td>منابع پرونده</td></tr>
+<tr><td><code>/v1/martyrs/{id}/claims</code></td><td>GET</td><td>ادعاها و وضعیت آنها</td></tr>
+<tr><td><code>/v1/search</code></td><td>GET</td><td>جست‌وجوی ترکیبی</td></tr>
+<tr><td><code>/v1/martyrs/suggestions</code></td><td>POST</td><td>ثبت پیشنهاد اصلاح/تکمیل</td></tr>
+<tr><td><code>/v1/schema</code></td><td>GET</td><td>دریافت schema نسخه‌دار</td></tr>
+</table>
+<div class="note">این Endpointها «قرارداد پیشنهادی معماری» هستند، نه اعلام API عملیاتی موجود. قرارداد نهایی باید پس از تثبیت مدل داده و امنیت API تصویب شود.</div>
+<h3>استاندارد پاسخ</h3><div class="code">{
+  "status": "ok",
+  "data": { "...": "..." },
+  "meta": { "page": 1, "limit": 20, "total": 1204 }
+}</div>
+<h3>امنیت و نسخه‌بندی</h3><ul><li>نسخه‌بندی صریح API مانند <code>/v1/</code>.</li><li>احراز هویت برای عملیات نوشتن و داده‌های محدود.</li><li>API Key برای مصرف‌کنندگان سازمانی و OAuth/OIDC برای حساب‌های کاربری در صورت نیاز.</li><li>Rate limit، audit log و سیاست خروجی بر اساس سطح دسترسی.</li></ul>
+</section>
 
-<section class="card" id="final"><h2>۲۴. جمع‌بندی نهایی</h2><div class="quote"><strong>بانک شهدا چیست؟</strong> محصولی مستقل و جامع برای ساخت و نگهداری مرجع هویتی و دانشی شهدا؛ جایی که هر شهید به‌عنوان موجودیتی یکتا و پایدار، پرونده‌ای شامل هویت، زندگی، خانواده، سوابق، شهادت، آثار و روابط خود دارد و از طریق شناسه پایدار به مکان، زمان، روایت، سند و سایر لایه‌های اکوسیستم متصل می‌شود.</div><p>بانک شهدا در معماری شهیدپورتال همان نقشی را دارد که <strong>اطلس شهدا برای مکان</strong> و <strong>تقویم شهدا برای زمان</strong> دارند: مرجع اصلی یک محور مشخص. محور بانک شهدا <strong>خود شهید</strong> است.</p><p><strong>قاعده توسعه:</strong> هر قابلیت جدید باید به هویت، زندگی، رابطه، منبع، اعتبار، اتصال یا ارائه دانش شهید خدمت کند.</p></section>
-<a class="back-top" href="#top" aria-label="بازگشت به بالا">↑</a><footer class="footer">بانک شهدا | طرح جامع مستقل در اکوسیستم شهیدپورتال</footer></div><script src="../assets/js/sidebar.js?v=20261008-6"></script></body></html>
+<section class="card" id="ecosystem"><h2>۲۲. ارتباط با پروژه‌های اکوسیستم</h2>
+<table><tr><th>پروژه</th><th>ورودی/خروجی</th><th>مرجع تخصصی</th></tr>
+<tr><td>اطلس شهدا</td><td>Location ID برای تولد، سکونت، جبهه، شهادت، مزار و یادمان</td><td>اطلس</td></tr>
+<tr><td>تقویم شهدا</td><td>Event ID برای تولد، شهادت، عملیات و مناسبت</td><td>تقویم</td></tr>
+<tr><td>بانک روایت</td><td>Narrative ID برای خاطرات و تاریخ شفاهی</td><td>بانک روایت</td></tr>
+<tr><td>پاتوق شهدا</td><td>مصرف پرونده و خدمات مشارکتی</td><td>پاتوق</td></tr>
+<tr><td>ودجا</td><td>ارجاع‌های خدماتی طبق قرارداد</td><td>سامانه مربوط</td></tr>
+<tr><td>شهیدپورتال</td><td>کشف، معرفی، استاندارد و اتصال بین محصولات</td><td>لایه مادر</td></tr></table>
+<div class="quote"><strong>فرمول اکوسیستم:</strong> بانک شهدا = چه کسی؟ | اطلس شهدا = کجا؟ | تقویم شهدا = چه زمانی؟ | بانک روایت = چه روایتی؟ | پاتوق شهدا = چگونه تعامل کنیم؟</div>
+</section>
+
+<section class="card" id="independence"><h2>۲۳. استقلال و مرز مسئولیت</h2>
+<p>بانک شهدا محصولی مستقل است؛ توسعه، رابط کاربری، داده و چرخه عمر خودش را دارد. ارتباط با شهیدپورتال به معنی تبدیل شدن به یک صفحه از پورتال نیست.</p>
+<table><tr><th>موضوع</th><th>بانک شهدا</th><th>مرجع تخصصی بیرونی</th></tr>
+<tr><td>هویت شهید</td><td>مالک و مرجع</td><td>منابع/مراجع هویتی</td></tr>
+<tr><td>مکان</td><td>ارجاع</td><td>اطلس شهدا</td></tr>
+<tr><td>زمان و رویداد</td><td>ارجاع</td><td>تقویم شهدا</td></tr>
+<tr><td>روایت</td><td>ارجاع</td><td>بانک روایت</td></tr>
+<tr><td>تعامل</td><td>ارائه داده به سرویس</td><td>پاتوق شهدا</td></tr></table>
+</section>
+
+<section class="card" id="governance"><h2>۲۴. حکمرانی، حریم خصوصی و حقوق محتوا</h2>
+<table><tr><th>سطح</th><th>نمونه</th><th>قاعده</th></tr><tr><td>عمومی</td><td>اطلاعات مجاز برای انتشار</td><td>قابل نمایش و API عمومی طبق سیاست</td></tr><tr><td>محدود</td><td>اطلاعات خانوادگی/پژوهشی</td><td>دسترسی کنترل‌شده</td></tr><tr><td>حساس</td><td>اطلاعات دارای ریسک یا محدودیت</td><td>حداقل افشا و کنترل ویژه</td></tr></table>
+<h3>اصول حفاظتی</h3><ul><li>ثبت تغییر و فاعل تغییرهای مهم.</li><li>مسیر رسمی اصلاح برای خانواده و مراجع ذی‌صلاح.</li><li>پشتیبان‌گیری، رخدادنگاری، کنترل دسترسی و بازیابی.</li><li>مدیریت حقوق انتشار عکس، سند، صوت و ویدئو.</li><li>جلوگیری از نمایش عمومی داده‌های حساس اشخاص زنده بدون مجوز.</li><li>ثبت دلیل تصمیم‌های مهم در ادغام، تفکیک و اعتبارسنجی.</li></ul>
+<div class="quote"><strong>اصل کمترین افشا:</strong> اگر انتشار دقیق یک داده ریسک ایجاد کند، سطح انتشار کاهش می‌یابد؛ پرونده تا حد امکان حفظ می‌شود اما داده حساس عمومی نمی‌شود.</div>
+</section>
+
+<section class="card" id="architecture"><h2>۲۵. معماری فنی و مسیر توسعه</h2>
+<div class="grid three"><div class="mini"><h3>Static First</h3><p>نسخه اولیه می‌تواند با داده ایستا و JSON/فایل‌های ساختاریافته آغاز شود.</p></div><div class="mini"><h3>CMS/API Ready</h3><p>schema از ابتدا طوری تعریف شود که مهاجرت به backend و CMS نیازمند بازطراحی هویت نباشد.</p></div><div class="mini"><h3>Data Layer مستقل</h3><p>داده مرجع از رابط کاربری مستقل باشد تا API و محصولات دیگر بتوانند آن را مصرف کنند.</p></div><div class="mini"><h3>Search Layer</h3><p>جست‌وجوی دقیق، نرمال‌سازی فارسی و در آینده semantic search.</p></div><div class="mini"><h3>Audit Layer</h3><p>نسخه، provenance، Claim، Verification و ChangeLog.</p></div><div class="mini"><h3>Integration Layer</h3><p>قراردادهای پایدار برای Atlas، Calendar، Narrative و سایر سرویس‌ها.</p></div></div>
+<div class="tree">Presentation
+   ↓
+Application / Search / API
+   ↓
+Martyr Domain Model
+   ├── Identity
+   ├── Life / Military / Martyrdom
+   ├── Relations
+   ├── Claims / Verification
+   ├── Sources / Provenance
+   └── Media / Rights
+   ↓
+Integration Contracts
+   ├── Atlas Location
+   ├── Calendar Event
+   └── Narrative Record</div>
+</section>
+
+<section class="card" id="roadmap"><h2>۲۶. نقشه راه توسعه</h2>
+<table><tr><th>فاز</th><th>تمرکز</th><th>خروجی</th><th>معیار عبور</th></tr>
+<tr><td>۰</td><td>واژه‌نامه و هویت</td><td>شناسه، قواعد نام و تشخیص تکرار</td><td>تأیید مدل هویت</td></tr>
+<tr><td>۱</td><td>هسته بانک</td><td>فهرست، جست‌وجو و پرونده جامع</td><td>نمونه عملیاتی پایدار</td></tr>
+<tr><td>۲</td><td>کیفیت و منبع</td><td>Source، Claim، Verification و نسخه‌بندی</td><td>ردیابی منبع و تغییر</td></tr>
+<tr><td>۳</td><td>شبکه روابط</td><td>خانواده، مکان، زمان، عملیات، سند و روایت</td><td>روابط قابل پیمایش</td></tr>
+<tr><td>۴</td><td>اتصال اکوسیستم</td><td>API نسخه‌دار و قرارداد بین پروژه‌ها</td><td>اتصال عملی به محصولات مستقل</td></tr>
+<tr><td>۵</td><td>مشارکت و پژوهش</td><td>صف پیشنهاد، گردش بررسی و ابزار پژوهش</td><td>چرخه بررسی قابل حسابرسی</td></tr>
+<tr><td>۶</td><td>هوشمندسازی</td><td>Entity Resolution، جست‌وجوی معنایی و دانش‌گراف</td><td>کنترل کیفیت مدل‌های هوشمند</td></tr></table>
+<div class="quote"><strong>قاعده عبور:</strong> رشد تعداد پرونده‌ها نباید از بلوغ مدل داده و کیفیت پایه جلو بزند؛ توسعه پوشش بدون کنترل هویت، بدهی داده ایجاد می‌کند.</div>
+</section>
+
+<section class="card" id="kpi"><h2>۲۷. شاخص‌های موفقیت</h2>
+<table><tr><th>حوزه</th><th>شاخص</th><th>هدف پیشنهادی</th></tr>
+<tr><td>هویت</td><td>موفقیت تطبیق موجودیت‌ها</td><td>بیش از ۹۵٪ پس از بازبینی</td></tr>
+<tr><td>کیفیت</td><td>پرونده‌های دارای منبع</td><td>بیش از ۹۰٪</td></tr>
+<tr><td>کیفیت</td><td>ادعاهای دارای وضعیت اعتبار</td><td>بیش از ۹۵٪</td></tr>
+<tr><td>تکرار</td><td>رکوردهای تکراری باقی‌مانده</td><td>کمتر از ۱٪</td></tr>
+<tr><td>اتصال</td><td>پرونده‌های دارای پیوند معتبر به اطلس</td><td>بیش از ۷۰٪</td></tr>
+<tr><td>اتصال</td><td>پرونده‌های دارای پیوند معتبر به تقویم</td><td>بیش از ۶۰٪</td></tr>
+<tr><td>اتصال</td><td>پرونده‌های دارای پیوند به بانک روایت</td><td>بیش از ۵۰٪</td></tr>
+<tr><td>کاربرد</td><td>رسیدن کاربر به پرونده در کمتر از ۳ گام</td><td>بیش از ۸۰٪</td></tr>
+<tr><td>پایداری</td><td>دسترس‌پذیری سرویس</td><td>۹۹.۵٪ یا بالاتر</td></tr>
+<tr><td>API</td><td>صدک ۹۵ زمان پاسخ خواندن</td><td>کمتر از ۵۰۰ms در شرایط هدف</td></tr></table>
+<p>اهداف عددی نهایی باید پس از شناخت حجم واقعی داده، منابع و زیرساخت تثبیت شوند؛ اعداد بالا KPI پیشنهادی‌اند، نه آمار موجود.</p>
+</section>
+
+<span class="appendix-marker" id="appendix-a">ضمیمه الف — مدل داده نمونه</span>
+<section class="card"><h2>ضمیمه الف: نمونه رکورد مرجع</h2>
+<p>نمونه زیر صرفاً برای نشان دادن ساختار است. مقادیر واقعی باید از منابع معتبر و فرآیند اعتبارسنجی وارد شوند.</p>
+<div class="code">{
+  "id": "MTR-1405-000123",
+  "identityStatus": "verified",
+  "primaryName": "نام نمونه",
+  "alternativeNames": [],
+  "birth": {
+    "date": null,
+    "datePrecision": "unknown",
+    "placeId": null
+  },
+  "martyrdom": {
+    "date": null,
+    "datePrecision": "unknown",
+    "placeId": null,
+    "eventId": null
+  },
+  "relations": [],
+  "claims": [],
+  "sources": [],
+  "accessLevel": "public",
+  "version": 1
+}</div>
+<div class="note">از درج کد ملی، شماره شناسنامه یا اطلاعات خانوادگی حساس در نمونه‌های عمومی خودداری می‌شود؛ این فیلدها در مدل داخلی می‌توانند وجود داشته باشند اما باید سطح دسترسی و حفاظت مشخص داشته باشند.</div>
+</section>
+
+<span class="appendix-marker" id="appendix-b">ضمیمه ب — قرارداد API</span>
+<section class="card"><h2>ضمیمه ب: قواعد API</h2>
+<table><tr><th>اصل</th><th>قاعده</th></tr><tr><td>شناسه</td><td>شناسه شهید پایدار است و با تغییر نام یا وضعیت عوض نمی‌شود.</td></tr><tr><td>نسخه</td><td>Breaking change با نسخه جدید API منتشر می‌شود.</td></tr><tr><td>منبع</td><td>در خروجی‌های پژوهشی امکان دریافت provenance و status وجود دارد.</td></tr><tr><td>امنیت</td><td>سطح دسترسی API با access level داده هماهنگ است.</td></tr><tr><td>خطا</td><td>کدهای استاندارد 400/401/403/404/409/429/500 و پیام قابل فهم.</td></tr><tr><td>مستندات</td><td>schema و قرارداد API باید نسخه‌دار و قابل انتشار باشد.</td></tr></table>
+</section>
+
+<span class="appendix-marker" id="appendix-c">ضمیمه پ — KPI و کیفیت</span>
+<section class="card"><h2>ضمیمه پ: چارچوب سنجش</h2>
+<div class="grid four"><div class="mini"><h3>پوشش</h3><p>تعداد و درصد پرونده‌های معتبر و قابل استفاده.</p></div><div class="mini"><h3>کیفیت</h3><p>منبع‌مندی، اعتبار، تعارض و تکرار.</p></div><div class="mini"><h3>اتصال</h3><p>پیوندهای معتبر با پروژه‌های اکوسیستم.</p></div><div class="mini"><h3>کاربرد</h3><p>جست‌وجو، پژوهش، مشارکت و استفاده مجدد.</p></div></div>
+</section>
+
+<span class="appendix-marker" id="appendix-d">ضمیمه ت — UX و هویت بصری</span>
+<section class="card"><h2>ضمیمه ت: اصول UX</h2>
+<div class="grid three"><div class="mini"><h3>وقار و آرامش</h3><p>طراحی رسمی، انسانی و بدون شلوغی.</p></div><div class="mini"><h3>خوانایی</h3><p>تایپوگرافی فارسی محلی و اندازه‌های مناسب.</p></div><div class="mini"><h3>منبع‌محوری</h3><p>منبع و وضعیت اعتبار بخشی طبیعی از تجربه پرونده.</p></div><div class="mini"><h3>دسترس‌پذیری</h3><p>کنتراست، صفحه‌کلید، صفحه‌خوان، چاپ و کاهش حرکت.</p></div><div class="mini"><h3>موبایل‌محوری</h3><p>پرونده و جست‌وجو باید در صفحه کوچک بدون افقی‌شدن اجباری کار کند.</p></div><div class="mini"><h3>حالت پژوهش</h3><p>کاربر حرفه‌ای بتواند منابع، روابط و تاریخچه را عمیق‌تر ببیند.</p></div></div>
+</section>
+
+<section class="card" id="final"><h2>۲۸. جمع‌بندی نهایی</h2>
+<div class="quote"><strong>بانک شهدا چیست؟</strong> محصولی مستقل و جامع برای ساخت و نگهداری مرجع هویتی و دانشی شهدا؛ جایی که هر شهید به‌عنوان موجودیتی یکتا و پایدار، پرونده‌ای شامل هویت، زندگی، خانواده، سوابق، شهادت، آثار و روابط خود دارد و از طریق شناسه پایدار به مکان، زمان، روایت، سند و سایر لایه‌های اکوسیستم متصل می‌شود.</div>
+<p>بانک شهدا در معماری اکوسیستم همان نقشی را دارد که <strong>اطلس شهدا برای مکان</strong> و <strong>تقویم شهدا برای زمان</strong> دارند: مرجع اصلی یک محور مشخص. محور بانک شهدا <strong>خود شهید</strong> است.</p>
+<div class="quote"><strong>قاعده توسعه:</strong> هر قابلیت جدید باید حداقل به یکی از این محورها خدمت کند: هویت، زندگی، رابطه، منبع، اعتبار، میراث، اتصال یا ارائه دانش شهید.</div>
+</section>
+
+<a class="back-top" href="#top" aria-label="بازگشت به بالا">↑</a>
+<footer class="footer">بانک شهدا | طرح جامع، معماری داده و نقشه راه توسعه | نسخه ۲.۰ — سند مادر محصول</footer>
+</div>
+<script src="../assets/js/sidebar.js?v=20261008-6"></script>
+</body>
+</html>
