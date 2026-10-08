@@ -1,141 +1,1549 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>بانک روایت | طرح جامع</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>بانک روایت | طرح جامع، معماری محصول و نقشه راه توسعه</title>
 <style>
-@font-face{font-family:TarhhaBody;src:url('../assets/fonts/Vazirmatn-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:TarhhaBody;src:url('../assets/fonts/Vazirmatn-Medium.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
-@font-face{font-family:TarhhaBody;src:url('../assets/fonts/Vazirmatn-SemiBold.woff2') format('woff2');font-weight:600;font-style:normal;font-display:swap}
-@font-face{font-family:TarhhaBody;src:url('../assets/fonts/Vazirmatn-Bold.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
-:root{--ink:#20272b;--muted:#657277;--paper:#fffdf8;--paper2:#f6f1e8;--line:#ded8cc;--accent:#795548;--accent2:#a67c52;--deep:#342821;--soft:#f1e9de}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(180deg,#f5f2ec,#eef1ef 55%,#f5f2ec);color:var(--ink);font-family:TarhhaBody;line-height:2.05}.wrap{max-width:1240px;margin:auto;padding:28px 22px 75px}
-.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#2d231f,#574137 58%,#765846);color:#fffdf9;border-radius:28px;padding:48px 44px;margin-bottom:20px;box-shadow:0 20px 55px #34282125;border:1px solid #ffffff18}
-.hero:after{content:"روایت • حافظه • سند";position:absolute;left:28px;bottom:18px;opacity:.16;font-size:28px;font-weight:700;letter-spacing:1px}.hero h1{margin:0 0 10px;font-size:37px;letter-spacing:-.5px}.hero p{max-width:850px;margin:5px 0;opacity:.94}.badge{display:inline-block;margin-top:16px;padding:5px 14px;border:1px solid #ffffff35;background:#ffffff12;border-radius:999px;font-size:12px}.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:28px;margin:17px 0;box-shadow:0 9px 27px #34282109}.card h2{margin:0 0 14px;color:var(--deep);font-size:23px}.card h3{margin:0 0 7px;color:#6b4b3b;font-size:16px}.lead{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.grid.three{grid-template-columns:repeat(3,1fr)}.mini{background:#faf7f1;border:1px solid #e4ddd1;border-radius:15px;padding:17px}.mini p{margin:2px 0;color:#5d686b;font-size:13px;line-height:1.95}.quote{border-right:4px solid var(--accent2);background:var(--soft);padding:15px 18px;border-radius:11px;margin:15px 0}.flow{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin:15px 0}.flow div{padding:12px 7px;text-align:center;border-radius:13px;background:#f2e9dd;border:1px solid #e0d3c2;color:#604635;font-size:12px;font-weight:700}.tag{display:inline-block;background:#eee5d8;color:#654837;border-radius:999px;padding:3px 10px;margin:3px;font-size:11px}table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px}th,td{border:1px solid #ded8cc;padding:10px;text-align:right;vertical-align:top}th{background:#f0e8dc;color:#4e382c}.status{font-weight:700}.done{color:#4e735d}.next{color:#8a6233}.future{color:#6d7480}.code{direction:ltr;text-align:left;background:#2c2926;color:#f6eee4;border-radius:13px;padding:16px;overflow:auto;font:12px/1.8 Consolas,monospace}.callout{background:#f5ede2;border:1px solid #e0d2c1;border-right:4px solid #8a6349;border-radius:12px;padding:15px 18px;margin:15px 0}.footer{text-align:center;color:#657277;padding-top:24px}.back-top{position:fixed;left:20px;bottom:20px;z-index:20;width:42px;height:42px;border:1px solid #d7d0c5;border-radius:12px;background:#fffdf8ee;color:#654837;text-decoration:none;display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 8px 22px #34282118}
-@media(max-width:900px){.grid.three{grid-template-columns:repeat(2,1fr)}.flow{grid-template-columns:repeat(4,1fr)}}
-@media(max-width:760px){.grid,.grid.three{grid-template-columns:1fr}.hero{padding:31px 22px}.hero h1{font-size:29px}.card{padding:21px;overflow-x:auto}.flow{grid-template-columns:repeat(2,1fr)}table{font-size:12px;min-width:700px}.hero:after{display:none}}
+@font-face{font-family:Vazir;src:url('../assets/fonts/Vazirmatn-Regular.woff2')}@font-face{font-family:Vazir;src:url('../assets/fonts/Vazirmatn-Bold.woff2');font-weight:700}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f4f5f8;color:#172235;font-family:Vazir;line-height:2}.wrap{max-width:1240px;margin:auto;padding:28px 20px 80px}
+.hero{position:relative;background:linear-gradient(135deg,#2c1f3d 0%,#4a3560 55%,#6b4a7a 100%);color:#fff;border-radius:24px;padding:48px 44px;margin-bottom:22px;box-shadow:0 22px 60px #2c1f3d33;overflow:hidden}
+.hero::after{content:"";position:absolute;left:-80px;bottom:-100px;width:280px;height:280px;border:1px solid #ffffff1c;border-radius:50%;box-shadow:0 0 0 40px #ffffff08,0 0 0 80px #ffffff05}
+.hero h1{margin:0 0 10px;font-size:36px;letter-spacing:-.4px;position:relative;z-index:1}
+.hero p{margin:6px 0;opacity:.94;font-size:14.5px;max-width:900px;position:relative;z-index:1}
+.hero .badge{display:inline-block;background:#ffffff1c;border:1px solid #ffffff44;border-radius:999px;padding:4px 14px;margin-top:16px;font-size:12.5px;position:relative;z-index:1}
+.nav{position:sticky;top:8px;z-index:5;background:#fffffff2;backdrop-filter:blur(14px);border:1px solid #e4ddec;border-radius:15px;padding:8px 12px;margin-bottom:20px;display:flex;flex-wrap:wrap;gap:3px;box-shadow:0 6px 18px #2c1f3d0a}
+.nav a{color:#5a3f7a;text-decoration:none;font-size:12px;padding:3px 9px;white-space:nowrap;border-radius:6px;transition:.2s}
+.nav a:hover{background:#f2eefa;color:#4a3560}
+.card{background:#fff;border:1px solid #e6e1ec;border-radius:20px;padding:30px 32px;margin:18px 0;box-shadow:0 8px 25px #2c1f3d08}
+.card h2{margin:0 0 16px;color:#4a3560;font-size:23px;letter-spacing:-.3px;padding-bottom:12px;border-bottom:2px solid #f2eefa}
+.card h3{color:#5a3f7a;font-size:16.5px;margin:22px 0 10px}
+.card h4{color:#6b4a7a;font-size:14.5px;margin:18px 0 8px}
+.card p{margin:8px 0;font-size:14px;line-height:1.95;color:#2c3a48}
+.card ul{padding-right:22px;margin:10px 0}
+.card ul li{font-size:13.5px;line-height:1.9;margin-bottom:4px;color:#2c3a48}
+.card ol{padding-right:22px;margin:10px 0}
+.card ol li{font-size:13.5px;line-height:1.9;margin-bottom:4px;color:#2c3a48}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+.grid.four{grid-template-columns:repeat(4,1fr)}
+.mini{background:#faf8fd;border:1px solid #e6e1ee;border-radius:14px;padding:18px;transition:.25s}
+.mini:hover{border-color:#8a6ba0;transform:translateY(-2px)}
+.mini h3{margin:0 0 8px;font-size:14.5px;color:#4a3560}
+.mini h4{margin:0 0 6px;font-size:13.5px;color:#4a3560}
+.mini p{margin:0;font-size:12.5px;line-height:1.85;color:#5b6d79}
+.mini .num{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;border-radius:9px;background:#f2eefa;color:#5a3f7a;font-weight:800;font-size:12px;margin-bottom:10px}
+.quote{border-right:4px solid #8a6ba0;background:linear-gradient(90deg,#f7f3fa,transparent);padding:16px 20px;border-radius:0 12px 12px 0;margin:18px 0;font-size:14px;line-height:1.95;color:#3a2b4a}
+.quote strong{color:#2c1f3d}
+.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:9px;margin:20px 0}
+.flow.five{grid-template-columns:repeat(5,1fr)}
+.flow.four{grid-template-columns:repeat(4,1fr)}
+.flow.seven{grid-template-columns:repeat(7,1fr)}
+.flow div{padding:14px 8px;text-align:center;border-radius:12px;background:linear-gradient(135deg,#f2eefa,#faf8fd);border:1px solid #e0d8ec;color:#4a3560;font-weight:700;font-size:12.5px;line-height:1.5}
+.flow div.hi{background:linear-gradient(135deg,#4a3560,#6b4a7a);color:#fff;border-color:transparent;box-shadow:0 4px 12px #4a356033}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13px}
+th,td{border:1px solid #e2dce8;padding:10px 12px;text-align:right;vertical-align:top;line-height:1.75}
+th{background:#f2eefa;color:#4a3560;font-weight:700;font-size:12.5px}
+tr:nth-child(even) td{background:#faf8fd}
+.tree{background:#faf8fd;border:1px solid #e6e1ee;border-radius:14px;padding:22px 26px;font-family:"SF Mono","Consolas",monospace;font-size:12px;direction:ltr;text-align:left;line-height:2;color:#3a2b4a;overflow-x:auto;white-space:pre}
+.tag{display:inline-block;background:#f2eefa;color:#4a3560;border-radius:18px;padding:5px 12px;font-size:12px;margin:3px;font-weight:600}
+.code{background:#2c1f3d;color:#e8ddf5;border-radius:14px;padding:20px 24px;font-family:"SF Mono","Consolas",monospace;font-size:12.5px;direction:ltr;text-align:left;line-height:1.9;overflow-x:auto;white-space:pre;margin:14px 0}
+.code .k{color:#c8a8e8}.code .s{color:#a8d8a8}.code .c{color:#8a7a9a}
+.footer{text-align:center;color:#7b8995;padding:30px 20px 10px;font-size:12px}
+.back-top{position:fixed;left:20px;bottom:20px;z-index:20;width:44px;height:44px;border:1px solid #e0dbe8;border-radius:12px;background:#ffffffee;color:#5a3f7a;text-decoration:none;display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 8px 22px #2c1f3d18;transition:.2s}
+.back-top:hover{transform:translateY(-3px);background:#f2eefa}
+code{background:#f2eefa;border-radius:5px;padding:1px 6px;font-family:"SF Mono","Consolas",monospace;font-size:.9em;color:#4a3560;direction:ltr;display:inline-block}
+@media(max-width:800px){.grid,.grid.two,.grid.four{grid-template-columns:1fr}.flow,.flow.five,.flow.four,.flow.seven{grid-template-columns:repeat(2,1fr)}.hero{padding:32px 24px}.hero h1{font-size:26px}.card{padding:22px 18px}.nav{position:static}table{font-size:12px}}
+.appendix-marker{display:inline-block;background:linear-gradient(135deg,#4a3560,#6b4a7a);color:#fff;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700;margin:20px 0 10px;letter-spacing:.5px}
 </style>
-<link rel="stylesheet" href="../assets/css/sidebar.css?v=20261008-2">
-<link rel="stylesheet" href="../assets/css/page-nav.css?v=20261008-2">
-<meta name="shahidportal-version" content="2026-10-08-narrative-bank-plan-v2">
 </head>
-<body data-sidebar-page="narrative-bank" class="sp-main" id="top">
+<body id="top" data-sidebar-page="narrative-bank">
 <div class="wrap">
-<section class="hero"><h1>بانک روایت | طرح جامع</h1><p>زیرساخت تخصصی ثبت، حفظ، ساختاردهی، بررسی، پیونددهی و ارائه روایت‌های انسانی و تاریخی.</p><p>بانک روایت، لایه روایی اکوسیستم است؛ جایی که هر روایت هویت پایدار دارد، هر ادعا وضعیت اعتبار دارد و هر ارتباط به یک شخص، زمان، مکان، رویداد یا منبع قابل پیگیری است.</p><span class="badge">سند مادر محصول • معماری • داده • تجربه • نقشه راه</span></section>
 
-<nav class="page-nav" aria-label="ناوبری این صفحه">
-<a class="nav-home" href="#summary">خلاصه</a>
-<details><summary>هویت و مأموریت</summary><div class="page-subnav"><a href="#position">جایگاه</a><a href="#problem">مسئله</a><a href="#mission">مأموریت</a><a href="#principles">اصول</a><a href="#scope">قلمرو</a></div></details>
-<details><summary>مدل روایت</summary><div class="page-subnav"><a href="#unit">واحد روایت</a><a href="#people">راوی و اشخاص</a><a href="#context">زمان و مکان</a><a href="#types">انواع</a><a href="#lifecycle">چرخه حیات</a><a href="#claims">ادعا</a></div></details>
-<details><summary>اعتبار و آرشیو</summary><div class="page-subnav"><a href="#validation">اعتبارسنجی</a><a href="#sources">منابع</a><a href="#media">رسانه</a><a href="#graph">گراف دانش</a><a href="#data">مدل داده</a></div></details>
-<details><summary>محصول و کاربران</summary><div class="page-subnav"><a href="#ux">UX</a><a href="#roles">نقش‌ها</a><a href="#governance">حکمرانی</a><a href="#privacy">حقوق</a><a href="#search">جست‌وجو</a><a href="#website">ساختار سایت</a></div></details>
-<details><summary>فناوری و اکوسیستم</summary><div class="page-subnav"><a href="#api">API</a><a href="#ecosystem">اکوسیستم</a><a href="#independence">استقلال</a><a href="#security">امنیت</a><a href="#quality">کیفیت</a><a href="#ai">هوش مصنوعی</a></div></details>
-<details><summary>توسعه محصول</summary><div class="page-subnav"><a href="#mvp">MVP</a><a href="#kpi">شاخص‌ها</a><a href="#risks">ریسک‌ها</a><a href="#organization">سازمان</a><a href="#roadmap">نقشه راه</a><a href="#implementation">تبدیل طرح به سایت</a><a href="#conclusion">جمع‌بندی</a></div></details>
+<section class="hero">
+<h1>بانک روایت</h1>
+<p>سامانه‌ی تخصصی ثبت، نگهداری، سامان‌دهی، مستندسازی، اعتبارسنجی، ارتباط‌دهی، جست‌وجو و ارائه‌ی روایت‌های انسانی و تاریخی.</p>
+<p>یک زیرسامانه‌ی مستقل در معماری اکوسیستم شهیدپورتال برای تبدیل روایت‌های پراکنده به میراثی مستند، قابل جست‌وجو و قابل پیوند با دانش شهیدان.</p>
+<span class="badge">طرح جامع، معماری محصول و نقشه راه توسعه | نسخه ۱.۰ — سند مادر محصول</span>
+</section>
+
+<nav class="nav" aria-label="ناوبری">
+<a href="#s1">۱. خلاصه</a>
+<a href="#s2">۲. تعریف</a>
+<a href="#s3">۳. جایگاه</a>
+<a href="#s4">۴. مسئله</a>
+<a href="#s5">۵. مأموریت</a>
+<a href="#s6">۶. چشم‌انداز</a>
+<a href="#s7">۷. اصول</a>
+<a href="#s8">۸. روایت</a>
+<a href="#s9">۹. انواع</a>
+<a href="#s10">۱۰. هویت</a>
+<a href="#s11">۱۱. راوی</a>
+<a href="#s12">۱۲. نقش‌ها</a>
+<a href="#s13">۱۳. موضوع</a>
+<a href="#s14">۱۴. زمان</a>
+<a href="#s15">۱۵. مکان</a>
+<a href="#s16">۱۶. ساختار</a>
+<a href="#s17">۱۷. ادعا</a>
+<a href="#s18">۱۸. اعتبارسنجی</a>
+<a href="#s19">۱۹. تعارض</a>
+<a href="#s20">۲۰. منابع</a>
+<a href="#s21">۲۱. رسانه</a>
+<a href="#s22">۲۲. نسخه‌ها</a>
+<a href="#s23">۲۳. گراف</a>
+<a href="#s24">۲۴. مدل داده</a>
+<a href="#s25">۲۵. بانک شهدا</a>
+<a href="#s26">۲۶. اطلس</a>
+<a href="#s27">۲۷. تقویم</a>
+<a href="#s28">۲۸. UX</a>
+<a href="#s29">۲۹. معماری سایت</a>
+<a href="#s30">۳۰. صفحه روایت</a>
+<a href="#s31">۳۱. جست‌وجو</a>
+<a href="#s32">۳۲. AI</a>
+<a href="#s33">۳۳. کاربران</a>
+<a href="#s34">۳۴. مشارکت</a>
+<a href="#s35">۳۵. رضایت</a>
+<a href="#s36">۳۶. مالکیت</a>
+<a href="#s37">۳۷. تحریریه</a>
+<a href="#s38">۳۸. پنل</a>
+<a href="#s39">۳۹. API</a>
+<a href="#s40">۴۰. شناسه</a>
+<a href="#s41">۴۱. امنیت</a>
+<a href="#s42">۴۲. کیفیت</a>
+<a href="#s43">۴۳. استاندارد</a>
+<a href="#s44">۴۴. معماری فنی</a>
+<a href="#s45">۴۵. MVP</a>
+<a href="#s46">۴۶. نسخه دوم</a>
+<a href="#s47">۴۷. نسخه سوم</a>
+<a href="#s48">۴۸. سناریوها</a>
+<a href="#s49">۴۹. معماری اطلاعات</a>
+<a href="#s50">۵۰. مجموعه‌ها</a>
+<a href="#s51">۵۱. خط زمانی</a>
+<a href="#s52">۵۲. نقشه</a>
+<a href="#s53">۵۳. داده زنده</a>
+<a href="#s54">۵۴. گزارش</a>
+<a href="#s55">۵۵. داشبورد</a>
+<a href="#s56">۵۶. KPI</a>
+<a href="#s57">۵۷. ریسک‌ها</a>
+<a href="#s58">۵۸. سازمان</a>
+<a href="#s59">۵۹. نقشه راه</a>
+<a href="#s60">۶۰. معماری آینده</a>
+<a href="#appendix-a">ضمیمه الف</a>
+<a href="#appendix-b">ضمیمه ب</a>
+<a href="#appendix-c">ضمیمه پ</a>
+<a href="#appendix-d">ضمیمه ت</a>
 </nav>
 
-<section class="card" id="summary"><h2>۱. خلاصه مدیریتی</h2><p>بانک روایت، یک آرشیو ساده برای نگهداری خاطره نیست. این پروژه یک <strong>زیرسامانه دانش و میراث شفاهی</strong> است که روایت‌های مرتبط با شهدا و ایثارگران را با هویت راوی، موضوع، زمان، مکان، اشخاص، منابع، رسانه‌ها و وضعیت اعتبار ثبت می‌کند و آنها را به موجودیت‌های اصلی شهیدپورتال پیوند می‌دهد.</p><div class="quote"><strong>تعریف مرکزی:</strong> بانک روایت باید از «جمع‌آوری خاطره» به «مدیریت چرخه حیات روایت» برسد؛ یعنی هر روایت ثبت شود، منشأ آن مشخص باشد، اعتبار آن قابل ارزیابی باشد، ارتباطاتش حفظ شود و در نهایت بتواند به بخشی از شبکه دانش و میراث شهیدپورتال تبدیل شود.</div><p>روایت می‌تواند یک خاطره کوتاه، مصاحبه تاریخ شفاهی، نامه، خاطره مکتوب، روایت تصویری، روایت صوتی، روایت چندنفره یا یک مجموعه روایی درباره یک شخص، مکان یا رویداد باشد.</p></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- بخش اول: خلاصه اجرایی -->
+<!-- ═══════════════════════════════════════════════════════════ -->
 
-<section class="card" id="position"><h2>۲. جایگاه بانک روایت در شهیدپورتال</h2><p>در طرح مادر شهیدپورتال، «بانک روایت» در قلمرو <strong>روایت</strong> قرار دارد و با دانشنامه شهدا، گنجینه، اطلس شهدا، تقویم شهدا، رسانه و سایر پروژه‌ها ارتباط برقرار می‌کند.</p><div class="grid three"><div class="mini"><h3>شهیدپورتال</h3><p>معماری مادر، شناسه‌ها، استانداردها و نقطه اتصال اکوسیستم.</p></div><div class="mini"><h3>بانک روایت</h3><p>مرجع تخصصی روایت، راوی، تاریخ شفاهی، ادعا و منبع روایی.</p></div><div class="mini"><h3>پروژه‌های مستقل</h3><p>مصرف یا ارائه روایت از طریق پیوند و API، بدون کپی‌سازی بی‌دلیل داده.</p></div></div><div class="quote"><strong>اصل ارتباط:</strong> بانک روایت مستقل در اجراست، اما در سطح شناسه، استاندارد، داده و API با شهیدپورتال هماهنگ است.</div></section>
+<section class="card" id="s1">
+<h2>۱. خلاصه اجرایی</h2>
+<p>«بانک روایت» یک سامانه‌ی تخصصی برای <strong>ثبت، نگهداری، سامان‌دهی، مستندسازی، اعتبارسنجی، ارتباط‌دهی، جست‌وجو و ارائه‌ی روایت‌های انسانی و تاریخی</strong> است.</p>
+<p>موضوع اصلی بانک روایت، «روایت» است؛ نه صرفاً شخص، سند، عکس، فایل صوتی یا یک رویداد تاریخی. این سامانه می‌تواند روایت‌های مربوط به شهدا، جانبازان، آزادگان، خانواده‌ها، همرزمان، راویان، شاهدان، رزمندگان، مردم، وقایع تاریخی و اجتماعی و سایر موضوعات مرتبط را در قالبی ساختاریافته ثبت و مدیریت کند.</p>
+<p>بانک روایت نباید صرفاً یک آرشیو فایل یا مجموعه‌ای از خاطرات پراکنده باشد. هدف، ایجاد یک <strong>زیرساخت دانشی برای روایت‌های انسانی</strong> است؛ زیرساختی که بتواند منشأ هر روایت، راوی آن، موضوع روایت، ادعاهای مطرح‌شده، منابع پشتیبان، مکان، زمان، اشخاص مرتبط، نسخه‌های مختلف و وضعیت اعتبار هر بخش را مدیریت کند.</p>
 
-<section class="card" id="problem"><h2>۳. مسئله اصلی</h2><div class="grid"><div class="mini"><h3>پراکندگی خاطرات</h3><p>روایت‌ها در خانواده‌ها، کتاب‌ها، مصاحبه‌ها، رسانه‌ها، آرشیوها و پروژه‌های محلی پراکنده‌اند.</p></div><div class="mini"><h3>از دست رفتن روایت شفاهی</h3><p>بخشی از تجربه نسل‌های گذشته هنوز ثبت و دیجیتال نشده و با گذر زمان در معرض از دست رفتن است.</p></div><div class="mini"><h3>نبود شناسنامه روایت</h3><p>در بسیاری از محتواها مشخص نیست چه کسی، چه زمانی، از چه منظری و بر اساس چه منبعی روایت کرده است.</p></div><div class="mini"><h3>اختلاط روایت و واقعیت قطعی</h3><p>خاطره شخصی، نقل قول، سند رسمی و ادعای تاریخی نباید بدون برچسب و وضعیت اعتبار یکسان نمایش داده شوند.</p></div><div class="mini"><h3>نبود پیوند شبکه‌ای</h3><p>روایت‌ها باید به شهید، راوی، مکان، عملیات، رویداد، سند و سایر روایت‌ها متصل شوند.</p></div><div class="mini"><h3>دشواری کشف</h3><p>کاربر باید بتواند بر اساس شخص، موضوع، مکان، زمان، راوی، عملیات و نوع رسانه به روایت مناسب برسد.</p></div></div></section>
+<div class="quote"><strong>اصل بنیادین سامانه:</strong> هر روایت، یک هویت پایدار؛ هر ادعا، یک وضعیت اعتبار؛ هر منبع، یک ارجاع؛ و هر ارتباط، یک رابطه‌ی قابل پیگیری.</div>
 
-<section class="card" id="mission"><h2>۴. مأموریت‌های اصلی</h2><div class="grid"><div class="mini"><h3>حفظ میراث شفاهی</h3><p>ثبت و نگهداری روایت‌های ارزشمند پیش از فراموشی یا از بین رفتن منابع.</p></div><div class="mini"><h3>مستندسازی</h3><p>ثبت شناسنامه روایت، راوی، منبع، زمان، مکان و وضعیت اعتبار.</p></div><div class="mini"><h3>پیوند دانش</h3><p>وصل کردن روایت به پرونده شهید، اشخاص، مکان‌ها، رویدادها و اسناد.</p></div><div class="mini"><h3>کشف و دسترسی</h3><p>تبدیل آرشیو پراکنده به یک مخزن قابل جست‌وجو و قابل استفاده.</p></div><div class="mini"><h3>مشارکت</h3><p>فراهم کردن مسیر امن و کنترل‌شده برای ثبت روایت توسط خانواده، راوی، پژوهشگر و جامعه.</p></div><div class="mini"><h3>تولید دانش</h3><p>امکان استخراج موضوعات، خط زمانی، شبکه اشخاص و روایت‌های مرتبط برای پژوهش و تولید محتوا.</p></div></div></section>
+<h3>تصمیم‌های کلیدی سند</h3>
+<table>
+<tr><th>موضوع</th><th>تصمیم تثبیت‌شده</th><th>اثر بر اجرا</th></tr>
+<tr><td>واحد پایه</td><td><code>Narrative</code> به‌عنوان هسته؛ نه فایل رسانه و نه صفحه</td><td>هر روایت شناسنامه‌ی مستقل دارد</td></tr>
+<tr><td>تفکیک راوی از شخص</td><td>راوی، شخص مورد روایت و شاهد موجودیت‌های مستقل‌اند</td><td>جلوگیری از اختلاط نقش‌ها</td></tr>
+<tr><td>ادعا (Claim)</td><td>هر ادعای مهم، موجودیت مستقل با وضعیت اعتبار است</td><td>اعتبارسنجی جزئی و دقیق</td></tr>
+<tr><td>حفظ اختلاف</td><td>روایت‌های متعارض پنهان نمی‌شوند</td><td>صداقت تاریخی و پژوهشی</td></tr>
+<tr><td>پیوند اکوسیستمی</td><td>اتصال از طریق شناسه‌ی پایدار و API، نه تکثیر داده</td><td>یکپارچگی با اطلس، بانک شهدا، تقویم</td></tr>
+<tr><td>حفظ متن اصلی</td><td>فایل و متن اصلی هرگز جایگزین یا ویرایش نمی‌شود</td><td>امکان ردیابی و بازبینی</td></tr>
+</table>
+</section>
 
-<section class="card" id="principles"><h2>۵. اصول بنیادین</h2><div class="grid three"><div class="mini"><h3>روایت ≠ سند قطعی</h3><p>هر روایت باید با ماهیت و وضعیت اعتبار خودش نمایش داده شود.</p></div><div class="mini"><h3>راوی مشخص</h3><p>تا حد امکان هویت، نسبت، نقش و شرایط روایت ثبت شود.</p></div><div class="mini"><h3>منبع‌محوری</h3><p>ادعاهای مهم باید به منبع، فایل، مصاحبه یا شاهد قابل ردیابی متصل باشند.</p></div><div class="mini"><h3>حفظ متن اصلی</h3><p>ویرایش تحریری نباید جای نسخه اصلی یا صدای واقعی را بگیرد.</p></div><div class="mini"><h3>حفظ اختلاف روایت</h3><p>روایت‌های متعارض نباید بدون دلیل حذف شوند؛ اختلاف باید مستند و شفاف باشد.</p></div><div class="mini"><h3>کرامت و احترام</h3><p>نمایش روایت باید متناسب با شأن شهدا، خانواده‌ها، راویان و موضوعات حساس باشد.</p></div></div></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s2">
+<h2>۲. تعریف بانک روایت</h2>
+<p>بانک روایت عبارت است از:</p>
+<div class="quote"><strong>یک سامانه‌ی مستقل و توسعه‌پذیر برای ثبت، حفظ، مدیریت، بررسی، اعتبارسنجی، پیونددهی و ارائه‌ی روایت‌های مرتبط با انسان‌ها، رویدادها، مکان‌ها و دوره‌های تاریخی.</strong></div>
+<p>در این تعریف، روایت می‌تواند:</p>
+<ul>
+<li>شفاهی باشد؛</li>
+<li>نوشتاری باشد؛</li>
+<li>صوتی باشد؛</li>
+<li>تصویری باشد؛</li>
+<li>ترکیبی از چند رسانه باشد؛</li>
+<li>از یک راوی یا چند راوی تشکیل شده باشد؛</li>
+<li>شخصی، خانوادگی، سازمانی یا تاریخی باشد؛</li>
+<li>تأیید شده، در حال بررسی یا فاقد تأیید قطعی باشد.</li>
+</ul>
+<p>بانک روایت تلاش نمی‌کند همه‌ی روایت‌ها را به یک «حقیقت واحد» تبدیل کند؛ بلکه تلاش می‌کند <strong>روایت‌ها را با منشأ، زمینه و میزان اعتبارشان حفظ کند.</strong></p>
+</section>
 
-<section class="card" id="scope"><h2>۶. قلمرو بانک روایت</h2><div class="grid three"><div class="mini"><h3>شهدا</h3><p>خاطرات مربوط به زندگی، منش، جهاد، شهادت و میراث شهید.</p></div><div class="mini"><h3>خانواده</h3><p>خاطرات والدین، همسر، فرزندان، خواهران، برادران و بستگان.</p></div><div class="mini"><h3>همرزمان</h3><p>روایت تجربه‌های مشترک، عملیات، یگان و موقعیت‌های تاریخی.</p></div><div class="mini"><h3>دوستان و همکاران</h3><p>روایت‌های زندگی اجتماعی، تحصیلی، کاری و فرهنگی.</p></div><div class="mini"><h3>پژوهشگران و راویان حرفه‌ای</h3><p>مصاحبه‌ها و تحقیقات تاریخ شفاهی با روش و منبع مشخص.</p></div><div class="mini"><h3>روایت‌های مکانی و رویدادی</h3><p>روایت یک گلزار، خانه، مدرسه، عملیات، شهر، مسیر یا واقعه.</p></div></div></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s3">
+<h2>۳. جایگاه بانک روایت در اکوسیستم</h2>
+<p>چهار محور اصلی اکوسیستم:</p>
+<table>
+<tr><th>سامانه</th><th>پرسش اصلی</th></tr>
+<tr><td>بانک شهدا</td><td>چه کسی؟</td></tr>
+<tr><td>تقویم شهدا</td><td>چه زمانی؟</td></tr>
+<tr><td>اطلس شهدا</td><td>کجا؟</td></tr>
+<tr><td>بانک روایت</td><td>چه روایتی؟</td></tr>
+</table>
+<p>در کنار این چهار محور، سامانه‌های دیگری نیز می‌توانند نقش‌های تخصصی خود را داشته باشند. بانک روایت نباید تبدیل به نسخه‌ی دوم بانک شهدا یا اطلس شود.</p>
 
-<section class="card" id="unit"><h2>۷. واحد پایه: «روایت»</h2><p>هر روایت باید یک موجودیت مستقل و دارای شناسه پایدار باشد. یک صفحه یا فایل رسانه‌ای صرفاً «محتوا» نیست؛ باید بداند چه چیزی را روایت می‌کند و به چه موجودیت‌هایی مربوط است.</p><table><tr><th>جزء</th><th>کارکرد</th></tr><tr><td>شناسه روایت</td><td>شناسه یکتا و پایدار برای ارجاع و اتصال.</td></tr><tr><td>عنوان</td><td>عنوان کوتاه و قابل فهم برای نمایش و جست‌وجو.</td></tr><tr><td>متن/رسانه</td><td>متن روایت یا فایل صوتی، تصویری، ویدئویی و سایر قالب‌ها.</td></tr><tr><td>راوی</td><td>فرد یا افراد ارائه‌دهنده روایت.</td></tr><tr><td>موضوع</td><td>موضوع یا محور اصلی روایت.</td></tr><tr><td>زمان</td><td>زمان روایت‌کردن و در صورت امکان زمان رخداد مورد روایت.</td></tr><tr><td>مکان</td><td>محل رخداد یا محل مرتبط با روایت.</td></tr><tr><td>اشخاص مرتبط</td><td>شهید، همرزم، خانواده، فرمانده، دوست یا سایر اشخاص.</td></tr><tr><td>منبع</td><td>منشأ روایت و شواهد پشتیبان.</td></tr><tr><td>اعتبار</td><td>وضعیت بررسی و میزان اطمینان به روایت یا اجزای آن.</td></tr></table></section>
+<h3>مرز مسئولیت‌ها</h3>
+<div class="grid two">
+<div class="mini"><h3>بانک شهدا</h3><p>هویت شخص، پرونده‌ی شهید، اطلاعات هویتی، روابط خانوادگی، سوابق اصلی زندگی.</p></div>
+<div class="mini"><h3>اطلس شهدا</h3><p>موقعیت‌ها، نقاط جغرافیایی، مسیرها، مناطق، لایه‌های مکانی.</p></div>
+<div class="mini"><h3>تقویم شهدا</h3><p>تاریخ‌ها، مناسبت‌ها، رخدادهای زمانی، تقویم و زمان‌بندی.</p></div>
+<div class="mini"><h3>بانک روایت</h3><p>روایت، راوی، ادعا، زمینه‌ی روایت، ارتباط روایت با اشخاص، مکان‌ها، زمان‌ها و منابع.</p></div>
+</div>
 
-<section class="card" id="people"><h2>۸. راوی، شخصیت‌ها و نقش‌ها</h2><p>«راوی» با «شخص مورد روایت» یکی نیست. بانک روایت باید این دو مفهوم را مستقل نگه دارد.</p><div class="grid three"><div class="mini"><h3>راوی</h3><p>کسی که روایت را ارائه یا نقل کرده است.</p></div><div class="mini"><h3>شخص مورد روایت</h3><p>کسی که روایت درباره او یا تجربه اوست.</p></div><div class="mini"><h3>شاهد</h3><p>فرد یا منبعی که بخشی از ادعا را تأیید یا تکمیل می‌کند.</p></div><div class="mini"><h3>مصاحبه‌گر</h3><p>فردی که روایت تاریخ شفاهی را ثبت کرده است.</p></div><div class="mini"><h3>ویراستار</h3><p>مسئول ویرایش ارائه‌ای بدون تغییر غیرمجاز در معنای روایت.</p></div><div class="mini"><h3>ارزیاب</h3><p>فرد یا مرجعی که کیفیت، منبع و اعتبار را بررسی می‌کند.</p></div></div></section>
+<div class="quote"><strong>اصل:</strong> هر سامانه مالک حوزه‌ی تخصصی خود است و سامانه‌های دیگر مصرف‌کننده یا شریک داده‌ی آن هستند، نه مالک ثانویه‌ی آن.</div>
+</section>
 
-<section class="card" id="context"><h2>۹. زمان، مکان و زمینه روایت</h2><p>روایت بدون زمینه ناقص است. بانک روایت باید دو زمان را در صورت امکان جداگانه نگهداری کند: <strong>زمان رخداد</strong> و <strong>زمان ثبت/بیان روایت</strong>.</p><div class="grid"><div class="mini"><h3>زمان رخداد</h3><p>چه زمانی اتفاقی که روایت می‌شود رخ داده است.</p></div><div class="mini"><h3>زمان ثبت</h3><p>چه زمانی روایت ضبط، نوشته یا ثبت شده است.</p></div><div class="mini"><h3>مکان رخداد</h3><p>مکانی که واقعه یا تجربه در آن اتفاق افتاده و می‌تواند به اطلس شهدا متصل شود.</p></div><div class="mini"><h3>زمینه تاریخی</h3><p>دوره، عملیات، جنگ، شهر، یگان، خانواده یا شرایطی که برای فهم روایت لازم است.</p></div></div><div class="quote"><strong>اصل اتصال مکانی:</strong> اگر روایت به یک مکان مشخص مربوط باشد، به‌جای کپی اطلاعات مکانی، از شناسه مکان در اطلس شهدا استفاده می‌شود.</div></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s4">
+<h2>۴. مسئله‌ای که بانک روایت حل می‌کند</h2>
+<p>روایت‌های ارزشمند معمولاً در وضعیت پراکنده قرار دارند: دفترچه‌های شخصی، مصاحبه‌های صوتی، فیلم‌ها، خاطرات خانواده‌ها، کتاب‌ها، نشریات، آرشیوهای سازمانی، صفحات اینترنتی، شبکه‌های اجتماعی، فایل‌های شخصی، مجموعه‌های صوتی و تصویری، و خاطرات شفاهی افراد.</p>
 
-<section class="card" id="types"><h2>۱۰. انواع روایت</h2><div class="grid three"><div class="mini"><h3>خاطره شفاهی</h3><p>روایتی که توسط راوی بیان و ضبط می‌شود.</p></div><div class="mini"><h3>مصاحبه تاریخ شفاهی</h3><p>گفت‌وگوی ساختاریافته با اطلاعات جلسه، مصاحبه‌گر و راوی.</p></div><div class="mini"><h3>خاطره مکتوب</h3><p>متنی که توسط راوی یا فرد دیگری نوشته شده است.</p></div><div class="mini"><h3>روایت سندی</h3><p>روایت مبتنی بر نامه، دفتر، سند یا مدرک تاریخی.</p></div><div class="mini"><h3>روایت تصویری</h3><p>مجموعه‌ای که تصویر بخش اصلی روایت را تشکیل می‌دهد.</p></div><div class="mini"><h3>روایت صوتی/ویدئویی</h3><p>محتوای چندرسانه‌ای همراه با متن پیاده‌سازی‌شده و فراداده.</p></div><div class="mini"><h3>روایت چندراوی</h3><p>چند روایت مستقل درباره یک شخص، مکان یا رویداد.</p></div><div class="mini"><h3>روایت موضوعی</h3><p>مجموعه روایت‌هایی که یک موضوع یا پرسش مشترک دارند.</p></div><div class="mini"><h3>روایت مکانی</h3><p>روایت شکل‌گرفته پیرامون یک مکان و تاریخ آن.</p></div></div></section>
+<h3>مشکلات اصلی</h3>
+<div class="grid">
+<div class="mini"><span class="num">۱</span><h3>پراکندگی</h3><p>روایت‌ها در سامانه‌های مختلف گم می‌شوند.</p></div>
+<div class="mini"><span class="num">۲</span><h3>نبود ساختار واحد</h3><p>مقایسه و جست‌وجو دشوار است.</p></div>
+<div class="mini"><span class="num">۳</span><h3>نبود شناسه‌ی پایدار</h3><p>ارجاع‌ها شکسته می‌شوند.</p></div>
+<div class="mini"><span class="num">۴</span><h3>دشواری جست‌وجو</h3><p>کاربر روایت مناسب را پیدا نمی‌کند.</p></div>
+<div class="mini"><span class="num">۵</span><h3>نبود ارتباط میان روایت‌ها</h3><p>روایت‌های مرتبط از هم جدا می‌مانند.</p></div>
+<div class="mini"><span class="num">۶</span><h3>مشخص نبودن منشأ</h3><p>اعتماد کاهش می‌یابد.</p></div>
+<div class="mini"><span class="num">۷</span><h3>مخلوط شدن خاطره و ادعا</h3><p>واقعیت و روایت قاطی می‌شوند.</p></div>
+<div class="mini"><span class="num">۸</span><h3>دشواری بررسی صحت</h3><p>کاربر نمی‌تواند اعتبار را بسنجد.</p></div>
+<div class="mini"><span class="num">۹</span><h3>از بین رفتن نسخه‌ی اصلی</h3><p>اصل روایت گم می‌شود.</p></div>
+<div class="mini"><span class="num">۱۰</span><h3>نبود مدیریت اختلاف</h3><p>یکی از روایت‌ها حذف می‌شود.</p></div>
+<div class="mini"><span class="num">۱۱</span><h3>نبود استاندارد راوی</h3><p>اطلاعات ناقص می‌ماند.</p></div>
+<div class="mini"><span class="num">۱۲</span><h3>نبود مدیریت حقوق</h3><p>رضایت و مالکیت نادیده می‌ماند.</p></div>
+</div>
 
-<section class="card" id="lifecycle"><h2>۱۱. چرخه حیات روایت</h2><div class="flow"><div>پیشنهاد</div><div>ثبت اولیه</div><div>تکمیل</div><div>بررسی</div><div>اعتبارسنجی</div><div>انتشار</div><div>بازبینی</div></div><p>ثبت اولیه به معنی تأیید نیست. هر روایت می‌تواند در طول عمر خود وضعیت‌های مختلفی داشته باشد و تاریخچه تغییرات آن حفظ شود.</p><table><tr><th>وضعیت</th><th>معنا</th></tr><tr><td>پیشنهادی</td><td>تازه ارسال شده و هنوز بررسی نشده است.</td></tr><tr><td>در بررسی</td><td>در فرآیند ارزیابی محتوایی، منبع یا حقوقی است.</td></tr><tr><td>تأییدشده</td><td>طبق معیارهای پروژه بررسی و برای انتشار عمومی مناسب تشخیص داده شده است.</td></tr><tr><td>محدود</td><td>ثبت شده اما انتشار کامل آن به دلیل حقوق، حریم خصوصی یا حساسیت محدود است.</td></tr><tr><td>آرشیوی</td><td>نگهداری می‌شود اما لزوماً در تجربه عمومی نمایش داده نمی‌شود.</td></tr></table></section>
+<h3>جدول مسئله و راهکار</h3>
+<table>
+<tr><th>مسئله</th><th>راهکار بانک روایت</th></tr>
+<tr><td>پراکندگی خاطرات</td><td>مرجع واحد روایت با شناسه‌ی پایدار</td></tr>
+<tr><td>از دست رفتن روایت شفاهی</td><td>ثبت ساختاریافته‌ی صوت، فیلم و متن</td></tr>
+<tr><td>نبود شناسنامه‌ی روایت</td><td>شناسنامه‌ی کامل با ۱۶ فیلد</td></tr>
+<tr><td>اختلاط روایت و واقعیت</td><td>برچسب‌گذاری نوع، منبع و وضعیت اعتبار</td></tr>
+<tr><td>نبود پیوند شبکه‌ای</td><td>گراف دانش روایت با شناسه‌های پایدار</td></tr>
+<tr><td>دشواری کشف</td><td>جست‌وجوی چندوجهی و کشف پیشرفته</td></tr>
+<tr><td>نبود حاکمیت داده</td><td>گردش بررسی، نسخه‌بندی، اعتبارسنجی</td></tr>
+</table>
+</section>
 
-<section class="card" id="sources"><h2>۱۲. منابع و شواهد</h2><p>بانک روایت باید برای هر روایت، منبع و سطح اتکای آن را تا حد ممکن ثبت کند. یک روایت خانوادگی ارزش تاریخی و انسانی دارد، اما نوع منبع آن با یک سند رسمی متفاوت است.</p><table><tr><th>منبع</th><th>نمونه</th><th>نحوه نمایش</th></tr><tr><td>راوی مستقیم</td><td>خاطره شخصی یا مصاحبه</td><td>هویت و شرایط روایت مشخص شود.</td></tr><tr><td>سند مکتوب</td><td>نامه، دفتر، گزارش</td><td>تصویر/شناسه سند و منشأ آن ثبت شود.</td></tr><tr><td>منبع سازمانی</td><td>آرشیو یا پرونده رسمی</td><td>مرجع و شناسه منبع ثبت شود.</td></tr><tr><td>منبع ثانویه</td><td>کتاب، مقاله، رسانه</td><td>مشخصات کامل اثر ثبت شود.</td></tr><tr><td>روایت دیگر</td><td>شاهد یا راوی دوم</td><td>ارتباط میان روایت‌ها ثبت شود.</td></tr></table></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s5">
+<h2>۵. مأموریت</h2>
+<div class="quote"><strong>حفظ حافظه‌ی روایی جامعه و تبدیل روایت‌های پراکنده‌ی انسانی به داده‌های ساختاریافته، قابل جست‌وجو، قابل پیگیری و قابل ارتباط.</strong></div>
+<p>این مأموریت چهار مرحله دارد: <strong>حفظ → ساختاردهی → اعتبارسنجی → دسترس‌پذیری</strong></p>
 
-<section class="card" id="validation"><h2>۱۳. اعتبارسنجی و کیفیت روایت</h2><p>اعتبارسنجی نباید به یک برچسب ساده «درست/غلط» تقلیل پیدا کند. ممکن است متن یک خاطره معتبر باشد، اما یک تاریخ یا مکان ذکرشده در آن نیازمند بررسی بیشتر باشد.</p><div class="grid three"><div class="mini"><h3>اصالت منبع</h3><p>آیا منشأ روایت مشخص و قابل بررسی است؟</p></div><div class="mini"><h3>هویت راوی</h3><p>آیا راوی و نسبت او با موضوع مشخص است؟</p></div><div class="mini"><h3>سازگاری</h3><p>آیا با داده‌های معتبر دیگر تعارض دارد؟</p></div><div class="mini"><h3>مستندات</h3><p>آیا شواهد یا منابع پشتیبان وجود دارد؟</p></div><div class="mini"><h3>سطح اطمینان</h3><p>میزان اطمینان برای هر ادعا یا بخش مهم مشخص شود.</p></div><div class="mini"><h3>تاریخ بازبینی</h3><p>آخرین زمان بررسی و مسئول آن ثبت شود.</p></div></div></section>
+<h3>مأموریت‌های تفصیلی</h3>
+<div class="grid">
+<div class="mini"><span class="num">۱</span><h3>حفظ میراث شفاهی</h3><p>ثبت و نگهداری روایت‌های ارزشمند پیش از فراموشی یا از بین رفتن منابع.</p></div>
+<div class="mini"><span class="num">۲</span><h3>مستندسازی</h3><p>ثبت شناسنامه‌ی روایت، راوی، منبع، زمان، مکان و وضعیت اعتبار.</p></div>
+<div class="mini"><span class="num">۳</span><h3>پیوند دانش</h3><p>وصل کردن روایت به پرونده‌ی شهید، اشخاص، مکان‌ها، رویدادها و اسناد.</p></div>
+<div class="mini"><span class="num">۴</span><h3>کشف و دسترسی</h3><p>تبدیل آرشیو پراکنده به یک مخزن قابل جست‌وجو و قابل استفاده.</p></div>
+<div class="mini"><span class="num">۵</span><h3>مشارکت</h3><p>مسیر امن و کنترل‌شده برای ثبت روایت توسط خانواده، راوی، پژوهشگر و جامعه.</p></div>
+<div class="mini"><span class="num">۶</span><h3>تولید دانش</h3><p>استخراج موضوعات، خط زمانی، شبکه‌ی اشخاص و روایت‌های مرتبط.</p></div>
+</div>
+</section>
 
-<section class="card" id="media"><h2>۱۴. رسانه و آرشیو</h2><p>رسانه بخشی از خود روایت است و نباید فقط به‌عنوان فایل پیوست دیده شود.</p><div class="grid three"><div class="mini"><h3>صوت</h3><p>فایل اصلی، مشخصات ضبط و متن پیاده‌سازی‌شده.</p></div><div class="mini"><h3>ویدئو</h3><p>مصاحبه، روایت میدانی و محتوای تاریخی با فراداده کامل.</p></div><div class="mini"><h3>تصویر</h3><p>عکس، اسکن سند و تصاویر تاریخی همراه با منشأ.</p></div><div class="mini"><h3>متن</h3><p>نسخه اصلی و نسخه ویرایش‌شده با امکان ردیابی.</p></div><div class="mini"><h3>زیرنویس و پیاده‌سازی</h3><p>تبدیل صوت و ویدئو به متن برای جست‌وجو و دسترس‌پذیری.</p></div><div class="mini"><h3>آرشیو اصلی</h3><p>حفظ فایل اصلی و نسخه‌های مشتق‌شده بدون از دست دادن اصل منبع.</p></div></div></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s6">
+<h2>۶. چشم‌انداز</h2>
+<p>چشم‌انداز بانک روایت، تبدیل شدن به یک مرجع بزرگ و قابل توسعه برای روایت‌های انسانی و تاریخی است؛ به‌گونه‌ای که کاربر بتواند از یک روایت به این‌ها دسترسی پیدا کند:</p>
+<p>راوی، شهید، شخص، خانواده، واقعه، عملیات، مکان، تاریخ، سند، تصویر، صوت، و روایت‌های مرتبط.</p>
+<p>در آینده، بانک روایت می‌تواند از یک «بانک اطلاعاتی» به یک <strong>شبکه‌ی دانشی روایت‌های انسانی</strong> تبدیل شود.</p>
+<div class="quote"><strong>ستاره‌ی شمالی:</strong> هر روایت، یک هویت پایدار؛ هر راوی، یک منبع معتبر؛ هر اقتباس، یک ارجاع شفاف.</div>
+</section>
 
-<section class="card" id="graph"><h2>۱۵. گراف دانش روایت</h2><p>ارزش اصلی بانک روایت زمانی کامل می‌شود که روایت‌ها به یک شبکه دانش تبدیل شوند.</p><div class="grid three"><div class="mini"><h3>روایت ← شهید</h3><p>این روایت درباره چه شهیدی است؟</p></div><div class="mini"><h3>روایت ← راوی</h3><p>چه کسی آن را بیان کرده است؟</p></div><div class="mini"><h3>روایت ← مکان</h3><p>کدام مکان در روایت نقش دارد؟</p></div><div class="mini"><h3>روایت ← رویداد</h3><p>به کدام عملیات، حادثه یا مناسبت مربوط است؟</p></div><div class="mini"><h3>روایت ← سند</h3><p>کدام سند آن را پشتیبانی یا تکمیل می‌کند؟</p></div><div class="mini"><h3>روایت ↔ روایت</h3><p>کدام روایت دیگر همان موضوع را تأیید، تکمیل یا متفاوت بیان می‌کند؟</p></div></div></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s7">
+<h2>۷. اصول بنیادین</h2>
+<div class="grid">
+<div class="mini"><h3>۱) استقلال روایت</h3><p>هر روایت باید هویت مستقل داشته باشد.</p></div>
+<div class="mini"><h3>۲) حفظ اصل</h3><p>نسخه‌ی اولیه‌ی روایت نباید با ویرایش‌های بعدی از بین برود.</p></div>
+<div class="mini"><h3>۳) تفکیک روایت و حقیقت</h3><p>روایت یک منبع اطلاعاتی است؛ الزاماً حقیقت قطعی نیست.</p></div>
+<div class="mini"><h3>۴) تفکیک ادعا و روایت</h3><p>هر روایت ممکن است چندین ادعا داشته باشد و هر ادعا وضعیت اعتبار جداگانه‌ای داشته باشد.</p></div>
+<div class="mini"><h3>۵) شفافیت منبع</h3><p>منشأ اطلاعات باید تا حد امکان مشخص باشد.</p></div>
+<div class="mini"><h3>۶) حفظ اختلاف</h3><p>روایت‌های متعارض نباید بدون دلیل حذف شوند.</p></div>
+<div class="mini"><h3>۷) شناسه‌ی پایدار</h3><p>هر موجودیت مهم باید شناسه‌ی مستقل داشته باشد.</p></div>
+<div class="mini"><h3>۸) قابلیت ارتباط</h3><p>اطلاعات باید بتوانند به سایر سامانه‌ها متصل شوند.</p></div>
+<div class="mini"><h3>۹) حفظ شأن انسانی</h3><p>ارائه‌ی روایت‌ها باید محترمانه، دقیق و غیرهیجانی باشد.</p></div>
+<div class="mini"><h3>۱۰) توسعه‌پذیری</h3><p>معماری باید برای رشد چندین ساله طراحی شود.</p></div>
+<div class="mini"><h3>۱۱) بازبودن برای اقتباس</h3><p>پژوهشگر و هنرمند می‌توانند از روایت‌ها با ذکر منبع استفاده کنند.</p></div>
+<div class="mini"><h3>۱۲) عدم دستکاری فایل اصلی</h3><p>فایل اصلی هرگز جایگزین یا ویرایش نمی‌شود؛ فقط نسخه‌های مشتق ثبت می‌شوند.</p></div>
+</div>
+</section>
 
-<section class="card" id="data"><h2>۱۶. مدل داده پیشنهادی</h2><table><tr><th>موجودیت</th><th>توضیح</th></tr><tr><td>Narrative</td><td>هویت، عنوان، متن، نوع، وضعیت و فراداده اصلی روایت.</td></tr><tr><td>Narrator</td><td>راوی یا راویان و نقش آنها.</td></tr><tr><td>Person</td><td>اشخاصی که روایت درباره آنهاست یا در آن حضور دارند.</td></tr><tr><td>Event</td><td>رویداد یا واقعه مرتبط.</td></tr><tr><td>Location</td><td>مکان مرتبط با شناسه مرجع، ترجیحاً از اطلس شهدا.</td></tr><tr><td>Source</td><td>منبع یا شاهد پشتیبان.</td></tr><tr><td>Media</td><td>فایل صوتی، تصویری، ویدئویی، سند یا سایر رسانه‌ها.</td></tr><tr><td>Claim</td><td>ادعای قابل ارزیابی استخراج‌شده از روایت.</td></tr><tr><td>Review</td><td>بررسی، نظر ارزیاب، تاریخ و نتیجه اعتبارسنجی.</td></tr><tr><td>Relation</td><td>ارتباط روایت با اشخاص، مکان‌ها، رویدادها و روایت‌های دیگر.</td></tr><tr><td>Revision</td><td>تاریخچه تغییرات و نسخه‌های روایت.</td></tr></table></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s8">
+<h2>۸. تعریف «روایت»</h2>
+<p>روایت یک واحد مستقل اطلاعاتی است که توسط یک یا چند راوی، درباره‌ی یک یا چند موضوع، در یک زمینه‌ی زمانی، مکانی یا تاریخی ارائه شده است.</p>
+<p>هر روایت می‌تواند شامل این‌ها باشد:</p>
+<p>عنوان، متن، صوت، تصویر، ویدئو، راوی، موضوع، اشخاص، زمان، مکان، ادعاها، منابع، برچسب‌ها، نسخه‌ها، وضعیت بررسی، حقوق انتشار.</p>
+</section>
 
-<section class="card" id="ux"><h2>۱۷. تجربه کاربری</h2><div class="grid three"><div class="mini"><h3>جست‌وجوی ساده</h3><p>جست‌وجو با نام شهید، راوی، مکان یا واژه کلیدی.</p></div><div class="mini"><h3>کشف پیشرفته</h3><p>فیلتر زمان، نوع روایت، موضوع، راوی، استان، عملیات و وضعیت اعتبار.</p></div><div class="mini"><h3>صفحه روایت</h3><p>متن یا رسانه، راوی، زمینه، منابع، اشخاص مرتبط و روایت‌های مشابه.</p></div><div class="mini"><h3>صفحه راوی</h3><p>روایت‌های منتشرشده یک راوی و اطلاعات مجاز درباره او.</p></div><div class="mini"><h3>خط زمانی</h3><p>نمایش روایت‌ها بر اساس زمان رخداد یا زمان ثبت.</p></div><div class="mini"><h3>نقشه</h3><p>نمایش روایت‌های مرتبط با مکان و اتصال به اطلس شهدا.</p></div></div></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s9">
+<h2>۹. انواع روایت</h2>
+<table>
+<tr><th>نوع</th><th>تعریف</th></tr>
+<tr><td>روایت شفاهی</td><td>خاطرات و گفت‌وگوهای ثبت‌شده.</td></tr>
+<tr><td>روایت مکتوب</td><td>خاطرات، نامه‌ها، دست‌نوشته‌ها و متون.</td></tr>
+<tr><td>روایت خانوادگی</td><td>روایت اعضای خانواده.</td></tr>
+<tr><td>روایت همرزمان</td><td>خاطرات همرزمان و دوستان.</td></tr>
+<tr><td>روایت شاهد عینی</td><td>گزارش فردی که مستقیماً شاهد واقعه بوده است.</td></tr>
+<tr><td>روایت تاریخی</td><td>روایتی مبتنی بر اسناد و منابع تاریخی.</td></tr>
+<tr><td>روایت سازمانی</td><td>روایت ثبت‌شده توسط یک نهاد یا مجموعه.</td></tr>
+<tr><td>روایت تصویری</td><td>روایت منتقل‌شده از طریق عکس و تصویر.</td></tr>
+<tr><td>روایت صوتی</td><td>مصاحبه یا خاطره‌ی صوتی.</td></tr>
+<tr><td>روایت ویدئویی</td><td>مصاحبه یا مستند تصویری.</td></tr>
+<tr><td>روایت ترکیبی</td><td>ترکیبی از متن و چند رسانه.</td></tr>
+</table>
+</section>
 
-<section class="card" id="roles"><h2>۱۸. نقش‌های استفاده</h2><table><tr><th>نقش</th><th>کارکرد</th></tr><tr><td>کاربر عمومی</td><td>جست‌وجو، مطالعه و مشاهده روایت‌های منتشرشده.</td></tr><tr><td>خانواده</td><td>ثبت، تکمیل یا اصلاح روایت‌های مرتبط با شهید و خانواده.</td></tr><tr><td>راوی</td><td>ارائه مستقیم روایت و مدیریت موارد مجاز مرتبط با آن.</td></tr><tr><td>پژوهشگر</td><td>کشف، مقایسه، مطالعه منابع و استفاده پژوهشی از داده.</td></tr><tr><td>مصاحبه‌گر</td><td>ثبت و مدیریت جلسات تاریخ شفاهی.</td></tr><tr><td>ویراستار</td><td>ویرایش ارائه‌ای و آماده‌سازی محتوا برای انتشار.</td></tr><tr><td>ارزیاب</td><td>بررسی منبع، ادعا، کیفیت و اعتبار.</td></tr><tr><td>مدیر بانک روایت</td><td>حکمرانی محتوا، دسترسی، گردش کار و کیفیت.</td></tr></table></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s10">
+<h2>۱۰. هویت روایت</h2>
+<p>هر روایت باید دارای شناسه‌ی پایدار باشد. نمونه: <code>NAR-1405-000001</code></p>
+<p>شناسه‌ی نهایی در نسخه‌ی عملیاتی می‌تواند بعداً با استاندارد مناسب جایگزین شود.</p>
 
-<section class="card" id="governance"><h2>۱۹. حکمرانی و تحریریه</h2><p>بانک روایت بدون سیاست تحریریه و حاکمیت داده به آرشیوی بزرگ اما نامطمئن تبدیل می‌شود.</p><div class="grid"><div class="mini"><h3>سیاست ثبت</h3><p>تعریف معیار پذیرش، قالب، حداقل فراداده و حقوق ارسال‌کننده.</p></div><div class="mini"><h3>سیاست ویرایش</h3><p>تفکیک متن اصلی از نسخه ویرایش‌شده و ثبت تاریخچه.</p></div><div class="mini"><h3>سیاست اعتبار</h3><p>تعریف سطوح اعتبار و روش بررسی ادعاها.</p></div><div class="mini"><h3>سیاست انتشار</h3><p>تعیین محتوای عمومی، محدود، محرمانه و آرشیوی.</p></div><div class="mini"><h3>حل اختلاف</h3><p>روش برخورد با روایت‌های متعارض بدون حذف بی‌دلیل شواهد.</p></div><div class="mini"><h3>حفظ اصالت</h3><p>نگهداری فایل و متن اولیه در کنار نسخه‌های مشتق‌شده.</p></div></div></section>
+<h3>اطلاعات پایه</h3>
+<p>شناسه، عنوان، چکیده، نوع، زبان، تاریخ ایجاد، تاریخ ثبت، وضعیت انتشار، راوی، موضوع، مالک داده، سطح دسترسی.</p>
+</section>
 
-<section class="card" id="privacy"><h2>۲۰. حقوق، رضایت و حریم خصوصی</h2><p>ثبت روایت، به‌خصوص مصاحبه‌های صوتی و تصویری، باید با رضایت و سیاست روشن استفاده از محتوا همراه باشد.</p><div class="grid three"><div class="mini"><h3>رضایت راوی</h3><p>نوع استفاده، انتشار و امکان دسترسی باید تا حد امکان روشن باشد.</p></div><div class="mini"><h3>حق خانواده</h3><p>در موارد حساس، جایگاه خانواده و حقوق مرتبط با محتوا رعایت شود.</p></div><div class="mini"><h3>حقوق رسانه</h3><p>مالکیت یا مجوز استفاده از فایل‌ها ثبت شود.</p></div><div class="mini"><h3>اطلاعات شخصی</h3><p>اطلاعات خصوصی غیرضروری عمومی نشود.</p></div><div class="mini"><h3>محتوای حساس</h3><p>برای انتشار برخی روایت‌ها سطح دسترسی و بررسی ویژه لازم است.</p></div><div class="mini"><h3>ردپای تصمیم</h3><p>تغییر سطح انتشار یا حذف باید قابل ثبت و پیگیری باشد.</p></div></div></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s11">
+<h2>۱۱. راوی</h2>
+<p>راوی یکی از مهم‌ترین موجودیت‌های بانک روایت است.</p>
 
-<section class="card" id="search"><h2>۲۱. جست‌وجو و بازیابی</h2><p>جست‌وجو باید هم «متن» و هم «رابطه» را بشناسد.</p><div class="grid three"><div class="mini"><h3>متنی</h3><p>نام‌ها، عبارات و موضوعات داخل روایت.</p></div><div class="mini"><h3>شخص‌محور</h3><p>تمام روایت‌های مرتبط با یک شهید یا شخص.</p></div><div class="mini"><h3>مکان‌محور</h3><p>روایت‌های مربوط به یک مکان یا محدوده.</p></div><div class="mini"><h3>زمان‌محور</h3><p>روایت‌های مربوط به یک روز، دوره، عملیات یا بازه.</p></div><div class="mini"><h3>راوی‌محور</h3><p>کشف مجموعه روایت‌های یک راوی.</p></div><div class="mini"><h3>موضوع‌محور</h3><p>موضوعاتی مانند خانواده، عملیات، اخلاق، مدرسه، کار و زندگی روزمره.</p></div></div></section>
+<h3>اطلاعات راوی</h3>
+<ul>
+<li>شناسه‌ی راوی</li>
+<li>نام</li>
+<li>نام خانوادگی</li>
+<li>نسبت با موضوع</li>
+<li>سن یا بازه‌ی سنی در زمان روایت</li>
+<li>شغل</li>
+<li>محل زندگی</li>
+<li>ارتباط با واقعه</li>
+<li>نوع مشارکت</li>
+<li>وضعیت هویت</li>
+<li>رضایت انتشار</li>
+<li>سطح نمایش اطلاعات</li>
+</ul>
+<p>اطلاعات هویتی اصلی اشخاص در صورت وجود باید از سامانه‌ی مرجع هویت (مانند بانک شهدا) دریافت شود.</p>
+</section>
 
-<section class="card" id="api"><h2>۲۲. API و اتصال فنی</h2><p>بانک روایت باید بتواند مستقل کار کند و در عین حال روایت را به سایر محصولات ارائه دهد.</p><table><tr><th>سرویس</th><th>کارکرد</th></tr><tr><td>Narrative API</td><td>دریافت اطلاعات و وضعیت یک روایت.</td></tr><tr><td>Search API</td><td>جست‌وجوی متنی و ترکیبی.</td></tr><tr><td>Person API</td><td>دریافت روایت‌های مرتبط با یک شخص.</td></tr><tr><td>Location API</td><td>دریافت روایت‌های مرتبط با مکان.</td></tr><tr><td>Timeline API</td><td>دریافت روایت‌های یک بازه یا رویداد زمانی.</td></tr><tr><td>Media API</td><td>دسترسی کنترل‌شده به رسانه‌های مجاز.</td></tr></table><p>API باید نسخه‌دار، مستند، دارای سیاست دسترسی و سازگار با شناسه‌های مشترک اکوسیستم باشد.</p></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s12">
+<h2>۱۲. نقش‌های انسانی</h2>
+<p>یک شخص ممکن است در روایت چند نقش داشته باشد: راوی، شاهد، موضوع روایت، مصاحبه‌شونده، مصاحبه‌کننده، تدوینگر، پژوهشگر، ارزیاب، منبع، صاحب اثر.</p>
 
-<section class="card" id="ecosystem"><h2>۲۳. ارتباط با اکوسیستم شهیدپورتال</h2><table><tr><th>پروژه</th><th>ارتباط پیشنهادی</th></tr><tr><td>شهیدپورتال</td><td>مرجع راهبری، شناسه‌ها، نمایش و اتصال روایت‌ها.</td></tr><tr><td>اطلس شهدا</td><td>اتصال روایت به مکان، مسیر، گلزار، یادمان و سایر موجودیت‌های مکانی.</td></tr><tr><td>تقویم شهدا</td><td>اتصال روایت به تاریخ تولد، شهادت، عملیات و مناسبت‌های زمانی.</td></tr><tr><td>ودجا</td><td>استفاده از روایت‌های مرتبط با خدمات، خانواده و جامعه هدف در چارچوب دسترسی مجاز.</td></tr><tr><td>پاتوق شهدا</td><td>استفاده از روایت به‌عنوان محتوای فرهنگی و اجتماعی مرتبط.</td></tr><tr><td>سامانه‌های اسناد و رسانه</td><td>پیوند روایت با اسناد، عکس‌ها، نامه‌ها و سایر آثار از طریق شناسه و API.</td></tr></table><div class="quote"><strong>قاعده اکوسیستم:</strong> بانک روایت مالک تخصص «روایت» است؛ پروژه‌های دیگر مالک تجربه و حوزه تخصصی خود هستند و از طریق شناسه و API به روایت متصل می‌شوند.</div></section>
+<table>
+<tr><th>نقش</th><th>تعریف</th></tr>
+<tr><td>راوی</td><td>کسی که روایت را ارائه یا نقل کرده است.</td></tr>
+<tr><td>شخص مورد روایت</td><td>کسی که روایت درباره‌ی او یا تجربه‌ی اوست.</td></tr>
+<tr><td>شاهد</td><td>فرد یا منبعی که بخشی از ادعا را تأیید یا تکمیل می‌کند.</td></tr>
+<tr><td>مصاحبه‌گر</td><td>فردی که روایت تاریخ شفاهی را ثبت کرده است.</td></tr>
+<tr><td>ویراستار</td><td>مسئول ویرایش ارائه‌ای بدون تغییر غیرمجاز در معنای روایت.</td></tr>
+<tr><td>ارزیاب</td><td>فرد یا مرجعی که کیفیت، منبع و اعتبار را بررسی می‌کند.</td></tr>
+</table>
 
-<section class="card" id="independence"><h2>۲۴. استقلال پروژه و مرز مسئولیت</h2><div class="grid"><div class="mini"><h3>مسئولیت بانک روایت</h3><p>مدل روایت، راوی، منابع، ادعا، اعتبارسنجی، آرشیو روایی و تجربه کشف روایت.</p></div><div class="mini"><h3>مسئولیت اطلس</h3><p>مدل مکان و جغرافیا؛ بانک روایت فقط شناسه مکان را مصرف می‌کند.</p></div><div class="mini"><h3>مسئولیت تقویم</h3><p>مدل زمان و رویدادهای تقویمی؛ روایت از شناسه رویداد استفاده می‌کند.</p></div><div class="mini"><h3>اصل معماری</h3><p>هر پروژه در حوزه تخصصی خود مرجع است و اطلاعات تخصصی را بی‌دلیل تکثیر نمی‌کند.</p></div></div></section>
+<div class="quote"><strong>اصل تفکیک:</strong> «شخص» و «نقش شخص» باید از هم جدا باشند. یک نفر می‌تواند هم‌زمان راوی و شاهد باشد، ولی این دو نقش در داده جدا ثبت می‌شوند.</div>
+</section>
 
-<section class="card" id="quality"><h2>۲۵. کیفیت، امنیت و پایداری</h2><div class="grid three"><div class="mini"><h3>نسخه‌بندی</h3><p>تغییرات روایت و رسانه قابل ردیابی باشد.</p></div><div class="mini"><h3>پشتیبان‌گیری</h3><p>اصل رسانه و داده‌های فراداده‌ای با سیاست نگهداری مشخص محافظت شوند.</p></div><div class="mini"><h3>دسترسی</h3><p>سطح دسترسی براساس نقش و حساسیت محتوا کنترل شود.</p></div><div class="mini"><h3>تمامیت داده</h3><p>شناسه‌ها و روابط نباید با ویرایش محتوا از بین بروند.</p></div><div class="mini"><h3>دسترس‌پذیری</h3><p>متن پیاده‌سازی‌شده، زیرنویس و روش‌های غیررسانه‌ای برای دسترسی فراهم شود.</p></div><div class="mini"><h3>قابلیت انتقال</h3><p>داده به یک قالب یا رابط بسته وابسته نباشد و امکان مهاجرت حفظ شود.</p></div></div></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s13">
+<h2>۱۳. موضوع روایت</h2>
+<p>موضوع روایت می‌تواند باشد:</p>
+<p>یک شهید، چند شهید، یک فرد، یک خانواده، یک عملیات، یک رویداد، یک مکان، یک دوره‌ی تاریخی، یک یگان، یک سازمان، یک موضوع اجتماعی.</p>
+<p>هر موضوع باید با شناسه‌ی مرجع به موجودیت اصلی خود متصل شود.</p>
+</section>
 
-<section class="card" id="kpi"><h2>۲۶. شاخص‌های موفقیت</h2><table><tr><th>حوزه</th><th>نمونه شاخص</th></tr><tr><td>پوشش</td><td>تعداد روایت‌های ثبت‌شده، راویان، موضوعات و اشخاص پوشش‌داده‌شده.</td></tr><tr><td>کیفیت</td><td>درصد روایت‌های دارای منبع، فراداده کامل و وضعیت اعتبار مشخص.</td></tr><tr><td>دسترسی</td><td>جست‌وجوی موفق، مشاهده روایت و استفاده پژوهشی.</td></tr><tr><td>مشارکت</td><td>تعداد مشارکت‌کنندگان معتبر و روایت‌های تکمیل‌شده.</td></tr><tr><td>حفظ میراث</td><td>ساعت/حجم تاریخ شفاهی دیجیتال‌شده و رسانه‌های دارای نسخه اصلی.</td></tr><tr><td>اتصال</td><td>درصد روایت‌های متصل به شهید، مکان، رویداد و منبع.</td></tr></table></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s14">
+<h2>۱۴. زمان</h2>
+<p>هر روایت می‌تواند چند نوع زمان داشته باشد: زمان وقوع، زمان روایت، زمان ثبت، زمان انتشار، زمان مصاحبه، بازه‌ی زمانی موضوع.</p>
 
-<section class="card" id="roadmap"><h2>۲۷. نقشه راه پیشنهادی</h2><table><tr><th>مرحله</th><th>موضوع</th><th>خروجی</th></tr><tr><td>۱</td><td>تثبیت طرح</td><td>تعریف روایت، راوی، منبع، ادعا، اعتبار و مرز پروژه.</td></tr><tr><td>۲</td><td>مدل داده</td><td>Schema روایت، اشخاص، منابع، رسانه و روابط.</td></tr><tr><td>۳</td><td>نمونه تجربه</td><td>صفحه روایت، راوی، جست‌وجو و خط زمانی.</td></tr><tr><td>۴</td><td>ثبت و آرشیو</td><td>ثبت متن، صوت، تصویر و ویدئو با فراداده.</td></tr><tr><td>۵</td><td>گردش اعتبار</td><td>صف بررسی، ارزیابی و انتشار.</td></tr><tr><td>۶</td><td>داده اولیه</td><td>ورود مجموعه‌ای کنترل‌شده از روایت‌های معتبر.</td></tr><tr><td>۷</td><td>گراف دانش</td><td>اتصال روایت به شهید، اشخاص، مکان، رویداد و سند.</td></tr><tr><td>۸</td><td>مشارکت</td><td>ثبت روایت توسط خانواده و جامعه با کنترل کیفیت.</td></tr><tr><td>۹</td><td>API</td><td>ارائه سرویس به شهیدپورتال و پروژه‌های مستقل.</td></tr><tr><td>۱۰</td><td>گسترش</td><td>توسعه پوشش موضوعی، جغرافیایی و تاریخی.</td></tr></table></section>
+<h3>الگوی ثبت زمان</h3>
+<table>
+<tr><th>حالت</th><th>ثبت داده</th><th>نمایش</th></tr>
+<tr><td>تاریخ دقیق</td><td>روز، ماه، سال مشخص با تقویم مبنا</td><td>نمایش کامل</td></tr>
+<tr><td>بازه‌ی مشخص</td><td>از تاریخ … تا تاریخ …</td><td>نمایش بازه</td></tr>
+<tr><td>بازه‌ی تقریبی</td><td>حد پایین، حد بالا و سطح اطمینان</td><td>«حدوداً» با نشان عدم‌قطعیت</td></tr>
+<tr><td>دهه یا دوره</td><td>انتساب به دهه یا دوره‌ی تاریخی</td><td>نمایش دوره</td></tr>
+<tr><td>نامعلوم</td><td>بدون تاریخ، با علامت نیازمند پژوهش</td><td>در صف پژوهش</td></tr>
+</table>
 
-<section class="card" id="claims"><h2>۱۲. ادعا؛ واحد قابل ارزیابی</h2><p>روایت و ادعا باید از هم تفکیک شوند. یک روایت می‌تواند معتبر، ارزشمند و اصیل باشد، اما بعضی جزئیات آن هنوز نیازمند بررسی باشند.</p><table><tr><th>وضعیت ادعا</th><th>معنا</th></tr><tr><td>ثبت‌نشده</td><td>ادعا هنوز استخراج یا ثبت نشده است.</td></tr><tr><td>در حال بررسی</td><td>منبع یا شاهد در حال بررسی است.</td></tr><tr><td>تأییدشده</td><td>شواهد کافی برای تأیید وجود دارد.</td></tr><tr><td>تأیید نسبی</td><td>بخش قابل توجهی از ادعا پشتیبانی شده، اما قطعیت کامل نیست.</td></tr><tr><td>مورد اختلاف</td><td>منابع معتبر یا روایت‌های مستقل نتایج متفاوت دارند.</td></tr><tr><td>ردشده</td><td>شواهد معتبر خلاف ادعا را نشان می‌دهد.</td></tr><tr><td>نامشخص</td><td>شواهد برای تصمیم قطعی کافی نیست.</td></tr></table><div class="callout"><strong>اصل مهم:</strong> وضعیت روایت با وضعیت ادعا یکی نیست. یک روایت ممکن است منتشرشده باشد و درون آن چند ادعای با وضعیت‌های متفاوت وجود داشته باشد.</div></section>
+<p>برای زمان‌های نامعلوم نیز باید امکان ثبت تقریبی وجود داشته باشد. مثلاً: «حدود سال ۱۳۶۲» یا «بین سال‌های ۱۳۶۰ تا ۱۳۶۲».</p>
+</section>
 
-<section class="card" id="sources"><h2>۱۳. منابع، منشأ و قابلیت ردیابی</h2><p>هر داده مهم باید تا حد امکان دارای <strong>Provenance</strong> باشد؛ یعنی مشخص باشد از کجا آمده، چه کسی آن را ثبت کرده، چه تغییراتی داشته و چه منبعی از آن پشتیبانی می‌کند.</p><div class="grid three"><div class="mini"><h3>منبع اولیه</h3><p>خود راوی، فایل ضبط‌شده، نامه، دست‌نوشته یا سند اصلی.</p></div><div class="mini"><h3>منبع ثانویه</h3><p>کتاب، مقاله، گزارش یا محتوایی که روایت را نقل یا تحلیل کرده است.</p></div><div class="mini"><h3>منبع مرجع</h3><p>داده‌ای که از یک سامانه یا مرجع رسمی اکوسیستم دریافت می‌شود.</p></div></div><div class="callout">کپی یک داده از پروژه دیگر نباید به معنی مالکیت آن داده باشد؛ منشأ و مرجع اصلی باید قابل تشخیص باقی بماند.</div></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s15">
+<h2>۱۵. مکان</h2>
+<p>روایت می‌تواند به این‌ها متصل شود: کشور، استان، شهر، روستا، محله، ساختمان، جاده، منطقه‌ی عملیاتی، پادگان، بیمارستان، قبرستان، نقطه‌ی جغرافیایی.</p>
+<p>اطلاعات مکانی بهتر است از اطلس شهدا دریافت شود و بانک روایت تنها رابطه‌ی خود با مکان را نگهداری کند.</p>
 
-<section class="card" id="website"><h2>۳۰. معماری وب‌سایت و صفحات محصول</h2><p>وب‌سایت باید از ابتدا بر اساس مدل محصول طراحی شود، نه اینکه بعداً یک پوسته روی آرشیو داده قرار گیرد.</p><div class="grid three"><div class="mini"><h3>خانه</h3><p>معرفی، جست‌وجوی اصلی، روایت‌های منتخب، روایت‌های تازه و دسترسی سریع.</p></div><div class="mini"><h3>روایت‌ها</h3><p>فهرست، دسته‌بندی، فیلتر و کشف روایت‌ها.</p></div><div class="mini"><h3>صفحه روایت</h3><p>متن، رسانه، راوی، موضوع، زمان، مکان، ادعا، منابع و روایت‌های مرتبط.</p></div><div class="mini"><h3>راویان</h3><p>پروفایل راوی و مجموعه روایت‌های مرتبط با او.</p></div><div class="mini"><h3>مجموعه‌ها</h3><p>مجموعه‌های موضوعی، خانوادگی، عملیاتی، محلی یا تاریخی.</p></div><div class="mini"><h3>جست‌وجوی پیشرفته</h3><p>ترکیب فیلترهای شخص، راوی، زمان، مکان، موضوع، رسانه و اعتبار.</p></div><div class="mini"><h3>روش کار</h3><p>توضیح سیاست ثبت، اعتبارسنجی، حقوق و حریم خصوصی.</p></div><div class="mini"><h3>مشارکت</h3><p>مسیر ارسال روایت، اصلاح اطلاعات و معرفی منبع.</p></div><div class="mini"><h3>درباره</h3><p>هویت محصول، مأموریت، معماری و ارتباط با اکوسیستم.</p></div></div></section>
+<div class="quote"><strong>اصل اتصال مکانی:</strong> اگر روایت به یک مکان مشخص مربوط باشد، به‌جای کپی اطلاعات مکانی، از شناسه‌ی مکان در اطلس شهدا استفاده می‌شود.</div>
+</section>
 
-<section class="card" id="security"><h2>۳۱. معماری امنیت و کنترل دسترسی</h2><div class="grid three"><div class="mini"><h3>احراز هویت</h3><p>ورود امن و مدیریت نشست کاربران.</p></div><div class="mini"><h3>مجوزها</h3><p>دسترسی مبتنی بر نقش، نوع داده و حساسیت محتوا.</p></div><div class="mini"><h3>ثبت رویداد</h3><p>ثبت تغییرات مهم، انتشار، حذف، اصلاح و تغییر سطح دسترسی.</p></div><div class="mini"><h3>رسانه امن</h3><p>اعتبارسنجی فایل، محدودیت نوع و حجم و جلوگیری از دسترسی غیرمجاز.</p></div><div class="mini"><h3>پشتیبان‌گیری</h3><p>نسخه پشتیبان منظم از داده و رسانه با سیاست بازیابی مشخص.</p></div><div class="mini"><h3>حفاظت از داده حساس</h3><p>تفکیک اطلاعات عمومی از داده‌های شخصی، خانوادگی یا محرمانه.</p></div></div></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s16">
+<h2>۱۶. ساختار داخلی روایت</h2>
+<p>روایت‌های طولانی نباید الزاماً به‌صورت یک متن یکپارچه ذخیره شوند.</p>
 
-<section class="card" id="data-contract"><h2>۳۲. قرارداد داده و شناسه‌های پایدار</h2><p>قرارداد داده باید قبل از توسعه API تثبیت شود. شناسه یک موجودیت با تغییر عنوان یا متن نباید تغییر کند.</p><div class="code">NAR-000001  → Narrative
-NARRATOR-000001 → Narrator
-CLAIM-000001 → Claim
-SRC-000001 → Source
-MED-000001 → Media
-PLACE-000001 → Place
-EVENT-000001 → Event</div><p>این شناسه‌ها نمونه مفهومی‌اند؛ قالب نهایی باید در طراحی فنی و قرارداد API تصویب شود.</p></section>
+<h3>ساختار پیشنهادی</h3>
+<div class="tree">روایت
+  → فصل
+  → بخش
+  → بند
+  → ادعا
+  → منبع</div>
 
-<section class="card" id="api-contract"><h2>۳۳. قرارداد API</h2><p>API باید نسخه‌دار، مستند و قابل توسعه باشد.</p><div class="code">GET /api/v1/narratives
-GET /api/v1/narratives/{id}
-GET /api/v1/narrators/{id}
-GET /api/v1/claims/{id}
-GET /api/v1/search?q=...
-GET /api/v1/persons/{id}/narratives
-GET /api/v1/places/{id}/narratives
-GET /api/v1/events/{id}/narratives</div><div class="callout">نمونه مسیرها قرارداد نهایی نیستند و پس از تثبیت مدل داده، احراز هویت، pagination، خطاها و سیاست دسترسی نهایی خواهند شد.</div></section>
+<p>این ساختار امکان جست‌وجوی دقیق و اعتبارسنجی جزئی را فراهم می‌کند.</p>
+</section>
 
-<section class="card" id="ai"><h2>۳۴. هوش مصنوعی و پردازش هوشمند</h2><p>هوش مصنوعی می‌تواند ظرفیت بانک روایت را چند برابر کند، اما نباید مرجع نهایی حقیقت تاریخی باشد.</p><div class="grid three"><div class="mini"><h3>تبدیل صوت به متن</h3><p>تولید متن اولیه از مصاحبه و روایت صوتی.</p></div><div class="mini"><h3>استخراج موجودیت</h3><p>پیشنهاد نام اشخاص، مکان‌ها، رویدادها و تاریخ‌ها.</p></div><div class="mini"><h3>استخراج ادعا</h3><p>پیشنهاد ادعاهای قابل بررسی برای تحریریه.</p></div><div class="mini"><h3>جست‌وجوی معنایی</h3><p>یافتن روایت‌های مشابه حتی با تفاوت واژگان.</p></div><div class="mini"><h3>پیشنهاد ارتباط</h3><p>پیشنهاد اتصال روایت به شهید، مکان، رویداد یا روایت دیگر.</p></div><div class="mini"><h3>کنترل انسانی</h3><p>تمام خروجی‌های مهم هوش مصنوعی باید قابل بررسی و اصلاح انسانی باشند.</p></div></div></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s17">
+<h2>۱۷. ادعا (Claim)</h2>
+<p>یکی از مهم‌ترین اجزای بانک روایت، موجودیت <strong>Claim</strong> یا ادعا است. مثلاً:</p>
+<div class="quote">«فلان شخص در تاریخ مشخصی در فلان منطقه حضور داشته است.»</div>
+<p>این جمله یک ادعاست. هر ادعا باید بتواند وضعیت مستقلی داشته باشد:</p>
+<table>
+<tr><th>وضعیت</th><th>معنا</th></tr>
+<tr><td>بررسی نشده</td><td>تازه استخراج شده، هنوز بررسی نشده.</td></tr>
+<tr><td>در حال بررسی</td><td>در فرآیند ارزیابی.</td></tr>
+<tr><td>تأییدشده</td><td>با منبع و شواهد معتبر تأیید شده.</td></tr>
+<tr><td>تأیید نسبی</td><td>بخشی از ادعا تأیید شده.</td></tr>
+<tr><td>مورد اختلاف</td><td>با روایت یا منبع دیگر تعارض دارد.</td></tr>
+<tr><td>ردشده</td><td>با شواهد معتبر رد شده.</td></tr>
+<tr><td>فاقد شواهد کافی</td><td>نه تأیید و نه رد، نیازمند منبع بیشتر.</td></tr>
+</table>
+<div class="quote"><strong>اصل مهم:</strong> این ساختار باعث می‌شود کل روایت به دلیل یک بخش مبهم، به‌طور کامل معتبر یا نامعتبر تلقی نشود.</div>
+</section>
 
-<section class="card" id="mvp"><h2>۳۵. محدوده MVP</h2><p>نسخه نخست باید کوچک اما واقعی باشد.</p><table><tr><th>قابلیت</th><th>اولویت</th></tr><tr><td>صفحه نخست</td><td>ضروری</td></tr><tr><td>فهرست و صفحه روایت</td><td>ضروری</td></tr><tr><td>راوی و اشخاص مرتبط</td><td>ضروری</td></tr><tr><td>جست‌وجوی پایه</td><td>ضروری</td></tr><tr><td>منبع و وضعیت اعتبار</td><td>ضروری</td></tr><tr><td>رسانه و متن</td><td>ضروری</td></tr><tr><td>ارسال روایت</td><td>مرحله دوم</td></tr><tr><td>گراف دانش</td><td>مرحله پیشرفته</td></tr><tr><td>هوش مصنوعی</td><td>مرحله پیشرفته</td></tr></table></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s18">
+<h2>۱۸. اعتبارسنجی</h2>
+<p>اعتبارسنجی باید مرحله‌ای باشد:</p>
+<table>
+<tr><th>سطح</th><th>موضوع</th></tr>
+<tr><td>سطح اول</td><td>ثبت اولیه</td></tr>
+<tr><td>سطح دوم</td><td>بررسی محتوایی</td></tr>
+<tr><td>سطح سوم</td><td>بررسی منابع</td></tr>
+<tr><td>سطح چهارم</td><td>مقایسه با داده‌های مرجع</td></tr>
+<tr><td>سطح پنجم</td><td>تأیید تخصصی</td></tr>
+<tr><td>سطح ششم</td><td>انتشار عمومی</td></tr>
+</table>
+<div class="quote"><strong>اصل تفکیک اعتبار:</strong> وضعیت اعتبار روایت و وضعیت اعتبار ادعا باید دو مفهوم مستقل باشند.</div>
+</section>
 
-<section class="card" id="risks"><h2>۳۶. ریسک‌ها و راهکارها</h2><div class="grid"><div class="mini"><h3>تبدیل شدن به انبار فایل</h3><p>راهکار: مدل داده و ارتباطات از ابتدا اجباری باشند.</p></div><div class="mini"><h3>انتشار ادعای نادرست</h3><p>راهکار: تفکیک روایت و ادعا و نمایش وضعیت اعتبار.</p></div><div class="mini"><h3>تبدیل شدن به بانک دوم شهدا</h3><p>راهکار: مالکیت هویت و پرونده شخص با بانک شهدا باقی بماند.</p></div><div class="mini"><h3>از بین رفتن اصل روایت</h3><p>راهکار: حفظ نسخه اولیه و نسخه‌بندی تمام ویرایش‌ها.</p></div><div class="mini"><h3>نقض حقوق راوی</h3><p>راهکار: رضایت، مجوز، سطح دسترسی و ثبت تصمیم انتشار.</p></div><div class="mini"><h3>رشد بی‌ضابطه</h3><p>راهکار: استاندارد، حکمرانی داده و بازبینی دوره‌ای.</p></div></div></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s19">
+<h2>۱۹. تعارض روایت‌ها</h2>
+<p>اگر دو روایت درباره‌ی یک موضوع اختلاف داشته باشند، سامانه نباید یکی را بدون دلیل حذف کند. باید بتواند نمایش دهد:</p>
+<div class="quote">
+<strong>روایت اول:</strong> چنین گزارشی ارائه می‌کند.<br>
+<strong>روایت دوم:</strong> گزارش متفاوتی ارائه می‌کند.<br>
+<strong>وضعیت بررسی:</strong> اختلاف موجود است.
+</div>
+<p>در صورت وجود سند معتبر، نتیجه‌ی بررسی نیز ثبت می‌شود. این ویژگی یکی از نقاط تمایز اصلی بانک روایت خواهد بود.</p>
+</section>
 
-<section class="card" id="organization"><h2>۳۷. مدل اجرایی و سازمانی</h2><div class="grid three"><div class="mini"><h3>مدیر محصول</h3><p>مسئول جهت‌گیری محصول و اولویت‌بندی.</p></div><div class="mini"><h3>مدیر داده</h3><p>مالک مدل داده، کیفیت و استانداردها.</p></div><div class="mini"><h3>تحریریه</h3><p>ثبت، ویرایش و سیاست محتوایی.</p></div><div class="mini"><h3>پژوهشگر</h3><p>بررسی تاریخی و منبع‌شناسی.</p></div><div class="mini"><h3>ارزیاب</h3><p>بررسی ادعاها و منابع.</p></div><div class="mini"><h3>تیم فنی</h3><p>وب، API، داده، امنیت و زیرساخت.</p></div></div></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s20">
+<h2>۲۰. منابع و شواهد</h2>
+<p>منابع می‌توانند شامل این‌ها باشند: کتاب، سند، نامه، عکس، فیلم، فایل صوتی، مصاحبه، روزنامه، آرشیو سازمانی، وب‌سایت رسمی، سند اداری، پرونده‌ی تاریخی، شهادت شاهد، منابع خانوادگی.</p>
 
-<section class="card" id="ux-principles"><h2>۳۸. اصول طراحی تجربه و ظاهر</h2><p>هویت بصری بانک روایت باید مستقل از اطلس، تقویم و بانک شهدا باشد، اما از خانواده طراحی اکوسیستم فاصله مفهومی نگیرد.</p><div class="grid three"><div class="mini"><h3>آرشیوی</h3><p>حس سند، پرونده، کاغذ و حافظه بدون تبدیل شدن به طراحی قدیمی.</p></div><div class="mini"><h3>انسانی</h3><p>چهره راوی، نقل قول و متن در مرکز تجربه قرار گیرد.</p></div><div class="mini"><h3>خوانا</h3><p>تایپوگرافی و فاصله‌گذاری برای مطالعه طولانی طراحی شود.</p></div><div class="mini"><h3>مستند</h3><p>منبع، اعتبار و وضعیت باید واضح اما غیرمزاحم باشند.</p></div><div class="mini"><h3>واکنش‌گرا</h3><p>روایت‌های طولانی و رسانه‌ها در موبایل نیز بدون شکست نمایش داده شوند.</p></div><div class="mini"><h3>دسترس‌پذیر</h3><p>کنتراست، اندازه متن، متن جایگزین، زیرنویس و پیمایش مناسب رعایت شود.</p></div></div></section>
+<h3>وزن اعتبار منابع</h3>
+<table>
+<tr><th>نوع منبع</th><th>وزن اعتبار</th></tr>
+<tr><td>راوی مستقیم</td><td>بالا (برای تجربه‌ی مستقیم)</td></tr>
+<tr><td>سند مکتوب</td><td>بالا</td></tr>
+<tr><td>منبع سازمانی</td><td>بالا</td></tr>
+<tr><td>منبع ثانویه</td><td>متوسط</td></tr>
+<tr><td>روایت دیگر</td><td>متوسط</td></tr>
+<tr><td>روایت شفاهی بدون سند</td><td>پایین (نیازمند تأیید)</td></tr>
+</table>
+<p>هر ادعا می‌تواند به چند منبع متصل باشد.</p>
+</section>
 
-<section class="card" id="scenarios"><h2>۳۹. سناریوهای کلیدی استفاده</h2><div class="grid"><div class="mini"><h3>جست‌وجوی یک شهید</h3><p>کاربر از بانک شهدا وارد پرونده یک شهید می‌شود و روایت‌های مرتبط را مشاهده می‌کند.</p></div><div class="mini"><h3>کشف روایت یک مکان</h3><p>کاربر از اطلس یک مکان را انتخاب می‌کند و روایت‌های آن مکان را می‌بیند.</p></div><div class="mini"><h3>مقایسه دو روایت</h3><p>دو روایت متفاوت درباره یک واقعه کنار هم قرار می‌گیرند و منابع آنها قابل بررسی است.</p></div><div class="mini"><h3>ثبت خاطره</h3><p>خانواده یا راوی یک روایت را ارسال می‌کند و سامانه آن را وارد گردش بررسی می‌کند.</p></div></div></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s21">
+<h2>۲۱. رسانه و آرشیو</h2>
+<p>سامانه باید رسانه‌ی اصلی را حفظ کند. برای هر فایل باید این‌ها ثبت شود:</p>
+<p>شناسه، نوع فایل، حجم، فرمت، تاریخ ایجاد، تاریخ بارگذاری، صاحب اثر، وضعیت حقوقی، هش فایل، نسخه، کیفیت، توضیح.</p>
+<div class="quote"><strong>اصل عدم دستکاری:</strong> فایل اصلی نباید با نسخه‌ی فشرده یا ویرایش‌شده جایگزین شود.</div>
+</section>
 
-<section class="card" id="implementation"><h2>۴۰. تبدیل مستقیم طرح به وب‌سایت</h2><p>پس از تصویب طرح، توسعه وب‌سایت باید مرحله‌ای باشد:</p><div class="flow"><div>هویت بصری</div><div>معماری اطلاعات</div><div>Wireframe</div><div>UI</div><div>داده نمونه</div><div>وب‌سایت</div><div>آزمون</div></div><div class="callout"><strong>قاعده اجرا:</strong> ابتدا نسخه نمایشی مستقل و کامل از تجربه کاربر ساخته می‌شود؛ سپس مدل داده و API روی همان معماری سوار می‌شوند. ظاهر سایت نباید در اثر اضافه شدن لایه فنی از بین برود.</div></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s22">
+<h2>۲۲. نسخه‌ها</h2>
+<p>هر تغییر مهم باید نسخه‌ی جدید ایجاد کند:</p>
+<table>
+<tr><th>نسخه</th><th>توضیح</th></tr>
+<tr><td>v1</td><td>روایت خام</td></tr>
+<tr><td>v2</td><td>ویرایش نگارشی</td></tr>
+<tr><td>v3</td><td>اضافه شدن منبع</td></tr>
+<tr><td>v4</td><td>اصلاح اطلاعات</td></tr>
+</table>
+<p>کاربر مجاز باید بتواند تاریخچه‌ی تغییرات را مشاهده کند.</p>
+</section>
 
-<section class="card" id="standards"><h2>۴۱. استانداردها و قواعد توسعه</h2><div class="grid three"><div class="mini"><h3>الزامی</h3><p>شناسه پایدار، نسخه‌بندی، منشأ داده، کنترل دسترسی و حفظ اصل محتوا.</p></div><div class="mini"><h3>توصیه‌شده</h3><p>API نسخه‌دار، متادیتای رسانه، دسترس‌پذیری و داده ساختاریافته.</p></div><div class="mini"><h3>آینده</h3><p>گراف دانش، جست‌وجوی معنایی، داده باز و چندزبانه شدن.</p></div></div></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s23">
+<h2>۲۳. گراف دانش روایت</h2>
+<p>یکی از قابلیت‌های آینده و مهم بانک روایت، ایجاد گراف ارتباطی است:</p>
+<div class="tree">روایت
+  → درباره شهید X
+  → توسط راوی Y
+  → در مکان Z
+  → در سال T
+  → درباره عملیات A
+  → مرتبط با روایت B
+  → دارای سند C</div>
+<p>این ساختار امکان کشف ارتباطات پنهان میان داده‌ها را فراهم می‌کند.</p>
+</section>
 
-<section class="card" id="delivery"><h2>۴۲. معیار آمادگی برای ورود به توسعه</h2><p>طرح زمانی آماده ورود به طراحی و پیاده‌سازی است که این موارد نهایی شده باشند:</p><div class="grid three"><div class="mini"><h3>تعریف محصول</h3><p>هویت، مأموریت، مخاطب و مرز مسئولیت.</p></div><div class="mini"><h3>مدل داده</h3><p>موجودیت‌ها، روابط، شناسه‌ها و وضعیت‌ها.</p></div><div class="mini"><h3>معماری سایت</h3><p>صفحات، مسیرهای کاربر و ساختار ناوبری.</p></div><div class="mini"><h3>سیاست محتوا</h3><p>ثبت، بررسی، اعتبار، انتشار و اصلاح.</p></div><div class="mini"><h3>هویت بصری</h3><p>رنگ، فونت، اجزای UI و قواعد نمایش روایت.</p></div><div class="mini"><h3>MVP</h3><p>محدوده دقیق نسخه اول و قابلیت‌های خارج از آن.</p></div></div></section>
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s24">
+<h2>۲۴. مدل داده</h2>
+<p>موجودیت‌های اصلی:</p>
+<div class="tree">Narrative
+Narrator
+Person
+Role
+Claim
+Source
+Evidence
+Media
+Place
+Time
+Event
+Relation
+Review
+Revision
+Consent
+Collection
+Tag
+User
+Organization</div>
 
-<section class="card" id="status"><h2>۴۳. وضعیت طرح</h2><table><tr><th>حوزه</th><th>وضعیت</th><th>گام بعدی</th></tr><tr><td>تعریف جایگاه در شهیدپورتال</td><td class="status done">تثبیت مفهومی</td><td>تبدیل به معماری مستقل.</td></tr><tr><td>مدل روایت و راوی</td><td class="status done">تعریف اولیه</td><td>تکمیل Schema.</td></tr><tr><td>منبع و اعتبارسنجی</td><td class="status done">تعریف اولیه</td><td>تدوین سیاست و گردش کار.</td></tr><tr><td>تجربه کاربری</td><td class="status next">مرحله طراحی</td><td>نمونه‌سازی صفحات و جست‌وجو.</td></tr><tr><td>داده واقعی</td><td class="status future">آتی</td><td>انتخاب مجموعه اولیه و فرآیند ورود.</td></tr><tr><td>API و اتصال اکوسیستم</td><td class="status future">آتی</td><td>تعریف قراردادهای داده و شناسه.</td></tr></table></section>
+<h3>ارتباط نمونه</h3>
+<div class="tree">Narrative
+ ├── Narrator
+ ├── Person
+ ├── Claim
+ │    └── Source
+ ├── Media
+ ├── Place
+ ├── Time
+ ├── Event
+ ├── Relation
+ ├── Review
+ ├── Revision
+ └── Consent</div>
 
-<section class="card" id="conclusion"><h2>۴۴. جمع‌بندی نهایی</h2><div class="quote"><strong>بانک روایت چیست؟</strong> یک زیرسامانه تخصصی و در صورت اجرا یک محصول مستقل برای حفظ، سازمان‌دهی، اعتبارسنجی و قابل‌کشف کردن روایت‌های انسانی و تاریخی مرتبط با شهدا و ایثارگران؛ با پیوند مستقیم به اشخاص، زمان، مکان، رویداد، سند و رسانه.</div><p>بانک روایت قرار نیست صرفاً یک صفحه برای خاطرات باشد. هدف، ساخت یک «لایه روایی» برای اکوسیستم شهیدپورتال است؛ لایه‌ای که روایت‌های پراکنده را با شناسنامه و منبع نگهداری می‌کند و آنها را به شبکه دانش متصل می‌سازد.</p><p><strong>قاعده توسعه آینده:</strong> هر قابلیت جدید باید بتواند جایگاه خود را در روایت، راوی، ادعا، منبع، زمان، مکان، شخص، رسانه، رابطه یا وضعیت اعتبار مشخص کند.</p></section>
+<p><strong>جزئیات کامل هر موجودیت در «ضمیمه‌ی الف» آمده است.</strong></p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s25">
+<h2>۲۵. رابطه با بانک شهدا</h2>
+<p>اگر روایت درباره‌ی یک شهید باشد، بانک روایت نباید اطلاعات هویتی او را دوباره تولید کند:</p>
+<div class="tree">narrative.person_id
+        ↓
+Shahid Bank
+        ↓
+canonical person</div>
+<p><strong>بانک روایت:</strong> اطلاعات روایی را مالک است. <strong>بانک شهدا:</strong> اطلاعات هویتی را مالک است.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s26">
+<h2>۲۶. رابطه با اطلس شهدا</h2>
+<div class="tree">narrative.place_id
+        ↓
+Atlas
+        ↓
+canonical location</div>
+<p>بانک روایت تنها ارتباط روایی با مکان را ثبت می‌کند.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s27">
+<h2>۲۷. رابطه با تقویم شهدا</h2>
+<div class="tree">narrative.event_id
+        ↓
+Calendar
+        ↓
+canonical event</div>
+<p>به این ترتیب یک روایت می‌تواند به یک واقعه‌ی تاریخی در تقویم متصل شود.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s28">
+<h2>۲۸. تجربه‌ی کاربری</h2>
+<p>رابط کاربری باید این ویژگی‌ها را داشته باشد:</p>
+<p>آرام، رسمی، خوانا، انسانی، مستند، بدون شلوغی، مناسب موبایل، مناسب دسکتاپ، قابل دسترس.</p>
+<p>ظاهر بانک روایت نباید شبیه یک داشبورد اداری خشک باشد. در عین حال نباید به سمت طراحی کودکانه یا تزئینی افراطی برود.</p>
+<div class="quote"><strong>هویت بصری پیشنهادی:</strong> آرشیوی، انسانی، مستند و معاصر.</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s29">
+<h2>۲۹. معماری وب‌سایت</h2>
+<p>ساختار اصلی سایت می‌تواند شامل این بخش‌ها باشد:</p>
+<div class="grid">
+<div class="mini"><h3>صفحه‌ی نخست</h3><p>معرفی بانک روایت، روایت‌های منتخب، روایت‌های تازه، راویان، موضوعات، جست‌وجوی اصلی.</p></div>
+<div class="mini"><h3>روایت‌ها</h3><p>فهرست، دسته‌بندی، فیلتر، جست‌وجو.</p></div>
+<div class="mini"><h3>روایت</h3><p>عنوان، چکیده، متن، رسانه، راوی، موضوع، زمان، مکان، منابع، وضعیت اعتبار، روایت‌های مرتبط.</p></div>
+<div class="mini"><h3>راویان</h3><p>فهرست راویان، پروفایل راوی، روایت‌های راوی.</p></div>
+<div class="mini"><h3>اشخاص</h3><p>اتصال به بانک شهدا، روایت‌های مرتبط.</p></div>
+<div class="mini"><h3>مکان‌ها</h3><p>اتصال به اطلس.</p></div>
+<div class="mini"><h3>زمان و رخدادها</h3><p>اتصال به تقویم.</p></div>
+<div class="mini"><h3>منابع</h3><p>فهرست منابع، اسناد مرتبط.</p></div>
+<div class="mini"><h3>جست‌وجوی پیشرفته</h3><p>متن، شخص، راوی، مکان، زمان، نوع روایت، وضعیت اعتبار، منبع.</p></div>
+</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s30">
+<h2>۳۰. صفحه‌ی اختصاصی روایت</h2>
+<p>صفحه‌ی روایت مهم‌ترین صفحه‌ی محصول خواهد بود.</p>
+
+<h3>ساختار پیشنهادی</h3>
+<div class="tree">عنوان روایت
+
+نوع روایت | وضعیت اعتبار | شناسه
+
+خلاصه
+
+روایت اصلی
+
+رسانه‌ها
+
+راوی
+
+موضوع / اشخاص
+
+زمان
+
+مکان
+
+ادعاهای اصلی
+
+منابع و شواهد
+
+روایت‌های مرتبط
+
+نسخه‌ها
+
+یادداشت بررسی
+
+ثبت‌کنندگان و مشارکت‌کنندگان</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s31">
+<h2>۳۱. جست‌وجو</h2>
+<p>جست‌وجوی بانک روایت باید فراتر از جست‌وجوی ساده‌ی متن باشد.</p>
+
+<h3>فیلترها</h3>
+<p>عنوان، متن، راوی، شخص، شهید، مکان، زمان، نوع روایت، موضوع، منبع، وضعیت اعتبار، سازمان، رسانه.</p>
+<p>در آینده جست‌وجوی معنایی نیز قابل اضافه شدن است.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s32">
+<h2>۳۲. جست‌وجوی معنایی و هوش مصنوعی</h2>
+<p>در نسخه‌های پیشرفته، هوش مصنوعی می‌تواند برای این کارها استفاده شود: استخراج موجودیت‌ها، پیشنهاد ارتباطات، استخراج ادعاها، تبدیل صوت به متن، خلاصه‌سازی، دسته‌بندی، تشخیص موضوع، پیشنهاد منابع مرتبط، کشف روایت‌های مشابه، پیشنهاد تعارض‌های احتمالی.</p>
+<div class="quote"><strong>اصل مهم:</strong> هوش مصنوعی نباید به‌تنهایی اعتبار تاریخی ایجاد کند. AI ابزار کمکی است، نه مرجع نهایی حقیقت.</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s33">
+<h2>۳۳. نقش کاربران</h2>
+<table>
+<tr><th>نقش</th><th>کارکرد</th></tr>
+<tr><td>بازدیدکننده</td><td>مشاهده‌ی محتوای عمومی.</td></tr>
+<tr><td>مشارکت‌کننده</td><td>ارسال روایت یا اطلاعات.</td></tr>
+<tr><td>راوی</td><td>ارائه‌ی روایت شخصی.</td></tr>
+<tr><td>پژوهشگر</td><td>بررسی و تحلیل داده‌ها.</td></tr>
+<tr><td>ویراستار</td><td>ویرایش محتوای مجاز.</td></tr>
+<tr><td>ارزیاب</td><td>بررسی اعتبار.</td></tr>
+<tr><td>مدیر محتوا</td><td>مدیریت انتشار.</td></tr>
+<tr><td>مدیر سامانه</td><td>مدیریت فنی و دسترسی.</td></tr>
+</table>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s34">
+<h2>۳۴. مشارکت عمومی</h2>
+<p>امکان مشارکت باید وجود داشته باشد: ارسال روایت، اصلاح اطلاعات، معرفی منبع، ارسال تصویر، ارسال سند، پیشنهاد ارتباط، گزارش خطا.</p>
+<p>اما همه‌ی مشارکت‌ها باید وارد فرآیند بررسی شوند.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s35">
+<h2>۳۵. رضایت و حریم خصوصی</h2>
+<p>اطلاعات حساس باید سطح دسترسی داشته باشند.</p>
+
+<h3>سطوح پیشنهادی</h3>
+<table>
+<tr><th>سطح</th><th>توضیح</th></tr>
+<tr><td>عمومی</td><td>قابل انتشار برای همه.</td></tr>
+<tr><td>ثبت‌شده</td><td>فقط برای کاربران ثبت‌نام‌شده.</td></tr>
+<tr><td>محدود</td><td>دسترسی برای نقش‌های مشخص.</td></tr>
+<tr><td>خصوصی</td><td>دسترسی فقط برای مالک و مدیران.</td></tr>
+<tr><td>محرمانه</td><td>فقط برای پژوهش داخلی و حاکمیت داده.</td></tr>
+</table>
+
+<h3>رضایت راوی</h3>
+<p>برای روایت‌های شفاهی باید رضایت راوی درباره‌ی این موارد ثبت شود: ضبط، نگهداری، ویرایش، انتشار، استفاده‌ی پژوهشی، استفاده‌ی رسانه‌ای.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s36">
+<h2>۳۶. مالکیت فکری</h2>
+<p>هر محتوا باید تا حد امکان دارای اطلاعات حقوقی باشد: صاحب اثر، مجوز استفاده، نوع مجوز، محدودیت انتشار، منبع، شرایط بازنشر.</p>
+<div class="quote"><strong>اصل:</strong> حقوق افراد و صاحبان آثار باید بخشی از معماری داده باشد، نه یک توضیح جانبی.</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s37">
+<h2>۳۷. تحریریه و حکمرانی محتوا</h2>
+<p>بانک روایت نیازمند یک نظام تحریریه‌ی مشخص است.</p>
+
+<h3>فرآیند پیشنهادی</h3>
+<div class="tree">ثبت
+ ↓
+بررسی اولیه
+ ↓
+ساختاردهی
+ ↓
+استخراج ادعا
+ ↓
+بررسی منابع
+ ↓
+ارزیابی
+ ↓
+تأیید
+ ↓
+انتشار
+ ↓
+بازبینی دوره‌ای</div>
+<p>هر مرحله باید مسئول و وضعیت مشخص داشته باشد.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s38">
+<h2>۳۸. پنل مدیریت</h2>
+<p>پنل مدیریت باید این بخش‌ها را داشته باشد:</p>
+<p>داشبورد، روایت‌ها، راویان، اشخاص، ادعاها، منابع، رسانه‌ها، بررسی‌ها، گزارش خطا، مشارکت‌ها، کاربران، نقش‌ها، مجوزها، آمار، تنظیمات.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s39">
+<h2>۳۹. API</h2>
+<p>بانک روایت باید از ابتدا API-ready طراحی شود.</p>
+
+<h3>نمونه مسیرهای مفهومی</h3>
+<div class="tree">GET /api/narratives
+GET /api/narratives/{id}
+GET /api/narrators/{id}
+GET /api/claims/{id}
+GET /api/sources/{id}
+GET /api/relations
+GET /api/search</div>
+
+<p>API نهایی باید پس از تثبیت مدل داده و سیاست امنیتی تعریف شود. <strong>جزئیات کامل در «ضمیمه‌ی ب» آمده است.</strong></p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s40">
+<h2>۴۰. شناسه‌های پایدار</h2>
+<p>هر موجودیت باید شناسه‌ی پایدار داشته باشد:</p>
+<div class="tree">NAR-...
+PER-...
+NARRATOR-...
+CLAIM-...
+SRC-...
+MED-...
+PLACE-...
+EVENT-...</div>
+<p>شناسه نباید با تغییر عنوان یا متن تغییر کند.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s41">
+<h2>۴۱. امنیت</h2>
+<p>اصول امنیت:</p>
+<ul>
+<li>احراز هویت امن</li>
+<li>کنترل دسترسی</li>
+<li>نقش‌های چندسطحی</li>
+<li>ثبت لاگ</li>
+<li>تاریخچه‌ی تغییرات</li>
+<li>پشتیبان‌گیری</li>
+<li>رمزنگاری اطلاعات حساس</li>
+<li>محدودیت API</li>
+<li>جلوگیری از بارگذاری فایل مخرب</li>
+<li>کنترل نشست‌ها</li>
+<li>ثبت رویدادهای امنیتی</li>
+</ul>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s42">
+<h2>۴۲. کیفیت داده</h2>
+<p>شاخص‌های کیفیت: کامل بودن، صحت، یکتایی، سازگاری، به‌روز بودن، قابل ردیابی بودن، مشخص بودن منبع.</p>
+<p>برای هر رکورد می‌توان یک وضعیت کیفیت تعریف کرد.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s43">
+<h2>۴۳. استانداردسازی</h2>
+<p>بانک روایت باید از استانداردهای عمومی و تخصصی در حد نیاز استفاده کند:</p>
+<ul>
+<li>UTF-8</li>
+<li>تاریخ استاندارد داخلی</li>
+<li>شناسه‌ی پایدار</li>
+<li>متادیتای رسانه</li>
+<li>ساختار داده‌ی قابل تبادل</li>
+<li>API مستند</li>
+<li>نسخه‌بندی</li>
+<li>استانداردهای دسترس‌پذیری وب (WCAG 2.2)</li>
+</ul>
+<p>استانداردهای انتخابی نهایی باید در مرحله‌ی طراحی فنی تعیین شوند.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s44">
+<h2>۴۴. معماری فنی</h2>
+<div class="quote"><strong>اصل پیشنهادی:</strong> Static First → Structured Data → API → CMS → Intelligence</div>
+<p>یعنی محصول می‌تواند از یک نسخه‌ی ایستا و سبک آغاز شود، اما ساختار داده از ابتدا به شکلی طراحی شود که در آینده بتوان آن را به سامانه‌ی کامل تبدیل کرد.</p>
+
+<h3>لایه‌ها</h3>
+<div class="tree">Presentation
+      ↓
+Application
+      ↓
+API
+      ↓
+Domain
+      ↓
+Data
+      ↓
+Media / Storage</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s45">
+<h2>۴۵. نسخه‌ی اولیه‌ی وب‌سایت (MVP)</h2>
+<p>نسخه‌ی اول لازم نیست تمام قابلیت‌های نهایی را داشته باشد. MVP پیشنهادی:</p>
+<ol>
+<li>صفحه‌ی نخست</li>
+<li>فهرست روایت‌ها</li>
+<li>صفحه‌ی روایت</li>
+<li>راوی</li>
+<li>جست‌وجوی پایه</li>
+<li>دسته‌بندی</li>
+<li>منابع</li>
+<li>ارتباط با بانک شهدا</li>
+<li>ارتباط با اطلس</li>
+<li>ارتباط با تقویم</li>
+<li>طراحی واکنش‌گرا</li>
+<li>ساختار داده‌ی اولیه</li>
+</ol>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s46">
+<h2>۴۶. نسخه‌ی دوم</h2>
+<p>در نسخه‌ی دوم این قابلیت‌ها اضافه می‌شود:</p>
+<p>حساب کاربری، ارسال روایت، مدیریت مشارکت، پنل تحریریه، اعتبارسنجی، ادعاها، منابع، نسخه‌ها، گزارش خطا، جست‌وجوی پیشرفته.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s47">
+<h2>۴۷. نسخه‌ی سوم</h2>
+<p>در نسخه‌ی سوم این قابلیت‌ها اضافه می‌شود:</p>
+<p>API عمومی، گراف دانش، نقشه‌ی روایت‌ها، خط زمانی روایت‌ها، تحلیل ارتباطات، جست‌وجوی معنایی، پردازش صوت، استخراج خودکار ادعا، پیشنهاد ارتباطات.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s48">
+<h2>۴۸. سناریوهای واقعی استفاده</h2>
+<div class="grid two">
+<div class="mini"><h3>سناریوی اول</h3><p>کاربر نام یک شهید را جست‌وجو می‌کند. سامانه علاوه بر پرونده‌ی شهید، روایت‌های مرتبط را نمایش می‌دهد.</p></div>
+<div class="mini"><h3>سناریوی دوم</h3><p>کاربر یک راوی را جست‌وجو می‌کند. تمام روایت‌های ثبت‌شده توسط او نمایش داده می‌شود.</p></div>
+<div class="mini"><h3>سناریوی سوم</h3><p>کاربر یک مکان را انتخاب می‌کند. روایت‌های مرتبط با آن مکان از طریق اطلس نمایش داده می‌شوند.</p></div>
+<div class="mini"><h3>سناریوی چهارم</h3><p>کاربر یک عملیات را انتخاب می‌کند. روایت‌های مربوط به آن عملیات در کنار اطلاعات زمانی و مکانی نمایش داده می‌شوند.</p></div>
+<div class="mini"><h3>سناریوی پنجم</h3><p>دو روایت متعارض درباره‌ی یک واقعه وجود دارد. سامانه هر دو را حفظ و وضعیت اختلاف را نمایش می‌دهد.</p></div>
+</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s49">
+<h2>۴۹. معماری اطلاعات</h2>
+<div class="tree">بانک روایت
+│
+├── روایت‌ها
+│   ├── روایت‌های جدید
+│   ├── روایت‌های منتخب
+│   ├── روایت‌های صوتی
+│   ├── روایت‌های تصویری
+│   └── روایت‌های مستند
+│
+├── راویان
+│
+├── اشخاص
+│
+├── مکان‌ها
+│
+├── رخدادها
+│
+├── منابع
+│
+├── مجموعه‌ها
+│
+├── جست‌وجو
+│
+└── درباره بانک روایت</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s50">
+<h2>۵۰. مجموعه‌های روایی</h2>
+<p>روایت‌ها می‌توانند در مجموعه‌های موضوعی قرار گیرند. مثلاً:</p>
+<p>خاطرات یک عملیات، روایت‌های یک خانواده، روایت‌های یک شهر، روایت‌های یک نسل، روایت‌های یک یگان، روایت‌های یک دوره‌ی تاریخی.</p>
+<p>هر مجموعه نیز باید شناسه‌ی مستقل داشته باشد.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s51">
+<h2>۵۱. خط زمانی روایت</h2>
+<p>یکی از قابلیت‌های مهم آینده:</p>
+<div class="tree">روایت
+  ↓
+زمان
+  ↓
+رخداد
+  ↓
+روایت‌های مرتبط</div>
+<p>کاربر می‌تواند روایت‌ها را در محور زمان مشاهده کند.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s52">
+<h2>۵۲. نقشه‌ی روایت</h2>
+<p>با اتصال به اطلس:</p>
+<div class="tree">روایت → مکان → اطلس</div>
+<p>می‌توان روی نقشه دید:</p>
+<ul>
+<li>چه روایت‌هایی در یک مکان ثبت شده‌اند؟</li>
+<li>چه اشخاصی با آن مکان مرتبط هستند؟</li>
+<li>چه رخدادهایی در آنجا اتفاق افتاده؟</li>
+<li>روایت‌ها مربوط به چه دوره‌ای هستند؟</li>
+</ul>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s53">
+<h2>۵۳. روایت به‌عنوان داده‌ی زنده</h2>
+<p>روایت پس از انتشار نباید یک صفحه‌ی ثابت و فراموش‌شده باشد. در طول زمان ممکن است:</p>
+<ul>
+<li>منبع جدید پیدا شود؛</li>
+<li>اشتباه کشف شود؛</li>
+<li>روایت دیگری ثبت شود؛</li>
+<li>شخص جدیدی به آن مرتبط شود؛</li>
+<li>مکان دقیق‌تر شود؛</li>
+<li>تاریخ اصلاح شود.</li>
+</ul>
+<p>بنابراین هر روایت باید قابلیت تکامل کنترل‌شده داشته باشد.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s54">
+<h2>۵۴. گزارش اصلاح</h2>
+<p>کاربر باید بتواند گزارش کند: اشتباه تایپی، اشتباه تاریخی، منبع ناقص، ارتباط اشتباه، اطلاعات هویتی نادرست، مشکل رسانه، نقض حقوق.</p>
+<p>گزارش‌ها وارد فرآیند بررسی شوند.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s55">
+<h2>۵۵. داشبورد آماری</h2>
+<p>در آینده می‌توان آمارهایی مانند این‌ها را نمایش داد:</p>
+<p>تعداد روایت‌ها، تعداد راویان، تعداد منابع، تعداد روایت‌های تأییدشده، روایت‌های در انتظار بررسی، تعداد مکان‌های پوشش‌داده‌شده، تعداد موضوعات، تعداد مشارکت‌کنندگان.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s56">
+<h2>۵۶. شاخص‌های موفقیت</h2>
+<table>
+<tr><th>حوزه</th><th>شاخص</th></tr>
+<tr><td>پوشش</td><td>تعداد روایت‌های ثبت‌شده</td></tr>
+<tr><td>کیفیت</td><td>درصد روایت‌های دارای منبع</td></tr>
+<tr><td>اعتبار</td><td>درصد ادعاهای بررسی‌شده</td></tr>
+<tr><td>ارتباط</td><td>تعداد ارتباطات معتبر میان موجودیت‌ها</td></tr>
+<tr><td>مشارکت</td><td>تعداد مشارکت‌کنندگان فعال</td></tr>
+<tr><td>استفاده</td><td>تعداد جست‌وجو و مشاهده</td></tr>
+<tr><td>پایداری</td><td>نرخ حفظ و بازیابی موفق داده‌ها</td></tr>
+</table>
+<p><strong>جزئیات کامل اهداف کمّی در «ضمیمه‌ی پ» آمده است.</strong></p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s57">
+<h2>۵۷. ریسک‌ها و راهکارها</h2>
+<table>
+<tr><th>ریسک</th><th>راهکار</th></tr>
+<tr><td>تبدیل شدن به آرشیو خام</td><td>مدل داده‌ی ساختاریافته</td></tr>
+<tr><td>انتشار اطلاعات نادرست</td><td>اعتبارسنجی و وضعیت ادعا</td></tr>
+<tr><td>حذف اختلاف‌ها</td><td>مدل چندروایتی</td></tr>
+<tr><td>تبدیل شدن به بانک دوم شهدا</td><td>مرزبندی مالکیت داده</td></tr>
+<tr><td>نقض حریم خصوصی</td><td>رضایت و سطوح دسترسی</td></tr>
+<tr><td>وابستگی به یک فناوری</td><td>API و مدل داده‌ی مستقل</td></tr>
+<tr><td>رشد بدون کنترل</td><td>حکمرانی و استاندارد</td></tr>
+</table>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s58">
+<h2>۵۸. مدل سازمانی</h2>
+<p>برای رشد واقعی سامانه، نقش‌های زیر می‌توانند شکل بگیرند:</p>
+<p>مدیر محصول، مدیر داده، مدیر تحریریه، پژوهشگر، ارزیاب، متخصص تاریخ شفاهی، ویراستار، مدیر فنی، مدیر رسانه، مسئول حقوق و حریم خصوصی.</p>
+<p>در مراحل ابتدایی یک نفر می‌تواند چند نقش را برعهده داشته باشد.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s59">
+<h2>۵۹. نقشه راه</h2>
+
+<h3>فاز صفر — طراحی</h3>
+<p>نهایی‌سازی مدل مفهومی، تعیین موجودیت‌ها، تعیین روابط، تعیین شناسه‌ها، طراحی هویت بصری، طراحی UX.</p>
+
+<h3>فاز یک — وب‌سایت اولیه</h3>
+<p>صفحات اصلی، روایت‌ها، پروفایل روایت، راویان، جست‌وجو، منابع.</p>
+
+<h3>فاز دو — هسته‌ی داده</h3>
+<p>دیتابیس، API، مدیریت کاربران، مدیریت روایت، نسخه‌بندی، منابع.</p>
+
+<h3>فاز سه — تحریریه</h3>
+<p>ارسال روایت، بررسی، اعتبارسنجی، ادعا، گزارش اصلاح.</p>
+
+<h3>فاز چهار — اتصال اکوسیستم</h3>
+<p>بانک شهدا، اطلس شهدا، تقویم شهدا، سایر سامانه‌ها.</p>
+
+<h3>فاز پنج — شبکه‌ی دانش</h3>
+<p>گراف، جست‌وجوی معنایی، ارتباطات هوشمند، تحلیل روایت.</p>
+
+<h3>فاز شش — توسعه‌ی ملی و بین‌المللی</h3>
+<p>چندزبانه، API عمومی، مشارکت سازمانی، پژوهش، داده‌ی باز در بخش‌های مجاز.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="card" id="s60">
+<h2>۶۰. معماری آینده</h2>
+<p>تصویر مفهومی:</p>
+<div class="tree">                  بانک شهدا
+                      │
+                      │
+اطلس شهدا ───── بانک روایت ───── تقویم شهدا
+                      │
+                      │
+                گراف دانش
+                      │
+        ┌─────────────┼─────────────┐
+        │             │             │
+      مردم          پژوهشگران      سازمان‌ها
+        │             │             │
+        └─────────────┼─────────────┘
+                      │
+                   API</div>
+<p>بانک روایت در این معماری یک «هاب روایی» است، اما مالک داده‌های سایر سامانه‌ها نیست.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ضمیمه الف: مدل داده کامل -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+
+<span class="appendix-marker" id="appendix-a">📎 ضمیمه الف — مدل داده‌ی کامل</span>
+
+<section class="card">
+<h2>ضمیمه الف: مدل داده‌ی کامل</h2>
+<p>این ضمیمه، جدول کامل ۱۹ موجودیت اصلی بانک روایت را با فیلدها، نوع داده، کلید اصلی و توضیح نشان می‌دهد.</p>
+
+<h3>الف-۱. Narrative (روایت)</h3>
+<table>
+<tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
+<tr><td>id</td><td>string</td><td>PK</td><td>شناسه‌ی پایدار مثل NAR-1405-000001</td></tr>
+<tr><td>title</td><td>string</td><td></td><td>عنوان روایت</td></tr>
+<tr><td>summary</td><td>text</td><td></td><td>چکیده‌ی ۱۰۰ کلمه‌ای</td></tr>
+<tr><td>bodyText</td><td>text</td><td></td><td>متن کامل روایت</td></tr>
+<tr><td>type</td><td>enum</td><td></td><td>oral / written / visual / audio / video / documentary / composite</td></tr>
+<tr><td>language</td><td>string</td><td></td><td>fa / ar / en</td></tr>
+<tr><td>status</td><td>enum</td><td></td><td>draft / pending / reviewed / approved / published / archived / rejected</td></tr>
+<tr><td>accessLevel</td><td>enum</td><td></td><td>public / registered / limited / private / confidential</td></tr>
+<tr><td>narratorId</td><td>uuid</td><td>FK</td><td>ارجاع به Narrator</td></tr>
+<tr><td>subjectPersonIds</td><td>uuid[]</td><td>FK</td><td>اشخاص مورد روایت</td></tr>
+<tr><td>locationId</td><td>string</td><td>FK</td><td>ارجاع به Location در اطلس</td></tr>
+<tr><td>eventId</td><td>string</td><td>FK</td><td>ارجاع به Event در تقویم</td></tr>
+<tr><td>recordDate</td><td>date</td><td></td><td>تاریخ ثبت روایت</td></tr>
+<tr><td>eventDate</td><td>date</td><td></td><td>تاریخ وقوع</td></tr>
+<tr><td>consentId</td><td>uuid</td><td>FK</td><td>ارجاع به Consent</td></tr>
+<tr><td>tags</td><td>string[]</td><td></td><td>برچسب‌ها</td></tr>
+<tr><td>confidence</td><td>float</td><td></td><td>۰ تا ۱</td></tr>
+<tr><td>version</td><td>int</td><td></td><td>شماره‌ی نسخه</td></tr>
+<tr><td>createdAt</td><td>datetime</td><td></td><td>تاریخ ایجاد</td></tr>
+<tr><td>updatedAt</td><td>datetime</td><td></td><td>تاریخ آخرین به‌روزرسانی</td></tr>
+</table>
+
+<h3>الف-۲. Narrator (راوی)</h3>
+<table>
+<tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
+<tr><td>id</td><td>uuid</td><td>PK</td><td></td></tr>
+<tr><td>personId</td><td>string</td><td>FK</td><td>ارجاع به Person در بانک شهدا (اختیاری)</td></tr>
+<tr><td>fullName</td><td>string</td><td></td><td>نام کامل</td></tr>
+<tr><td>relationToSubject</td><td>string</td><td></td><td>نسبت با موضوع</td></tr>
+<tr><td>ageAtNarration</td><td>string</td><td></td><td>سن یا بازه‌ی سنی</td></tr>
+<tr><td>occupation</td><td>string</td><td></td><td>شغل</td></tr>
+<tr><td>location</td><td>string</td><td></td><td>محل زندگی</td></tr>
+<tr><td>connectionToEvent</td><td>text</td><td></td><td>ارتباط با واقعه</td></tr>
+<tr><td>participationType</td><td>enum</td><td></td><td>direct / indirect / family / observer</td></tr>
+<tr><td>identityStatus</td><td>enum</td><td></td><td>verified / unverified / anonymous</td></tr>
+<tr><td>consentId</td><td>uuid</td><td>FK</td><td>رضایت انتشار</td></tr>
+<tr><td>displayLevel</td><td>enum</td><td></td><td>full / partial / anonymous</td></tr>
+</table>
+
+<h3>الف-۳. Person (شخص)</h3>
+<table>
+<tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
+<tr><td>id</td><td>string</td><td>PK</td><td>ارجاع به بانک شهدا</td></tr>
+<tr><td>externalRef</td><td>string</td><td></td><td>شناسه در سامانه‌ی مرجع</td></tr>
+<tr><td>fullName</td><td>string</td><td></td><td>نام</td></tr>
+<tr><td>roleInNarrative</td><td>enum</td><td></td><td>subject / witness / narrator / participant</td></tr>
+</table>
+
+<h3>الف-۴. Role (نقش)</h3>
+<table>
+<tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
+<tr><td>id</td><td>uuid</td><td>PK</td><td></td></tr>
+<tr><td>narrativeId</td><td>uuid</td><td>FK</td><td></td></tr>
+<tr><td>personId</td><td>uuid</td><td>FK</td><td></td></tr>
+<tr><td>roleType</td><td>enum</td><td></td><td>narrator / witness / subject / interviewer / editor / evaluator / source / author</td></tr>
+<tr><td>note</td><td>text</td><td></td><td>توضیح</td></tr>
+</table>
+
+<h3>الف-۵. Claim (ادعا)</h3>
+<table>
+<tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
+<tr><td>id</td><td>string</td><td>PK</td><td>CLAIM-1405-000001</td></tr>
+<tr><td>narrativeId</td><td>uuid</td><td>FK</td><td></td></tr>
+<tr><td>claimText</td><td>text</td><td></td><td>متن ادعا</td></tr>
+<tr><td>claimType</td><td>enum</td><td></td><td>time / place / person / event / quantity</td></tr>
+<tr><td>status</td><td>enum</td><td></td><td>unchecked / reviewing / verified / partially-verified / disputed / rejected / insufficient-evidence</td></tr>
+<tr><td>confidence</td><td>float</td><td></td><td>۰ تا ۱</td></tr>
+<tr><td>reviewedAt</td><td>datetime</td><td></td><td></td></tr>
+<tr><td>reviewer</td><td>uuid</td><td>FK</td><td>ارجاع به User</td></tr>
+<tr><td>sourceIds</td><td>uuid[]</td><td>FK</td><td>منابع مرتبط</td></tr>
+</table>
+
+<h3>الف-۶. Source (منبع)</h3>
+<table>
+<tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
+<tr><td>id</td><td>string</td><td>PK</td><td>SRC-...</td></tr>
+<tr><td>title</td><td>string</td><td></td><td></td></tr>
+<tr><td>sourceType</td><td>enum</td><td></td><td>book / document / letter / interview / media / archive / website</td></tr>
+<tr><td>authority</td><td>enum</td><td></td><td>high / medium / low</td></tr>
+<tr><td>reference</td><td>string</td><td></td><td>ارجاع یا شناسه</td></tr>
+<tr><td>accessLevel</td><td>enum</td><td></td><td></td></tr>
+</table>
+
+<h3>الف-۷. Evidence (شاهد / مدرک)</h3>
+<table>
+<tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
+<tr><td>id</td><td>uuid</td><td>PK</td><td></td></tr>
+<tr><td>claimId</td><td>uuid</td><td>FK</td><td></td></tr>
+<tr><td>sourceId</td><td>uuid</td><td>FK</td><td></td></tr>
+<tr><td>relation</td><td>enum</td><td></td><td>supports / contradicts / complements</td></tr>
+<tr><td>note</td><td>text</td><td></td><td></td></tr>
+</table>
+
+<h3>الف-۸. Media (رسانه)</h3>
+<table>
+<tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
+<tr><td>id</td><td>string</td><td>PK</td><td>MED-...</td></tr>
+<tr><td>narrativeId</td><td>uuid</td><td>FK</td><td></td></tr>
+<tr><td>mediaType</td><td>enum</td><td></td><td>audio / video / image / document</td></tr>
+<tr><td>storagePath</td><td>string</td><td></td><td>مسیر فایل</td></tr>
+<tr><td>fileHash</td><td>string</td><td></td><td>هش فایل</td></tr>
+<tr><td>fileSize</td><td>int</td><td></td><td>حجم</td></tr>
+<tr><td>format</td><td>string</td><td></td><td>فرمت</td></tr>
+<tr><td>copyrightStatus</td><td>enum</td><td></td><td>owned / licensed / public / unknown</td></tr>
+<tr><td>owner</td><td>string</td><td></td><td>صاحب اثر</td></tr>
+<tr><td>quality</td><td>enum</td><td></td><td>original / high / medium / low</td></tr>
+</table>
+
+<h3>الف-۹ تا الف-۱۹. سایر موجودیت‌ها</h3>
+<table>
+<tr><th>موجودیت</th><th>فیلدهای اصلی</th></tr>
+<tr><td><code>Place</code></td><td>id, atlasRef, name, type, relation-to-narrative</td></tr>
+<tr><td><code>Time</code></td><td>id, narrativeId, timeType, exactDate, fromDate, toDate, confidence</td></tr>
+<tr><td><code>Event</code></td><td>id, calendarRef, title, eventDate, eventType</td></tr>
+<tr><td><code>Relation</code></td><td>id, fromType, fromId, toType, toId, relationType, confidence, note</td></tr>
+<tr><td><code>Review</code></td><td>id, narrativeId, reviewerId, reviewType, result, note, reviewedAt</td></tr>
+<tr><td><code>Revision</code></td><td>id, narrativeId, version, changeType, changedBy, changeNote, createdAt</td></tr>
+<tr><td><code>Consent</code></td><td>id, narratorId, scope[], grantedAt, expireAt, documentRef</td></tr>
+<tr><td><code>Collection</code></td><td>id, title, description, narrativeIds[], curatorId</td></tr>
+<tr><td><code>Tag</code></td><td>slug, label, category, usageCount</td></tr>
+<tr><td><code>User</code></td><td>id, name, role, email, status, lastLogin</td></tr>
+<tr><td><code>Organization</code></td><td>id, name, type, contactRef, roleInEcosystem</td></tr>
+</table>
+
+<h3>نمونه رکورد کامل روایت (JSON)</h3>
+<div class="code">{
+  <span class="k">"id"</span>: <span class="s">"NAR-1404-000123"</span>,
+  <span class="k">"title"</span>: <span class="s">"خاطره‌ی مادر شهید از روز اعزام"</span>,
+  <span class="k">"summary"</span>: <span class="s">"روایت مادر شهید از لحظه‌ی اعزام فرزندش..."</span>,
+  <span class="k">"type"</span>: <span class="s">"oral"</span>,
+  <span class="k">"status"</span>: <span class="s">"published"</span>,
+  <span class="k">"accessLevel"</span>: <span class="s">"public"</span>,
+  <span class="k">"narratorId"</span>: <span class="s">"NARRATOR-1404-00056"</span>,
+  <span class="k">"subjectPersonIds"</span>: [<span class="s">"PER-1404-00012"</span>],
+  <span class="k">"locationId"</span>: <span class="s">"PL-KER-VADI"</span>,
+  <span class="k">"eventId"</span>: <span class="s">"EV-1360-07-15"</span>,
+  <span class="k">"recordDate"</span>: <span class="s">"1404-05-20"</span>,
+  <span class="k">"eventDate"</span>: <span class="s">"1360-07-15"</span>,
+  <span class="k">"confidence"</span>: <span class="s">0.85</span>,
+  <span class="k">"tags"</span>: [<span class="s">"خانواده"</span>, <span class="s">"اعزام"</span>, <span class="s">"کرمان"</span>],
+  <span class="k">"claims"</span>: [
+    {
+      <span class="k">"id"</span>: <span class="s">"CLAIM-1404-000456"</span>,
+      <span class="k">"claimText"</span>: <span class="s">"شهید در تاریخ ۱۵ مهر ۱۳۶۰ در کرمان حضور داشت"</span>,
+      <span class="k">"claimType"</span>: <span class="s">"time"</span>,
+      <span class="k">"status"</span>: <span class="s">"verified"</span>,
+      <span class="k">"confidence"</span>: <span class="s">0.75</span>,
+      <span class="k">"sourceIds"</span>: [<span class="s">"SRC-1404-00789"</span>]
+    }
+  ],
+  <span class="k">"mediaIds"</span>: [<span class="s">"MED-1404-00234"</span>],
+  <span class="k">"ecosystemRefs"</span>: {
+    <span class="k">"atlas"</span>: <span class="s">"PL-KER-VADI"</span>,
+    <span class="k">"shahidbank"</span>: <span class="s">"PER-1404-00012"</span>,
+    <span class="k">"calendar"</span>: <span class="s">"EV-1360-07-15"</span>
+  },
+  <span class="k">"version"</span>: 3,
+  <span class="k">"createdAt"</span>: <span class="s">"1404-05-20T08:30:00Z"</span>,
+  <span class="k">"updatedAt"</span>: <span class="s">"1404-08-12T10:30:00Z"</span>
+}</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ضمیمه ب: API کامل -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+
+<span class="appendix-marker" id="appendix-b">📎 ضمیمه ب — API کامل</span>
+
+<section class="card">
+<h2>ضمیمه ب: API کامل</h2>
+
+<h3>ب-۱. Narrative API</h3>
+<table>
+<tr><th>نقطه‌ی پایانی</th><th>روش</th><th>توضیح</th><th>پارامترها</th></tr>
+<tr><td><code>/v1/narratives</code></td><td>GET</td><td>فهرست روایت‌ها</td><td>page, limit, type, status, accessLevel, tag</td></tr>
+<tr><td><code>/v1/narratives/{id}</code></td><td>GET</td><td>پرونده‌ی کامل روایت</td><td>—</td></tr>
+<tr><td><code>/v1/narratives</code></td><td>POST</td><td>ثبت روایت جدید</td><td>body با فیلدهای الزامی</td></tr>
+<tr><td><code>/v1/narratives/{id}</code></td><td>PATCH</td><td>به‌روزرسانی روایت</td><td>partial body</td></tr>
+<tr><td><code>/v1/narratives/{id}/versions</code></td><td>GET</td><td>تاریخچه‌ی نسخه‌ها</td><td>—</td></tr>
+<tr><td><code>/v1/narratives/{id}/claims</code></td><td>GET</td><td>ادعاهای روایت</td><td>status, type</td></tr>
+<tr><td><code>/v1/narratives/{id}/media</code></td><td>GET</td><td>رسانه‌های روایت</td><td>type</td></tr>
+</table>
+
+<h3>ب-۲. Narrator API</h3>
+<table>
+<tr><th>نقطه‌ی پایانی</th><th>روش</th><th>توضیح</th></tr>
+<tr><td><code>/v1/narrators</code></td><td>GET</td><td>فهرست راویان</td></tr>
+<tr><td><code>/v1/narrators/{id}</code></td><td>GET</td><td>پرونده‌ی راوی</td></tr>
+<tr><td><code>/v1/narrators/{id}/narratives</code></td><td>GET</td><td>روایت‌های راوی</td></tr>
+</table>
+
+<h3>ب-۳. Claim API</h3>
+<table>
+<tr><th>نقطه‌ی پایانی</th><th>روش</th><th>توضیح</th></tr>
+<tr><td><code>/v1/claims</code></td><td>GET</td><td>فهرست ادعاها</td></tr>
+<tr><td><code>/v1/claims/{id}</code></td><td>GET</td><td>جزئیات ادعا</td></tr>
+<tr><td><code>/v1/claims/{id}/evidence</code></td><td>GET</td><td>شواهد ادعا</td></tr>
+<tr><td><code>/v1/claims/{id}/review</code></td><td>POST</td><td>ثبت بررسی</td></tr>
+</table>
+
+<h3>ب-۴. Source API</h3>
+<table>
+<tr><th>نقطه‌ی پایانی</th><th>روش</th><th>توضیح</th></tr>
+<tr><td><code>/v1/sources</code></td><td>GET</td><td>فهرست منابع</td></tr>
+<tr><td><code>/v1/sources/{id}</code></td><td>GET</td><td>جزئیات منبع</td></tr>
+</table>
+
+<h3>ب-۵. اتصال اکوسیستم</h3>
+<table>
+<tr><th>نقطه‌ی پایانی</th><th>روش</th><th>توضیح</th></tr>
+<tr><td><code>/v1/narratives/by-person/{personId}</code></td><td>GET</td><td>روایت‌های یک شخص (از بانک شهدا)</td></tr>
+<tr><td><code>/v1/narratives/by-place/{locationId}</code></td><td>GET</td><td>روایت‌های یک مکان (از اطلس)</td></tr>
+<tr><td><code>/v1/narratives/by-event/{eventId}</code></td><td>GET</td><td>روایت‌های یک رویداد (از تقویم)</td></tr>
+</table>
+
+<h3>ب-۶. Search API</h3>
+<table>
+<tr><th>نقطه‌ی پایانی</th><th>روش</th><th>توضیح</th></tr>
+<tr><td><code>/v1/search</code></td><td>GET</td><td>جست‌وجوی ترکیبی</td></tr>
+<tr><td><code>/v1/search/suggest</code></td><td>GET</td><td>پیشنهاد جست‌وجو</td></tr>
+</table>
+
+<h3>ب-۷. Schema API</h3>
+<table>
+<tr><th>نقطه‌ی پایانی</th><th>روش</th><th>توضیح</th></tr>
+<tr><td><code>/v1/schema</code></td><td>GET</td><td>دریافت schema نسخه‌دار</td></tr>
+<tr><td><code>/v1/schema/{entity}</code></td><td>GET</td><td>schema یک موجودیت خاص</td></tr>
+</table>
+
+<h3>ب-۸. استانداردهای پاسخ</h3>
+<div class="code"><span class="c">// پاسخ موفق</span>
+{
+  <span class="k">"status"</span>: <span class="s">"ok"</span>,
+  <span class="k">"data"</span>: { ... },
+  <span class="k">"meta"</span>: {
+    <span class="k">"page"</span>: 1,
+    <span class="k">"limit"</span>: 20,
+    <span class="k">"total"</span>: 543
+  }
+}
+
+<span class="c">// پاسخ خطا</span>
+{
+  <span class="k">"status"</span>: <span class="s">"error"</span>,
+  <span class="k">"code"</span>: <span class="s">"NOT_FOUND"</span>,
+  <span class="k">"message"</span>: <span class="s">"روایت مورد نظر یافت نشد"</span>
+}</div>
+
+<h3>ب-۹. کدهای خطا</h3>
+<table>
+<tr><th>کد</th><th>HTTP</th><th>معنا</th></tr>
+<tr><td>BAD_REQUEST</td><td>400</td><td>درخواست نامعتبر</td></tr>
+<tr><td>UNAUTHORIZED</td><td>401</td><td>نیاز به احراز هویت</td></tr>
+<tr><td>FORBIDDEN</td><td>403</td><td>دسترسی مجاز نیست</td></tr>
+<tr><td>NOT_FOUND</td><td>404</td><td>منبع یافت نشد</td></tr>
+<tr><td>CONFLICT</td><td>409</td><td>تعارض داده</td></tr>
+<tr><td>RATE_LIMIT</td><td>429</td><td>تعداد درخواست زیاد</td></tr>
+<tr><td>SERVER_ERROR</td><td>500</td><td>خطای سرور</td></tr>
+</table>
+
+<h3>ب-۱۰. نسخه‌بندی و احراز هویت</h3>
+<ul>
+<li>نسخه‌بندی در URL: <code>/v1/</code>، <code>/v2/</code></li>
+<li>احراز هویت با <code>Authorization: Bearer &lt;token&gt;</code></li>
+<li>OAuth 2.0 برای پنل کاربری</li>
+<li>API Key برای سرویس‌های سازمانی</li>
+<li>Rate limit بر اساس نقش کاربر</li>
+</ul>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ضمیمه پ: KPI -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+
+<span class="appendix-marker" id="appendix-c">📎 ضمیمه پ — شاخص‌های کلیدی عملکرد</span>
+
+<section class="card">
+<h2>ضمیمه پ: شاخص‌های کلیدی عملکرد (KPI)</h2>
+
+<h3>پ-۱. شاخص‌های پوشش</h3>
+<table>
+<tr><th>شاخص</th><th>هدف سال اول</th><th>هدف سال دوم</th><th>هدف سال سوم</th></tr>
+<tr><td>تعداد روایت ثبت‌شده</td><td>۵٬۰۰۰</td><td>۲۵٬۰۰۰</td><td>۱۰۰٬۰۰۰</td></tr>
+<tr><td>تعداد راویان فعال</td><td>۱٬۰۰۰</td><td>۵٬۰۰۰</td><td>۲۰٬۰۰۰</td></tr>
+<tr><td>تعداد اشخاص پوشش‌داده‌شده</td><td>۲٬۰۰۰</td><td>۱۰٬۰۰۰</td><td>۵۰٬۰۰۰</td></tr>
+<tr><td>تعداد مکان‌های پوشش‌داده‌شده</td><td>۵۰۰</td><td>۲٬۵۰۰</td><td>۱۰٬۰۰۰</td></tr>
+<tr><td>تعداد موضوعات پوشش‌داده‌شده</td><td>۵۰</td><td>۲۰۰</td><td>۵۰۰</td></tr>
+</table>
+
+<h3>پ-۲. شاخص‌های کیفیت</h3>
+<table>
+<tr><th>شاخص</th><th>هدف</th></tr>
+<tr><td>درصد روایت‌های دارای منبع</td><td>بالای ۹۰٪</td></tr>
+<tr><td>درصد روایت‌های دارای فراداده‌ی کامل</td><td>بالای ۸۵٪</td></tr>
+<tr><td>درصد ادعاهای بررسی‌شده</td><td>بالای ۷۰٪</td></tr>
+<tr><td>درصد روایت‌های دارای نسخه‌ی اصلی حفظ‌شده</td><td>۱۰۰٪</td></tr>
+<tr><td>میانگین سطح اطمینان روایت‌ها</td><td>بالای ۰.۷</td></tr>
+</table>
+
+<h3>پ-۳. شاخص‌های دسترسی</h3>
+<table>
+<tr><th>شاخص</th><th>هدف</th></tr>
+<tr><td>بازدید ماهانه</td><td>۱۰۰٬۰۰۰</td></tr>
+<tr><td>نرخ یافتن روایت هدف در کمتر از ۳ گام</td><td>بالای ۸۰٪</td></tr>
+<tr><td>میانگین زمان ماندن روی صفحه‌ی روایت</td><td>بالای ۳ دقیقه</td></tr>
+<tr><td>تعداد استفاده‌های پژوهشی ثبت‌شده</td><td>۵۰۰ سال اول</td></tr>
+</table>
+
+<h3>پ-۴. شاخص‌های مشارکت</h3>
+<table>
+<tr><th>شاخص</th><th>هدف</th></tr>
+<tr><td>تعداد مشارکت‌کنندگان معتبر</td><td>۵۰۰</td></tr>
+<tr><td>تعداد روایت‌های تکمیل‌شده توسط مشارکت‌کنندگان</td><td>۱٬۰۰۰</td></tr>
+<tr><td>نرخ تأیید پیشنهادها</td><td>بالای ۶۰٪</td></tr>
+<tr><td>زمان چرخه‌ی بررسی</td><td>کمتر از ۱۴ روز</td></tr>
+</table>
+
+<h3>پ-۵. شاخص‌های ارتباط اکوسیستمی</h3>
+<table>
+<tr><th>شاخص</th><th>هدف</th></tr>
+<tr><td>درصد روایت‌های متصل به بانک شهدا</td><td>بالای ۷۰٪</td></tr>
+<tr><td>درصد روایت‌های متصل به اطلس</td><td>بالای ۶۰٪</td></tr>
+<tr><td>درصد روایت‌های متصل به تقویم</td><td>بالای ۵۰٪</td></tr>
+<tr><td>تعداد پروژه‌های متصل از طریق API</td><td>۴+</td></tr>
+</table>
+
+<h3>پ-۶. شاخص‌های فنی</h3>
+<table>
+<tr><th>شاخص</th><th>هدف</th></tr>
+<tr><td>Uptime</td><td>۹۹.۵٪</td></tr>
+<tr><td>زمان پاسخ API</td><td>کمتر از ۵۰۰ms</td></tr>
+<tr><td>زمان بارگذاری صفحه</td><td>کمتر از ۳ ثانیه</td></tr>
+<tr><td>نرخ پشتیبان‌گیری موفق</td><td>۱۰۰٪</td></tr>
+<tr><td>رخداد امنیتی حل‌شده</td><td>۱۰۰٪ در کمتر از ۴۸ ساعت</td></tr>
+</table>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ضمیمه ت: UX و هویت بصری -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+
+<span class="appendix-marker" id="appendix-d">📎 ضمیمه ت — UX و هویت بصری</span>
+
+<section class="card">
+<h2>ضمیمه ت: UX و هویت بصری</h2>
+
+<h3>ت-۱. پالت رنگی پیشنهادی</h3>
+<table>
+<tr><th>نقش</th><th>رنگ</th><th>کد</th></tr>
+<tr><td>رنگ اصلی (برند)</td><td>بنفش خاکی تیره</td><td><code>#4A3560</code></td></tr>
+<tr><td>رنگ ثانویه</td><td>بنفش روشن‌تر</td><td><code>#6B4A7A</code></td></tr>
+<tr><td>رنگ مکمل</td><td>زعفرانی ملایم</td><td><code>#C4903A</code></td></tr>
+<tr><td>متن اصلی</td><td>مرکب کهنه</td><td><code>#2A2419</code></td></tr>
+<tr><td>متن ثانویه</td><td>خاکستری خاکی</td><td><code>#6B6250</code></td></tr>
+<tr><td>پس‌زمینه</td><td>کرم روشن</td><td><code>#F5EFE2</code></td></tr>
+<tr><td>مرز و خطوط</td><td>مرز نرم</td><td><code>#D4C8B0</code></td></tr>
+</table>
+
+<h3>ت-۲. تایپوگرافی</h3>
+<ul>
+<li>فونت اصلی: <strong>وزیرمتن</strong> یا <strong>ایران‌سنس</strong></li>
+<li>وزن‌ها: ۴۰۰ (متن)، ۶۰۰ (تیتر کوچک)، ۷۰۰ (تیتر متوسط)، ۸۰۰ (تیتر بزرگ)، ۹۰۰ (hero)</li>
+<li>ارتفاع خط: ۱.۸ برای متن، ۱.۲ برای تیتر</li>
+<li>مقیاس: ۱۲ / ۱۴ / ۱۶ / ۲۰ / ۲۶ / ۳۴ / ۴۸ / ۶۴</li>
+</ul>
+
+<h3>ت-۳. اصول طراحی</h3>
+<div class="grid">
+<div class="mini"><h3>آرامش بصری</h3><p>فضای سفید کافی، بدون شلوغی.</p></div>
+<div class="mini"><h3>خوانایی</h3><p>ارتفاع خط باز، فاصله‌ی مناسب.</p></div>
+<div class="mini"><h3>مستند بودن</h3><p>زمینه، منبع، وضعیت اعتبار همیشه دیده می‌شود.</p></div>
+<div class="mini"><h3>دسترس‌پذیری</h3><p>کنتراست کافی، صفحه‌کلید، متن جانشین.</p></div>
+<div class="mini"><h3>ریسپانسیو</h3><p>موبایل، تبلت، دسکتاپ.</p></div>
+<div class="mini"><h3>بدون کودک‌گرایی</h3><p>بدون افکت اضافه یا رنگ‌های تند.</p></div>
+</div>
+
+<h3>ت-۴. Wireframe صفحه‌ی نخست</h3>
+<div class="tree">┌──────────────────────────────────────────────┐
+│ HEADER — لوگو + نام + جست‌وجو + منو          │
+├──────────────────────────────────────────────┤
+│ HERO                                          │
+│  ┌────────────────────────────────────────┐  │
+│  │  معرفی کوتاه + جست‌وجوی اصلی           │  │
+│  └────────────────────────────────────────┘  │
+├──────────────────────────────────────────────┤
+│ روایت‌های منتخب (۳-۴ کارت)                    │
+├──────────────────────────────────────────────┤
+│ روایت‌های تازه (لیست فشرده)                   │
+├──────────────────────────────────────────────┤
+│ راویان (گرید آواتار)                         │
+├──────────────────────────────────────────────┤
+│ موضوعات (چیپ‌های موضوعی)                     │
+├──────────────────────────────────────────────┤
+│ خط زمانی روایت‌ها                            │
+├──────────────────────────────────────────────┤
+│ پیوند با اکوسیستم                            │
+├──────────────────────────────────────────────┤
+│ FOOTER                                        │
+└──────────────────────────────────────────────┘</div>
+
+<h3>ت-۵. Wireframe صفحه‌ی روایت</h3>
+<div class="tree">┌──────────────────────────────────────────────┐
+│ Breadcrumb: خانه › روایت‌ها › ...             │
+├──────────────────────────────────────────────┤
+│ سربرگ:                                       │
+│  - عنوان روایت (h1)                          │
+│  - بج نوع روایت + بج وضعیت اعتبار + شناسه    │
+│  - خلاصه                                     │
+├──────────────────────────────────────────────┤
+│ رسانه‌ی اصلی (صوت/فیلم/تصویر)                 │
+├──────────────────────────────────────────────┤
+│ متن روایت                                    │
+├──────────────────────────────────────────────┤
+│ ┌──────────────┬───────────────┐            │
+│ │ ستون اصلی     │ ستون کنار      │            │
+│ │ - ادعاها     │ - راوی         │            │
+│ │ - منابع      │ - زمان         │            │
+│ │ - نسخه‌ها    │ - مکان         │            │
+│ │              │ - اشخاص مرتبط  │            │
+│ │              │ - روایت‌های    │            │
+│ │              │   مرتبط        │            │
+│ └──────────────┴───────────────┘            │
+├──────────────────────────────────────────────┤
+│ نوار اقدام: مشارکت، گزارش خطا، اشتراک، چاپ   │
+└──────────────────────────────────────────────┘</div>
+
+<h3>ت-۶. Wireframe صفحه‌ی راوی</h3>
+<div class="tree">┌──────────────────────────────────────────────┐
+│ سربرگ راوی: نام + نسبت + معرفی               │
+├──────────────────────────────────────────────┤
+│ روایت‌های ثبت‌شده (گرید کارت)                 │
+├──────────────────────────────────────────────┤
+│ موضوعات مرتبط                                 │
+├──────────────────────────────────────────────┤
+│ مکان‌های مرتبط                                │
+├──────────────────────────────────────────────┤
+│ زمان‌های مرتبط                                │
+└──────────────────────────────────────────────┘</div>
+
+<h3>ت-۷. اصول دسترس‌پذیری</h3>
+<ul>
+<li>کنتراست حداقل ۴.۵:۱ برای متن اصلی</li>
+<li>پیمایش کامل با صفحه‌کلید</li>
+<li>متن جانشین برای همه‌ی تصاویر</li>
+<li>پیاده‌سازی متنی برای صوت و ویدئو</li>
+<li>سازگاری با صفحه‌خوان</li>
+<li>پشتیبانی از حالت چاپ</li>
+<li>پشتیبانی از prefers-reduced-motion</li>
+</ul>
+</section>
+
+<!-- پایان -->
+
+<footer class="footer">
+بانک روایت | طرح جامع، معماری محصول و نقشه راه توسعه | نسخه ۱.۰ — سند مادر محصول | با ۴ ضمیمه‌ی عملیاتی
+</footer>
 
 <a class="back-top" href="#top" title="بازگشت به بالا" aria-label="بازگشت به بالا">↑</a>
-<footer class="footer">بانک روایت | طرح جامع مستقل در مجموعه شهیدپورتال</footer>
+
 </div>
 <script src="../assets/js/sidebar.js?v=20261008-5"></script>
-</body></html>
+</body>
+</html>
