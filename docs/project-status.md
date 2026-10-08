@@ -258,3 +258,11 @@
 این طرح به منوی مرکزی با شناسه `services-welfare` و شماره `۰۲-۱-۸` اضافه شد و در سبد طرح‌های `index.html` نیز قرار گرفت.
 
 پس از ایجاد، صفحه از GitHub دوباره بررسی شد: ۳۴ بخش `section`، دقیقاً یک `page-nav`، یک `sidebar.css`، یک `sidebar.js`، یک `page-nav.css` و صفر لینک داخلیِ بدون مقصد. وضعیت طرح: **ایده / تدوین اولیه — آماده بررسی تخصصی دامنه خدمات و طراحی MVP.**
+
+
+### ۱۳. اصلاح Workflow انتشار GitHub Pages
+Workflow فایل `.github/workflows/pages.yml` بررسی شد. ساختار انتشار با `push` روی شاخه `main` و `workflow_dispatch` حفظ شد، اما مرحله `configure-pages` با `enablement: true` تنظیم شد تا در صورت نیاز Pages را برای انتشار از طریق Workflow فعال کند. سطح دسترسی‌های `contents: read`، `pages: write` و `id-token: write` هم در سطح Job صریح شد و محدودیت زمانی ۱۰ دقیقه‌ای برای Job انتشار اضافه شد.
+
+Commit اصلاح Workflow: `62c8cbc14d55c983d609f9a6455401a04a6403cc`.
+
+وضعیت: **Workflow اصلاح شد؛ اجرای واقعی GitHub Actions باید از سمت سرویس GitHub تأیید شود.**
