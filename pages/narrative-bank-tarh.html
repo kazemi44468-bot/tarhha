@@ -6,19 +6,19 @@
 <title>بانک روایت | طرح جامع، معماری محصول و نقشه راه توسعه</title>
 <style>
 @font-face{font-family:Vazir;src:url('../assets/fonts/Vazirmatn-Regular.woff2')}@font-face{font-family:Vazir;src:url('../assets/fonts/Vazirmatn-Bold.woff2');font-weight:700}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f4f5f8;color:#172235;font-family:Vazir;line-height:2}.wrap{max-width:1240px;margin:auto;padding:28px 20px 80px}
-.hero{position:relative;background:linear-gradient(135deg,#2c1f3d 0%,#4a3560 55%,#6b4a7a 100%);color:#fff;border-radius:24px;padding:48px 44px;margin-bottom:22px;box-shadow:0 22px 60px #2c1f3d33;overflow:hidden}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f7f8fa;color:#202a36;font-family:Vazir;line-height:2}.wrap{max-width:1240px;margin:auto;padding:28px 20px 80px}
+.hero{position:relative;background:linear-gradient(135deg,#123b5d 0%,#1f5b78 55%,#3d7f91 100%);color:#fff;border-radius:24px;padding:48px 44px;margin-bottom:22px;box-shadow:0 22px 60px #123b5d33;overflow:hidden}
 .hero::after{content:"";position:absolute;left:-80px;bottom:-100px;width:280px;height:280px;border:1px solid #ffffff1c;border-radius:50%;box-shadow:0 0 0 40px #ffffff08,0 0 0 80px #ffffff05}
 .hero h1{margin:0 0 10px;font-size:36px;letter-spacing:-.4px;position:relative;z-index:1}
 .hero p{margin:6px 0;opacity:.94;font-size:14.5px;max-width:900px;position:relative;z-index:1}
 .hero .badge{display:inline-block;background:#ffffff1c;border:1px solid #ffffff44;border-radius:999px;padding:4px 14px;margin-top:16px;font-size:12.5px;position:relative;z-index:1}
-.nav{position:sticky;top:8px;z-index:5;background:#fffffff2;backdrop-filter:blur(14px);border:1px solid #e4ddec;border-radius:15px;padding:8px 12px;margin-bottom:20px;display:flex;flex-wrap:wrap;gap:3px;box-shadow:0 6px 18px #2c1f3d0a}
-.nav a{color:#5a3f7a;text-decoration:none;font-size:12px;padding:3px 9px;white-space:nowrap;border-radius:6px;transition:.2s}
-.nav a:hover{background:#f2eefa;color:#4a3560}
-.card{background:#fff;border:1px solid #e6e1ec;border-radius:20px;padding:30px 32px;margin:18px 0;box-shadow:0 8px 25px #2c1f3d08}
-.card h2{margin:0 0 16px;color:#4a3560;font-size:23px;letter-spacing:-.3px;padding-bottom:12px;border-bottom:2px solid #f2eefa}
-.card h3{color:#5a3f7a;font-size:16.5px;margin:22px 0 10px}
-.card h4{color:#6b4a7a;font-size:14.5px;margin:18px 0 8px}
+.nav{position:sticky;top:8px;z-index:5;background:#fffffff2;backdrop-filter:blur(14px);border:1px solid #dbe5ea;border-radius:15px;padding:8px 12px;margin-bottom:20px;display:flex;flex-wrap:wrap;gap:3px;box-shadow:0 6px 18px #123b5d0a}
+.nav a{color:#1f5b78;text-decoration:none;font-size:12px;padding:3px 9px;white-space:nowrap;border-radius:6px;transition:.2s}
+.nav a:hover{background:#eaf3f6;color:#123b5d}
+.card{background:#fff;border:1px solid #dfe7eb;border-radius:20px;padding:30px 32px;margin:18px 0;box-shadow:0 8px 25px #123b5d08}
+.card h2{margin:0 0 16px;color:#174f69;font-size:23px;letter-spacing:-.3px;padding-bottom:12px;border-bottom:2px solid #eaf3f6}
+.card h3{color:#23677f;font-size:16.5px;margin:22px 0 10px}
+.card h4{color:#3d7f91;font-size:14.5px;margin:18px 0 8px}
 .card p{margin:8px 0;font-size:14px;line-height:1.95;color:#2c3a48}
 .card ul{padding-right:22px;margin:10px 0}
 .card ul li{font-size:13.5px;line-height:1.9;margin-bottom:4px;color:#2c3a48}
@@ -27,38 +27,40 @@
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}
 .grid.two{grid-template-columns:repeat(2,1fr)}
 .grid.four{grid-template-columns:repeat(4,1fr)}
-.mini{background:#faf8fd;border:1px solid #e6e1ee;border-radius:14px;padding:18px;transition:.25s}
-.mini:hover{border-color:#8a6ba0;transform:translateY(-2px)}
-.mini h3{margin:0 0 8px;font-size:14.5px;color:#4a3560}
-.mini h4{margin:0 0 6px;font-size:13.5px;color:#4a3560}
+.mini{background:#f7fafb;border:1px solid #dfe7eb;border-radius:14px;padding:18px;transition:.25s}
+.mini:hover{border-color:#7aa9b8;transform:translateY(-2px)}
+.mini h3{margin:0 0 8px;font-size:14.5px;color:#174f69}
+.mini h4{margin:0 0 6px;font-size:13.5px;color:#174f69}
 .mini p{margin:0;font-size:12.5px;line-height:1.85;color:#5b6d79}
-.mini .num{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;border-radius:9px;background:#f2eefa;color:#5a3f7a;font-weight:800;font-size:12px;margin-bottom:10px}
-.quote{border-right:4px solid #8a6ba0;background:linear-gradient(90deg,#f7f3fa,transparent);padding:16px 20px;border-radius:0 12px 12px 0;margin:18px 0;font-size:14px;line-height:1.95;color:#3a2b4a}
-.quote strong{color:#2c1f3d}
+.mini .num{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;border-radius:9px;background:#eaf3f6;color:#1f5b78;font-weight:800;font-size:12px;margin-bottom:10px}
+.quote{border-right:4px solid #3d7f91;background:linear-gradient(90deg,#eef6f8,transparent);padding:16px 20px;border-radius:0 12px 12px 0;margin:18px 0;font-size:14px;line-height:1.95;color:#294454}
+.quote strong{color:#123b5d}
 .flow{display:grid;grid-template-columns:repeat(6,1fr);gap:9px;margin:20px 0}
 .flow.five{grid-template-columns:repeat(5,1fr)}
 .flow.four{grid-template-columns:repeat(4,1fr)}
 .flow.seven{grid-template-columns:repeat(7,1fr)}
-.flow div{padding:14px 8px;text-align:center;border-radius:12px;background:linear-gradient(135deg,#f2eefa,#faf8fd);border:1px solid #e0d8ec;color:#4a3560;font-weight:700;font-size:12.5px;line-height:1.5}
-.flow div.hi{background:linear-gradient(135deg,#4a3560,#6b4a7a);color:#fff;border-color:transparent;box-shadow:0 4px 12px #4a356033}
+.flow div{padding:14px 8px;text-align:center;border-radius:12px;background:linear-gradient(135deg,#eaf3f6,#f7fafb);border:1px solid #d6e4e9;color:#1f5b78;font-weight:700;font-size:12.5px;line-height:1.5}
+.flow div.hi{background:linear-gradient(135deg,#1f5b78,#3d7f91);color:#fff;border-color:transparent;box-shadow:0 4px 12px #1f5b7833}
 table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13px}
 th,td{border:1px solid #e2dce8;padding:10px 12px;text-align:right;vertical-align:top;line-height:1.75}
-th{background:#f2eefa;color:#4a3560;font-weight:700;font-size:12.5px}
-tr:nth-child(even) td{background:#faf8fd}
+th{background:#eaf3f6;color:#174f69;font-weight:700;font-size:12.5px}
+tr:nth-child(even) td{background:#f7fafb}
 .tree{background:#faf8fd;border:1px solid #e6e1ee;border-radius:14px;padding:22px 26px;font-family:"SF Mono","Consolas",monospace;font-size:12px;direction:ltr;text-align:left;line-height:2;color:#3a2b4a;overflow-x:auto;white-space:pre}
-.tag{display:inline-block;background:#f2eefa;color:#4a3560;border-radius:18px;padding:5px 12px;font-size:12px;margin:3px;font-weight:600}
-.code{background:#2c1f3d;color:#e8ddf5;border-radius:14px;padding:20px 24px;font-family:"SF Mono","Consolas",monospace;font-size:12.5px;direction:ltr;text-align:left;line-height:1.9;overflow-x:auto;white-space:pre;margin:14px 0}
+.tag{display:inline-block;background:#eaf3f6;color:#1f5b78;border-radius:18px;padding:5px 12px;font-size:12px;margin:3px;font-weight:600}
+.code{background:#eaf3f6;border-radius:5px;padding:1px 6px;font-family:"SF Mono","Consolas",monospace;font-size:.9em;color:#174f69;direction:ltr;display:inline-block}
 .code .k{color:#c8a8e8}.code .s{color:#a8d8a8}.code .c{color:#8a7a9a}
 .footer{text-align:center;color:#7b8995;padding:30px 20px 10px;font-size:12px}
-.back-top{position:fixed;left:20px;bottom:20px;z-index:20;width:44px;height:44px;border:1px solid #e0dbe8;border-radius:12px;background:#ffffffee;color:#5a3f7a;text-decoration:none;display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 8px 22px #2c1f3d18;transition:.2s}
-.back-top:hover{transform:translateY(-3px);background:#f2eefa}
+.back-top{position:fixed;left:20px;bottom:20px;z-index:20;width:44px;height:44px;border:1px solid #d7e2e7;border-radius:12px;background:#ffffffee;color:#1f5b78;text-decoration:none;display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 8px 22px #123b5d18;transition:.2s}
+.back-top:hover{transform:translateY(-3px);background:#eaf3f6}
 code{background:#f2eefa;border-radius:5px;padding:1px 6px;font-family:"SF Mono","Consolas",monospace;font-size:.9em;color:#4a3560;direction:ltr;display:inline-block}
 @media(max-width:800px){.grid,.grid.two,.grid.four{grid-template-columns:1fr}.flow,.flow.five,.flow.four,.flow.seven{grid-template-columns:repeat(2,1fr)}.hero{padding:32px 24px}.hero h1{font-size:26px}.card{padding:22px 18px}.nav{position:static}table{font-size:12px}}
-.appendix-marker{display:inline-block;background:linear-gradient(135deg,#4a3560,#6b4a7a);color:#fff;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700;margin:20px 0 10px;letter-spacing:.5px}
+.appendix-marker{display:inline-block;background:linear-gradient(135deg,#1f5b78,#3d7f91);color:#fff;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700;margin:20px 0 10px;letter-spacing:.5px}
 </style>
 </head>
 <body id="top" data-sidebar-page="narrative-bank">
 <div class="wrap">
+
+
 
 <section class="hero">
 <h1>بانک روایت</h1>
@@ -153,7 +155,7 @@ code{background:#f2eefa;border-radius:5px;padding:1px 6px;font-family:"SF Mono",
 <tr><td>تفکیک راوی از شخص</td><td>راوی، شخص مورد روایت و شاهد موجودیت‌های مستقل‌اند</td><td>جلوگیری از اختلاط نقش‌ها</td></tr>
 <tr><td>ادعا (Claim)</td><td>هر ادعای مهم، موجودیت مستقل با وضعیت اعتبار است</td><td>اعتبارسنجی جزئی و دقیق</td></tr>
 <tr><td>حفظ اختلاف</td><td>روایت‌های متعارض پنهان نمی‌شوند</td><td>صداقت تاریخی و پژوهشی</td></tr>
-<tr><td>پیوند اکوسیستمی</td><td>اتصال از طریق شناسه‌ی پایدار و API، نه تکثیر داده</td><td>یکپارچگی با اطلس، بانک شهدا، تقویم</td></tr>
+<tr><td>پیوند اکوسیستمی</td><td>اتصال از طریق شناسه‌ی پایدار و API، نه تکثیر داده</td><td>یکپارچگی با اطلس، شهیدبانک، تقویم</td></tr>
 <tr><td>حفظ متن اصلی</td><td>فایل و متن اصلی هرگز جایگزین یا ویرایش نمی‌شود</td><td>امکان ردیابی و بازبینی</td></tr>
 </table>
 </section>
@@ -1110,7 +1112,7 @@ Media / Storage</div>
 <table>
 <tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
 <tr><td>id</td><td>uuid</td><td>PK</td><td></td></tr>
-<tr><td>personId</td><td>string</td><td>FK</td><td>ارجاع به Person در بانک شهدا (اختیاری)</td></tr>
+<tr><td>personId</td><td>string</td><td>FK</td><td>ارجاع به Person در شهیدبانک (اختیاری)</td></tr>
 <tr><td>fullName</td><td>string</td><td></td><td>نام کامل</td></tr>
 <tr><td>relationToSubject</td><td>string</td><td></td><td>نسبت با موضوع</td></tr>
 <tr><td>ageAtNarration</td><td>string</td><td></td><td>سن یا بازه‌ی سنی</td></tr>
@@ -1126,7 +1128,7 @@ Media / Storage</div>
 <h3>الف-۳. Person (شخص)</h3>
 <table>
 <tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
-<tr><td>id</td><td>string</td><td>PK</td><td>ارجاع به بانک شهدا</td></tr>
+<tr><td>id</td><td>string</td><td>PK</td><td>ارجاع به شهیدبانک</td></tr>
 <tr><td>externalRef</td><td>string</td><td></td><td>شناسه در سامانه‌ی مرجع</td></tr>
 <tr><td>fullName</td><td>string</td><td></td><td>نام</td></tr>
 <tr><td>roleInNarrative</td><td>enum</td><td></td><td>subject / witness / narrator / participant</td></tr>
@@ -1294,7 +1296,7 @@ Media / Storage</div>
 <h3>ب-۵. اتصال اکوسیستم</h3>
 <table>
 <tr><th>نقطه‌ی پایانی</th><th>روش</th><th>توضیح</th></tr>
-<tr><td><code>/v1/narratives/by-person/{personId}</code></td><td>GET</td><td>روایت‌های یک شخص (از بانک شهدا)</td></tr>
+<tr><td><code>/v1/narratives/by-person/{personId}</code></td><td>GET</td><td>روایت‌های یک شخص (از شهیدبانک)</td></tr>
 <tr><td><code>/v1/narratives/by-place/{locationId}</code></td><td>GET</td><td>روایت‌های یک مکان (از اطلس)</td></tr>
 <tr><td><code>/v1/narratives/by-event/{eventId}</code></td><td>GET</td><td>روایت‌های یک رویداد (از تقویم)</td></tr>
 </table>
@@ -1404,7 +1406,7 @@ Media / Storage</div>
 <h3>پ-۵. شاخص‌های ارتباط اکوسیستمی</h3>
 <table>
 <tr><th>شاخص</th><th>هدف</th></tr>
-<tr><td>درصد روایت‌های متصل به بانک شهدا</td><td>بالای ۷۰٪</td></tr>
+<tr><td>درصد روایت‌های متصل به شهیدبانک</td><td>بالای ۷۰٪</td></tr>
 <tr><td>درصد روایت‌های متصل به اطلس</td><td>بالای ۶۰٪</td></tr>
 <tr><td>درصد روایت‌های متصل به تقویم</td><td>بالای ۵۰٪</td></tr>
 <tr><td>تعداد پروژه‌های متصل از طریق API</td><td>۴+</td></tr>
@@ -1538,10 +1540,11 @@ Media / Storage</div>
 <!-- پایان -->
 
 <footer class="footer">
-بانک روایت | طرح جامع، معماری محصول و نقشه راه توسعه | نسخه ۱.۰ — سند مادر محصول | با ۴ ضمیمه‌ی عملیاتی
+بانک روایت | طرح جامع، معماری محصول و نقشه راه توسعه | نسخه ۱.۰ — سند مادر محصول | با ۶ ضمیمه‌ی عملیاتی
 </footer>
 
 <a class="back-top" href="#top" title="بازگشت به بالا" aria-label="بازگشت به بالا">↑</a>
+
 
 </div>
 <script src="../assets/js/sidebar.js?v=20261008-5"></script>
