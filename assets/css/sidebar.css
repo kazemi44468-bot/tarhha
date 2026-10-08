@@ -22,3 +22,14 @@
 .sp-sidebar.menu-expanded .sp-item-wrap>.sp-item{min-width:0}.sp-sidebar.menu-expanded .sp-item-wrap>.sp-sub-toggle{margin-left:2px}.sp-sidebar.menu-expanded .sp-sub .sp-item-wrap>.sp-sub-toggle{flex-basis:30px;width:30px;height:32px}.sp-sidebar.menu-expanded .sp-sub .sp-item-wrap>.sp-item{flex:1;min-width:0}.sp-sidebar.menu-expanded .sp-sub .sp-item-wrap>.sp-sub-toggle .sp-branch-icon{width:14px;height:14px}
 .sp-sidebar:not(.menu-expanded) .sp-item-wrap>.sp-sub-toggle{position:absolute;inset:1px 0 auto auto;width:30px;height:34px;z-index:3;border-radius:10px}.sp-sidebar:not(.menu-expanded) .sp-item-wrap>.sp-item{pointer-events:auto}.sp-sidebar:not(.menu-expanded) .sp-item-wrap>.sp-item .sp-icon{opacity:0}.sp-sidebar:not(.menu-expanded) .sp-group>.sp-sub.is-open{opacity:1;visibility:visible;pointer-events:auto;transform:none}.sp-sidebar:not(.menu-expanded) .sp-group:hover>.sp-sub,.sp-sidebar:not(.menu-expanded) .sp-group:focus-within>.sp-sub{z-index:8}
 @media(max-width:850px){.sp-sidebar.menu-collapsed .sp-item-wrap>.sp-sub-toggle{position:relative;inset:auto;flex:0 0 34px;width:34px;height:36px}.sp-sidebar.menu-collapsed .sp-item-wrap>.sp-item{pointer-events:auto}.sp-sidebar.menu-collapsed .sp-item-wrap>.sp-sub-toggle .sp-branch-icon{width:15px;height:15px}.sp-sidebar.menu-collapsed .sp-sub .sp-item-wrap>.sp-sub-toggle{flex-basis:30px;width:30px}}
+
+
+/* اصلاح ریشه‌ای: ارتفاع محدود پنل و پیمایش واقعی فهرست بلند */
+.sp-sidebar{height:calc(100vh - 36px);max-height:calc(100vh - 36px);min-height:0}
+.sp-nav{flex:1 1 auto;min-height:0;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:rgba(23,107,103,.42) rgba(29,41,40,.06);scrollbar-gutter:stable}
+.sp-nav::-webkit-scrollbar{display:block;width:5px;height:5px}
+.sp-nav::-webkit-scrollbar-track{background:rgba(29,41,40,.05);border-radius:8px}
+.sp-nav::-webkit-scrollbar-thumb{background:rgba(23,107,103,.38);border-radius:8px}
+.sp-sidebar.menu-expanded .sp-sub.is-open,.sp-sidebar:not(.menu-expanded) .sp-group>.sp-sub.is-open{max-height:2000px}
+.sp-sidebar.menu-expanded .sp-sub{min-height:0}
+@media(max-width:850px){.sp-sidebar{height:100vh;max-height:100vh;min-height:100vh}.sp-nav{flex:1 1 auto;min-height:0;overflow-y:auto;scrollbar-width:thin;scrollbar-gutter:stable}.sp-nav::-webkit-scrollbar{display:block;width:5px}.sp-sidebar.menu-collapsed .sp-sub.is-open,.sp-sub.is-open{max-height:2000px}}
