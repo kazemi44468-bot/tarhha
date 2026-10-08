@@ -1,0 +1,1307 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>مرکز چندرسانه‌ای شهدا | طرح جامع، معماری و نقشه راه</title>
+<style>
+@font-face{font-family:Vazir;src:url('../assets/fonts/Vazirmatn-Regular.woff2')}@font-face{font-family:Vazir;src:url('../assets/fonts/Vazirmatn-Bold.woff2');font-weight:700}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f4f7fa;color:#172235;font-family:Vazir,Tahoma,Arial,sans-serif;line-height:2}.wrap{max-width:1240px;margin:auto;padding:28px 20px 80px}
+.hero{position:relative;background:linear-gradient(135deg,#1a1038 0%,#3d2066 55%,#6b3a9c 100%);color:#fff;border-radius:24px;padding:48px 44px;margin-bottom:22px;box-shadow:0 22px 60px #1a103833;overflow:hidden}
+.hero::after{content:"";position:absolute;left:-80px;bottom:-100px;width:280px;height:280px;border:1px solid #ffffff1c;border-radius:50%;box-shadow:0 0 0 40px #ffffff08,0 0 0 80px #ffffff05}
+.hero h1{margin:0 0 10px;font-size:36px;letter-spacing:-.4px;position:relative;z-index:1}
+.hero p{margin:6px 0;opacity:.94;font-size:14.5px;max-width:900px;position:relative;z-index:1}
+.hero .badge{display:inline-block;background:#ffffff1c;border:1px solid #ffffff44;border-radius:999px;padding:4px 14px;margin-top:16px;font-size:12.5px;position:relative;z-index:1}
+.nav{position:sticky;top:8px;z-index:5;background:#fffffff2;backdrop-filter:blur(14px);border:1px solid #ddd0ec;border-radius:15px;padding:8px 12px;margin-bottom:20px;display:flex;flex-wrap:wrap;gap:3px;box-shadow:0 6px 18px #1a10380a}
+.nav a{color:#3d2066;text-decoration:none;font-size:12px;padding:3px 9px;white-space:nowrap;border-radius:6px;transition:.2s}
+.nav a:hover{background:#ece0f5;color:#1a1038}
+.card{background:#fff;border:1px solid #e6ddef;border-radius:20px;padding:30px 32px;margin:18px 0;box-shadow:0 8px 25px #1a103808}
+.card h2{margin:0 0 16px;color:#1a1038;font-size:23px;letter-spacing:-.3px;padding-bottom:12px;border-bottom:2px solid #ece0f5}
+.card h3{color:#3d2066;font-size:16.5px;margin:22px 0 10px}
+.card h4{color:#6b3a9c;font-size:14.5px;margin:18px 0 8px}
+.card p{margin:8px 0;font-size:14px;line-height:1.95;color:#2c3a48}
+.card ul{padding-right:22px;margin:10px 0}
+.card ul li{font-size:13.5px;line-height:1.9;margin-bottom:4px;color:#2c3a48}
+.card ol{padding-right:22px;margin:10px 0}
+.card ol li{font-size:13.5px;line-height:1.9;margin-bottom:4px;color:#2c3a48}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+.grid.four{grid-template-columns:repeat(4,1fr)}
+.mini{background:#faf6fd;border:1px solid #e6ddef;border-radius:14px;padding:18px;transition:.25s}
+.mini:hover{border-color:#6b3a9c;transform:translateY(-2px)}
+.mini h3{margin:0 0 8px;font-size:14.5px;color:#1a1038}
+.mini h4{margin:0 0 6px;font-size:13.5px;color:#1a1038}
+.mini p{margin:0;font-size:12.5px;line-height:1.85;color:#5b6d79}
+.mini .num{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;border-radius:9px;background:#ece0f5;color:#3d2066;font-weight:800;font-size:12px;margin-bottom:10px}
+.quote{border-right:4px solid #6b3a9c;background:linear-gradient(90deg,#f5eefa,transparent);padding:16px 20px;border-radius:0 12px 12px 0;margin:18px 0;font-size:14px;line-height:1.95;color:#1a1038}
+.quote strong{color:#1a1038}
+.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:9px;margin:20px 0}
+.flow.five{grid-template-columns:repeat(5,1fr)}
+.flow.four{grid-template-columns:repeat(4,1fr)}
+.flow.seven{grid-template-columns:repeat(7,1fr)}
+.flow div{padding:14px 8px;text-align:center;border-radius:12px;background:linear-gradient(135deg,#ece0f5,#f5eefa);border:1px solid #ddd0ec;color:#1a1038;font-weight:700;font-size:12.5px;line-height:1.5}
+.flow div.hi{background:linear-gradient(135deg,#3d2066,#6b3a9c);color:#fff;border-color:transparent;box-shadow:0 4px 12px #3d206633}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13px}
+th,td{border:1px solid #e6ddef;padding:10px 12px;text-align:right;vertical-align:top;line-height:1.75}
+th{background:#ece0f5;color:#1a1038;font-weight:700;font-size:12.5px}
+tr:nth-child(even) td{background:#faf6fd}
+.tree{background:#faf6fd;border:1px solid #e6ddef;border-radius:14px;padding:22px 26px;font-family:"SF Mono","Consolas",monospace;font-size:12px;direction:ltr;text-align:left;line-height:2;color:#1a1038;overflow-x:auto;white-space:pre}
+.tag{display:inline-block;background:#ece0f5;color:#3d2066;border-radius:18px;padding:5px 12px;font-size:12px;margin:3px;font-weight:600}
+.code{background:#1a1038;color:#e0d0f0;border-radius:14px;padding:20px 24px;font-family:"SF Mono","Consolas",monospace;font-size:12.5px;direction:ltr;text-align:left;line-height:1.9;overflow-x:auto;white-space:pre;margin:14px 0}
+.code .k{color:#c8a8e8}.code .s{color:#a8d8a8}.code .c{color:#9a7ab8}
+.footer{text-align:center;color:#7b8995;padding:30px 20px 10px;font-size:12px}
+.back-top{position:fixed;left:20px;bottom:20px;z-index:20;width:44px;height:44px;border:1px solid #ddd0ec;border-radius:12px;background:#ffffffee;color:#3d2066;text-decoration:none;display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 8px 22px #1a103818;transition:.2s}
+.back-top:hover{transform:translateY(-3px);background:#ece0f5}
+code{background:#ece0f5;border-radius:5px;padding:1px 6px;font-family:"SF Mono","Consolas",monospace;font-size:.9em;color:#3d2066;direction:ltr;display:inline-block}
+.appendix-marker{display:inline-block;background:linear-gradient(135deg,#3d2066,#6b3a9c);color:#fff;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700;margin:20px 0 10px;letter-spacing:.5px}
+.media-card{background:#faf6fd;border:1.5px solid #ddd0ec;border-radius:14px;padding:20px 22px;margin:12px 0;transition:.25s;position:relative;overflow:hidden}
+.media-card::before{content:'';position:absolute;top:0;inset-inline-start:0;width:4px;height:100%;background:linear-gradient(180deg,#3d2066,#6b3a9c)}
+.media-card:hover{border-color:#6b3a9c;transform:translateX(-3px);box-shadow:0 6px 18px #3d206615}
+.media-card h4{margin:0 0 8px;font-size:15px;color:#1a1038;font-weight:800}
+.media-card p{margin:0;font-size:12.5px;color:#5b6d79;line-height:1.85}
+.media-card .meta{display:flex;gap:14px;margin-top:10px;font-size:11px;color:#7b8a94;font-weight:600}
+.media-card .meta span{display:inline-flex;align-items:center;gap:4px}
+.media-preview{background:linear-gradient(135deg,#ece0f5,#ddd0ec);border:1.5px solid #c8a8e8;border-radius:14px;height:200px;margin:18px 0;position:relative;overflow:hidden}
+.media-preview::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(45deg,rgba(61,32,102,.05) 0,rgba(61,32,102,.05) 1px,transparent 1px,transparent 16px)}
+.media-preview-icon{position:absolute;top:50%;inset-inline-start:50%;transform:translate(50%,-50%);width:64px;height:64px;border-radius:16px;background:linear-gradient(145deg,#3d2066,#6b3a9c);color:#fff;display:grid;place-items:center;font-size:28px;box-shadow:0 8px 24px rgba(61,32,102,.35)}
+@media(max-width:800px){.grid,.grid.two,.grid.four{grid-template-columns:1fr}.flow,.flow.five,.flow.four,.flow.seven{grid-template-columns:repeat(2,1fr)}.hero{padding:32px 24px}.hero h1{font-size:26px}.card{padding:22px 18px}.nav{position:static}table{font-size:12px}}
+</style>
+</head>
+<body id="top">
+<div class="wrap">
+
+<section class="hero">
+<h1>مرکز چندرسانه‌ای شهدا</h1>
+<p>سامانه‌ی تخصصی برای نگهداری، سازمان‌دهی، پردازش، تولید و ارائه‌ی محتوای چندرسانه‌ای مرتبط با شهدا؛ شامل عکس، فیلم، صوت، موشن‌گرافیک، اینفوگرافیک و آرشیو دیجیتال.</p>
+<p>محصولی مستقل در اکوسیستم شهیدپورتال. اگر بانک روایت محور «چه گفته شد؟» است، مرکز چندرسانه‌ای محور <strong>«چه دیده و شنیده می‌شود؟»</strong> است.</p>
+<span class="badge">طرح جامع، معماری و نقشه راه توسعه | نسخه ۱.۰ — سند مادر محصول</span>
+</section>
+
+<nav class="nav" aria-label="ناوبری">
+<a href="#s1">۱. خلاصه</a>
+<a href="#s2">۲. تعریف</a>
+<a href="#s3">۳. جایگاه</a>
+<a href="#s4">۴. مسئله</a>
+<a href="#s5">۵. مأموریت</a>
+<a href="#s6">۶. اصول</a>
+<a href="#s7">۷. مخاطبان</a>
+<a href="#s8">۸. انواع رسانه</a>
+<a href="#s9">۹. مدل رسانه</a>
+<a href="#s10">۱۰. مدل آرشیو</a>
+<a href="#s11">۱۱. پردازش و بهینه‌سازی</a>
+<a href="#s12">۱۲. متادیتا و برچسب</a>
+<a href="#s13">۱۳. حق نشر و رضایت</a>
+<a href="#s14">۱۴. تولید رسانه</a>
+<a href="#s15">۱۵. کیفیت و اصالت</a>
+<a href="#s16">۱۶. حریم خصوصی</a>
+<a href="#s17">۱۷. جست‌وجو و کشف</a>
+<a href="#s18">۱۸. تجربه کاربری</a>
+<a href="#s19">۱۹. ساختار محصول</a>
+<a href="#s20">۲۰. مدل داده</a>
+<a href="#s21">۲۱. API</a>
+<a href="#s22">۲۲. اکوسیستم</a>
+<a href="#s23">۲۳. حکمرانی</a>
+<a href="#s24">۲۴. نقشه راه</a>
+<a href="#s25">۲۵. KPI</a>
+<a href="#s26">۲۶. جمع‌بندی</a>
+<a href="#appendix-a">ضمیمه الف</a>
+<a href="#appendix-b">ضمیمه ب</a>
+<a href="#appendix-c">ضمیمه پ</a>
+<a href="#appendix-d">ضمیمه ت</a>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- بخش‌های اصلی -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+
+<section class="card" id="s1">
+<h2>۱. خلاصه مدیریتی</h2>
+<p>مرکز چندرسانه‌ای شهدا، مرجع تخصصی <strong>محتوای بصری و صوتی</strong> در اکوسیستم است. اگر بانک روایت محور «روایت» و بانک وصیت‌نامه محور «سند مکتوب» است، مرکز چندرسانه‌ای محور <strong>«رسانه‌ی دیداری و شنیداری»</strong> است.</p>
+
+<p>این مرکز نباید فقط یک «آرشیو فایل» باشد. هدف، ایجاد یک <strong>سامانه‌ی تخصصی رسانه‌محور</strong> است که بتواند:</p>
+<ul>
+<li>رسانه‌های موجود را با متادیتای کامل نگهداری کند؛</li>
+<li>به‌صورت حرفه‌ای پردازش، بهینه‌سازی و آرشیو کند؛</li>
+<li>امکان جست‌وجو و کشف معنادار فراهم کند؛</li>
+<li>رسانه‌های تولیدی جدید را سازمان دهد؛</li>
+<li>به‌عنوان منبع تولید محتوای اکوسیستم عمل کند.</li>
+</ul>
+
+<div class="quote"><strong>تعریف مرکزی:</strong> یک سامانه‌ی مستقل و توسعه‌پذیر برای نگهداری، سازمان‌دهی، پردازش، تولید و ارائه‌ی محتوای چندرسانه‌ای مرتبط با شهدا؛ با حفظ اصالت، متادیتای کامل، احترام به حق نشر و اتصال به اکوسیستم.</div>
+
+<h3>تصمیم‌های کلیدی سند</h3>
+<table>
+<tr><th>موضوع</th><th>تصمیم تثبیت‌شده</th><th>اثر بر اجرا</th></tr>
+<tr><td>واحد پایه</td><td><code>MediaAsset</code> به‌عنوان هسته</td><td>هر رسانه شناسنامه‌ی مستقل دارد</td></tr>
+<tr><td>حفظ اصالت</td><td>فایل اصلی هرگز جایگزین یا فشرده نمی‌شود</td><td>کیفیت آرشیوی حفظ می‌شود</td></tr>
+<tr><td>نسخه‌های مشتق</td><td>نسخه‌های بهینه‌شده (thumbnail، preview، streaming) از اصل جدا هستند</td><td>کارایی و کیفیت همزمان</td></tr>
+<tr><td>متادیتای کامل</td><td>هر رسانه دارای متادیتای ساختاریافته است</td><td>جست‌وجو و کشف دقیق</td></tr>
+<tr><td>حق نشر</td><td>رضایت صاحب اثر و وضعیت حقوقی ثبت می‌شود</td><td>حفظ حقوق و جلوگیری از تخلف</td></tr>
+<tr><td>پیوند اکوسیستمی</td><td>اتصال به هویت، مکان، روایت، عملیات</td><td>یکپارچگی کامل</td></tr>
+</table>
+
+<div class="quote"><strong>جمله‌ی محوری سند:</strong> «هر تصویر، یک لحظه؛ هر صدا، یک روایت؛ هر فیلم، یک سند؛ و هر رسانه، یک حافظه.»</div>
+</section>
+
+<section class="card" id="s2">
+<h2>۲. تعریف مرکز چندرسانه‌ای</h2>
+<p>مرکز چندرسانه‌ای شهدا عبارت است از:</p>
+<div class="quote"><strong>یک سامانه‌ی مستقل و توسعه‌پذیر برای نگهداری، سازمان‌دهی، پردازش، تولید و ارائه‌ی محتوای چندرسانه‌ای مرتبط با شهدا؛ با حفظ اصالت، متادیتای کامل، احترام به حق نشر و اتصال به اکوسیستم.</strong></div>
+
+<p>در این تعریف، رسانه می‌تواند شامل:</p>
+<ul>
+<li>عکس‌های شخصی، خانوادگی و رسمی؛</li>
+<li>عکس‌های مستند و خبری؛</li>
+<li>فیلم‌های مستند و داستانی؛</li>
+<li>ویدئوهای مصاحبه و تاریخ شفاهی؛</li>
+<li>فایل‌های صوتی (مصاحبه، خاطره، سرود)؛</li>
+<li>موشن‌گرافیک و اینفوگرافیک؛</li>
+<li>پوستر و طرح‌های گرافیکی؛</li>
+<li>کتاب‌های صوتی و پادکست؛</li>
+<li>محتوای واقعیت افزوده و ۳۶۰ درجه (اختیاری)؛</li>
+<li>آرشیو دیجیتال اسناد تصویری.</li>
+</ul>
+
+<p>این مرکز تلاش نمی‌کند جایگاه آرشیوهای سازمانی موجود را بگیرد؛ بلکه تلاش می‌کند <strong>یک لایه‌ی اتصال، سازمان‌دهی و دسترسی مدرن برای رسانه‌های شهدا فراهم کند.</strong></p>
+</section>
+
+<section class="card" id="s3">
+<h2>۳. جایگاه در اکوسیستم</h2>
+<p>یازده محور اصلی اکوسیستم:</p>
+<table>
+<tr><th>سامانه</th><th>پرسش اصلی</th><th>لایه‌ی مسئولیت</th></tr>
+<tr><td><strong>بانک شهدا</strong></td><td>چه کسی؟</td><td>هویت شخص، پرونده‌ی شهید</td></tr>
+<tr><td><strong>اطلس شهدا</strong></td><td>کجا؟</td><td>مکان، موقعیت، مسیر</td></tr>
+<tr><td><strong>تقویم شهدا</strong></td><td>چه زمانی؟</td><td>تاریخ، مناسبت، رویداد</td></tr>
+<tr><td><strong>بانک روایت</strong></td><td>چه روایتی؟</td><td>روایت، راوی، ادعا</td></tr>
+<tr><td><strong>بانک وصیت‌نامه</strong></td><td>چه پیامی؟</td><td>سند مکتوب، مضمون</td></tr>
+<tr><td><strong>بانک عملیات</strong></td><td>چه رویدادی؟</td><td>عملیات، رخداد، یگان</td></tr>
+<tr><td><strong>مرکز خدمات</strong></td><td>چه خدمتی؟</td><td>خدمت، رفاه، درخواست</td></tr>
+<tr><td><strong>مرکز پشتیبانی</strong></td><td>چه پرسشی؟</td><td>پاسخ، پیگیری، شکایت</td></tr>
+<tr><td><strong>بازار خانواده شهدا</strong></td><td>چه محصولی؟</td><td>محصول، فروشنده، خرید</td></tr>
+<tr><td><strong>مرکز چندرسانه‌ای</strong></td><td>چه تصویری؟ چه صدایی؟</td><td>رسانه، آرشیو، پردازش، تولید</td></tr>
+<tr><td><strong>پاتوق شهدا</strong></td><td>چگونه تعامل کنیم؟</td><td>شبکه، مشارکت، خدمات فرهنگی</td></tr>
+</table>
+
+<div class="quote"><strong>اصل مالکیت:</strong> مرکز چندرسانه‌ای مالک «جریان رسانه» است. هویت شخص نزد بانک شهدا، روایت نزد بانک روایت، مکان نزد اطلس، و محصول اقتصادی نزد بازار باقی می‌ماند.</div>
+
+<h3>جدول ارتباط با پروژه‌ها</h3>
+<table>
+<tr><th>پروژه</th><th>نوع ارتباط</th><th>جهت داده</th></tr>
+<tr><td>شهیدپورتال</td><td>هویت، استاندارد و اتصال مادر</td><td>دوطرفه</td></tr>
+<tr><td>بانک شهدا</td><td>رسانه‌های مرتبط با پرونده‌ی شهید</td><td>دوطرفه</td></tr>
+<tr><td>بانک روایت</td><td>فایل صوتی، تصویری و ویدئوی روایت</td><td>دوطرفه</td></tr>
+<tr><td>بانک وصیت‌نامه</td><td>تصویر اصل وصیت‌نامه، صوت، ویدئو</td><td>دوطرفه</td></tr>
+<tr><td>بانک عملیات</td><td>عکس، فیلم، نقشه‌های عملیات</td><td>دوطرفه</td></tr>
+<tr><td>اطلس شهدا</td><td>رسانه‌های مکانی، عکس‌های هوایی</td><td>دوطرفه</td></tr>
+<tr><td>تقویم شهدا</td><td>رسانه‌های مناسبتی و آرشیوی</td><td>دوطرفه</td></tr>
+<tr><td>گنجینه (در پروژه‌های قبلی)</td><td>ادغام یا ارجاع در چارچوب توافق</td><td>دوطرفه</td></tr>
+<tr><td>پاتوق شهدا</td><td>نمایش و انتشار رسانه در شبکه</td><td>دوطرفه</td></tr>
+</table>
+</section>
+
+<section class="card" id="s4">
+<h2>۴. مسئله‌ای که مرکز چندرسانه‌ای حل می‌کند</h2>
+
+<table>
+<tr><th>مسئله</th><th>اثر منفی</th><th>راهکار مرکز چندرسانه‌ای</th></tr>
+<tr><td>پراکندگی رسانه‌ها</td><td>عکس و فیلم در آرشیوهای خانوادگی و سازمانی پراکنده است</td><td>مرجع واحد با شناسه‌ی پایدار</td></tr>
+<tr><td>از بین رفتن اصل</td><td>فایل‌های اصلی با فشرده‌سازی از بین می‌روند</td><td>حفظ نسخه‌ی اصل + نسخه‌های مشتق</td></tr>
+<tr><td>نبود متادیتا</td><td>عکس بدون تاریخ، مکان، منبع</td><td>متادیتای کامل ساختاریافته</td></tr>
+<tr><td>نبود جست‌وجوی معنادار</td><td>یافتن یک عکس خاص دشوار است</td><td>جست‌وجوی ترکیبی + برچسب‌گذاری</td></tr>
+<tr><td>دشواری انتقال</td><td>حجم بالا و فرمت‌های متنوع</td><td>بهینه‌سازی، فرمت‌های استاندارد، استریم</td></tr>
+<tr><td>حق نشر نامعلوم</td><td>ریسک حقوقی</td><td>ثبت رضایت و حق نشر</td></tr>
+<tr><td>نبود نگاه حرفه‌ای به رسانه</td><td>رسانه به‌عنوان «فایل ضمیمه» دیده می‌شود</td><td>رسانه به‌عنوان «دارایی مستقل»</td></tr>
+<tr><td>نبود تولید حرفه‌ای</td><td>محتوای ضعیف یا نامناسب</td><td>بخش تولید با استانداردهای حرفه‌ای</td></tr>
+</table>
+
+<div class="quote"><strong>خطر اصلی:</strong> اگر رسانه به‌عنوان «دارایی مستقل با شناسه و متادیتا» مدل نشود، در چند سال آینده با آرشیوی بزرگ اما نامنظم، بدون متادیتا و بدون امکان جست‌وجو روبه‌رو خواهیم شد.</div>
+</section>
+
+<section class="card" id="s5">
+<h2>۵. مأموریت و چشم‌انداز</h2>
+
+<div class="grid two">
+<div class="mini"><h3>مأموریت</h3><p>ایجاد یک مرجع معتبر، امن و توسعه‌پذیر برای نگهداری، سازمان‌دهی، پردازش و ارائه‌ی رسانه‌های شهدا؛ با حفظ اصالت، متادیتای کامل، احترام به حقوق و کرامت.</p></div>
+<div class="mini"><h3>چشم‌انداز</h3><p>تبدیل شدن به مرجع اصلی آرشیو و تولید محتوای چندرسانه‌ای شهدا در ایران؛ جایی که هر عکس، فیلم و صوت با اصالت و متادیتای کامل نگهداری و ارائه شود.</p></div>
+</div>
+
+<div class="quote"><strong>ستاره‌ی شمالی:</strong> «هر تصویر، یک لحظه؛ هر صدا، یک روایت؛ هر فیلم، یک سند؛ و هر رسانه، یک حافظه.»</div>
+
+<h3>ارزش‌های عملیاتی</h3>
+<div>
+<span class="tag">حفظ اصالت</span>
+<span class="tag">کرامت سوژه</span>
+<span class="tag">متادیتای کامل</span>
+<span class="tag">احترام به حق نشر</span>
+<span class="tag">کیفیت آرشیوی</span>
+<span class="tag">دسترس‌پذیری</span>
+<span class="tag">تولید حرفه‌ای</span>
+<span class="tag">پایداری بلندمدت</span>
+</div>
+</section>
+
+<section class="card" id="s6">
+<h2>۶. اصول بنیادین</h2>
+
+<div class="grid">
+<div class="mini"><h3>۱) حفظ اصالت</h3><p>فایل اصلی هرگز جایگزین، فشرده یا ویرایش نمی‌شود.</p></div>
+<div class="mini"><h3>۲) نسخه‌ی مشتق جدا</h3><p>نسخه‌های بهینه‌شده با برچسب «مشتق» ثبت می‌شوند.</p></div>
+<div class="mini"><h3>۳) متادیتای کامل</h3><p>هر رسانه باید حداقل متادیتای ساختاریافته داشته باشد.</p></div>
+<div class="mini"><h3>۴) کرامت سوژه</h3><p>تصویر و صدای شهید و خانواده با احترام مدیریت می‌شود.</p></div>
+<div class="mini"><h3>۵) حق نشر</h3><p>رضایت صاحب اثر و وضعیت حقوقی ثبت می‌شود.</p></div>
+<div class="mini"><h3>۶) عدم دستکاری</h3><p>ویرایش معنا تغییر نمی‌دهد؛ فقط اصلاح فنی مجاز است.</p></div>
+<div class="mini"><h3>۷) پردازش استاندارد</h3><p>فرمت‌های استاندارد و باز برای پایداری بلندمدت.</p></div>
+<div class="mini"><h3>۸) اتصال ساختاریافته</h3><p>هر رسانه به شهید، مکان، روایت و رویداد متصل می‌شود.</p></div>
+<div class="mini"><h3>۹) حریم خصوصی</h3><p>سطح دسترسی رسانه بر اساس رضایت و حساسیت تعیین می‌شود.</p></div>
+<div class="mini"><h3>۱۰) اتصال بدون تکثیر</h3><p>پروژه‌ها به شناسه‌ی رسانه ارجاع دهند.</p></div>
+<div class="mini"><h3>۱۱) دسترس‌پذیری</h3><p>متن جانشین، زیرنویس و فرمت‌های قابل دسترس.</p></div>
+<div class="mini"><h3>۱۲) استقلال محصول</h3><p>توسعه‌ی مستقل، اتصال استاندارد از طریق API.</p></div>
+</div>
+</section>
+
+<section class="card" id="s7">
+<h2>۷. مخاطبان</h2>
+
+<table>
+<tr><th>مخاطب</th><th>نیاز اصلی</th><th>ارزش مرکز</th></tr>
+<tr><td>خانواده‌های شهدا</td><td>نگهداری رسانه‌های خانوادگی</td><td>آرشیو امن + دسترسی همیشگی</td></tr>
+<tr><td>پژوهشگران</td><td>دسترسی به رسانه‌های مستند</td><td>جست‌وجو + متادیتا</td></tr>
+<tr><td>هنرمندان و تولیدکنندگان</td><td>دسترسی به منابع برای تولید</td><td>آرشیو با مجوز استفاده</td></tr>
+<tr><td>رسانه‌ها</td><td>تصاویر و فیلم‌های خبری</td><td>کیفیت بالا + رضایت‌نامه</td></tr>
+<tr><td>موزه‌ها و مراکز فرهنگی</td><td>نمایشگاه و روایت تصویری</td><td>آرشیو با کیفیت نمایشگاهی</td></tr>
+<tr><td>نهادهای متولی</td><td>پایش آرشیو رسانه‌ای</td><td>داشبورد و گزارش</td></tr>
+<tr><td>عموم مردم</td><td>تماشای محتوای عمومی</td><td>نمایش ساده و دسترس‌پذیر</td></tr>
+<tr><td>سازمان‌ها</td><td>مصرف رسانه در پروژه‌ها</td><td>API نسخه‌دار</td></tr>
+</table>
+
+<h3>ویژگی‌های مشترک</h3>
+<div class="grid">
+<div class="mini"><h3>نیاز به کیفیت</h3><p>رسانه باید در بهترین کیفیت موجود باشد.</p></div>
+<div class="mini"><h3>نیاز به متادیتا</h3><p>تاریخ، مکان، اشخاص، منبع.</p></div>
+<div class="mini"><h3>نیاز به مجوز</h3><p>مشخص بودن وضعیت حقوقی رسانه.</p></div>
+<div class="mini"><h3>نیاز به دسترسی</h3><p>جست‌وجو، تماشا و دانلود کنترل‌شده.</p></div>
+</div>
+</section>
+
+<section class="card" id="s8">
+<h2>۸. انواع رسانه</h2>
+
+<h3>دسته‌بندی اصلی</h3>
+
+<div class="media-card">
+<h4>عکس</h4>
+<p>عکس‌های شخصی، خانوادگی، رسمی، خبری، مستند، آرشیوی، اسکن اسناد.</p>
+<div class="meta"><span>● فرمت‌ها: JPG, PNG, TIFF, RAW</span><span>● نسخه‌ی اصل + مشتق</span></div>
+</div>
+
+<div class="media-card">
+<h4>فیلم و ویدئو</h4>
+<p>مستند، داستانی، مصاحبه، خاطره، مستند کوتاه، کلیپ، موشن‌گرافیک.</p>
+<div class="meta"><span>● فرمت‌ها: MP4, MOV, MKV, ProRes</span><span>● نسخه‌ی استریم + اصل</span></div>
+</div>
+
+<div class="media-card">
+<h4>صوت</h4>
+<p>مصاحبه، خاطره، سرود، کتاب صوتی، پادکست، موسیقی.</p>
+<div class="meta"><span>● فرمت‌ها: MP3, WAV, FLAC, AAC</span><span>● پیاده‌سازی متنی</span></div>
+</div>
+
+<div class="media-card">
+<h4>موشن‌گرافیک و اینفوگرافیک</h4>
+<p>محتوای گرافیکی متحرک و ثابت برای روایت داده و اطلاعات.</p>
+<div class="meta"><span>● فرمت‌ها: MP4, GIF, SVG, PNG</span><span>● قابلیت ویرایش</span></div>
+</div>
+
+<div class="media-card">
+<h4>گرافیک و پوستر</h4>
+<p>پوستر، بنر، تصویرسازی، طرح فرهنگی.</p>
+<div class="meta"><span>● فرمت‌ها: PSD, AI, SVG, PNG, JPG</span><span>● نسخه‌ی چاپ + وب</span></div>
+</div>
+
+<div class="media-card">
+<h4>اسناد تصویری</h4>
+<p>اسکن نامه، سند، وصیت‌نامه، دفترچه خاطرات، مدارک.</p>
+<div class="meta"><span>● فرمت‌ها: PDF, JPG, TIFF</span><span>● کیفیت آرشیوی</span></div>
+</div>
+
+<div class="media-card">
+<h4>محتوای تعاملی (اختیاری)</h4>
+<p>واقعیت افزوده، ۳۶۰ درجه، نمایشگاه مجازی.</p>
+<div class="meta"><span>● فرمت‌ها: GLB, USDZ, HTML5</span><span>● در فاز توسعه‌ی آینده</span></div>
+</div>
+
+<h3>دسته‌بندی موضوعی</h3>
+<div class="grid">
+<div class="mini"><h3>بر اساس مرحله</h3><p>کودکی، نوجوانی، جوانی، جبهه، شهادت، پس از شهادت.</p></div>
+<div class="mini"><h3>بر اساس موقعیت</h3><p>خانوادگی، رسمی، میدانی، خبری، یادمانی.</p></div>
+<div class="mini"><h3>بر اساس دوره</h3><p>پیش از انقلاب، انقلاب، دفاع مقدس، معاصر.</p></div>
+</div>
+</section>
+
+<section class="card" id="s9">
+<h2>۹. مدل رسانه</h2>
+
+<p>هر رسانه باید یک <strong>شناسنامه‌ی کامل</strong> داشته باشد:</p>
+
+<table>
+<tr><th>بخش</th><th>توضیح</th><th>الزام</th></tr>
+<tr><td>شناسه</td><td>مثل <code>MED-1405-000123</code></td><td>✅</td></tr>
+<tr><td>عنوان</td><td>عنوان توصیفی</td><td>✅</td></tr>
+<tr><td>نوع</td><td>عکس، فیلم، صوت، موشن، اینفوگرافیک، سند</td><td>✅</td></tr>
+<tr><td>دسته</td><td>زیر‌دسته</td><td>✅</td></tr>
+<tr><td>اشخاص مرتبط</td><td>شهید، خانواده، همرزم</td><td>✅</td></tr>
+<tr><td>مکان</td><td>ارجاع به Location در اطلس</td><td>⬜</td></tr>
+<tr><td>تاریخ</td><td>تاریخ ثبت یا واقعه</td><td>✅</td></tr>
+<tr><td>منبع</td><td>خانواده، آرشیو، رسانه، گنجینه</td><td>✅</td></tr>
+<tr><td>حق نشر</td><td>وضعیت حقوقی و رضایت</td><td>✅</td></tr>
+<tr><td>تگ و کلیدواژه</td><td>برچسب‌های موضوعی</td><td>✅</td></tr>
+<tr><td>توضیحات</td><td>متن توصیفی</td><td>✅</td></tr>
+<tr><td>متن جانشین</td><td>برای دسترس‌پذیری</td><td>✅</td></tr>
+<tr><td>فراداده فنی</td><td>فرمت، حجم، ابعاد، مدت</td><td>✅</td></tr>
+<tr><td>نسخه‌ی اصل</td><td>فایل اصلی بدون دستکاری</td><td>✅</td></tr>
+<tr><td>نسخه‌های مشتق</td><td>thumbnail، preview، streaming</td><td>✅</td></tr>
+<tr><td>سطح دسترسی</td><td>عمومی / محدود / حساس</td><td>✅</td></tr>
+<tr><td>وضعیت</td><td>منتشرشده / در بررسی / آرشیو</td><td>✅</td></tr>
+</table>
+
+<h3>حالت‌های رسانه</h3>
+<table>
+<tr><th>حالت</th><th>توضیح</th></tr>
+<tr><td>منتشرشده</td><td>قابل نمایش عمومی</td></tr>
+<tr><td>در بررسی</td><td>در حال ارزیابی</td></tr>
+<tr><td>آرشیو</td><td>نگهداری بدون نمایش عمومی</td></tr>
+<tr><td>محدود</td><td>نمایش با محدودیت</td></tr>
+<tr><td>حذف‌شده</td><td>از فهرست عمومی حذف شده</td></tr>
+</table>
+</section>
+
+<section class="card" id="s10">
+<h2>۱۰. مدل آرشیو</h2>
+
+<p>مرکز چندرسانه‌ای، یک آرشیو سه‌لایه‌ای است:</p>
+
+<div class="flow three" style="grid-template-columns:repeat(3,1fr)">
+<div class="hi">لایه‌ی اصل</div>
+<div>لایه‌ی پردازش</div>
+<div class="hi">لایه‌ی دسترسی</div>
+</div>
+
+<table>
+<tr><th>لایه</th><th>توضیح</th><th>نحوه‌ی نگهداری</th></tr>
+<tr><td>لایه‌ی اصل</td><td>فایل اصلی بدون دستکاری</td><td>ذخیره‌سازی امن بلندمدت + پشتیبان چندلایه</td></tr>
+<tr><td>لایه‌ی پردازش</td><td>نسخه‌های بهینه‌شده و مشتق</td><td>سرورهای جداگانه + کش</td></tr>
+<tr><td>لایه‌ی دسترسی</td><td>نمایش، استریم و دانلود</td><td>CDN + کنترل دسترسی</td></tr>
+</table>
+
+<h3>ساختار پوشه‌ی آرشیو</h3>
+<div class="tree">آرشیو/
+├── originals/         ← فایل‌های اصل
+│   ├── images/
+│   ├── videos/
+│   ├── audios/
+│   └── documents/
+│
+├── derivatives/       ← نسخه‌های مشتق
+│   ├── thumbnails/    ← تصاویر بندانگشتی
+│   ├── previews/      ← نسخه‌های پیش‌نمایش
+│   ├── streaming/     ← نسخه‌های استریم
+│   └── optimized/     ← نسخه‌های بهینه
+│
+├── metadata/          ← فراداده‌ی ساختاریافته
+│   ├── images/
+│   ├── videos/
+│   └── audios/
+│
+└── indexes/           ← نمایه‌های جست‌وجو</div>
+
+<div class="quote"><strong>اصل پایداری آرشیوی:</strong> فایل‌های اصل باید حداقل ۵۰ سال قابل دسترس بمانند. فرمت‌های باز و استاندارد برای پایداری بلندمدت ترجیح داده می‌شوند.</div>
+</section>
+
+<section class="card" id="s11">
+<h2>۱۱. پردازش و بهینه‌سازی</h2>
+
+<h3>پردازش عکس</h3>
+<table>
+<tr><th>نسخه</th><th>ابعاد</th><th>کاربرد</th></tr>
+<tr><td>اصل</td><td>بدون تغییر</td><td>آرشیو</td></tr>
+<tr><td>کیفیت بالا</td><td>حداکثر ۲۰۰۰px</td><td>دانلود با کیفیت</td></tr>
+<tr><td>نمایش</td><td>حداکثر ۱۰۰۰px</td><td>نمایش در صفحه</td></tr>
+<tr><td>بندانگشتی</td><td>حداکثر ۳۰۰px</td><td>لیست و کارت</td></tr>
+</table>
+
+<h3>پردازش ویدئو</h3>
+<table>
+<tr><th>نسخه</th><th>کیفیت</th><th>کاربرد</th></tr>
+<tr><td>اصل</td><td>بدون تغییر</td><td>آرشیو</td></tr>
+<tr><td>1080p</td><td>Full HD</td><td>دانلود</td></tr>
+<tr><td>720p</td><td>HD</td><td>استریم معمول</td></tr>
+<tr><td>480p</td><td>SD</td><td>استریم سبک</td></tr>
+<tr><td>بندانگشتی</td><td>تصویر اول یا فریم خاص</td><td>لیست و کارت</td></tr>
+</table>
+
+<h3>پردازش صوت</h3>
+<table>
+<tr><th>نسخه</th><th>فرمت</th><th>کاربرد</th></tr>
+<tr><td>اصل</td><td>WAV/FLAC</td><td>آرشیو</td></tr>
+<tr><td>کیفیت بالا</td><td>MP3 320kbps</td><td>دانلود</td></tr>
+<tr><td>استریم</td><td>MP3 128kbps</td><td>پخش آنلاین</td></tr>
+</table>
+
+<h3>فرآیند پردازش خودکار</h3>
+<div class="flow five">
+<div>بارگذاری</div>
+<div>بررسی فرمت</div>
+<div>تولید مشتق‌ها</div>
+<div>تولید متادیتا</div>
+<div class="hi">انتشار</div>
+</div>
+</section>
+
+<section class="card" id="s12">
+<h2>۱۲. متادیتا و برچسب</h2>
+
+<h3>فراداده‌ی ساختاریافته</h3>
+<table>
+<tr><th>دسته</th><th>نمونه</th></tr>
+<tr><td>فراداده‌ی توصیفی</td><td>عنوان، توضیحات، کلیدواژه‌ها</td></tr>
+<tr><td>فراداده‌ی پدیدآورنده</td><td>عکاس، فیلمبردار، تدوینگر</td></tr>
+<tr><td>فراداده‌ی مکانی</td><td>مکان ثبت، ارجاع به اطلس</td></tr>
+<tr><td>فراداده‌ی زمانی</td><td>تاریخ ثبت، بازه</td></tr>
+<tr><td>فراداده‌ی اشخاص</td><td>شهید، خانواده، همرزم</td></tr>
+<tr><td>فراداده‌ی فنی</td><td>فرمت، ابعاد، مدت، حجم</td></tr>
+<tr><td>فراداده‌ی حقوقی</td><td>وضعیت حق نشر، رضایت</td></tr>
+<tr><td>فراداده‌ی دسترسی</td><td>سطح دسترسی، محدودیت‌ها</td></tr>
+<tr><td>فراداده‌ی روابط</td><td>روایت، عملیات، منبع مرتبط</td></tr>
+</table>
+
+<h3>سیستم برچسب‌گذاری</h3>
+<div class="grid">
+<div class="mini"><h3>برچسب شخصی</h3><p>مرتبط با شهید یا شخص خاص</p></div>
+<div class="mini"><h3>برچسب مکانی</h3><p>مرتبط با مکان یا منطقه</p></div>
+<div class="mini"><h3>برچسب زمانی</h3><p>مرتبط با دوره یا تاریخ</p></div>
+<div class="mini"><h3>برچسب موضوعی</h3><p>مرتبط با موضوع یا رخداد</p></div>
+<div class="mini"><h3>برچسب رسانه‌ای</h3><p>نوع رسانه و قالب</p></div>
+<div class="mini"><h3>برچسب حقوقی</h3><p>وضعیت حقوقی و مجوز</p></div>
+</div>
+</section>
+
+<section class="card" id="s13">
+<h2>۱۳. حق نشر و رضایت</h2>
+
+<h3>وضعیت‌های حق نشر</h3>
+<table>
+<tr><th>وضعیت</th><th>توضیح</th><th>امکان استفاده</th></tr>
+<tr><td>متعلق به خانواده</td><td>خانواده‌ی شهید صاحب اثر است</td><td>با رضایت خانواده</td></tr>
+<tr><td>متعلق به سازمان</td><td>سازمان یا نهاد صاحب اثر است</td><td>با مجوز سازمان</td></tr>
+<tr><td>متعلق به رسانه</td><td>رسانه یا خبرگزاری صاحب اثر است</td><td>با مجوز رسانه</td></tr>
+<tr><td>متعلق به عکاس</td><td>عکاس یا فیلمبردار صاحب اثر است</td><td>با مجوز عکاس</td></tr>
+<tr><td>مالکیت عمومی</td><td>آزاد برای استفاده</td><td>آزاد</td></tr>
+<tr><td>نامعلوم</td><td>صاحب اثر مشخص نیست</td><td>محدود به آرشیو</td></tr>
+</table>
+
+<h3>فرآیند رضایت</h3>
+<div class="flow five">
+<div>دریافت</div>
+<div>ثبت منبع</div>
+<div>درخواست رضایت</div>
+<div>تأیید</div>
+<div class="hi">انتشار</div>
+</div>
+
+<div class="quote"><strong>اصل احترام به حقوق:</strong> هیچ رسانه‌ای بدون وضعیت حقوقی مشخص منتشر نمی‌شود. رسانه‌های نامعلوم فقط در آرشیو نگهداری می‌شوند.</div>
+</section>
+
+<section class="card" id="s14">
+<h2>۱۴. تولید رسانه</h2>
+
+<p>مرکز چندرسانه‌ای نه فقط نگهدارنده، بلکه <strong>تولیدکننده‌ی رسانه</strong> نیز هست:</p>
+
+<h3>خدمات تولیدی</h3>
+<div class="grid">
+<div class="mini"><h3>عکاسی</h3><p>عکاسی رویداد، مستند، خانوادگی، مراسم.</p></div>
+<div class="mini"><h3>فیلم‌برداری</h3><p>مستند، مصاحبه، کلیپ، روایت تصویری.</p></div>
+<div class="mini"><h3>تدوین</h3><p>تدوین فیلم، موشن‌گرافیک، ترکیب.</p></div>
+<div class="mini"><h3>صوت</h3><p>ضبط مصاحبه، پادکست، صداگذاری.</p></div>
+<div class="mini"><h3>طراحی گرافیک</h3><p>پوستر، اینفوگرافیک، هویت بصری.</p></div>
+<div class="mini"><h3>تولید محتوای دیجیتال</h3><p>محتوای تعاملی، اینفوگرافیک متحرک.</p></div>
+</div>
+
+<h3>فرآیند تولید</h3>
+<div class="flow six">
+<div class="hi">نیاز</div>
+<div>طرح</div>
+<div>تولید</div>
+<div>ویرایش</div>
+<div>بازبینی</div>
+<div class="hi">انتشار</div>
+</div>
+
+<h3>استانداردهای تولید</h3>
+<ul>
+<li>کیفیت فنی بالا (رزولوشن، صدا، رنگ)</li>
+<li>رعایت کرامت سوژه</li>
+<li>متادیتای کامل از ابتدا</li>
+<li>رعایت حقوق و رضایت</li>
+<li>بازبینی محتوایی پیش از انتشار</li>
+</ul>
+</section>
+
+<section class="card" id="s15">
+<h2>۱۵. کیفیت و اصالت</h2>
+
+<h3>معیارهای کیفیت رسانه</h3>
+<table>
+<tr><th>معیار</th><th>توضیح</th></tr>
+<tr><td>کیفیت فنی</td><td>رزولوشن، وضوح، صدا، رنگ</td></tr>
+<tr><td>اصالت</td><td>عدم دستکاری معنا یا سوژه</td></tr>
+<tr><td>کامل بودن متادیتا</td><td>تاریخ، مکان، اشخاص، منبع</td></tr>
+<tr><td>وضعیت حقوقی</td><td>مشخص و قابل ردیابی</td></tr>
+<tr><td>متن جانشین</td><td>برای دسترس‌پذیری</td></tr>
+<tr><td>نسخه‌ی اصل</td><td>حفظ شده و قابل دسترسی</td></tr>
+</table>
+
+<h3>اصالت و عدم دستکاری</h3>
+<div class="quote"><strong>اصل:</strong> رسانه‌ی شهدا یک سند تاریخی است. ویرایش معنا، تغییر ترکیب، حذف یا اضافه کردن محتوا مجاز نیست. فقط اصلاح فنی (رنگ، نویز، ترمیم آسیب) با ثبت دقیق مجاز است.</div>
+
+<h3>ترمیم و بازسازی</h3>
+<table>
+<tr><th>نوع</th><th>مجاز؟</th><th>شرط</th></tr>
+<tr><td>ترمیم آسیب فیزیکی عکس</td><td>✅</td><td>ثبت نسخه‌ی اصل و ترمیم‌شده جداگانه</td></tr>
+<tr><td>بازسازی رنگ</td><td>✅</td><td>با ذکر «رنگ بازسازی‌شده»</td></tr>
+<tr><td>افزایش کیفیت</td><td>✅</td><td>با ذکر «کیفیت بهبودیافته»</td></tr>
+<tr><td>حذف اشخاص</td><td>❌</td><td>ممنوع</td></tr>
+<tr><td>افزودن عناصر</td><td>❌</td><td>ممنوع</td></tr>
+<tr><td>تغییر ترکیب</td><td>❌</td><td>ممنوع</td></tr>
+</table>
+</section>
+
+<section class="card" id="s16">
+<h2>۱۶. حریم خصوصی</h2>
+
+<h3>سطوح دسترسی رسانه</h3>
+<table>
+<tr><th>سطح</th><th>توضیح</th></tr>
+<tr><td>عمومی</td><td>قابل نمایش و دانلود برای همه</td></tr>
+<tr><td>محدود</td><td>نمایش با محدودیت (مثلاً فقط نمایش بدون دانلود)</td></tr>
+<tr><td>حساس</td><td>دسترسی محدود به نقش‌های خاص</td></tr>
+<tr><td>آرشیوی</td><td>نگهداری بدون نمایش</td></tr>
+</table>
+
+<h3>اصول حفاظتی</h3>
+<ul>
+<li>رضایت صریح برای انتشار رسانه‌های خانوادگی</li>
+<li>حفاظت از تصاویر خصوصی خانواده‌ها</li>
+<li>علامت‌گذاری رسانه‌های حساس</li>
+<li>ثبت رخداد دسترسی به رسانه‌های محدود</li>
+<li>امکان درخواست حذف توسط صاحب اثر</li>
+<li>رمزنگاری رسانه‌های حساس</li>
+</ul>
+
+<div class="quote"><strong>اصل کمترین افشا:</strong> اگر انتشار یک رسانه ریسک ایجاد کند، با محدودیت نمایش داده می‌شود — نه حذف کامل و نه افشای کامل.</div>
+</section>
+
+<section class="card" id="s17">
+<h2>۱۷. جست‌وجو و کشف</h2>
+
+<table>
+<tr><th>نوع جست‌وجو</th><th>توضیح</th></tr>
+<tr><td>متنی</td><td>جست‌وجو در عنوان، توضیحات و کلیدواژه‌ها</td></tr>
+<tr><td>شخص‌محور</td><td>رسانه‌های مرتبط با یک شهید</td></tr>
+<tr><td>مکان‌محور</td><td>رسانه‌های مرتبط با یک مکان</td></tr>
+<tr><td>زمان‌محور</td><td>رسانه‌های یک دوره یا تاریخ</td></tr>
+<tr><td>نوع‌محور</td><td>عکس، فیلم، صوت، موشن</td></tr>
+<tr><td>موضوع‌محور</td><td>موضوع یا رخداد خاص</td></tr>
+<tr><td>ترکیبی</td><td>چند معیار همزمان</td></tr>
+</table>
+
+<h3>در آینده</h3>
+<ul>
+<li>جست‌وجوی بصری (تشخیص اشخاص و مکان در تصویر)</li>
+<li>جست‌وجوی معنایی در متن پیاده‌سازی‌شده</li>
+<li>پیشنهاد رسانه‌های مرتبط</li>
+<li>کشف خودکار ارتباطات</li>
+</ul>
+</section>
+
+<section class="card" id="s18">
+<h2>۱۸. تجربه‌ی کاربری</h2>
+
+<div class="grid">
+<div class="mini"><h3>گالری زیبا</h3><p>نمایش گرافیکی جذاب و محترمانه</p></div>
+<div class="mini"><h3>نمایش سریع</h3><p>لود سریع تصاویر و ویدئوها با کیفیت مناسب</p></div>
+<div class="mini"><h3>پخش‌کننده‌ی حرفه‌ای</h3><p>پخش صوت و ویدئو با کنترل کامل</p></div>
+<div class="mini"><h3>اطلاعات کامل</h3><p>متادیتا و توضیحات در دسترس</p></div>
+<div class="mini"><h3>جست‌وجوی قوی</h3><p>فیلترهای ترکیبی</p></div>
+<div class="mini"><h3>دسترس‌پذیری</h3><p>متن جانشین، زیرنویس، فرمت‌های متنوع</p></div>
+</div>
+
+<h3>ساختار صفحه‌ی رسانه</h3>
+<div class="tree">┌──────────────────────────────────────────────┐
+│ Breadcrumb                                    │
+├──────────────────────────────────────────────┤
+│ نمایشگر اصلی:                                │
+│ ┌────────────────────────────────────────┐  │
+│ │                                        │  │
+│ │       [عکس / ویدئو / صوت]              │  │
+│ │                                        │  │
+│ │       [کنترل پخش / بزرگ‌نمایی]          │  │
+│ └────────────────────────────────────────┘  │
+├──────────────────────────────────────────────┤
+│ عنوان + توضیحات                              │
+├──────────────────────────────────────────────┤
+│ متادیتا:                                     │
+│  - اشخاص مرتبط                                │
+│  - مکان                                       │
+│  - تاریخ                                      │
+│  - منبع                                       │
+│  - حق نشر                                     │
+├──────────────────────────────────────────────┤
+│ برچسب‌ها                                     │
+├──────────────────────────────────────────────┤
+│ رسانه‌های مرتبط                              │
+├──────────────────────────────────────────────┤
+│ نوار اقدام: دانلود، اشتراک، درخواست استفاده    │
+└──────────────────────────────────────────────┘</div>
+
+<h3>ساختار گالری</h3>
+<div class="tree">گالری
+├── نمایش شبکه‌ای (Grid)
+│   ├── فیلتر نوع رسانه
+│   ├── فیلتر اشخاص
+│   ├── فیلتر زمان
+│   └── فیلتر مکان
+├── نمایش لیستی
+├── نمایش نقشه‌ای (رسانه‌های مکانی)
+├── نمایش زمانی (خط زمانی)
+└── نمایش موضوعی</div>
+</section>
+
+<section class="card" id="s19">
+<h2>۱۹. ساختار محصول</h2>
+<div class="tree">مرکز چندرسانه‌ای شهدا
+├── خانه و جست‌وجو
+├── گالری
+│   ├── عکس
+│   ├── فیلم و ویدئو
+│   ├── صوت
+│   ├── موشن‌گرافیک
+│   ├── اینفوگرافیک
+│   ├── گرافیک و پوستر
+│   └── اسناد تصویری
+├── مشاهده‌ی رسانه
+├── مجموعه‌های موضوعی
+│   ├── مجموعه بر اساس شهید
+│   ├── مجموعه بر اساس عملیات
+│   ├── مجموعه بر اساس مکان
+│   └── مجموعه بر اساس دوره
+├── آرشیو
+├── تولید رسانه
+├── درخواست استفاده
+├── پنل کاربر
+├── پنل تولیدکننده
+├── پنل مدیریت آرشیو
+├── درباره پروژه
+└── API و مستندات</div>
+</section>
+
+<section class="card" id="s20">
+<h2>۲۰. مدل داده‌ی پیشنهادی</h2>
+
+<h3>موجودیت‌های اصلی</h3>
+<table>
+<tr><th>موجودیت</th><th>نقش</th><th>کلید اصلی</th></tr>
+<tr><td><code>MediaAsset</code></td><td>هویت پایدار رسانه</td><td>شناسه خوانا (MED-...)</td></tr>
+<tr><td><code>MediaCategory</code></td><td>دسته‌بندی رسانه</td><td>slug</td></tr>
+<tr><td><code>MediaFile</code></td><td>فایل‌های اصل و مشتق</td><td>UUID</td></tr>
+<tr><td><code>MediaMetadata</code></td><td>فراداده‌ی ساختاریافته</td><td>UUID</td></tr>
+<tr><td><code>MediaTag</code></td><td>برچسب</td><td>slug</td></tr>
+<tr><td><code>MediaPerson</code></td><td>اشخاص مرتبط</td><td>UUID</td></tr>
+<tr><td><code>MediaPlace</code></td><td>مکان مرتبط (ارجاع به اطلس)</td><td>UUID + شناسه</td></tr>
+<tr><td><code>MediaEvent</code></td><td>رویداد مرتبط (ارجاع به تقویم)</td><td>UUID + شناسه</td></tr>
+<tr><td><code>MediaRights</code></td><td>حق نشر و رضایت</td><td>UUID</td></tr>
+<tr><td><code>MediaCollection</code></td><td>مجموعه‌ی موضوعی</td><td>UUID</td></tr>
+<tr><td><code>MediaUsageRequest</code></td><td>درخواست استفاده</td><td>UUID</td></tr>
+<tr><td><code>MediaProduction</code></td><td>محتوای تولیدی</td><td>UUID</td></tr>
+<tr><td><code>MediaChange</code></td><td>تاریخچه تغییرات</td><td>UUID</td></tr>
+</table>
+
+<p><strong>جزئیات کامل در «ضمیمه‌ی الف» آمده است.</strong></p>
+</section>
+
+<section class="card" id="s21">
+<h2>۲۱. API و اتصال فنی</h2>
+
+<table>
+<tr><th>نقطه‌ی پایانی</th><th>کارکرد</th><th>خروجی</th></tr>
+<tr><td><code>GET /v1/media</code></td><td>فهرست رسانه‌ها</td><td>JSON + فراداده</td></tr>
+<tr><td><code>GET /v1/media/{id}</code></td><td>جزئیات رسانه</td><td>JSON + فایل‌ها + متادیتا</td></tr>
+<tr><td><code>POST /v1/media</code></td><td>بارگذاری رسانه جدید</td><td>شناسه رسانه</td></tr>
+<tr><td><code>PATCH /v1/media/{id}</code></td><td>به‌روزرسانی متادیتا</td><td>تأیید</td></tr>
+<tr><td><code>GET /v1/media/{id}/files</code></td><td>فایل‌های رسانه (اصل + مشتق)</td><td>فهرست فایل‌ها</td></tr>
+<tr><td><code>GET /v1/media/{id}/stream</code></td><td>استریم رسانه</td><td>Stream</td></tr>
+<tr><td><code>GET /v1/media/{id}/download</code></td><td>دانلود با کنترل دسترسی</td><td>File</td></tr>
+<tr><td><code>GET /v1/media/by-person/{personId}</code></td><td>رسانه‌های یک شهید</td><td>فهرست</td></tr>
+<tr><td><code>GET /v1/media/by-place/{locationId}</code></td><td>رسانه‌های یک مکان</td><td>فهرست</td></tr>
+<tr><td><code>GET /v1/media/by-collection/{id}</code></td><td>رسانه‌های یک مجموعه</td><td>فهرست</td></tr>
+<tr><td><code>POST /v1/media/{id}/usage-request</code></td><td>درخواست استفاده</td><td>شناسه درخواست</td></tr>
+<tr><td><code>GET /v1/search</code></td><td>جست‌وجوی ترکیبی</td><td>نتایج</td></tr>
+<tr><td><code>GET /v1/schema</code></td><td>دریافت schema</td><td>JSON Schema</td></tr>
+</table>
+
+<p><strong>جزئیات کامل در «ضمیمه‌ی ب» آمده است.</strong></p>
+</section>
+
+<section class="card" id="s22">
+<h2>۲۲. ارتباط با اکوسیستم</h2>
+
+<table>
+<tr><th>پروژه</th><th>نوع ارتباط</th><th>جهت داده</th></tr>
+<tr><td>شهیدپورتال</td><td>هویت، استاندارد و اتصال مادر</td><td>دوطرفه</td></tr>
+<tr><td>بانک شهدا</td><td>رسانه‌های پرونده‌ی شهید</td><td>دوطرفه</td></tr>
+<tr><td>بانک روایت</td><td>فایل صوتی، تصویری و ویدئوی روایت</td><td>دوطرفه</td></tr>
+<tr><td>بانک وصیت‌نامه</td><td>تصویر اصل، صوت، ویدئو</td><td>دوطرفه</td></tr>
+<tr><td>بانک عملیات</td><td>عکس، فیلم، نقشه</td><td>دوطرفه</td></tr>
+<tr><td>اطلس شهدا</td><td>رسانه‌های مکانی</td><td>دوطرفه</td></tr>
+<tr><td>تقویم شهدا</td><td>رسانه‌های مناسبتی</td><td>دوطرفه</td></tr>
+<tr><td>پاتوق شهدا</td><td>نمایش و انتشار رسانه در شبکه</td><td>دوطرفه</td></tr>
+</table>
+
+<div class="quote"><strong>فرمول اکوسیستم (یازده محور):</strong> بانک شهدا = چه کسی؟ | اطلس = کجا؟ | تقویم = چه زمانی؟ | بانک روایت = چه روایتی؟ | بانک وصیت‌نامه = چه پیامی؟ | بانک عملیات = چه رویدادی؟ | مرکز خدمات = چه خدمتی؟ | مرکز پشتیبانی = چه پرسشی؟ | بازار = چه محصولی؟ | مرکز چندرسانه‌ای = چه تصویری؟ چه صدایی؟ | پاتوق = چگونه تعامل کنیم؟</div>
+</section>
+
+<section class="card" id="s23">
+<h2>۲۳. حکمرانی و حریم خصوصی</h2>
+
+<h3>سطوح دسترسی</h3>
+<table>
+<tr><th>سطح</th><th>توضیح</th></tr>
+<tr><td>عمومی</td><td>رسانه‌های آزاد برای همه</td></tr>
+<tr><td>محدود</td><td>نمایش با محدودیت</td></tr>
+<tr><td>حساس</td><td>دسترسی به نقش‌های خاص</td></tr>
+<tr><td>آرشیوی</td><td>نگهداری بدون نمایش</td></tr>
+</table>
+
+<h3>اصول حفاظتی</h3>
+<ul>
+<li>رضایت صریح برای رسانه‌های خانوادگی</li>
+<li>حفاظت از تصاویر خصوصی</li>
+<li>علامت‌گذاری رسانه‌های حساس</li>
+<li>ثبت رخداد دسترسی</li>
+<li>امکان حذف توسط صاحب اثر</li>
+<li>رمزنگاری رسانه‌های حساس</li>
+<li>پشتیبان‌گیری چندلایه</li>
+<li>سیاست نگهداری بلندمدت (۵۰+ سال)</li>
+</ul>
+</section>
+
+<section class="card" id="s24">
+<h2>۲۴. نقشه راه توسعه</h2>
+
+<table>
+<tr><th>فاز</th><th>تمرکز</th><th>خروجی</th><th>معیار عبور</th></tr>
+<tr><td>۱</td><td>تثبیت مدل رسانه</td><td>Schema کامل + واژه‌نامه</td><td>تأیید مدل + شناسه‌های استاندارد</td></tr>
+<tr><td>۲</td><td>هسته‌ی آرشیو و گالری</td><td>نمایش رسانه + متادیتا + جست‌وجو</td><td>بارگذاری موفق ۱۰٬۰۰۰ رسانه</td></tr>
+<tr><td>۳</td><td>پردازش خودکار</td><td>تولید مشتق‌ها + بهینه‌سازی + استریم</td><td>پردازش ۹۰٪ رسانه‌ها</td></tr>
+<tr><td>۴</td><td>حق نشر و رضایت</td><td>سیستم رضایت + درخواست استفاده</td><td>پوشش حقوقی بالای ۹۰٪</td></tr>
+<tr><td>۵</td><td>اتصال اکوسیستم</td><td>API + اتصال به بانک شهدا و بانک روایت</td><td>اتصال موفق به ۴ پروژه</td></tr>
+<tr><td>۶</td><td>تولید حرفه‌ای</td><td>تیم تولید + خدمات تولیدی</td><td>تولید ۵۰۰ رسانه‌ی جدید سالانه</td></tr>
+<tr><td>۷</td><td>هوشمندسازی</td><td>جست‌وجوی بصری، تشخیص اشخاص و مکان</td><td>دقت تشخیص بالای ۸۰٪</td></tr>
+</table>
+
+<div class="quote"><strong>معیار عبور از هر فاز:</strong> هیچ فازی بدون تحقق کامل مدل رسانه و کیفیت پایه‌ی فاز پیشین آغاز نمی‌شود.</div>
+</section>
+
+<section class="card" id="s25">
+<h2>۲۵. شاخص‌های موفقیت</h2>
+
+<table>
+<tr><th>حوزه</th><th>شاخص</th><th>هدف</th></tr>
+<tr><td>پوشش</td><td>تعداد رسانه‌های ثبت‌شده</td><td>رشد پیوسته</td></tr>
+<tr><td>پوشش</td><td>تنوع نوع رسانه</td><td>۶+ نوع</td></tr>
+<tr><td>کیفیت</td><td>درصد رسانه‌های دارای متادیتای کامل</td><td>بالای ۹۰٪</td></tr>
+<tr><td>کیفیت</td><td>درصد رسانه‌های دارای وضعیت حقوقی مشخص</td><td>بالای ۹۵٪</td></tr>
+<tr><td>کیفیت</td><td>درصد رسانه‌های دارای نسخه‌ی اصل حفظ‌شده</td><td>۱۰۰٪</td></tr>
+<tr><td>کارایی</td><td>میانگین زمان بارگذاری صفحه‌ی رسانه</td><td>کمتر از ۳ ثانیه</td></tr>
+<tr><td>کارایی</td><td>میانگین زمان استریم ویدئو</td><td>شروع در کمتر از ۲ ثانیه</td></tr>
+<tr><td>کاربرد</td><td>بازدید ماهانه</td><td>۱۵۰٬۰۰۰</td></tr>
+<tr><td>کاربرد</td><td>تعداد درخواست‌های استفاده</td><td>۵۰۰ سال اول</td></tr>
+<tr><td>اتصال</td><td>درصد رسانه‌های متصل به شخص/مکان/روایت</td><td>بالای ۷۰٪</td></tr>
+<tr><td>پایداری</td><td>Uptime</td><td>۹۹.۵٪</td></tr>
+<tr><td>پایداری</td><td>صحت آرشیو (checksum موفق)</td><td>۱۰۰٪</td></tr>
+</table>
+
+<p><strong>جزئیات کامل در «ضمیمه‌ی پ» آمده است.</strong></p>
+</section>
+
+<section class="card" id="s26">
+<h2>۲۶. جمع‌بندی نهایی</h2>
+
+<div class="quote"><strong>مرکز چندرسانه‌ای شهدا چیست؟</strong> یک محصول مستقل و تخصصی در اکوسیستم شهیدپورتال برای نگهداری، سازمان‌دهی، پردازش، تولید و ارائه‌ی محتوای چندرسانه‌ای مرتبط با شهدا؛ با حفظ اصالت، متادیتای کامل، احترام به حق نشر و اتصال به اکوسیستم.</div>
+
+<p>مرکز چندرسانه‌ای از یک سو محصولی مستقل با هویت و توسعه‌ی خودش است، و از سوی دیگر از طریق <strong>شناسه‌ی پایدار و API</strong> به بانک شهدا، بانک روایت، بانک وصیت‌نامه، بانک عملیات، اطلس، تقویم و پاتوق متصل می‌شود.</p>
+
+<div class="quote"><strong>قاعده‌ی توسعه‌ی آینده:</strong> هر قابلیت جدید در مرکز چندرسانه‌ای باید جایگاه مشخصی در یکی از این شش محور داشته باشد — <strong>رسانه، آرشیو، متادیتا، حقوق، تولید، دسترسی</strong>.</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ضمیمه الف -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+
+<span class="appendix-marker" id="appendix-a">📎 ضمیمه الف — مدل داده‌ی کامل</span>
+
+<section class="card">
+<h2>ضمیمه الف: مدل داده‌ی کامل</h2>
+
+<h3>الف-۱. MediaAsset (رسانه)</h3>
+<table>
+<tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
+<tr><td>id</td><td>string</td><td>PK</td><td>شناسه پایدار MED-...</td></tr>
+<tr><td>title</td><td>string</td><td></td><td>عنوان توصیفی</td></tr>
+<tr><td>mediaType</td><td>enum</td><td></td><td>image / video / audio / motion / infographic / graphic / document</td></tr>
+<tr><td>categoryId</td><td>string</td><td>FK</td><td>زیر‌دسته</td></tr>
+<tr><td>description</td><td>text</td><td></td><td>توضیحات</td></tr>
+<tr><td>altText</td><td>string</td><td></td><td>متن جانشین (دسترس‌پذیری)</td></tr>
+<tr><td>eventDate</td><td>date</td><td></td><td>تاریخ رخداد</td></tr>
+<tr><td>eventDatePrecision</td><td>enum</td><td></td><td>exact / approximate / range / decade / unknown</td></tr>
+<tr><td>uploadDate</td><td>datetime</td><td></td><td>تاریخ بارگذاری</td></tr>
+<tr><td>personIds</td><td>string[]</td><td>FK</td><td>اشخاص مرتبط (ارجاع به بانک شهدا)</td></tr>
+<tr><td>locationId</td><td>string</td><td>FK</td><td>مکان (ارجاع به اطلس)</td></tr>
+<tr><td>eventId</td><td>string</td><td>FK</td><td>رویداد (ارجاع به تقویم)</td></tr>
+<tr><td>narrativeRef</td><td>string</td><td>FK</td><td>روایت مرتبط</td></tr>
+<tr><td>tags</td><td>string[]</td><td></td><td>برچسب‌ها</td></tr>
+<tr><td>source</td><td>string</td><td></td><td>منبع</td></tr>
+<tr><td>rightsId</td><td>uuid</td><td>FK</td><td>وضعیت حقوقی</td></tr>
+<tr><td>accessLevel</td><td>enum</td><td></td><td>public / limited / sensitive / archived</td></tr>
+<tr><td>status</td><td>enum</td><td></td><td>published / reviewing / archived / removed</td></tr>
+<tr><td>version</td><td>int</td><td></td><td>شماره نسخه</td></tr>
+<tr><td>createdAt</td><td>datetime</td><td></td><td></td></tr>
+<tr><td>updatedAt</td><td>datetime</td><td></td><td></td></tr>
+</table>
+
+<h3>الف-۲. MediaFile (فایل)</h3>
+<table>
+<tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
+<tr><td>id</td><td>uuid</td><td>PK</td><td></td></tr>
+<tr><td>mediaId</td><td>string</td><td>FK</td><td></td></tr>
+<tr><td>fileType</td><td>enum</td><td></td><td>original / high-quality / display / thumbnail / preview / streaming</td></tr>
+<tr><td>storagePath</td><td>string</td><td></td><td>مسیر فایل</td></tr>
+<tr><td>format</td><td>string</td><td></td><td>فرمت فایل</td></tr>
+<tr><td>fileSize</td><td>int</td><td></td><td>حجم (بایت)</td></tr>
+<tr><td>dimensions</td><td>json</td><td></td><td>ابعاد (برای عکس و ویدئو)</td></tr>
+<tr><td>duration</td><td>int</td><td></td><td>مدت (برای صوت و ویدئو)</td></tr>
+<tr><td>fileHash</td><td>string</td><td></td><td>هش SHA-256</td></tr>
+<tr><td>checksum</td><td>string</td><td></td><td>checksum برای صحت‌سنجی</td></tr>
+<tr><td>createdAt</td><td>datetime</td><td></td><td></td></tr>
+</table>
+
+<h3>الف-۳. MediaMetadata (فراداده)</h3>
+<table>
+<tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
+<tr><td>id</td><td>uuid</td><td>PK</td><td></td></tr>
+<tr><td>mediaId</td><td>string</td><td>FK</td><td></td></tr>
+<tr><td>photographer</td><td>string</td><td></td><td>عکاس یا فیلمبردار</td></tr>
+<tr><td>camera</td><td>string</td><td></td><td>دوربین</td></tr>
+<tr><td>exif</td><td>json</td><td></td><td>داده‌های EXIF</td></tr>
+<tr><td>technical</td><td>json</td><td></td><td>داده‌های فنی</td></tr>
+<tr><td>language</td><td>string</td><td></td><td>زبان (برای صوت و ویدئو)</td></tr>
+<tr><td>subtitles</td><td>uuid[]</td><td></td><td>زیرنویس‌ها</td></tr>
+<tr><td>transcript</td><td>text</td><td></td><td>متن پیاده‌سازی‌شده</td></tr>
+</table>
+
+<h3>الف-۴. MediaRights (حق نشر)</h3>
+<table>
+<tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
+<tr><td>id</td><td>uuid</td><td>PK</td><td></td></tr>
+<tr><td>mediaId</td><td>string</td><td>FK</td><td></td></tr>
+<tr><td>rightsType</td><td>enum</td><td></td><td>family / organization / media / photographer / public-domain / unknown</td></tr>
+<tr><td>ownerName</td><td>string</td><td></td><td>نام صاحب اثر</td></tr>
+<tr><td>licenseType</td><td>enum</td><td></td><td>all-rights / limited / cc-by / cc-by-sa / public</td></tr>
+<tr><td>consentDocumentId</td><td>uuid</td><td></td><td>سند رضایت</td></tr>
+<tr><td>usageRestrictions</td><td>text</td><td></td><td>محدودیت‌های استفاده</td></tr>
+<tr><td>expiryDate</td><td>date</td><td></td><td>تاریخ انقضا (در صورت وجود)</td></tr>
+</table>
+
+<h3>الف-۵. MediaUsageRequest (درخواست استفاده)</h3>
+<table>
+<tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
+<tr><td>id</td><td>uuid</td><td>PK</td><td></td></tr>
+<tr><td>mediaId</td><td>string</td><td>FK</td><td></td></tr>
+<tr><td>requesterName</td><td>string</td><td></td><td>نام درخواست‌کننده</td></tr>
+<tr><td>requesterOrg</td><td>string</td><td></td><td>سازمان</td></tr>
+<tr><td>purpose</td><td>text</td><td></td><td>هدف استفاده</td></tr>
+<tr><td>status</td><td>enum</td><td></td><td>pending / approved / rejected</td></tr>
+<tr><td>respondedAt</td><td>datetime</td><td></td><td></td></tr>
+</table>
+
+<h3>الف-۶. MediaCollection (مجموعه)</h3>
+<table>
+<tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
+<tr><td>id</td><td>uuid</td><td>PK</td><td></td></tr>
+<tr><td>title</td><td>string</td><td></td><td>عنوان مجموعه</td></tr>
+<tr><td>collectionType</td><td>enum</td><td></td><td>person / operation / place / period / thematic</td></tr>
+<tr><td>description</td><td>text</td><td></td><td>توضیحات</td></tr>
+<tr><td>mediaIds</td><td>string[]</td><td>FK</td><td>رسانه‌های مجموعه</td></tr>
+<tr><td>curator</td><td>string</td><td></td><td>گردآورنده</td></tr>
+</table>
+
+<h3>الف-۷. MediaProduction (تولید)</h3>
+<table>
+<tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
+<tr><td>id</td><td>uuid</td><td>PK</td><td></td></tr>
+<tr><td>title</td><td>string</td><td></td><td>عنوان تولید</td></tr>
+<tr><td>productionType</td><td>enum</td><td></td><td>photography / videography / audio / motion / graphic / interactive</td></tr>
+<tr><td>projectId</td><td>string</td><td></td><td>پروژه‌ی مرتبط</td></tr>
+<tr><td>team</td><td>json</td><td></td><td>تیم تولید</td></tr>
+<tr><td>startDate</td><td>date</td><td></td><td></td></tr>
+<tr><td>endDate</td><td>date</td><td></td><td></td></tr>
+<tr><td>resultMediaIds</td><td>string[]</td><td>FK</td><td>رسانه‌های تولیدی</td></tr>
+<tr><td>status</td><td>enum</td><td></td><td>planned / in-progress / completed / cancelled</td></tr>
+</table>
+
+<h3>الف-۸ تا الف-۱۲. سایر موجودیت‌ها</h3>
+<table>
+<tr><th>موجودیت</th><th>فیلدهای اصلی</th></tr>
+<tr><td><code>MediaCategory</code></td><td>slug, label, icon, order, mediaCount</td></tr>
+<tr><td><code>MediaTag</code></td><td>slug, label, category, usageCount</td></tr>
+<tr><td><code>MediaPerson</code></td><td>id, mediaId, personId, role, note</td></tr>
+<tr><td><code>MediaPlace</code></td><td>id, mediaId, locationId, role, note</td></tr>
+<tr><td><code>MediaChange</code></td><td>id, mediaId, changeType, fieldChanged, oldValue, newValue, actor, timestamp</td></tr>
+</table>
+
+<h3>نمونه رکورد کامل رسانه (JSON)</h3>
+<div class="code">{
+  <span class="k">"id"</span>: <span class="s">"MED-1404-000123"</span>,
+  <span class="k">"title"</span>: <span class="s">"عکس خانوادگی شهید در روز اعزام"</span>,
+  <span class="k">"mediaType"</span>: <span class="s">"image"</span>,
+  <span class="k">"categoryId"</span>: <span class="s">"family"</span>,
+  <span class="k">"description"</span>: <span class="s">"عکس یادگاری در حیاط خانه..."</span>,
+  <span class="k">"altText"</span>: <span class="s">"شهید در کنار خانواده در حیاط خانه"</span>,
+  <span class="k">"eventDate"</span>: <span class="s">"1360-07-15"</span>,
+  <span class="k">"eventDatePrecision"</span>: <span class="s">"approximate"</span>,
+  <span class="k">"uploadDate"</span>: <span class="s">"1404-05-20T08:30:00Z"</span>,
+  <span class="k">"personIds"</span>: [<span class="s">"MTR-1404-00045"</span>],
+  <span class="k">"locationId"</span>: <span class="s">"PL-KRN-KERMAN"</span>,
+  <span class="k">"tags"</span>: [<span class="s">"خانوادگی"</span>, <span class="s">"اعزام"</span>, <span class="s">"کرمان"</span>],
+  <span class="k">"source"</span>: <span class="s">"خانواده شهید"</span>,
+  <span class="k">"rights"</span>: {
+    <span class="k">"rightsType"</span>: <span class="s">"family"</span>,
+    <span class="k">"ownerName"</span>: <span class="s">"خانواده شهید"</span>,
+    <span class="k">"licenseType"</span>: <span class="s">"limited"</span>,
+    <span class="k">"usageRestrictions"</span>: <span class="s">"استفاده با ذکر منبع"</span>
+  },
+  <span class="k">"accessLevel"</span>: <span class="s">"public"</span>,
+  <span class="k">"status"</span>: <span class="s">"published"</span>,
+  <span class="k">"files"</span>: [
+    {
+      <span class="k">"fileType"</span>: <span class="s">"original"</span>,
+      <span class="k">"storagePath"</span>: <span class="s">"originals/images/MED-1404-000123.tif"</span>,
+      <span class="k">"format"</span>: <span class="s">"TIFF"</span>,
+      <span class="k">"fileSize"</span>: 45800000,
+      <span class="k">"dimensions"</span>: { <span class="k">"width"</span>: 4200, <span class="k">"height"</span>: 3200 },
+      <span class="k">"fileHash"</span>: <span class="s">"sha256:abc123..."</span>
+    },
+    {
+      <span class="k">"fileType"</span>: <span class="s">"display"</span>,
+      <span class="k">"storagePath"</span>: <span class="s">"derivatives/display/MED-1404-000123.jpg"</span>,
+      <span class="k">"format"</span>: <span class="s">"JPEG"</span>,
+      <span class="k">"fileSize"</span>: 320000,
+      <span class="k">"dimensions"</span>: { <span class="k">"width"</span>: 1000, <span class="k">"height"</span>: 760 }
+    },
+    {
+      <span class="k">"fileType"</span>: <span class="s">"thumbnail"</span>,
+      <span class="k">"storagePath"</span>: <span class="s">"derivatives/thumbnails/MED-1404-000123.jpg"</span>,
+      <span class="k">"format"</span>: <span class="s">"JPEG"</span>,
+      <span class="k">"fileSize"</span>: 18000,
+      <span class="k">"dimensions"</span>: { <span class="k">"width"</span>: 300, <span class="k">"height"</span>: 230 }
+    }
+  ],
+  <span class="k">"metadata"</span>: {
+    <span class="k">"photographer"</span>: <span class="s">"عکاس ناشناخته"</span>,
+    <span class="k">"exif"</span>: { ... }
+  },
+  <span class="k">"ecosystemRefs"</span>: {
+    <span class="k">"shahidbank"</span>: <span class="s">"MTR-1404-00045"</span>,
+    <span class="k">"atlas"</span>: <span class="s">"PL-KRN-KERMAN"</span>,
+    <span class="k">"narrative"</span>: <span class="s">"NAR-1404-00045"</span>,
+    <span class="k">"vasiyat"</span>: null,
+    <span class="k">"operation"</span>: null
+  },
+  <span class="k">"version"</span>: 1,
+  <span class="k">"createdAt"</span>: <span class="s">"1404-05-20T08:30:00Z"</span>,
+  <span class="k">"updatedAt"</span>: <span class="s">"1404-05-20T08:30:00Z"</span>
+}</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ضمیمه ب -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+
+<span class="appendix-marker" id="appendix-b">📎 ضمیمه ب — API کامل</span>
+
+<section class="card">
+<h2>ضمیمه ب: API کامل</h2>
+
+<h3>ب-۱. Media API</h3>
+<table>
+<tr><th>نقطه‌ی پایانی</th><th>روش</th><th>توضیح</th><th>پارامترها</th></tr>
+<tr><td><code>/v1/media</code></td><td>GET</td><td>فهرست رسانه‌ها</td><td>page, limit, type, category, accessLevel, status</td></tr>
+<tr><td><code>/v1/media/{id}</code></td><td>GET</td><td>جزئیات رسانه</td><td>—</td></tr>
+<tr><td><code>/v1/media</code></td><td>POST</td><td>بارگذاری رسانه جدید</td><td>multipart body</td></tr>
+<tr><td><code>/v1/media/{id}</code></td><td>PATCH</td><td>به‌روزرسانی متادیتا</td><td>partial body</td></tr>
+<tr><td><code>/v1/media/{id}/files</code></td><td>GET</td><td>فایل‌های رسانه</td><td>fileType</td></tr>
+<tr><td><code>/v1/media/{id}/stream</code></td><td>GET</td><td>استریم رسانه</td><td>quality</td></tr>
+<tr><td><code>/v1/media/{id}/download</code></td><td>GET</td><td>دانلود</td><td>quality, format</td></tr>
+<tr><td><code>/v1/media/{id}/rights</code></td><td>GET</td><td>وضعیت حقوقی</td><td>—</td></tr>
+<tr><td><code>/v1/media/by-person/{personId}</code></td><td>GET</td><td>رسانه‌های یک شهید</td><td>type</td></tr>
+<tr><td><code>/v1/media/by-place/{locationId}</code></td><td>GET</td><td>رسانه‌های یک مکان</td><td>type</td></tr>
+<tr><td><code>/v1/media/by-category/{slug}</code></td><td>GET</td><td>رسانه‌های یک دسته</td><td>page, limit</td></tr>
+</table>
+
+<h3>ب-۲. Collection API</h3>
+<table>
+<tr><th>نقطه‌ی پایانی</th><th>روش</th><th>توضیح</th></tr>
+<tr><td><code>/v1/collections</code></td><td>GET</td><td>فهرست مجموعه‌ها</td></tr>
+<tr><td><code>/v1/collections/{id}</code></td><td>GET</td><td>جزئیات مجموعه</td></tr>
+<tr><td><code>/v1/collections/{id}/media</code></td><td>GET</td><td>رسانه‌های مجموعه</td></tr>
+<tr><td><code>/v1/collections/by-person/{personId}</code></td><td>GET</td><td>مجموعه‌های مرتبط با یک شهید</td></tr>
+</table>
+
+<h3>ب-۳. Production API</h3>
+<table>
+<tr><th>نقطه‌ی پایانی</th><th>روش</th><th>توضیح</th></tr>
+<tr><td><code>/v1/productions</code></td><td>GET</td><td>فهرست تولیدات</td></tr>
+<tr><td><code>/v1/productions/{id}</code></td><td>GET</td><td>جزئیات تولید</td></tr>
+<tr><td><code>/v1/productions</code></td><td>POST</td><td>ثبت درخواست تولید</td></tr>
+</table>
+
+<h3>ب-۴. Usage Request API</h3>
+<table>
+<tr><th>نقطه‌ی پایانی</th><th>روش</th><th>توضیح</th></tr>
+<tr><td><code>/v1/media/{id}/usage-request</code></td><td>POST</td><td>ثبت درخواست استفاده</td></tr>
+<tr><td><code>/v1/usage-requests/{id}</code></td><td>GET</td><td>وضعیت درخواست</td></tr>
+<tr><td><code>/v1/usage-requests/by-media/{mediaId}</code></td><td>GET</td><td>درخواست‌های یک رسانه</td></tr>
+</table>
+
+<h3>ب-۵. جست‌وجو و Schema</h3>
+<table>
+<tr><th>نقطه‌ی پایانی</th><th>روش</th><th>توضیح</th></tr>
+<tr><td><code>/v1/search</code></td><td>GET</td><td>جست‌وجوی ترکیبی</td></tr>
+<tr><td><code>/v1/schema</code></td><td>GET</td><td>schema نسخه‌دار</td></tr>
+<tr><td><code>/v1/schema/{entity}</code></td><td>GET</td><td>schema یک موجودیت</td></tr>
+</table>
+
+<h3>ب-۶. استاندارد پاسخ</h3>
+<div class="code">{
+  <span class="k">"status"</span>: <span class="s">"ok"</span>,
+  <span class="k">"data"</span>: { ... },
+  <span class="k">"meta"</span>: {
+    <span class="k">"page"</span>: 1,
+    <span class="k">"limit"</span>: 20,
+    <span class="k">"total"</span>: 5678
+  }
+}</div>
+
+<h3>ب-۷. کدهای خطا</h3>
+<table>
+<tr><th>کد</th><th>HTTP</th><th>معنا</th></tr>
+<tr><td>BAD_REQUEST</td><td>400</td><td>درخواست نامعتبر</td></tr>
+<tr><td>UNAUTHORIZED</td><td>401</td><td>نیاز به احراز هویت</td></tr>
+<tr><td>FORBIDDEN</td><td>403</td><td>دسترسی مجاز نیست</td></tr>
+<tr><td>NOT_FOUND</td><td>404</td><td>منبع یافت نشد</td></tr>
+<tr><td>PAYLOAD_TOO_LARGE</td><td>413</td><td>حجم فایل زیاد</td></tr>
+<tr><td>UNSUPPORTED_MEDIA_TYPE</td><td>415</td><td>فرمت پشتیبانی نمی‌شود</td></tr>
+<tr><td>RATE_LIMIT</td><td>429</td><td>تعداد درخواست زیاد</td></tr>
+<tr><td>SERVER_ERROR</td><td>500</td><td>خطای سرور</td></tr>
+</table>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ضمیمه پ -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+
+<span class="appendix-marker" id="appendix-c">📎 ضمیمه پ — شاخص‌های کلیدی عملکرد</span>
+
+<section class="card">
+<h2>ضمیمه پ: شاخص‌های کلیدی عملکرد</h2>
+
+<h3>پ-۱. پوشش</h3>
+<table>
+<tr><th>شاخص</th><th>سال اول</th><th>سال دوم</th><th>سال سوم</th></tr>
+<tr><td>رسانه‌های ثبت‌شده</td><td>۵۰٬۰۰۰</td><td>۲۰۰٬۰۰۰</td><td>۵۰۰٬۰۰۰</td></tr>
+<tr><td>رسانه‌های دارای متادیتای کامل</td><td>۶۰٪</td><td>۸۵٪</td><td>۹۵٪</td></tr>
+<tr><td>رسانه‌های دارای نسخه‌ی اصل</td><td>۱۰۰٪</td><td>۱۰۰٪</td><td>۱۰۰٪</td></tr>
+<tr><td>رسانه‌های متصل به شخص/مکان/روایت</td><td>۴۰٪</td><td>۶۵٪</td><td>۸۵٪</td></tr>
+</table>
+
+<h3>پ-۲. کیفیت</h3>
+<table>
+<tr><th>شاخص</th><th>هدف</th></tr>
+<tr><td>درصد رسانه‌های دارای وضعیت حقوقی مشخص</td><td>بالای ۹۵٪</td></tr>
+<tr><td>درصد رسانه‌های دارای متن جانشین</td><td>بالای ۹۰٪</td></tr>
+<tr><td>صحت آرشیو (checksum موفق)</td><td>۱۰۰٪</td></tr>
+<tr><td>درصد رسانه‌های دارای تگ کافی</td><td>بالای ۸۰٪</td></tr>
+</table>
+
+<h3>پ-۳. کارایی</h3>
+<table>
+<tr><th>شاخص</th><th>هدف</th></tr>
+<tr><td>میانگین زمان بارگذاری صفحه‌ی رسانه</td><td>کمتر از ۳ ثانیه</td></tr>
+<tr><td>میانگین زمان شروع استریم ویدئو</td><td>کمتر از ۲ ثانیه</td></tr>
+<tr><td>میانگین زمان پردازش پس از بارگذاری</td><td>کمتر از ۵ دقیقه</td></tr>
+<tr><td>میانگین زمان جست‌وجو</td><td>کمتر از ۵۰۰ms</td></tr>
+</table>
+
+<h3>پ-۴. کاربرد</h3>
+<table>
+<tr><th>شاخص</th><th>هدف</th></tr>
+<tr><td>بازدید ماهانه</td><td>۱۵۰٬۰۰۰</td></tr>
+<tr><td>تعداد دانلودهای مجاز</td><td>۵٬۰۰۰ سال اول</td></tr>
+<tr><td>تعداد درخواست‌های استفاده</td><td>۵۰۰ سال اول</td></tr>
+<tr><td>نرخ بازگشت کاربران</td><td>بالای ۴۰٪</td></tr>
+</table>
+
+<h3>پ-۵. تولید</h3>
+<table>
+<tr><th>شاخص</th><th>هدف</th></tr>
+<tr><td>تعداد تولیدات رسانه‌ای سالانه</td><td>۵۰۰</td></tr>
+<tr><td>درصد تولیدات با متادیتای کامل</td><td>بالای ۹۵٪</td></tr>
+<tr><td>درصد تولیدات با وضعیت حقوقی مشخص</td><td>۱۰۰٪</td></tr>
+</table>
+
+<h3>پ-۶. پایداری</h3>
+<table>
+<tr><th>شاخص</th><th>هدف</th></tr>
+<tr><td>Uptime</td><td>۹۹.۵٪</td></tr>
+<tr><td>پاسخ API</td><td>کمتر از ۵۰۰ms</td></tr>
+<tr><td>پشتیبان موفق</td><td>۱۰۰٪</td></tr>
+<tr><td>رخداد امنیتی حل‌شده</td><td>۱۰۰٪ در کمتر از ۲۴ ساعت</td></tr>
+</table>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ضمیمه ت -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+
+<span class="appendix-marker" id="appendix-d">📎 ضمیمه ت — UX و هویت بصری</span>
+
+<section class="card">
+<h2>ضمیمه ت: UX و هویت بصری</h2>
+
+<h3>ت-۱. پالت رنگی پیشنهادی</h3>
+<table>
+<tr><th>نقش</th><th>رنگ</th><th>کد</th></tr>
+<tr><td>رنگ اصلی (برند)</td><td>بنفش تیره</td><td><code>#3D2066</code></td></tr>
+<tr><td>رنگ ثانویه</td><td>بنفش روشن</td><td><code>#6B3A9C</code></td></tr>
+<tr><td>رنگ مکمل</td><td>زعفرانی (تأکید)</td><td><code>#C4903A</code></td></tr>
+<tr><td>متن اصلی</td><td>مرکب کهنه</td><td><code>#2A2419</code></td></tr>
+<tr><td>متن ثانویه</td><td>خاکستری بنفش</td><td><code>#7B6B8A</code></td></tr>
+<tr><td>پس‌زمینه</td><td>کرم روشن</td><td><code>#F5EFE2</code></td></tr>
+</table>
+
+<h3>ت-۲. تایپوگرافی</h3>
+<ul>
+<li>فونت اصلی: <strong>وزیرمتن</strong> یا <strong>ایران‌سنس</strong></li>
+<li>وزن‌ها: ۴۰۰ تا ۹۰۰</li>
+<li>ارتفاع خط: ۱.۸ برای متن، ۱.۲ برای تیتر</li>
+<li>مقیاس: ۱۲ / ۱۴ / ۱۶ / ۲۰ / ۲۶ / ۳۴ / ۴۸ / ۶۴</li>
+</ul>
+
+<h3>ت-۳. اصول طراحی</h3>
+<div class="grid">
+<div class="mini"><h3>گالری محور</h3><p>رسانه عنصر اصلی صفحه است.</p></div>
+<div class="mini"><h3>کرامت سوژه</h3><p>نمایش محترمانه، بدون بزرگ‌نمایی یا افکت تزئینی.</p></div>
+<div class="mini"><h3>کیفیت نمایش</h3><p>تصاویر در بهترین کیفیت با بهینه‌سازی هوشمند.</p></div>
+<div class="mini"><h3>اطلاعات کامل</h3><p>متادیتا و توضیحات در دسترس.</p></div>
+<div class="mini"><h3>دسترس‌پذیری</h3><p>متن جانشین، زیرنویس، فرمت‌های متنوع.</p></div>
+<div class="mini"><h3>ریسپانسیو</h3><p>موبایل، تبلت، دسکتاپ.</p></div>
+</div>
+
+<h3>ت-۴. Wireframe گالری</h3>
+<div class="tree">┌──────────────────────────────────────────────┐
+│ نوار جست‌وجو + فیلتر                         │
+├──────────────────────────────────────────────┤
+│ تب‌ها: [عکس] [فیلم] [صوت] [موشن] [اسناد]      │
+├──────────────────────────────────────────────┤
+│ ┌──────┬──────┬──────┬──────┐                │
+│ │عکس   │عکس   │عکس   │عکس   │                │
+│ │      │      │      │      │                │
+│ ├──────┼──────┼──────┼──────┤                │
+│ │عکس   │عکس   │عکس   │عکس   │                │
+│ │      │      │      │      │                │
+│ ├──────┼──────┼──────┼──────┤                │
+│ │عکس   │عکس   │عکس   │عکس   │                │
+│ └──────┴──────┴──────┴──────┘                │
+├──────────────────────────────────────────────┤
+│ صفحه‌بندی                                    │
+└──────────────────────────────────────────────┘</div>
+
+<h3>ت-۵. Wireframe صفحه‌ی رسانه</h3>
+<div class="tree">┌──────────────────────────────────────────────┐
+│ Breadcrumb                                    │
+├──────────────────────────────────────────────┤
+│ ┌────────────────────────────────────────┐  │
+│ │                                        │  │
+│ │       [عکس / ویدئو / صوت]              │  │
+│ │                                        │  │
+│ │       [کنترل پخش / بزرگ‌نمایی]          │  │
+│ └────────────────────────────────────────┘  │
+├──────────────────────────────────────────────┤
+│ عنوان + توضیحات                              │
+├──────────────────────────────────────────────┤
+│ ┌──────────────────┬──────────────────────┐ │
+│ │ متادیتا:          │ رسانه‌های مرتبط:      │ │
+│ │  - اشخاص         │  - [عکس]              │ │
+│ │  - مکان          │  - [عکس]              │ │
+│ │  - تاریخ         │  - [فیلم]             │ │
+│ │  - منبع          │                       │ │
+│ │  - حق نشر        │                       │ │
+│ └──────────────────┴──────────────────────┘ │
+├──────────────────────────────────────────────┤
+│ برچسب‌ها                                     │
+├──────────────────────────────────────────────┤
+│ نوار اقدام: دانلود، اشتراک، درخواست استفاده    │
+└──────────────────────────────────────────────┘</div>
+
+<h3>ت-۶. رنگ‌بندی وضعیت‌ها</h3>
+<table>
+<tr><th>وضعیت</th><th>رنگ</th></tr>
+<tr><td>منتشرشده</td><td>سبز</td></tr>
+<tr><td>در بررسی</td><td>آبی</td></tr>
+<tr><td>آرشیوی</td><td>خاکستری</td></tr>
+<tr><td>محدود</td><td>نارنجی</td></tr>
+<tr><td>حذف‌شده</td><td>قرمز ملایم</td></tr>
+</table>
+
+<h3>ت-۷. انواع نمایش</h3>
+<ul>
+<li><strong>نمایش شبکه‌ای:</strong> برای گالری عمومی</li>
+<li><strong>نمایش لیستی:</strong> برای جست‌وجوی دقیق</li>
+<li><strong>نمایش نقشه‌ای:</strong> برای رسانه‌های مکانی</li>
+<li><strong>نمایش زمانی:</strong> برای خط زمانی</li>
+<li><strong>نمایش مجموعه‌ای:</strong> برای مجموعه‌های موضوعی</li>
+<li><strong>نمایش کامل صفحه:</strong> برای تماشای فیلم و عکس با کیفیت بالا</li>
+</ul>
+
+<h3>ت-۸. دسترس‌پذیری</h3>
+<ul>
+<li>کنتراست حداقل ۴.۵:۱ برای متن</li>
+<li>پیمایش کامل با صفحه‌کلید</li>
+<li>متن جانشین (alt) برای همه‌ی تصاویر</li>
+<li>زیرنویس برای همه‌ی فیلم‌ها</li>
+<li>متن پیاده‌سازی‌شده برای صوت</li>
+<li>سازگاری با صفحه‌خوان</li>
+<li>پشتیبانی از prefers-reduced-motion</li>
+<li>کنترل پخش کامل با صفحه‌کلید</li>
+</ul>
+</section>
+
+<footer class="footer">
+مرکز چندرسانه‌ای شهدا | طرح جامع، معماری و نقشه راه توسعه | نسخه ۱.۰ — سند مادر محصول | با ۴ ضمیمه‌ی عملیاتی
+</footer>
+
+<a class="back-top" href="#top" title="بازگشت به بالا" aria-label="بازگشت به بالا">↑</a>
+
+</div>
+</body>
+</html>
