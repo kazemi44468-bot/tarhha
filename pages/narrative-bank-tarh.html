@@ -12,9 +12,6 @@
 .hero h1{margin:0 0 10px;font-size:36px;letter-spacing:-.4px;position:relative;z-index:1}
 .hero p{margin:6px 0;opacity:.94;font-size:14.5px;max-width:900px;position:relative;z-index:1}
 .hero .badge{display:inline-block;background:#ffffff1c;border:1px solid #ffffff44;border-radius:999px;padding:4px 14px;margin-top:16px;font-size:12.5px;position:relative;z-index:1}
-.nav{position:sticky;top:8px;z-index:5;background:#fffffff2;backdrop-filter:blur(14px);border:1px solid #dbe5ea;border-radius:15px;padding:8px 12px;margin-bottom:20px;display:flex;flex-wrap:wrap;gap:3px;box-shadow:0 6px 18px #123b5d0a}
-.nav a{color:#1f5b78;text-decoration:none;font-size:12px;padding:3px 9px;white-space:nowrap;border-radius:6px;transition:.2s}
-.nav a:hover{background:#eaf3f6;color:#123b5d}
 .card{background:#fff;border:1px solid #dfe7eb;border-radius:20px;padding:30px 32px;margin:18px 0;box-shadow:0 8px 25px #123b5d08}
 .card h2{margin:0 0 16px;color:#174f69;font-size:23px;letter-spacing:-.3px;padding-bottom:12px;border-bottom:2px solid #eaf3f6}
 .card h3{color:#23677f;font-size:16.5px;margin:22px 0 10px}
@@ -56,7 +53,7 @@ code{background:#f2eefa;border-radius:5px;padding:1px 6px;font-family:"SF Mono",
 @media(max-width:800px){.grid,.grid.two,.grid.four{grid-template-columns:1fr}.flow,.flow.five,.flow.four,.flow.seven{grid-template-columns:repeat(2,1fr)}.hero{padding:32px 24px}.hero h1{font-size:26px}.card{padding:22px 18px}.nav{position:static}table{font-size:12px}}
 .appendix-marker{display:inline-block;background:linear-gradient(135deg,#1f5b78,#3d7f91);color:#fff;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700;margin:20px 0 10px;letter-spacing:.5px}
 </style>
-</head>
+<link rel="stylesheet" href="../assets/css/page-nav.css?v=20261008-2"></head>
 <body id="top" data-sidebar-page="narrative-bank">
 <div class="wrap">
 
@@ -69,71 +66,32 @@ code{background:#f2eefa;border-radius:5px;padding:1px 6px;font-family:"SF Mono",
 <span class="badge">طرح جامع، معماری محصول و نقشه راه توسعه | نسخه ۱.۰ — سند مادر محصول</span>
 </section>
 
-<nav class="nav" aria-label="ناوبری">
-<a href="#s1">۱. خلاصه</a>
-<a href="#s2">۲. تعریف</a>
-<a href="#s3">۳. جایگاه</a>
-<a href="#s4">۴. مسئله</a>
-<a href="#s5">۵. مأموریت</a>
-<a href="#s6">۶. چشم‌انداز</a>
-<a href="#s7">۷. اصول</a>
-<a href="#s8">۸. روایت</a>
-<a href="#s9">۹. انواع</a>
-<a href="#s10">۱۰. هویت</a>
-<a href="#s11">۱۱. راوی</a>
-<a href="#s12">۱۲. نقش‌ها</a>
-<a href="#s13">۱۳. موضوع</a>
-<a href="#s14">۱۴. زمان</a>
-<a href="#s15">۱۵. مکان</a>
-<a href="#s16">۱۶. ساختار</a>
-<a href="#s17">۱۷. ادعا</a>
-<a href="#s18">۱۸. اعتبارسنجی</a>
-<a href="#s19">۱۹. تعارض</a>
-<a href="#s20">۲۰. منابع</a>
-<a href="#s21">۲۱. رسانه</a>
-<a href="#s22">۲۲. نسخه‌ها</a>
-<a href="#s23">۲۳. گراف</a>
-<a href="#s24">۲۴. مدل داده</a>
-<a href="#s25">۲۵. بانک شهدا</a>
-<a href="#s26">۲۶. اطلس</a>
-<a href="#s27">۲۷. تقویم</a>
-<a href="#s28">۲۸. UX</a>
-<a href="#s29">۲۹. معماری سایت</a>
-<a href="#s30">۳۰. صفحه روایت</a>
-<a href="#s31">۳۱. جست‌وجو</a>
-<a href="#s32">۳۲. AI</a>
-<a href="#s33">۳۳. کاربران</a>
-<a href="#s34">۳۴. مشارکت</a>
-<a href="#s35">۳۵. رضایت</a>
-<a href="#s36">۳۶. مالکیت</a>
-<a href="#s37">۳۷. تحریریه</a>
-<a href="#s38">۳۸. پنل</a>
-<a href="#s39">۳۹. API</a>
-<a href="#s40">۴۰. شناسه</a>
-<a href="#s41">۴۱. امنیت</a>
-<a href="#s42">۴۲. کیفیت</a>
-<a href="#s43">۴۳. استاندارد</a>
-<a href="#s44">۴۴. معماری فنی</a>
-<a href="#s45">۴۵. MVP</a>
-<a href="#s46">۴۶. نسخه دوم</a>
-<a href="#s47">۴۷. نسخه سوم</a>
-<a href="#s48">۴۸. سناریوها</a>
-<a href="#s49">۴۹. معماری اطلاعات</a>
-<a href="#s50">۵۰. مجموعه‌ها</a>
-<a href="#s51">۵۱. خط زمانی</a>
-<a href="#s52">۵۲. نقشه</a>
-<a href="#s53">۵۳. داده زنده</a>
-<a href="#s54">۵۴. گزارش</a>
-<a href="#s55">۵۵. داشبورد</a>
-<a href="#s56">۵۶. KPI</a>
-<a href="#s57">۵۷. ریسک‌ها</a>
-<a href="#s58">۵۸. سازمان</a>
-<a href="#s59">۵۹. نقشه راه</a>
-<a href="#s60">۶۰. معماری آینده</a>
-<a href="#appendix-a">ضمیمه الف</a>
-<a href="#appendix-b">ضمیمه ب</a>
-<a href="#appendix-c">ضمیمه پ</a>
-<a href="#appendix-d">ضمیمه ت</a>
+<nav class="page-nav" aria-label="ناوبری این صفحه">
+<details><summary>کلیات طرح</summary><div class="page-subnav">
+<a href="#s1">خلاصه اجرایی</a><a href="#s2">تعریف</a><a href="#s3">جایگاه در اکوسیستم</a><a href="#s4">مسئله</a><a href="#s5">مأموریت</a><a href="#s6">چشم‌انداز</a><a href="#s7">اصول بنیادین</a><a href="#s8">تعریف روایت</a><a href="#s9">انواع روایت</a>
+</div></details>
+<details><summary>موجودیت‌ها و ساختار روایت</summary><div class="page-subnav">
+<a href="#s10">هویت روایت</a><a href="#s11">راوی</a><a href="#s12">نقش‌ها</a><a href="#s13">موضوع</a><a href="#s14">زمان</a><a href="#s15">مکان</a><a href="#s16">ساختار روایت</a><a href="#s17">ادعا</a><a href="#s18">اعتبارسنجی</a><a href="#s19">تعارض روایت‌ها</a><a href="#s20">منابع</a><a href="#s21">رسانه</a><a href="#s22">نسخه‌ها</a><a href="#s23">گراف دانش</a>
+</div></details>
+<details><summary>مدل داده و اتصال اکوسیستم</summary><div class="page-subnav">
+<a href="#s24">مدل داده</a><a href="#s25">ارتباط با بانک شهدا</a><a href="#s26">ارتباط با اطلس شهدا</a><a href="#s27">ارتباط با تقویم شهدا</a>
+</div></details>
+<details><summary>محصول و تجربه کاربری</summary><div class="page-subnav">
+<a href="#s28">UX</a><a href="#s29">معماری سایت</a><a href="#s30">صفحه روایت</a><a href="#s31">جست‌وجو</a><a href="#s32">هوش مصنوعی</a><a href="#s33">کاربران</a><a href="#s34">مشارکت</a><a href="#s35">رضایت</a><a href="#s36">مالکیت</a>
+</div></details>
+<details><summary>مدیریت، تحریریه و API</summary><div class="page-subnav">
+<a href="#s37">تحریریه</a><a href="#s38">پنل</a><a href="#s39">API</a><a href="#s40">شناسه پایدار</a><a href="#s41">امنیت</a><a href="#s42">کیفیت</a><a href="#s43">استانداردها</a>
+</div></details>
+<details><summary>فناوری و توسعه</summary><div class="page-subnav">
+<a href="#s44">معماری فنی</a><a href="#s45">MVP</a><a href="#s46">نسخه دوم</a><a href="#s47">نسخه سوم</a><a href="#s48">سناریوها</a><a href="#s49">معماری اطلاعات</a><a href="#s50">مجموعه‌ها</a>
+</div></details>
+<details><summary>داده، گزارش و راهبری</summary><div class="page-subnav">
+<a href="#s51">خط زمانی</a><a href="#s52">نقشه</a><a href="#s53">داده زنده</a><a href="#s54">گزارش</a><a href="#s55">داشبورد</a><a href="#s56">KPI</a><a href="#s57">ریسک‌ها</a><a href="#s58">سازمان</a><a href="#s59">نقشه راه</a><a href="#s60">معماری آینده</a>
+</div></details>
+<details><summary>ضمائم اجرایی</summary><div class="page-subnav">
+<a href="#appendix-a">ضمیمه الف</a><a href="#appendix-b">ضمیمه ب</a><a href="#appendix-c">ضمیمه پ</a><a href="#appendix-d">ضمیمه ت</a>
+</div></details>
+<a class="nav-end" href="#top">بازگشت به ابتدای طرح</a>
 </nav>
 
 <!-- ═══════════════════════════════════════════════════════════ -->
