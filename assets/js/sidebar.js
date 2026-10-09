@@ -5,7 +5,7 @@ const nav=[
 {id:'home',label:'نخست',href:'index.html',icon:'۰۱'},
 {id:'intro',label:'معرفی',href:'pages/intro.html',icon:'۰۱-۱'},
 {id:'plan-catalog',label:'طرح‌ها',href:'pages/plans.html',icon:'۰۲',children:[
-{id:'company-arshad',label:'شرکت جامع راهبردی ارشد ایرانیان',href:'pages/arshad-iranian-company-tarh.html',icon:'۰۲-۱'},
+{id:'company-arshad',label:'جامع راهبردی ارشد ایرانیان',href:'pages/arshad-iranian-company-tarh.html',icon:'۰۲-۱'},
 {id:'shahidportal',label:'شهیدپورتال',href:'pages/shahidportal-tarh.html',icon:'۰۲-۲',children:[
 {id:'shahidbank',label:'بانک شهدا',href:'pages/shahidbank-tarh.html',icon:'۰۲-۲-۱'},
 {id:'will-bank',label:'بانک وصیت‌نامه',href:'pages/will-bank-tarh.html',icon:'۰۲-۲-۲'},
@@ -43,6 +43,21 @@ const render=(items,level=0)=>items.map(x=>{
 const side=d.createElement('aside');side.className='sp-sidebar menu-expanded';side.setAttribute('aria-label','منوی کناری طرح و برنامه‌ها');
 side.innerHTML='<button class="sp-toggle" type="button" aria-label="جمع و باز کردن منوی کناری" aria-expanded="true"><span></span><span></span><span></span></button><div class="sp-brand"><span class="sp-mark">ط</span><div class="sp-brand-text"><strong>طرح و برنامه‌ها</strong><small>مرجع ایده، طرح، برنامه و توسعه</small></div></div><nav class="sp-nav" aria-label="منوی اصلی طرح و برنامه‌ها">'+render(nav)+'</nav>';
 d.body.prepend(side);d.body.classList.add('menu-body-expanded');
+/* راهنمای کامل عنوان آیتم‌های بلند و دکمه یکپارچه بازگشت به بالا */
+side.querySelectorAll('.sp-item,.sp-subitem').forEach(a=>{
+ const label=a.querySelector('.sp-label');
+ if(label&&label.textContent.trim().length>16){a.setAttribute('title',label.textContent.trim());a.setAttribute('data-long-label','true')}
+});
+let back=d.querySelector('.sp-back-top,.back-top');
+if(!back){
+ back=d.createElement('button');back.type='button';back.className='sp-back-top';back.setAttribute('aria-label','بازگشت به بالای صفحه');back.innerHTML='<span aria-hidden="true">↑</span>';d.body.appendChild(back);
+}else{
+ back.classList.add('sp-back-top');
+ back.setAttribute('aria-label','بازگشت به بالای صفحه');
+}
+const updateBackTop=()=>back.classList.toggle('is-visible',window.scrollY>240);
+back.addEventListener('click',e=>{e.preventDefault();window.scrollTo({top:0,behavior:'smooth'})});
+window.addEventListener('scroll',updateBackTop,{passive:true});updateBackTop();
 side.querySelectorAll('.sp-item,.sp-subitem').forEach(anchor=>anchor.addEventListener('click',e=>{
  const group=anchor.closest('.sp-group'),sub=group&&group.querySelector(':scope > .sp-sub');if(!sub)return;
  e.preventDefault();e.stopPropagation();
