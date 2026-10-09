@@ -48,3 +48,10 @@
 .sp-sidebar.menu-expanded .sp-nav{flex:1 1 auto;min-height:0;overflow-y:auto!important;overflow-x:hidden;scrollbar-width:thin;scrollbar-gutter:stable}
 .sp-sidebar .sp-sub.is-open{max-height:4000px;overflow:visible;opacity:1;visibility:visible}
 }
+
+
+/* قاعده یکسان منوی کناری: خود ردیفِ دارای زیرمنو باز و بسته می‌شود؛ نشانگر + جداگانه حذف است. */
+.sp-sub-toggle{display:none!important}
+.sp-sidebar:not(.menu-expanded) .sp-group:hover>.sp-sub,.sp-sidebar:not(.menu-expanded) .sp-group:focus-within>.sp-sub{opacity:0;visibility:hidden;pointer-events:none;transform:translateX(7px)}
+.sp-sidebar:not(.menu-expanded) .sp-group>.sp-sub.is-open{opacity:1;visibility:visible;pointer-events:auto;transform:none}
+.sp-sidebar .sp-item[aria-expanded],.sp-sidebar .sp-subitem[aria-expanded]{cursor:pointer}
