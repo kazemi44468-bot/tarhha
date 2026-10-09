@@ -68,3 +68,20 @@
 .sp-sidebar.menu-collapsed .sp-sub.is-open,.sp-sub.is-open{max-height:4000px}
 .sp-sidebar.menu-collapsed .sp-sub .sp-sub{margin-right:5px;padding-right:4px;border-right:1px solid rgba(23,107,103,.12)}
 }
+
+/* تثبیت نمایش منو پس از حذف تداخل نسخه‌های قدیمی */
+.sp-sidebar{display:flex!important;visibility:visible;opacity:1;box-sizing:border-box;height:calc(100vh - 28px);max-height:calc(100vh - 28px);min-height:0;top:14px;transform:none;overflow:hidden}
+.sp-sidebar.menu-expanded{width:var(--sp-open);align-items:stretch}
+.sp-sidebar.menu-expanded .sp-nav{flex:1 1 auto;min-height:0;overflow-y:auto!important;overflow-x:hidden;scrollbar-width:thin;scrollbar-gutter:stable}
+.sp-sidebar.menu-expanded .sp-nav::-webkit-scrollbar{display:block;width:5px}
+.sp-sidebar.menu-expanded .sp-nav::-webkit-scrollbar-thumb{background:rgba(23,107,103,.45);border-radius:8px}
+.sp-sidebar.menu-expanded .sp-sub.is-open{max-height:4000px;overflow:visible}
+.sp-sidebar.menu-expanded .sp-sub{min-height:0}
+@media(max-width:850px){
+.sp-sidebar{display:flex!important;visibility:visible;opacity:1;height:100vh;max-height:100vh;min-height:100vh;top:0;transform:translateX(110%);overflow-x:hidden}
+.sp-sidebar.is-open{transform:translateX(0)}
+.sp-sidebar.menu-expanded{width:270px}
+.sp-sidebar.menu-expanded .sp-nav{flex:1 1 auto;min-height:0;overflow-y:auto!important}
+.sp-mobile-btn{display:flex!important}
+.sp-sidebar .sp-sub.is-open{max-height:4000px;overflow:visible}
+}
