@@ -7,6 +7,6 @@
 .page-visual-slot__mark svg{width:29px;height:29px;display:block}
 .page-visual-slot__label{position:absolute;inset-inline:8px;bottom:12px;text-align:center;font-size:10px;line-height:1.7;color:#63796d;letter-spacing:0}
 .page-visual-slot__label strong{display:block;font-size:11px;font-weight:700;color:#385847}
-.hero.has-visual-placeholder{position:relative;padding-inline-start:196px;min-height:194px;box-sizing:border-box}
+.hero.has-visual-placeholder{position:relative;padding-left:196px;min-height:194px;box-sizing:border-box}
 .hero.has-visual-placeholder>.page-visual-slot{display:grid}
 @media(max-width:760px){.hero.has-visual-placeholder{padding-inline:clamp(16px,4vw,24px);min-height:0}.hero.has-visual-placeholder>.page-visual-slot{position:relative;inset:auto;width:100%;height:92px;margin:0 0 18px;border-radius:18px}.hero.has-visual-placeholder .page-visual-slot:before{width:65px;height:65px}.hero.has-visual-placeholder .page-visual-slot:after{width:43px;height:43px}.hero.has-visual-placeholder .page-visual-slot__mark{width:38px;height:38px;border-radius:12px}.hero.has-visual-placeholder .page-visual-slot__mark svg{width:23px;height:23px}.hero.has-visual-placeholder .page-visual-slot__label{bottom:5px;font-size:9px}.hero.has-visual-placeholder .page-visual-slot__label strong{font-size:10px}}
