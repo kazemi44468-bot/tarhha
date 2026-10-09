@@ -1,6 +1,8 @@
 (function(){
   "use strict";
   function addVisualPlaceholder(){
+    var pageKind=document.body&&document.body.getAttribute("data-sidebar-page");
+    if(pageKind==="home"||pageKind==="intro")return;
     var hero=document.querySelector("main .hero, .wrap .hero, .hero");
     if(!hero||hero.querySelector("img, picture, video, .hero-logo, .hero-media, .page-visual-slot"))return;
     var title=hero.querySelector("h1");
