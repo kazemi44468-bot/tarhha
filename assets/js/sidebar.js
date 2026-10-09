@@ -23,7 +23,8 @@ const nav=[
 {id:'khadem-shohada',label:'خادم شهدا',href:'pages/khadem-shohada-tarh.html',icon:'۰۳-۱-۱۳'},
 {id:'cyber-shohada',label:'شبکه سایبری شهدا',href:'pages/cyber-shohada-tarh.html',icon:'۰۳-۱-۱۴'}
 ]}
-]};
+]}
+];
 const defaultOpen=new Set(['plan-catalog','shahidportal']);
 const current=b.dataset.sidebarPage||'home';
 const pathname=location.pathname;
