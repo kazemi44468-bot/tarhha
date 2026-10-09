@@ -16,3 +16,9 @@
 .page-nav .page-subnav a+a:before{display:none}
 @media(max-width:900px){.page-nav{gap:3px}.page-nav>a,.page-nav>details>summary{font-size:10.5px;padding-inline:9px}}
 @media(max-width:760px){.page-nav{top:5px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;padding:6px}.page-nav::-webkit-scrollbar{display:none}.page-nav>a,.page-nav>details>summary{font-size:10.5px;flex:0 0 auto}.page-nav .page-subnav{position:fixed;right:12px;top:52px;min-width:190px;max-width:calc(100vw - 24px);max-height:62vh;overflow:auto}}
+
+
+/* حذف آیکن فهرست پیش از عنوان‌های منوی بالایی؛ فلش بازشدن زیرمنو حفظ می‌شود */
+.page-nav>details>summary:before{display:none!important}
+.page-nav>details>summary{gap:0}
+.page-nav>details>summary:after{margin-right:5px}
