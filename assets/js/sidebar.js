@@ -5,6 +5,7 @@ const nav=[
 {id:'home',label:'نخست',href:'index.html',icon:'۰۱'},
 {id:'plans',label:'معرفی',href:'pages/plans.html',icon:'۰۲'},
 {id:'plan-catalog',label:'طرح‌ها',href:'pages/plans.html',icon:'۰۳',children:[
+{id:'company-arshad',label:'شرکت جامع راهبردی ارشد ایرانیان',href:'pages/arshad-iranian-company-tarh.html',icon:'۰۳-۱'},
 {id:'shahidportal',label:'شهیدپورتال',href:'pages/shahidportal-tarh.html',icon:'۰۳-۱',children:[
 {id:'shahidbank',label:'بانک شهدا',href:'pages/shahidbank-tarh.html',icon:'۰۳-۱-۱'},
 {id:'will-bank',label:'بانک وصیت‌نامه',href:'pages/will-bank-tarh.html',icon:'۰۳-۱-۲'},
