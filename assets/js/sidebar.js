@@ -55,6 +55,24 @@ if(!back){
  back.classList.add('sp-back-top');
  back.setAttribute('aria-label','بازگشت به بالای صفحه');
 }
+const tooltip=d.createElement('div');tooltip.className='sp-label-tooltip';tooltip.setAttribute('role','tooltip');d.body.appendChild(tooltip);
+let tooltipTarget=null;
+const hideLabelTooltip=()=>{tooltip.classList.remove('is-visible');tooltipTarget=null};
+const showLabelTooltip=a=>{
+ const full=a.getAttribute('title');if(!full)return;
+ tooltip.textContent=full;tooltipTarget=a;tooltip.classList.add('is-visible');
+ const r=a.getBoundingClientRect();const tr=tooltip.getBoundingClientRect();
+ let left=r.left-tr.width-10;if(left<10)left=Math.min(window.innerWidth-tr.width-10,r.right+10);
+ const top=Math.max(8,Math.min(window.innerHeight-tr.height-8,r.top+(r.height-tr.height)/2));
+ tooltip.style.left=left+'px';tooltip.style.top=top+'px';
+};
+side.querySelectorAll('[data-long-label="true"]').forEach(a=>{
+ a.addEventListener('mouseenter',()=>showLabelTooltip(a));
+ a.addEventListener('mouseleave',hideLabelTooltip);
+ a.addEventListener('focus',()=>showLabelTooltip(a));
+ a.addEventListener('blur',hideLabelTooltip);
+});
+window.addEventListener('resize',hideLabelTooltip,{passive:true});
 const updateBackTop=()=>back.classList.toggle('is-visible',window.scrollY>240);
 back.addEventListener('click',e=>{e.preventDefault();window.scrollTo({top:0,behavior:'smooth'})});
 window.addEventListener('scroll',updateBackTop,{passive:true});updateBackTop();
