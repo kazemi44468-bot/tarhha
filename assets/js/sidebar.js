@@ -22,7 +22,7 @@ const nav=[
 {id:'treasure',label:'گنجینه شهدا',href:'pages/treasure-tarh.html',icon:'۰۳-۱۳'},
 {id:'khadem-shohada',label:'خادم شهدا',href:'pages/khadem-shohada-tarh.html',icon:'۰۳-۱۴'},
 {id:'cyber-shohada',label:'شبکه سایبری شهدا',href:'pages/cyber-shohada-tarh.html',icon:'۰۳-۱۵'}
-]};
+];
 const defaultOpen=new Set(['plan-catalog']);
 const current=b.dataset.sidebarPage||'home';
 const pathname=location.pathname;
