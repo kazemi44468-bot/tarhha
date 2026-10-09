@@ -6,11 +6,11 @@ const nav=[
 {id:'plans',label:'معرفی',href:'pages/plans.html',icon:'۰۲'},
 {id:'plan-catalog',label:'طرح‌ها',href:'pages/plans.html',icon:'۰۳',children:[
 {id:'company-arshad',label:'شرکت جامع راهبردی ارشد ایرانیان',href:'pages/arshad-iranian-company-tarh.html',icon:'۰۳-۱'},
-{id:'shahidportal',label:'شهیدپورتال',href:'pages/shahidportal-tarh.html',icon:'۰۳-۱',children:[
+{id:'shahidportal',label:'شهیدپورتال',href:'pages/shahidportal-tarh.html',icon:'۰۳-۲',children:[
 {id:'shahidbank',label:'بانک شهدا',href:'pages/shahidbank-tarh.html',icon:'۰۳-۱-۱'},
 {id:'will-bank',label:'بانک وصیت‌نامه',href:'pages/will-bank-tarh.html',icon:'۰۳-۱-۲'},
 {id:'patogh',label:'پاتوق شهدا',href:'pages/patugh-tarh.html',icon:'۰۳-۱-۳',children:[
-{id:'wdja',label:'ودجا',href:'pages/wdja-tarh.html',icon:'۰۳-۱-۳-۱'}
+{id:'wdja',label:'ودجا',href:'pages/wdja-tarh.html',icon:'۰۳-۲-۳-۱'}
 ]},
 {id:'narrative-bank',label:'بانک روایت',href:'pages/narrative-bank-tarh.html',icon:'۰۳-۱-۴'},
 {id:'calendar',label:'تقویم شهدا',href:'pages/calendar-tarh.html',icon:'۰۳-۱-۵'},
