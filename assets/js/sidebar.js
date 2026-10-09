@@ -31,7 +31,7 @@ const nav=[
 ]}
 ]}
 ];
-const defaultOpen=new Set(['plan-catalog','shahidportal']);
+const defaultOpen=new Set(['plan-catalog','company-arshad','shahidportal']);
 const current=b.dataset.sidebarPage||'home';
 const pathname=location.pathname;
 const pagesAt=pathname.indexOf('/pages/');
