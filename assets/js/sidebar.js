@@ -7,9 +7,11 @@ const nav=[
 {id:'plan-catalog',label:'طرح‌ها',href:'pages/plans.html',icon:'۰۲',children:[
 {id:'company-arshad',label:'جامع راهبردی ارشد ایرانیان',href:'pages/arshad-iranian-company-tarh.html',icon:'۰۲-۱'},
 {id:'shahidportal',label:'شهیدپورتال',href:'pages/shahidportal-tarh.html',icon:'۰۲-۲',children:[
+{id:'shahidportal-plan',label:'طرح شهیدپورتال',href:'pages/shahidportal-tarh.html',icon:'۰۲-۲-۰'},
 {id:'shahidbank',label:'بانک شهدا',href:'pages/shahidbank-tarh.html',icon:'۰۲-۲-۱'},
 {id:'will-bank',label:'بانک وصیت‌نامه',href:'pages/will-bank-tarh.html',icon:'۰۲-۲-۲'},
 {id:'patogh',label:'پاتوق شهدا',href:'pages/patugh-tarh.html',icon:'۰۲-۲-۳',children:[
+{id:'patogh-plan',label:'طرح پاتوق شهدا',href:'pages/patugh-tarh.html',icon:'۰۲-۲-۳-۰'},
 {id:'wdja',label:'ودجا',href:'pages/wdja-tarh.html',icon:'۰۲-۲-۳-۱'}
 ]},
 {id:'narrative-bank',label:'بانک روایت',href:'pages/narrative-bank-tarh.html',icon:'۰۲-۲-۴'},
