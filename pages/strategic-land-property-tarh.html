@@ -16,6 +16,33 @@
 @media(max-width:950px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.flow{grid-template-columns:repeat(3,minmax(0,1fr))}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.wrap{padding:16px 11px 48px}.hero,.section{border-radius:16px;padding:18px}.grid,.grid.two{grid-template-columns:1fr}.flow{grid-template-columns:repeat(2,minmax(0,1fr))}.hero h1{font-size:27px}.actions .btn{flex:1 1 auto}}
 @media(max-width:380px){.flow{grid-template-columns:1fr}}
+
+/* نمودار ساختار هلدینگ */
+.structure-diagram{margin:18px 0 24px;padding:20px 14px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,#f8fbf8,#fff);overflow:hidden}
+.struct-level{display:flex;justify-content:center;align-items:stretch;gap:12px;flex-wrap:wrap}
+.struct-node{display:flex;flex-direction:column;justify-content:center;gap:5px;text-align:center;min-width:0;flex:1 1 180px;max-width:260px;padding:15px 13px;border:1px solid #d9e5dc;border-radius:14px;background:#fff;box-shadow:0 4px 14px #20322f08}
+.struct-node b{font-size:14px;line-height:1.7;color:var(--green)}
+.struct-node small{font-size:11px;line-height:1.8;color:var(--muted)}
+.struct-node.mother{max-width:520px;flex-basis:420px;background:#19473f;border-color:#19473f}
+.struct-node.mother b,.struct-node.mother small{color:#fff}
+.struct-node.current{max-width:430px;flex-basis:350px;background:#edf5ef;border:2px solid #43836c}
+.struct-node.current b{font-size:16px}
+.struct-node.sibling{background:#fbf7ed;border-color:#e6d9b9}
+.struct-node.sibling b{color:#796033}
+.struct-node.subplan{background:#f5f8fb;border-color:#d9e2ee}
+.struct-node.subplan b{color:#3f617c}
+.struct-arrow{text-align:center;color:var(--gold);font-size:26px;font-weight:700;line-height:1.6}
+.struct-caption{text-align:center;font-size:12px;color:var(--muted);margin:10px auto 0;max-width:850px}
+.relationship-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:12px 0}
+.relationship-card{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;min-width:0}
+.relationship-card h3{padding:13px 16px;margin:0;background:#edf4ef;color:var(--green)}
+.relationship-card.out h3{background:#f7f1e6;color:#765a2a}
+.relationship-card ul{padding:10px 28px 14px 14px;margin:0}
+.relationship-card li{font-size:13px;margin:5px 0}
+.principle-banner{margin-top:16px;padding:16px 18px;border-radius:14px;background:linear-gradient(110deg,#19473f,#2d7560);color:#fff}
+.principle-banner strong{display:block;font-size:16px;margin-bottom:4px}
+.principle-banner p{margin:0;font-size:13px;color:#eef6ef}
+@media(max-width:650px){.structure-diagram{padding:14px 9px}.struct-node{flex-basis:100%;max-width:100%}.relationship-grid{grid-template-columns:1fr}.struct-level{gap:8px}}
 </style>
 </head>
 <body data-sidebar-page="land-property" class="sp-main">
@@ -67,26 +94,60 @@
 <article class="tile"><h3>داده و ابزارهای دیجیتال</h3><p>سامانه‌ها و خدمات اطلاعاتی برای پرونده دارایی، گزارش و مدیریت عملیات؛ با رعایت محرمانگی و حقوق داده.</p></article>
 <article class="tile"><h3>فعالیت‌های معدنی</h3><p>فرصت درآمدی مشروط به حقوق و مجوزهای لازم، بررسی ذخیره، اقتصاد استخراج، بازار و مدیریت آثار محیطی.</p></article>
 </div><p class="intro" style="margin-top:13px">هیچ مدل درآمدی از پیش قطعی نیست. هر خط کسب‌وکار باید بازار هدف، مشتری، هزینه جذب، سرمایه در گردش، حاشیه سود، چرخه نقدینگی و نقطه سربه‌سر خود را مستند کند.</p></section>
-<section class="section" id="governance"><h2>۷. جایگاه در هلدینگ مادر و نظام حکمرانی</h2><p class="intro">استقلال تخصصی در چارچوب راهبرد، سرمایه و هم‌افزایی گروه</p>
-<div class="structure-diagram">
+<section class="section" id="governance">
+<h2>۷. جایگاه در ساختار هلدینگ</h2>
+<p class="intro">جایگاه شرکت زمین و ملک در ساختار سه‌طبقه؛ از راهبری کلان تا خانواده‌های تخصصی زیرمجموعه</p>
+<p>در معماری کسب‌وکار گروه، هلدینگ مادر راهبرد کلان و سازوکارهای مشترک را هدایت می‌کند؛ شرکت راهبردی زمین و ملک ایرانیان مسئول توسعه تخصصی این حوزه است؛ و طرح‌ها و خانواده‌های زیرمجموعه، هرکدام بخشی از زنجیره ارزش زمین و دارایی را پیش می‌برند.</p>
+<div class="structure-diagram" role="img" aria-label="نمودار سه‌طبقه ساختار هلدینگ مادر، شرکت‌های تخصصی و خانواده‌های زیرمجموعه زمین و ملک">
 <div class="struct-level"><div class="struct-node mother"><b>شرکت جامع راهبردی ارشد ایرانیان</b><small>هلدینگ مادر · راهبرد کلان، تخصیص سرمایه، حکمرانی و خدمات مشترک</small></div></div>
 <div class="struct-arrow">↓</div>
-<div class="struct-level"><div class="struct-node current"><b>شرکت راهبردی زمین و ملک ایرانیان</b><small>پنل تخصصی زمین، ملک، مسکن، معدن و مدیریت دارایی</small></div></div>
+<div class="struct-level">
+<div class="struct-node current"><b>شرکت راهبردی زمین و ملک ایرانیان</b><small>پازل تخصصی ۰۱ · زمین، ملک، مسکن، معدن و مدیریت دارایی</small></div>
+<div class="struct-node sibling"><b>سایر شرکت‌های تخصصی هلدینگ</b><small>پازل‌های تخصصی ۰۲ تا n · هرکدام با مأموریت و زنجیره ارزش مستقل</small></div>
+</div>
+<div class="struct-caption">شرکت زمین و ملک در کنار دیگر شرکت‌های تخصصی، زیر چتر راهبری هلدینگ مادر قرار می‌گیرد.</div>
 <div class="struct-arrow">↓</div>
 <div class="struct-level">
-<div class="struct-node"><b>زمین‌گستر ایرانیان</b><small>زمین و توسعه اراضی</small></div><div class="struct-node"><b>سرمایه‌گستر ایرانیان</b><small>سرمایه‌گذاری و تأمین مالی</small></div><div class="struct-node"><b>شهرآفرین ایرانیان</b><small>شهرسازی و توسعه منطقه‌ای</small></div><div class="struct-node"><b>سازه‌گستر ایرانیان</b><small>عمران و ساخت</small></div>
+<div class="struct-node subplan"><b>زمین و توسعه اراضی</b><small>شناسایی، تحلیل و آماده‌سازی فرصت‌های زمین</small></div>
+<div class="struct-node subplan"><b>مدیریت املاک و دارایی</b><small>سامان‌دهی، نگهداری، اجاره و بهره‌برداری</small></div>
+<div class="struct-node subplan"><b>اطلس و فناوری مکانی</b><small>اطلاعات جغرافیایی و پرونده مکانی دارایی‌ها</small></div>
+<div class="struct-node subplan"><b>مسکن و پروژه‌های ساختمانی</b><small>مطالعه تقاضا، توسعه، مشارکت و نوسازی</small></div>
+<div class="struct-node subplan"><b>معدن و منابع معدنی</b><small>ارزیابی فرصت و توسعه تخصصی منابع</small></div>
+<div class="struct-node subplan"><b>سرمایه‌گذاری و مشارکت</b><small>ساختار مالی، جذب شریک و پایش بازده</small></div>
 </div>
-<div class="struct-level"><div class="struct-node"><b>خانواده‌های تخصصی مکمل</b><small>مدیریت دارایی، داده مکانی، مسکن، معدن، بازرگانی، کشاورزی و گردشگری</small></div></div>
+<div class="struct-caption">این خانواده‌ها مسیرهای تخصصی توسعه شرکت‌اند و می‌توانند متناسب با اولویت و رشد کسب‌وکار به طرح‌های مستقل تبدیل شوند.</div>
 </div>
-<h3>نقش هلدینگ مادر</h3><div class="grid two">
-<article class="tile"><h3>راهبرد و سرمایه</h3><p>تعیین اولویت‌های کلان، بررسی سرمایه‌گذاری‌های بزرگ، تخصیص منابع بر اساس مرحله بلوغ فرصت و هم‌راستاسازی برنامه این پنل با سبد کسب‌وکارهای گروه.</p></article>
-<article class="tile"><h3>حکمرانی و کنترل</h3><p>تعریف استانداردهای گزارش‌دهی، مدیریت ریسک، کنترل داخلی، تعارض منافع و ارزیابی عملکرد؛ همراه با سازوکار روشن برای تصمیم‌های مهم.</p></article>
-<article class="tile"><h3>خدمات مشترک</h3><p>تجمیع یا خرید خدمات مالی، حقوقی، منابع انسانی، فناوری، امنیت اطلاعات، برند و تدارکات در جایی که از نظر هزینه، کیفیت و مسئولیت به‌صرفه باشد.</p></article>
-<article class="tile"><h3>توسعه هم‌افزایی</h3><p>هدایت فرصت‌های مشترک به خانواده تخصصی مناسب، ایجاد مشارکت میان پنل‌ها و جلوگیری از دوباره‌کاری یا رقابت ناسالم درون گروه.</p></article>
+<h3>رابطه با هلدینگ مادر</h3>
+<p>رابطه دوطرفه است: شرکت از ظرفیت‌های راهبردی و مشترک هلدینگ بهره می‌گیرد و در مقابل، عملکرد، فرصت‌ها و نیازهای خود را شفاف گزارش می‌کند و به رشد کل گروه یاری می‌رساند.</p>
+<div class="relationship-grid">
+<article class="relationship-card"><h3>چه چیزی از هلدینگ می‌گیریم؟</h3><ul>
+<li>راهبرد کلان و چارچوب‌های مشترک برای تصمیم‌گیری و توسعه.</li>
+<li>تخصیص مرحله‌ای سرمایه بر اساس توجیه اقتصادی، ریسک و پیشرفت کار.</li>
+<li>استانداردهای مشترک مالی، حقوقی، مدیریت ریسک و گزارش‌دهی.</li>
+<li>خدمات مشترک حسابداری، حقوقی، فناوری و منابع انسانی.</li>
+<li>پشتیبانی در تأمین مالی، جذب سرمایه‌گذار و انتخاب شریک راهبردی.</li>
+<li>معرفی فرصت‌های مکمل و همکاری با سایر شرکت‌های تخصصی گروه.</li>
+<li>پشتیبانی برند، ارتباطات سازمانی و توسعه روابط راهبردی.</li>
+</ul></article>
+<article class="relationship-card out"><h3>چه چیزی به هلدینگ می‌دهیم؟</h3><ul>
+<li>گزارش ماهانه از عملیات، پیشرفت پروژه‌ها، فرصت‌ها و مسائل مهم.</li>
+<li>گزارش فصلی مالی و راهبردی شامل عملکرد، ریسک‌ها و نیازهای آتی.</li>
+<li>گزارش سالانه جامع از نتایج، وضعیت دارایی‌ها و برنامه سال بعد.</li>
+<li>گزارش فوری و پیشنهاد اقدام هنگام بروز بحران یا ریسک بااهمیت.</li>
+<li>شناسایی و پیشنهاد فرصت‌های جدید سرمایه‌گذاری در حوزه تخصصی شرکت.</li>
+<li>معرفی فرصت‌های مکمل به سایر شرکت‌ها و مشارکت در پروژه‌های مشترک.</li>
+<li>بازده و منافع سرمایه‌گذاری مطابق توافق‌ها و مدل تخصیص سرمایه مصوب.</li>
+</ul></article>
 </div>
-<h3>مسئولیت‌های شرکت راهبردی زمین و ملک ایرانیان</h3><ul><li>تدوین راهبرد تخصصی، برنامه کسب‌وکار و اولویت‌های جغرافیایی و موضوعی.</li><li>مدیریت چرخه فرصت از شناسایی و ارزیابی تا توسعه، بهره‌برداری و پایش دارایی.</li><li>طراحی محصولات و خدمات قابل عرضه، ایجاد شبکه مشتریان و شرکای تخصصی و مدیریت قراردادها.</li><li>مدیریت داده‌ها و پرونده‌های تخصصی و ارائه گزارش منظم از فرصت‌ها، سرمایه، عملکرد و ریسک‌ها.</li><li>توسعه خانواده‌های تخصصی و طرح‌های زیرمجموعه در چارچوب معماری کلان هلدینگ.</li></ul>
-<h3>چرخه تصمیم‌گیری میان شرکت و هلدینگ</h3><div class="flow"><article><strong>پیشنهاد</strong><span>پرونده فرصت و توجیه اولیه</span></article><article><strong>ارزیابی</strong><span>حقوقی، بازار، فنی و مالی</span></article><article><strong>تصمیم</strong><span>در حدود اختیار مصوب</span></article><article><strong>اجرا</strong><span>مسئول، بودجه و زمان‌بندی</span></article><article><strong>گزارش و بازبینی</strong><span>نتیجه، ریسک و درس‌آموخته</span></article></div>
-<div class="callout green">اصل معماری: هلدینگ مادر جهت، چارچوب و هم‌افزایی را راهبری می‌کند؛ شرکت زمین و ملک مسئول طراحی و مدیریت تخصصی زنجیره ارزش خود است. خدمات مشترک و همکاری بین شرکت‌ها باید با دامنه خدمت، هزینه، مسئولیت و شاخص عملکرد روشن اداره شود.</div></section>
+<h3>حدود مسئولیت و شیوه همکاری</h3>
+<div class="grid two">
+<article class="tile"><h3>مسئولیت شرکت زمین و ملک</h3><p>طراحی و اجرای برنامه تخصصی، توسعه محصولات و خدمات، مدیریت مشتریان و قراردادها، سامان‌دهی داده‌ها، انتخاب همکاران متخصص و پاسخ‌گویی نسبت به نتایج حوزه خود.</p></article>
+<article class="tile"><h3>مسئولیت هلدینگ مادر</h3><p>تعیین جهت‌گیری کلان، تصویب تصمیم‌های فراتر از حدود اختیار شرکت، هماهنگی سرمایه و خدمات مشترک، پایش عملکرد گروه و ایجاد فرصت همکاری میان شرکت‌های تخصصی.</p></article>
+</div>
+<div class="principle-banner"><strong>اصل هماهنگی: استقلال در اجرا، یکپارچگی در راهبری</strong><p>شرکت زمین و ملک باید هویت، برنامه تخصصی، مسئولیت اجرایی و سبد خدمات روشن داشته باشد؛ در عین حال، تصمیم‌های کلان، استانداردهای مشترک، تخصیص سرمایه و گزارش‌دهی آن با چارچوب هلدینگ هماهنگ بماند. حدود اختیارات، ساختار حساب‌ها و قراردادها و مسئولیت‌های رسمی در مدل حکمرانی و اسناد سازمانی تعیین می‌شوند.</p></div>
+<h3>چرخه همکاری و پاسخ‌گویی</h3>
+<div class="flow"><article><strong>۱. تعیین جهت</strong><span>اولویت‌های کلان هلدینگ</span></article><article><strong>۲. طراحی برنامه</strong><span>هدف، بودجه و شاخص شرکت</span></article><article><strong>۳. تصمیم و اجرا</strong><span>در حدود اختیار مصوب</span></article><article><strong>۴. گزارش‌دهی</strong><span>عملکرد، مالی و ریسک</span></article><article><strong>۵. بازبینی</strong><span>اصلاح مسیر و تخصیص منابع</span></article></div>
+</section>
 <section class="section" id="portfolio"><h2>۸. معماری طرح‌های تخصصی و خانواده‌های کسب‌وکار</h2><p class="intro">تقسیم قلمرو مادر به طرح‌های تخصصی روشن، مستقل و مکمل</p>
 <p>این طرح، چارچوب مادر حوزه زمین و ملک است. خانواده‌های زیر هرکدام یک قلمرو تخصصی برای طراحی برنامه، خدمات، محصولات، داده‌ها، مدل اقتصادی و نقشه اجرای مستقل به‌شمار می‌روند. هر خانواده باید با طرح مادر پیوند داشته باشد، اما موضوع و خروجی مشخص خودش را دنبال کند.</p>
 <div class="grid two">
