@@ -3,6 +3,7 @@
 const d=document,b=d.body;
 const nav=[
 {id:'home',label:'نخست',href:'index.html',icon:'۰۱'},
+{id:'intro',label:'معرفی',href:'pages/intro.html',icon:'۰۱-۱'},
 {id:'plan-catalog',label:'طرح‌ها',href:'pages/plans.html',icon:'۰۲',children:[
 {id:'company-arshad',label:'شرکت جامع راهبردی ارشد ایرانیان',href:'pages/arshad-iranian-company-tarh.html',icon:'۰۲-۱'},
 {id:'shahidportal',label:'شهیدپورتال',href:'pages/shahidportal-tarh.html',icon:'۰۲-۲',children:[
