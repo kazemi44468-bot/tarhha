@@ -24,34 +24,14 @@
 @media(max-width:850px){.sp-sidebar.menu-collapsed .sp-item-wrap>.sp-sub-toggle{position:relative;inset:auto;flex:0 0 34px;width:34px;height:36px}.sp-sidebar.menu-collapsed .sp-item-wrap>.sp-item{pointer-events:auto}.sp-sidebar.menu-collapsed .sp-item-wrap>.sp-sub-toggle .sp-branch-icon{width:15px;height:15px}.sp-sidebar.menu-collapsed .sp-sub .sp-item-wrap>.sp-sub-toggle{flex-basis:30px;width:30px}}
 
 
-/* اصلاح ریشه‌ای: ارتفاع محدود پنل و پیمایش واقعی فهرست بلند */
-.sp-sidebar{height:calc(100vh - 36px);max-height:calc(100vh - 36px);min-height:0}
-.sp-nav{flex:1 1 auto;min-height:0;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:rgba(23,107,103,.42) rgba(29,41,40,.06);scrollbar-gutter:stable}
-.sp-nav::-webkit-scrollbar{display:block;width:5px;height:5px}
-.sp-nav::-webkit-scrollbar-track{background:rgba(29,41,40,.05);border-radius:8px}
-.sp-nav::-webkit-scrollbar-thumb{background:rgba(23,107,103,.38);border-radius:8px}
-.sp-sidebar.menu-expanded .sp-sub.is-open,.sp-sidebar:not(.menu-expanded) .sp-group>.sp-sub.is-open{max-height:2000px}
-.sp-sidebar.menu-expanded .sp-sub{min-height:0}
-@media(max-width:850px){.sp-sidebar{height:100vh;max-height:100vh;min-height:100vh}.sp-nav{flex:1 1 auto;min-height:0;overflow-y:auto;scrollbar-width:thin;scrollbar-gutter:stable}.sp-nav::-webkit-scrollbar{display:block;width:5px}.sp-sidebar.menu-collapsed .sp-sub.is-open,.sp-sub.is-open{max-height:2000px}}
-
-/* ناوبری بازطراحی‌شده: پیمایش فهرست و پشتیبانی از ده سطح زیرمنو */
-.sp-sidebar{height:calc(100vh - 28px);max-height:calc(100vh - 28px);min-height:0;top:14px;transform:none}
+/* اصلاح یکپارچه: پیمایش فهرست بلند و پشتیبانی از ده سطح زیرمنو */
+.sp-sidebar{height:calc(100vh - 28px);max-height:calc(100vh - 28px);min-height:0;top:14px;transform:none;overflow:hidden}
 .sp-sidebar.menu-expanded{align-items:stretch}
-.sp-nav{flex:1 1 auto;min-height:0;overflow-y:auto!important;overflow-x:hidden;padding-bottom:12px;scrollbar-width:thin;scrollbar-color:rgba(23,107,103,.45) rgba(29,41,40,.06);scrollbar-gutter:stable}
-.sp-nav::-webkit-scrollbar{display:block;width:5px}
-.sp-nav::-webkit-scrollbar-track{background:rgba(29,41,40,.05);border-radius:8px}
-.sp-nav::-webkit-scrollbar-thumb{background:rgba(23,107,103,.45);border-radius:8px}
-.sp-sidebar.menu-expanded .sp-sub.is-open,.sp-sidebar:not(.menu-expanded) .sp-group>.sp-sub.is-open{max-height:4000px;opacity:1;visibility:visible}
+.sp-sidebar.menu-expanded .sp-nav{flex:1 1 auto;min-height:0;overflow-x:hidden;overflow-y:auto!important;scrollbar-width:thin;scrollbar-color:rgba(23,107,103,.45) rgba(29,41,40,.06);scrollbar-gutter:stable}
+.sp-sidebar.menu-expanded .sp-nav::-webkit-scrollbar{display:block;width:5px}
+.sp-sidebar.menu-expanded .sp-nav::-webkit-scrollbar-thumb{background:rgba(23,107,103,.45);border-radius:8px}
+.sp-sidebar.menu-expanded .sp-sub.is-open{max-height:4000px;overflow:visible;opacity:1;visibility:visible}
 .sp-sidebar.menu-expanded .sp-sub{min-height:0}
-.sp-sub-toggle{display:flex;align-items:center;justify-content:center;flex:0 0 30px;width:30px;height:30px;margin-inline-start:2px;border:1px solid rgba(23,107,103,.22);border-radius:9px;background:#f5faf7;color:var(--sp-accent);cursor:pointer}
-.sp-sub-toggle:hover,.sp-sub-toggle:focus-visible{background:#e6f1ec;outline:2px solid rgba(23,107,103,.22);outline-offset:1px}
-.sp-branch-icon{position:relative;display:block;width:13px;height:13px}
-.sp-branch-icon:before,.sp-branch-icon:after{content:"";position:absolute;top:6px;right:2px;width:9px;height:1.5px;background:currentColor;border-radius:2px}
-.sp-branch-icon:after{transform:rotate(90deg);transition:transform .2s}
-.sp-sub-toggle[aria-expanded="true"] .sp-branch-icon:after{transform:rotate(0)}
-.sp-sidebar.menu-expanded .sp-item-wrap>.sp-item{flex:1;min-width:0}
-.sp-sidebar.menu-expanded .sp-sub.is-open{max-height:4000px}
-.sp-sidebar.menu-expanded .sp-sub .sp-sub{margin-right:5px;padding-right:4px;border-right:1px solid rgba(23,107,103,.12)}
 .sp-sidebar.menu-expanded .sp-depth-2>.sp-item-wrap .sp-item{padding-right:15px}
 .sp-sidebar.menu-expanded .sp-depth-3>.sp-item-wrap .sp-item{padding-right:19px}
 .sp-sidebar.menu-expanded .sp-depth-4>.sp-item-wrap .sp-item{padding-right:23px}
@@ -62,26 +42,9 @@
 .sp-sidebar.menu-expanded .sp-depth-9>.sp-item-wrap .sp-item{padding-right:43px}
 .sp-sidebar.menu-expanded .sp-depth-10>.sp-item-wrap .sp-item{padding-right:47px}
 @media(max-width:850px){
-.sp-sidebar{height:100vh;max-height:100vh;min-height:100vh;top:0;transform:translateX(110%)}
+.sp-sidebar{height:100vh;max-height:100vh;min-height:100vh;top:0;transform:translateX(110%);overflow:hidden}
 .sp-sidebar.is-open{transform:translateX(0)}
-.sp-nav{flex:1 1 auto;min-height:0;overflow-y:auto!important;scrollbar-width:thin;scrollbar-gutter:stable}
-.sp-sidebar.menu-collapsed .sp-sub.is-open,.sp-sub.is-open{max-height:4000px}
-.sp-sidebar.menu-collapsed .sp-sub .sp-sub{margin-right:5px;padding-right:4px;border-right:1px solid rgba(23,107,103,.12)}
-}
-
-/* تثبیت نمایش منو پس از حذف تداخل نسخه‌های قدیمی */
-.sp-sidebar{display:flex!important;visibility:visible;opacity:1;box-sizing:border-box;height:calc(100vh - 28px);max-height:calc(100vh - 28px);min-height:0;top:14px;transform:none;overflow:hidden}
-.sp-sidebar.menu-expanded{width:var(--sp-open);align-items:stretch}
+.sp-sidebar.menu-expanded{width:270px;align-items:stretch}
 .sp-sidebar.menu-expanded .sp-nav{flex:1 1 auto;min-height:0;overflow-y:auto!important;overflow-x:hidden;scrollbar-width:thin;scrollbar-gutter:stable}
-.sp-sidebar.menu-expanded .sp-nav::-webkit-scrollbar{display:block;width:5px}
-.sp-sidebar.menu-expanded .sp-nav::-webkit-scrollbar-thumb{background:rgba(23,107,103,.45);border-radius:8px}
-.sp-sidebar.menu-expanded .sp-sub.is-open{max-height:4000px;overflow:visible}
-.sp-sidebar.menu-expanded .sp-sub{min-height:0}
-@media(max-width:850px){
-.sp-sidebar{display:flex!important;visibility:visible;opacity:1;height:100vh;max-height:100vh;min-height:100vh;top:0;transform:translateX(110%);overflow-x:hidden}
-.sp-sidebar.is-open{transform:translateX(0)}
-.sp-sidebar.menu-expanded{width:270px}
-.sp-sidebar.menu-expanded .sp-nav{flex:1 1 auto;min-height:0;overflow-y:auto!important}
-.sp-mobile-btn{display:flex!important}
-.sp-sidebar .sp-sub.is-open{max-height:4000px;overflow:visible}
+.sp-sidebar .sp-sub.is-open{max-height:4000px;overflow:visible;opacity:1;visibility:visible}
 }
