@@ -1,12 +1,7 @@
-/* هویت بصری مشترک صفحات طرح‌ها؛ قاب موقت تا زمان افزودن تصویر اختصاصی */
-.page-visual-slot{position:absolute;left:clamp(18px,3vw,34px);top:clamp(18px,3vw,30px);width:154px;height:154px;display:grid;place-items:center;box-sizing:border-box;overflow:hidden;border:1px solid rgba(94,129,116,.28);border-radius:24px;background:linear-gradient(145deg,#fff 0%,#f4f8f5 58%,#e8f0eb 100%);box-shadow:0 12px 30px rgba(35,68,55,.08);isolation:isolate}
-.page-visual-slot:before,.page-visual-slot:after{content:"";position:absolute;z-index:-1;pointer-events:none}
-.page-visual-slot:before{width:108px;height:108px;border:1px solid rgba(93,132,113,.24);transform:rotate(45deg);border-radius:20px}
-.page-visual-slot:after{width:72px;height:72px;border:1px solid rgba(93,132,113,.25);transform:rotate(45deg);border-radius:14px}
-.page-visual-slot__mark{width:52px;height:52px;display:grid;place-items:center;border:1px solid rgba(83,122,103,.28);border-radius:16px;background:rgba(255,255,255,.78);color:#517561;box-shadow:0 5px 16px rgba(35,68,55,.07)}
-.page-visual-slot__mark svg{width:29px;height:29px;display:block}
-.page-visual-slot__label{position:absolute;inset-inline:8px;bottom:12px;text-align:center;font-size:10px;line-height:1.7;color:#63796d;letter-spacing:0}
-.page-visual-slot__label strong{display:block;font-size:11px;font-weight:700;color:#385847}
-.hero.has-visual-placeholder{position:relative;padding-left:196px;min-height:194px;box-sizing:border-box}
-.hero.has-visual-placeholder>.page-visual-slot{display:grid}
-@media(max-width:760px){.hero.has-visual-placeholder{padding-inline:clamp(16px,4vw,24px);min-height:0}.hero.has-visual-placeholder>.page-visual-slot{position:relative;inset:auto;width:100%;height:92px;margin:0 0 18px;border-radius:18px}.hero.has-visual-placeholder .page-visual-slot:before{width:65px;height:65px}.hero.has-visual-placeholder .page-visual-slot:after{width:43px;height:43px}.hero.has-visual-placeholder .page-visual-slot__mark{width:38px;height:38px;border-radius:12px}.hero.has-visual-placeholder .page-visual-slot__mark svg{width:23px;height:23px}.hero.has-visual-placeholder .page-visual-slot__label{bottom:5px;font-size:9px}.hero.has-visual-placeholder .page-visual-slot__label strong{font-size:10px}}
+/* قاب تصویری هماهنگ با الگوی ساده صفحه ودجا؛ بدون دست‌کاری فاصله‌گذاری متن‌های داخل قهرمان */
+.hero.has-visual-placeholder{display:grid;grid-template-columns:minmax(0,1fr) 190px;align-items:center;gap:26px}
+.hero.has-visual-placeholder>.page-visual-content{min-width:0}
+.page-visual-slot{width:190px;min-height:190px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;padding:18px;overflow:hidden;border:1px solid rgba(255,255,255,.24);border-radius:22px;background:rgba(255,255,255,.10);box-shadow:inset 0 0 0 1px rgba(255,255,255,.035),0 12px 28px rgba(0,0,0,.08)}
+.page-visual-slot__mark{width:100%;height:150px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.72)}
+.page-visual-slot__mark svg{display:block;width:74px;height:74px;max-width:100%;max-height:100%;fill:none;stroke:currentColor;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:760px){.hero.has-visual-placeholder{grid-template-columns:minmax(0,1fr);gap:18px}.page-visual-slot{width:100%;min-height:112px;padding:10px;border-radius:17px}.page-visual-slot__mark{height:88px}.page-visual-slot__mark svg{width:55px;height:55px}}
