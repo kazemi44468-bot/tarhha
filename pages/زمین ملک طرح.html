@@ -1,0 +1,1041 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>طرح جامع شرکت راهبردی زمین و ملک ایرانیان</title>
+<meta name="description" content="طرح جامع راهبردی، سازمانی، اقتصادی و توسعه‌ای شرکت راهبردی زمین و ملک ایرانیان؛ پازل تخصصی هلدینگ مادر.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+<style>
+:root{
+  --c-ink:#20322f;--c-muted:#687873;--c-green:#176b67;--c-green-d:#103f3d;
+  --c-gold:#b18a4d;--c-line:#e0e8e1;--c-soft:#f0f6f1;--c-paper:#f6f4ee;
+  --c-clay:#9c4a2e;--c-clay-soft:#f2e0d8;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:22px}
+body{
+  margin:0;background:var(--c-paper);color:var(--c-ink);
+  font-family:Vazirmatn,Tahoma,sans-serif;line-height:1.95;font-size:15px;
+}
+.wrap{max-width:1240px;margin:auto;padding:30px 28px 80px}
+
+/* HERO */
+.hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(125deg,#3a2a1c,#7a4a2e 72%,#a8693e);
+  color:#fff;border-radius:22px;padding:clamp(24px,4vw,48px);
+  margin-bottom:18px;box-shadow:0 18px 44px #3a2a1c24;
+}
+.hero::after{
+  content:'';position:absolute;left:-80px;bottom:-100px;
+  width:280px;height:280px;border:1px solid #ffffff1c;border-radius:50%;
+  box-shadow:0 0 0 40px #ffffff08,0 0 0 80px #ffffff05;pointer-events:none;
+}
+.eyebrow{font-size:12px;letter-spacing:.02em;opacity:.85;position:relative;z-index:1}
+.hero h1{font-size:clamp(27px,4vw,44px);line-height:1.4;margin:8px 0 14px;position:relative;z-index:1;font-weight:900;letter-spacing:-.5px}
+.hero .lead{max-width:980px;font-size:clamp(15px,1.8vw,18px);margin:8px 0;color:#fbf3ea;position:relative;z-index:1}
+.hero p{max-width:980px;margin:8px 0;color:#f0e0d0;position:relative;z-index:1;font-size:14px}
+.badge{
+  display:inline-block;background:#ffffff22;border:1px solid #ffffff44;
+  border-radius:999px;padding:4px 14px;margin-top:16px;
+  font-size:12px;position:relative;z-index:1;
+}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;position:relative;z-index:1}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  padding:10px 16px;border:1px solid #ffffff55;border-radius:11px;
+  color:#fff;text-decoration:none;font-size:13px;font-weight:600;transition:.2s;
+}
+.btn:hover{background:#ffffff1a}
+.btn.primary{background:#fff;color:var(--c-clay);font-weight:700}
+.btn.primary:hover{background:#f9efe6}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:26px;position:relative;z-index:1}
+.stat{padding:14px;border:1px solid #ffffff35;border-radius:14px;background:#ffffff0b}
+.stat strong{display:block;font-size:17px;font-weight:800}
+.stat span{display:block;font-size:11.5px;color:#f0e0d0;margin-top:3px}
+
+/* TOC */
+.toc{margin:0 0 18px;padding:14px 16px;background:#fff;border:1px solid var(--c-line);border-radius:16px;display:flex;flex-wrap:wrap;gap:8px}
+.toc a{font-size:12px;text-decoration:none;color:var(--c-clay);background:#f7ede4;padding:6px 12px;border-radius:999px;border:1px solid #ece3d8;transition:.2s}
+.toc a:hover{background:var(--c-clay);color:#fff}
+
+/* SECTION */
+.section{background:#fff;border:1px solid var(--c-line);border-radius:20px;box-shadow:0 8px 25px #1d292807;margin-bottom:18px;padding:clamp(20px,2.6vw,32px)}
+.section h2{font-size:clamp(21px,2.5vw,28px);line-height:1.5;margin:0 0 6px;font-weight:800;letter-spacing:-.3px}
+.section h3{font-size:16px;line-height:1.7;margin:22px 0 10px;font-weight:700;color:var(--c-green-d)}
+.section p{font-size:14px;line-height:1.95;color:#2c3a48}
+.intro{font-size:13px;color:var(--c-muted);margin:0 0 18px}
+
+/* GRID & TILE */
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:14px}
+.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.tile,.panel,.step{
+  padding:18px;border:1px solid var(--c-line);border-radius:15px;
+  background:linear-gradient(180deg,#fff,#fdfaf7);min-width:0;transition:.25s;
+}
+.tile:hover,.panel:hover{border-color:var(--c-clay);transform:translateY(-2px);box-shadow:0 6px 18px #9c4a2e0f}
+.tile p,.panel p,.step p{font-size:13px;color:var(--c-muted);margin:0}
+.num{display:inline-block;color:var(--c-gold);font-size:11px;font-weight:800;margin-bottom:6px;letter-spacing:.5px}
+.tile h3{color:var(--c-clay);font-size:14.5px;margin:0 0 8px}
+.panel h3{font-size:14.5px;color:var(--c-green-d);margin-bottom:10px}
+.panel ul,.panel ol{padding-right:22px;margin:8px 0 0}
+.panel li{font-size:13px;margin:5px 0;color:#2c3a48;line-height:1.85}
+.callout{border-right:4px solid var(--c-gold);background:#faf6f0;padding:14px 18px;border-radius:10px;font-size:13.5px;margin-top:16px;line-height:1.9;color:#2c3a48}
+.callout.green{border-right-color:var(--c-green);background:#f0f6f1}
+.callout.clay{border-right-color:var(--c-clay);background:#fbf3ed}
+.callout strong{color:var(--c-ink)}
+
+/* FLOW */
+.flow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:14px}
+.flow.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.flow.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.flow.seven{grid-template-columns:repeat(7,minmax(0,1fr))}
+.flow article{
+  text-align:center;padding:14px 10px;border:1px solid var(--c-line);
+  border-radius:13px;background:#fdfaf7;transition:.25s;
+}
+.flow article:hover{border-color:var(--c-clay);background:#fbf3ed;transform:translateY(-2px)}
+.flow strong{display:block;font-size:13px;color:var(--c-clay);font-weight:800;margin-bottom:4px}
+.flow span{display:block;font-size:11.5px;color:var(--c-muted)}
+
+/* TABLE */
+.table-wrap{overflow-x:auto;border:1px solid var(--c-line);border-radius:13px;margin-top:12px}
+table{width:100%;min-width:660px;border-collapse:collapse;background:#fff}
+th,td{text-align:right;vertical-align:top;padding:12px 14px;border-bottom:1px solid var(--c-line);font-size:13px}
+th{background:#f7ede4;color:#5a3b22;font-weight:800;font-size:12.5px}
+tr:last-child td{border-bottom:0}
+tr:hover td{background:#fdfaf7}
+
+/* DOMAIN LIST */
+.domain-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}
+.domain{
+  padding:16px;border:1px solid var(--c-line);border-radius:13px;
+  background:#fff;transition:.2s;position:relative;overflow:hidden;
+}
+.domain::before{content:'';position:absolute;top:0;inset-inline-start:0;width:4px;height:100%;background:var(--c-clay);opacity:.85}
+.domain:hover{border-color:var(--c-clay);transform:translateX(-3px);box-shadow:0 6px 18px #9c4a2e15}
+.domain h4{margin:0 0 6px;font-size:14.5px;color:var(--c-clay);font-weight:800}
+.domain p{margin:0;font-size:12.5px;color:var(--c-muted);line-height:1.75}
+
+/* STRUCTURE DIAGRAM */
+.structure-diagram{
+  background:linear-gradient(180deg,#fbf3ed,#fdfaf7);
+  border:1.5px solid var(--c-line);border-radius:20px;
+  padding:32px 20px;margin:20px 0;overflow-x:auto;
+}
+.struct-level{display:flex;justify-content:center;gap:16px;margin-bottom:20px;flex-wrap:wrap}
+.struct-node{
+  background:#fff;border:1.5px solid var(--c-line);border-radius:14px;
+  padding:16px 22px;text-align:center;min-width:180px;
+  box-shadow:0 4px 12px #9c4a2e08;transition:.25s;
+}
+.struct-node:hover{transform:translateY(-3px);box-shadow:0 8px 20px #9c4a2e15;border-color:var(--c-clay)}
+.struct-node.mother{
+  background:linear-gradient(145deg,var(--c-green),var(--c-green-d));
+  color:#fff;border-color:transparent;min-width:280px;padding:22px 32px;
+  box-shadow:0 12px 32px #176b6730;
+}
+.struct-node.mother b{color:#fff;font-size:16px;font-weight:800;display:block;margin-bottom:4px}
+.struct-node.mother small{color:#b8d8d4;font-size:11.5px;display:block}
+.struct-node.current{
+  background:linear-gradient(145deg,var(--c-clay),#7a4a2e);
+  color:#fff;border-color:transparent;
+  box-shadow:0 10px 28px #9c4a2e30;
+}
+.struct-node.current b{color:#fff}
+.struct-node.current small{color:#f0d8c8}
+.struct-node b{display:block;font-size:13.5px;font-weight:800;color:var(--c-green-d);margin-bottom:3px}
+.struct-node small{display:block;font-size:11px;color:var(--c-muted)}
+.struct-arrow{display:flex;justify-content:center;margin:-8px 0 12px;color:var(--c-line);font-size:22px;line-height:1}
+.struct-tag{
+  display:inline-block;background:#f7ede4;color:var(--c-clay);
+  font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:6px;
+  margin-top:6px;letter-spacing:.3px;
+}
+.struct-node.mother .struct-tag{background:#ffffff22;color:#fff}
+.struct-node.current .struct-tag{background:#ffffff22;color:#fff}
+
+/* PILL */
+.pill{
+  display:inline-block;padding:4px 11px;border-radius:999px;
+  font-size:11px;font-weight:700;margin-inline-end:6px;
+}
+.pill.ok{background:#e1ebdc;color:#2a4029}
+.pill.warn{background:#f5e8cc;color:#7a5a1c}
+.pill.plan{background:#e0ebf2;color:#1a4a6b}
+.pill.future{background:#ece0f5;color:#4a2d7a}
+
+/* FOOTER */
+.footer{text-align:center;color:#7b8782;font-size:12px;padding:24px 20px 10px;line-height:2}
+.footer a{color:var(--c-clay);text-decoration:none;font-weight:600}
+.footer a:hover{text-decoration:underline}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+  .grid,.grid.four{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .domain-list{grid-template-columns:1fr}
+  .flow,.flow.seven{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:700px){
+  .wrap{padding:17px 12px 50px}
+  .hero,.section{border-radius:16px;padding:18px}
+  .stats,.grid,.grid.two,.grid.four{grid-template-columns:1fr}
+  .flow,.flow.three,.flow.four,.flow.seven{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero h1{font-size:26px}
+  .toc a{font-size:11px}
+  .actions .btn{flex:1 1 auto}
+  .struct-node.mother{min-width:100%;padding:18px 20px}
+  .struct-node{min-width:130px;padding:12px 14px}
+}
+</style>
+</head>
+<body>
+
+<main class="wrap">
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="hero" id="top">
+  <div class="eyebrow">طرح جامع راهبردی · نسخه ۱.۰ · پازل تخصصی هلدینگ</div>
+  <h1>شرکت راهبردی زمین و ملک ایرانیان</h1>
+  <p class="lead">پازل تخصصی هلدینگ مادر در زنجیره ارزش زمین، املاک، مسکن، معدن، سرمایه‌گذاری و مدیریت دارایی. مجموعه‌ای راهبردی، داده‌محور و توسعه‌گرا که فرصت‌ها را از ایده تا بهره‌برداری و مدیریت دارایی هدایت می‌کند.</p>
+  <p>این شرکت، زیرمجموعه‌ی <strong style="color:#fff">شرکت جامع راهبردی ارشد ایرانیان</strong> است؛ با هویت، برند، مدیریت و حساب مستقل، ولی هماهنگ با راهبرد، سرمایه و استانداردهای هلدینگ مادر. اولین شرکت تخصصی فعال این هلدینگ و پایلوت مدل راهبری هلدینگ.</p>
+
+  <span class="badge">پازل تخصصی ۰۱ از هلدینگ مادر</span>
+
+  <div class="actions">
+    <a class="btn primary" href="#executive">خلاصه مدیریتی</a>
+    <a class="btn" href="#position">جایگاه در هلدینگ</a>
+    <a class="btn" href="#value-chain">زنجیره ارزش</a>
+    <a class="btn" href="#roadmap">نقشه راه</a>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><strong>هسته کسب‌وکار</strong><span>زمین، ملک، مسکن، معدن</span></div>
+    <div class="stat"><strong>۷ مرحله</strong><span>زنجیره ارزش یکپارچه</span></div>
+    <div class="stat"><strong>۶ حوزه</strong><span>هسته + توسعه‌ای</span></div>
+    <div class="stat"><strong>۳ سال</strong><span>نقشه راه اجرایی</span></div>
+  </div>
+</section>
+
+<!-- ═══════════════ TOC ═══════════════ -->
+<nav class="toc" aria-label="فهرست طرح">
+  <a href="#executive">۱. خلاصه</a>
+  <a href="#identity">۲. هویت</a>
+  <a href="#position">۳. جایگاه در هلدینگ</a>
+  <a href="#principles">۴. اصول</a>
+  <a href="#value-chain">۵. زنجیره ارزش</a>
+  <a href="#domains">۶. حوزه‌های فعالیت</a>
+  <a href="#services">۷. محصولات و خدمات</a>
+  <a href="#customers">۸. مشتریان و ذی‌نفعان</a>
+  <a href="#org">۹. ساختار سازمانی</a>
+  <a href="#investment">۱۰. ارزیابی فرصت</a>
+  <a href="#finance">۱۱. مدل مالی</a>
+  <a href="#risk">۱۲. مدیریت ریسک</a>
+  <a href="#digital">۱۳. داده و فناوری</a>
+  <a href="#subsidiaries">۱۴. زیرمجموعه‌های تخصصی</a>
+  <a href="#ecosystem">۱۵. هم‌افزایی با هلدینگ</a>
+  <a href="#website">۱۶. وب‌سایت و برند</a>
+  <a href="#roadmap">۱۷. نقشه راه</a>
+  <a href="#metrics">۱۸. KPI</a>
+  <a href="#legal">۱۹. ملاحظات حقوقی</a>
+  <a href="#summary">۲۰. جمع‌بندی</a>
+</nav>
+
+<!-- ═══════════════ ۱. خلاصه ═══════════════ -->
+<section class="section" id="executive">
+  <h2>۱. خلاصه مدیریتی</h2>
+  <p class="intro">این شرکت چیست، چه می‌کند، و چه نقشی در هلدینگ دارد</p>
+
+  <p>شرکت راهبردی زمین و ملک ایرانیان، یک <strong>شرکت تخصصی مستقل</strong> در زنجیره ارزش زمین، املاک، مسکن، معدن، سرمایه‌گذاری و مدیریت دارایی است که به‌عنوان <strong>پازل تخصصی شماره‌ی ۰۱</strong> زیر چتر هلدینگ مادر (شرکت جامع راهبردی ارشد ایرانیان) فعالیت می‌کند.</p>
+
+  <p>نقطه‌ی تمرکز این شرکت، عبور از معامله‌محوری صرف است. هدف، ساختن یک <strong>مجموعه‌ی راهبردی، سرمایه‌پذیر، داده‌محور و توسعه‌گرا</strong> است که بتواند فرصت‌ها را شناسایی، ارزیابی، تأمین مالی، تملک یا مشارکت کند و آن‌ها را از مرحله‌ی ایده تا بهره‌برداری و مدیریت دارایی پیش ببرد.</p>
+
+  <div class="callout clay">
+    <strong>جمله‌ی محوری:</strong> «از فرصت‌یابی تا خلق ارزش پایدار؛ هر دارایی، یک پروژه؛ هر پروژه، یک فرصت راهبردی؛ هر فرصت، یک شبکه از ارزش.»
+  </div>
+
+  <h3>تصمیم‌های کلیدی سند</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>موضوع</th><th>تصمیم تثبیت‌شده</th><th>اثر بر اجرا</th></tr></thead>
+      <tbody>
+        <tr><td>جایگاه در هلدینگ</td><td>پازل تخصصی ۰۱ · پایلوت مدل راهبری هلدینگ</td><td>الگوی سایر شرکت‌ها</td></tr>
+        <tr><td>استقلال شرکت</td><td>شخصیت حقوقی، برند، تیم و حساب مستقل</td><td>عدم اختلاط با هلدینگ</td></tr>
+        <tr><td>هسته کسب‌وکار</td><td>زمین، ملک، مسکن، معدن، مدیریت دارایی</td><td>تمرکز و تخصص</td></tr>
+        <tr><td>مدل راهبردی</td><td>زنجیره ارزش ۷ مرحله‌ای، نقش‌آفرینی متناسب</td><td>انعطاف بدون پذیرش یکسان ریسک</td></tr>
+        <tr><td>زیرمجموعه‌ها</td><td>مرحله‌ای بر اساس امکان‌سنجی</td><td>رشد کنترل‌شده، نه اعلام زودهنگام</td></tr>
+        <tr><td>رابطه با هلدینگ</td><td>راهبرد، سرمایه، استاندارد، خدمات مشترک</td><td>یکپارچگی بدون تمرکز افراطی</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ═══════════════ ۲. هویت ═══════════════ -->
+<section class="section" id="identity">
+  <h2>۲. هویت، چشم‌انداز و مأموریت</h2>
+
+  <div class="grid two">
+    <article class="tile">
+      <span class="num">نام مجموعه</span>
+      <h3>شرکت راهبردی زمین و ملک ایرانیان</h3>
+      <p>نام انگلیسی پیشنهادی: Iranian Strategic Land &amp; Property Company</p>
+    </article>
+    <article class="tile">
+      <span class="num">جایگاه در هلدینگ</span>
+      <h3>پازل تخصصی ۰۱</h3>
+      <p>زیرمجموعه‌ی شرکت جامع راهبردی ارشد ایرانیان؛ اولین شرکت تخصصی فعال و پایلوت مدل راهبری هلدینگ.</p>
+    </article>
+    <article class="tile">
+      <span class="num">چشم‌انداز</span>
+      <h3>مرجع تخصصی زمین و دارایی در ایران</h3>
+      <p>تبدیل شدن به مجموعه‌ای معتبر و اثرگذار در شناسایی و توسعه فرصت‌های زمین و املاک ایران؛ با پیوند دادن اطلاعات، سرمایه، تخصص، شرکای اجرایی و ظرفیت‌های منطقه‌ای.</p>
+    </article>
+    <article class="tile">
+      <span class="num">مأموریت</span>
+      <h3>شناسایی، ارزیابی و خلق ارزش</h3>
+      <p>شناسایی فرصت‌ها، کاهش ریسک تصمیم‌های ملکی، طراحی مدل‌های سرمایه‌گذاری و مشارکت، هدایت پروژه‌های توسعه‌ای، و مدیریت حرفه‌ای دارایی‌های ملکی.</p>
+    </article>
+  </div>
+
+  <h3>ارزش‌های بنیادین</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>ارزش</th><th>نمود اجرایی</th></tr></thead>
+      <tbody>
+        <tr><td>شفافیت</td><td>مستندسازی تصمیم‌ها، هزینه‌ها، قراردادها و تعهدات</td></tr>
+        <tr><td>اعتبار حقوقی</td><td>بررسی مالکیت، محدودیت‌ها، کاربری و مجوزها پیش از تعهد</td></tr>
+        <tr><td>انضباط مالی</td><td>ارزیابی جریان نقدی، سرمایه موردنیاز و سناریوهای ریسک</td></tr>
+        <tr><td>خلق ارزش واقعی</td><td>تمرکز بر ظرفیت اقتصادی و توسعه‌پذیری، نه صرفاً افزایش اسمی قیمت</td></tr>
+        <tr><td>مشارکت حرفه‌ای</td><td>تعریف روشن نقش، آورده، مسئولیت و منافع طرفین</td></tr>
+        <tr><td>تصمیم‌گیری داده‌محور</td><td>استفاده از اطلاعات قابل اتکا و قابل ردیابی</td></tr>
+        <tr><td>پایداری</td><td>توجه به آثار اجتماعی، محیطی، زیرساختی و بلندمدت پروژه</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ═══════════════ ۳. جایگاه در هلدینگ ═══════════════ -->
+<section class="section" id="position">
+  <h2>۳. جایگاه در ساختار هلدینگ</h2>
+  <p class="intro">این شرکت چگونه در ساختار سه‌طبقه‌ی هلدینگ قرار می‌گیرد</p>
+
+  <div class="structure-diagram">
+    <!-- طبقه اول: هلدینگ مادر -->
+    <div class="struct-level">
+      <div class="struct-node mother">
+        <b>شرکت جامع راهبردی ارشد ایرانیان</b>
+        <small>هلدینگ مادر · راهبرد، سرمایه، حکمرانی، خدمات مشترک</small>
+        <span class="struct-tag">HOLDING</span>
+      </div>
+    </div>
+
+    <div class="struct-arrow">↓</div>
+
+    <!-- طبقه دوم: این شرکت -->
+    <div class="struct-level">
+      <div class="struct-node current">
+        <b>شرکت راهبردی زمین و ملک ایرانیان</b>
+        <small>پازل تخصصی ۰۱ · زمین، ملک، مسکن، معدن</small>
+        <span class="struct-tag">CURRENT</span>
+      </div>
+      <div class="struct-node">
+        <b>سایر شرکت‌های تخصصی</b>
+        <small>پازل‌های ۰۲ تا n هلدینگ</small>
+        <span class="struct-tag">FUTURE</span>
+      </div>
+    </div>
+
+    <div class="struct-arrow">↓</div>
+
+    <!-- طبقه سوم: زیرمجموعه‌های این شرکت -->
+    <div class="struct-level">
+      <div class="struct-node">
+        <b>زیرمجموعه‌های تخصصی این شرکت</b>
+        <small>اراضی، املاک، مدیریت دارایی، فناوری مکانی، مسکن، معدن</small>
+        <span class="struct-tag">POTENTIAL</span>
+      </div>
+    </div>
+  </div>
+
+  <h3>رابطه با هلدینگ مادر</h3>
+  <div class="grid two">
+    <article class="panel">
+      <h3>چه چیزی از هلدینگ می‌گیریم</h3>
+      <ul>
+        <li>راهبرد کلان و چارچوب‌های راهبردی</li>
+        <li>تخصیص سرمایه بر اساس مدل مرحله‌ای</li>
+        <li>استانداردهای مشترک (مالی، حقوقی، ریسک)</li>
+        <li>خدمات مشترک (حسابداری، حقوقی، فناوری، منابع انسانی)</li>
+        <li>پشتیبانی در تأمین مالی و جذب شریک</li>
+        <li>هم‌افزایی با سایر پازل‌های هلدینگ</li>
+        <li>پشتیبانی برند و روابط راهبردی</li>
+      </ul>
+    </article>
+    <article class="panel">
+      <h3>چه چیزی به هلدینگ می‌دهیم</h3>
+      <ul>
+        <li>گزارش ماهانه عملیاتی</li>
+        <li>گزارش فصلی مالی و راهبردی</li>
+        <li>گزارش سالانه جامع</li>
+        <li>گزارش فوری در بحران</li>
+        <li>پیشنهاد فرصت‌های جدید سرمایه‌گذاری</li>
+        <li>معرفی فرصت‌های مکمل به سایر پازل‌ها</li>
+        <li>بازگشت سرمایه طبق مدل تخصیص</li>
+      </ul>
+    </article>
+  </div>
+
+  <div class="callout green">
+    <strong>اصل هماهنگی:</strong> استقلال در اجرا، یکپارچگی در راهبری. این شرکت هویت، برند، تیم، حساب و قراردادهای خودش را دارد، ولی در چارچوب راهبرد و استانداردهای هلدینگ عمل می‌کند.
+  </div>
+</section>
+
+<!-- ═══════════════ ۴. اصول ═══════════════ -->
+<section class="section" id="principles">
+  <h2>۴. اصول بنیادین</h2>
+
+  <div class="grid">
+    <article class="tile">
+      <span class="num">اصل ۰۱</span>
+      <h3>فرصت‌محوری راهبردی</h3>
+      <p>هر فرصت باید با راهبرد شرکت هم‌راستا باشد و از مسیر ارزیابی مشخص عبور کند.</p>
+    </article>
+    <article class="tile">
+      <span class="num">اصل ۰۲</span>
+      <h3>ارزیابی چندلایه</h3>
+      <p>بررسی حقوقی، فنی، اقتصادی و مکانی پیش از هر تعهد یا سرمایه‌گذاری.</p>
+    </article>
+    <article class="tile">
+      <span class="num">اصل ۰۳</span>
+      <h3>عدم‌قطعیت صریح</h3>
+      <p>اطلاعات تخمینی، پیشنهادی و تأییدنشده به‌عنوان داده قطعی نمایش داده نمی‌شود.</p>
+    </article>
+    <article class="tile">
+      <span class="num">اصل ۰۴</span>
+      <h3>انعطاف در نقش</h3>
+      <p>شرکت در هر فرصت می‌تواند نقش‌های مختلفی از مشاوره تا مدیریت دارایی ایفا کند.</p>
+    </article>
+    <article class="tile">
+      <span class="num">اصل ۰۵</span>
+      <h3>مشارکت حرفه‌ای</h3>
+      <p>هر مشارکت با تعریف روشن آورده، تعهد، تقسیم منافع و راه خروج.</p>
+    </article>
+    <article class="tile">
+      <span class="num">اصل ۰۶</span>
+      <h3>استقلال حقوقی</h3>
+      <p>حساب، دارایی، قرارداد و مسئولیت شرکت از هلدینگ و سایر شرکت‌ها جدا است.</p>
+    </article>
+    <article class="tile">
+      <span class="num">اصل ۰۷</span>
+      <h3>هماهنگی راهبردی</h3>
+      <p>راهبرد، سرمایه و استاندارد از هلدینگ؛ اجرا در چارچوب شرکت.</p>
+    </article>
+    <article class="tile">
+      <span class="num">اصل ۰۸</span>
+      <h3>هم‌افزایی واقعی</h3>
+      <p>هر فرصت مکمل به سایر پازل‌های هلدینگ معرفی می‌شود.</p>
+    </article>
+    <article class="tile">
+      <span class="num">اصل ۰۹</span>
+      <h3>پایداری بلندمدت</h3>
+      <p>توجه به آثار اجتماعی، محیطی و زیرساختی هر پروژه، نه فقط سود کوتاه‌مدت.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ═══════════════ ۵. زنجیره ارزش ═══════════════ -->
+<section class="section" id="value-chain">
+  <h2>۵. مدل راهبردی و زنجیره ارزش</h2>
+  <p class="intro">مسیر مشترک برای پیشبرد فرصت‌ها از ایده تا بهره‌برداری</p>
+
+  <p>فعالیت‌های شرکت بر یک زنجیره ارزش یکپارچه بنا می‌شود. شرکت متناسب با سرمایه، مجوزها، تخصص و فرصت‌های موجود، در یک یا چند مرحله از چرخه عمر دارایی نقش‌آفرینی می‌کند.</p>
+
+  <div class="flow seven">
+    <article><strong>۱</strong><span>شناسایی فرصت</span></article>
+    <article><strong>۲</strong><span>ارزیابی و اعتبارسنجی</span></article>
+    <article><strong>۳</strong><span>طراحی مدل اقتصادی</span></article>
+    <article><strong>۴</strong><span>تأمین منابع و قرارداد</span></article>
+    <article><strong>۵</strong><span>توسعه و اجرا</span></article>
+    <article><strong>۶</strong><span>بهره‌برداری و مدیریت</span></article>
+    <article><strong>۷</strong><span>ارزیابی و بازتوسعه</span></article>
+  </div>
+
+  <h3>شرح مراحل</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>مرحله</th><th>فعالیت</th><th>خروجی</th></tr></thead>
+      <tbody>
+        <tr><td>۱. شناسایی فرصت</td><td>زمین، ملک، دارایی راکد، نیاز بازار و فرصت مشارکت</td><td>فهرست فرصت‌های غربال‌شده</td></tr>
+        <tr><td>۲. ارزیابی و اعتبارسنجی</td><td>مالکیت، کاربری، بازار، زیرساخت، هزینه و ریسک</td><td>گزارش ارزیابی اولیه</td></tr>
+        <tr><td>۳. طراحی مدل اقتصادی</td><td>تملک، مشارکت، توسعه، اجاره، واگذاری یا مدیریت</td><td>مدل اقتصادی با سناریوها</td></tr>
+        <tr><td>۴. تأمین منابع و قرارداد</td><td>سرمایه، شرکای تخصصی، ساختار حقوقی و تقسیم منافع</td><td>قرارداد و تأمین مالی</td></tr>
+        <tr><td>۵. توسعه و اجرا</td><td>طراحی، اخذ مجوز، آماده‌سازی، ساخت یا تغییر بهره‌برداری</td><td>پروژه اجراشده</td></tr>
+        <tr><td>۶. بهره‌برداری و مدیریت</td><td>اجاره، نگهداری، مدیریت درآمد و کنترل هزینه</td><td>گزارش درآمد و بهره‌برداری</td></tr>
+        <tr><td>۷. ارزیابی و توسعه مجدد</td><td>سنجش عملکرد، افزایش ارزش، بازسرمایه‌گذاری یا خروج</td><td>تصمیم ادامه/توسعه/خروج</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout clay">
+    <strong>مزیت این مدل:</strong> شرکت مجبور نیست تمام پروژه‌ها را خود تملک یا اجرا کند. در یک فرصت ممکن است نقشش شناسایی و ارزیابی باشد؛ در فرصتی دیگر، سرمایه‌گذاری یا مشارکت در توسعه؛ و در پروژه‌ای دیگر، مدیریت دارایی و بهره‌برداری. این انعطاف، مدل درآمدی متنوع و ریسک متناسب ایجاد می‌کند.
+  </div>
+</section>
+
+<!-- ═══════════════ ۶. حوزه‌های فعالیت ═══════════════ -->
+<section class="section" id="domains">
+  <h2>۶. حوزه‌های فعالیت</h2>
+  <p class="intro">سبد پیشنهادی فعالیت شرکت با تفکیک هسته اصلی و حوزه‌های توسعه‌ای</p>
+
+  <h3>هسته اصلی کسب‌وکار</h3>
+  <div class="domain-list">
+    <div class="domain">
+      <h4>زمین و توسعه اراضی</h4>
+      <p>شناسایی و بانک اطلاعاتی فرصت‌های زمین، تحلیل موقعیت و دسترسی، بررسی تجمیع و تفکیک، امکان‌سنجی کاربری، طراحی سناریوهای توسعه و مشارکت با مالکان.</p>
+    </div>
+    <div class="domain">
+      <h4>املاک و مستغلات</h4>
+      <p>شناسایی فرصت‌های خرید، فروش، اجاره و معاوضه، تحلیل ارزش و مقایسه، بازاریابی دارایی‌های ملکی، شناسایی ظرفیت بهسازی و سامان‌دهی پرونده دارایی.</p>
+    </div>
+    <div class="domain">
+      <h4>سرمایه‌گذاری و مشارکت</h4>
+      <p>بررسی فرصت‌های سرمایه‌گذاری ملکی، طراحی مدل‌های مشارکت، ارزیابی آورده‌های نقدی و غیرنقدی، تحلیل جریان نقدی و بازده، تنظیم چارچوب خروج سرمایه‌گذار.</p>
+    </div>
+    <div class="domain">
+      <h4>توسعه و مدیریت پروژه</h4>
+      <p>مدیریت مطالعات امکان‌سنجی، هماهنگی مشاوران و مجریان، مدیریت زمان و هزینه و کیفیت، پیگیری مجوزها، کنترل پیشرفت و گزارش‌دهی.</p>
+    </div>
+    <div class="domain">
+      <h4>مدیریت دارایی و بهره‌برداری</h4>
+      <p>مدیریت اجاره و قراردادها، پایش درآمد و هزینه و نرخ اشغال، برنامه نگهداری و بهسازی، ارزیابی عملکرد پرتفوی، بررسی فروش یا بازتوسعه.</p>
+    </div>
+    <div class="domain">
+      <h4>داده، فناوری و هوشمندسازی</h4>
+      <p>ایجاد بانک اطلاعات، سامانه مدیریت فرصت‌ها، نقشه تعاملی و تحلیل مکانی GIS، داشبورد سرمایه‌گذاری، تحلیل داده با ثبت منبع و محدودیت.</p>
+    </div>
+  </div>
+
+  <h3>حوزه‌های توسعه‌ای و مکمل</h3>
+  <p>حوزه‌هایی مانند معماری و ساختمان، بازرگانی، کشاورزی و اراضی مولد، گردشگری، معدن، توسعه شهری و روستایی و نوآوری در نقشه بلندمدت بررسی می‌شوند. اما این حوزه‌ها در آغاز به‌عنوان <strong>سبد فرصت‌های قابل ارزیابی</strong> در نظر گرفته می‌شوند، نه واحدهای عملیاتی مستقل. ورود به هرکدام بر اساس انطباق با موضوع فعالیت قانونی، مزیت رقابتی، دسترسی به متخصص، سرمایه موردنیاز، ریسک و وجود مشتری یا شریک واقعی تصویب می‌شود.</p>
+
+  <div class="callout">
+    <strong>قاعده:</strong> هیچ حوزه‌ای صرفاً به دلیل درج در این طرح، مجوز فعالیت تلقی نمی‌شود. ورود نیازمند امکان‌سنجی مستقل است.
+  </div>
+</section>
+
+<!-- ═══════════════ ۷. محصولات و خدمات ═══════════════ -->
+<section class="section" id="services">
+  <h2>۷. محصولات و خدمات قابل عرضه</h2>
+  <p class="intro">خدمات شرکت در قالب محصولات مشخص و قابل قیمت‌گذاری</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>محصول یا خدمت</th><th>خروجی قابل تحویل</th><th>مدل درآمدی پیشنهادی</th></tr></thead>
+      <tbody>
+        <tr><td>شناسایی فرصت زمین و ملک</td><td>فهرست فرصت‌های غربال‌شده</td><td>حق‌الزحمه مطالعات یا قرارداد خدمات</td></tr>
+        <tr><td>گزارش ارزیابی مقدماتی</td><td>گزارش حقوقی، فنی و اقتصادی</td><td>مبلغ ثابت پروژه</td></tr>
+        <tr><td>امکان‌سنجی سرمایه‌گذاری</td><td>سناریوها، برآورد هزینه، جریان نقدی و ریسک</td><td>حق‌الزحمه مطالعات</td></tr>
+        <tr><td>طراحی مشارکت</td><td>مدل آورده، تعهدات، تقسیم منافع و خروج</td><td>حق‌الزحمه مشاوره یا قرارداد توافق‌شده</td></tr>
+        <tr><td>مدیریت توسعه پروژه</td><td>برنامه اجرا، کنترل پیشرفت و گزارش دوره‌ای</td><td>حق مدیریت یا حق‌الزحمه مرحله‌ای</td></tr>
+        <tr><td>مدیریت دارایی ملکی</td><td>گزارش درآمد و هزینه و برنامه نگهداری</td><td>کارمزد دوره‌ای یا مبتنی بر قرارداد</td></tr>
+        <tr><td>بازاریابی و واسطه‌گری مجاز</td><td>معرفی طرفین و مدیریت فرایند معامله</td><td>کارمزد قراردادی، در صورت مجازبودن</td></tr>
+        <tr><td>بانک اطلاعات و گزارش مکانی</td><td>پرونده داده، نقشه و گزارش تحلیلی</td><td>قرارداد پروژه یا اشتراک خدمات</td></tr>
+        <tr><td>مدیریت پرتفوی ملکی</td><td>گزارش تجمیعی عملکرد چند دارایی</td><td>قرارداد مدیریت مستمر</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout">
+    <strong>ملاحظه حقوقی:</strong> ارائه خدماتی مانند کارشناسی رسمی، خدمات حقوقی تخصصی، واسطه‌گری، جذب سرمایه عمومی، فعالیت‌های مالی و برخی امور فنی ممکن است به مجوز یا صلاحیت حرفه‌ای جداگانه نیاز داشته باشد. شرکت باید نقش خود و نقش متخصصان یا مؤسسات دارای صلاحیت را در هر قرارداد مشخص کند.
+  </div>
+</section>
+
+<!-- ═══════════════ ۸. مشتریان ═══════════════ -->
+<section class="section" id="customers">
+  <h2>۸. مشتریان و ذی‌نفعان هدف</h2>
+  <p class="intro">گروه‌های بازار و پیشنهاد ارزش متمایز شرکت</p>
+
+  <div class="grid two">
+    <article class="panel">
+      <h3>گروه‌های مشتریان</h3>
+      <ul>
+        <li><strong>مالکان زمین و ملک:</strong> اشخاص حقیقی، خانواده‌ها، شرکت‌ها و دارندگان دارایی‌های بلااستفاده</li>
+        <li><strong>سرمایه‌گذاران:</strong> خصوصی و شرکتی با هدف فرصت‌های ارزیابی‌شده</li>
+        <li><strong>توسعه‌گران و سازندگان:</strong> نیازمند زمین، فرصت پروژه یا خدمات مدیریت توسعه</li>
+        <li><strong>شرکت‌ها و نهادهای دارنده املاک:</strong> نیازمند سامان‌دهی، ارزیابی یا بهره‌برداری بهتر</li>
+        <li><strong>بهره‌برداران تجاری:</strong> کسب‌وکارهای نیازمند محل مناسب</li>
+        <li><strong>مشاوران و مجریان تخصصی:</strong> بخشی از زنجیره تحویل خدمات</li>
+      </ul>
+    </article>
+    <article class="panel">
+      <h3>پیشنهاد ارزش متمایز</h3>
+      <ul>
+        <li><strong>فرصت‌یابی:</strong> یافتن فرصت‌هایی که هنوز به پروژه روشن تبدیل نشده‌اند</li>
+        <li><strong>کاهش عدم‌قطعیت:</strong> گردآوری اطلاعات و شناسایی ریسک‌ها پیش از تعهد</li>
+        <li><strong>تبدیل فرصت به پروژه:</strong> اتصال دارایی به مدل اقتصادی، شریک و برنامه اجرایی</li>
+        <li><strong>حفظ و افزایش ارزش:</strong> مدیریت عملکرد دارایی پس از تملک، توسعه یا بهره‌برداری</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- ═══════════════ ۹. ساختار سازمانی ═══════════════ -->
+<section class="section" id="org">
+  <h2>۹. ساختار سازمانی و نظام اداره</h2>
+  <p class="intro">ساختار پیشنهادی متناسب با اندازه واقعی شرکت</p>
+
+  <div class="grid two">
+    <article class="panel">
+      <h3>سطوح سازمانی</h3>
+      <ul>
+        <li><strong>هیئت‌مدیره و مدیریت عالی:</strong> راهبرد، نظارت، سرمایه، تصویب پروژه‌های کلیدی</li>
+        <li><strong>مدیریت عامل و دفتر راهبرد:</strong> برنامه‌ریزی، هماهنگی، گزارش‌دهی، کنترل ریسک</li>
+        <li><strong>واحد زمین و املاک:</strong> فرصت‌یابی، بررسی اولیه و توسعه</li>
+        <li><strong>واحد سرمایه‌گذاری و مالی:</strong> مدل مالی، بودجه، تأمین منابع</li>
+        <li><strong>واحد توسعه و مدیریت پروژه:</strong> زمان، هزینه، کیفیت، اجرا</li>
+        <li><strong>واحد داده، فناوری و بازار:</strong> سامانه‌ها، بازاریابی، ارتباطات</li>
+      </ul>
+    </article>
+    <article class="panel">
+      <h3>کارکردهای مشترک و کنترلی</h3>
+      <ul>
+        <li>حقوقی و قراردادها</li>
+        <li>حسابداری و مالی</li>
+        <li>منابع انسانی</li>
+        <li>تدارکات</li>
+        <li>انطباق و کنترل داخلی</li>
+      </ul>
+      <p style="margin-top:10px;font-size:12.5px;color:var(--c-muted)">قابل تأمین از طریق تیم داخلی، مشاور بیرونی یا ترکیبی از هر دو، متناسب با نیاز.</p>
+    </article>
+  </div>
+
+  <h3>کمیته‌های تصمیم‌گیری</h3>
+  <div class="grid three" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+    <article class="tile">
+      <h3>کمیته سرمایه‌گذاری</h3>
+      <p>ارزیابی فرصت‌ها، بازده مورد انتظار، ریسک و تناسب با راهبرد شرکت و هلدینگ.</p>
+    </article>
+    <article class="tile">
+      <h3>کمیته ریسک و حقوقی</h3>
+      <p>بررسی مالکیت، تعهدات قراردادی، دعاوی احتمالی، مجوزها و محدودیت‌های استفاده.</p>
+    </article>
+    <article class="tile">
+      <h3>کمیته پروژه</h3>
+      <p>پایش زمان، هزینه، کیفیت، تغییرات و انحراف از برنامه.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ═══════════════ ۱۰. ارزیابی فرصت ═══════════════ -->
+<section class="section" id="investment">
+  <h2>۱۰. نظام ارزیابی و تصویب فرصت‌های سرمایه‌گذاری</h2>
+  <p class="intro">هر فرصت باید از مسیر مشخصی عبور کند</p>
+
+  <div class="flow">
+    <article><strong>۱. ثبت</strong><span>پرونده اولیه فرصت</span></article>
+    <article><strong>۲. غربال</strong><span>تناسب با راهبرد</span></article>
+    <article><strong>۳. بررسی حقوقی-فنی</strong><span>راستی‌آزمایی</span></article>
+    <article><strong>۴. تحلیل بازار و مالی</strong><span>مدل و سناریو</span></article>
+    <article><strong>۵. تصمیم</strong><span>تصویب یا رد</span></article>
+  </div>
+
+  <h3>مدل امتیازدهی مقدماتی</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>معیار</th><th>وزن پیشنهادی</th></tr></thead>
+      <tbody>
+        <tr><td>وضعیت حقوقی و قابلیت اجرای قانونی</td><td>۲۰٪</td></tr>
+        <tr><td>توجیه اقتصادی و بازده تعدیل‌شده با ریسک</td><td>۲۵٪</td></tr>
+        <tr><td>تقاضای بازار و امکان فروش یا بهره‌برداری</td><td>۱۵٪</td></tr>
+        <tr><td>تناسب با راهبرد شرکت</td><td>۱۵٪</td></tr>
+        <tr><td>امکان تأمین مالی و نقدشوندگی</td><td>۱۰٪</td></tr>
+        <tr><td>ریسک اجرا، زیرساخت و زمان‌بندی</td><td>۱۰٪</td></tr>
+        <tr><td>کیفیت و قابلیت راستی‌آزمایی اطلاعات</td><td>۵٪</td></tr>
+        <tr><td><strong>مجموع</strong></td><td><strong>۱۰۰٪</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout clay">
+    <strong>شرط توقف:</strong> مواردی مانند ابهام جدی در مالکیت، فقدان اختیار قانونی، احتمال ممنوعیت استفاده یا نبود امکان تأمین مالی باید به‌عنوان شرط توقف یا تعلیق بررسی تعریف شوند. امتیاز بالای سایر معیارها نباید این موانع را جبران کند.
+  </div>
+</section>
+
+<!-- ═══════════════ ۱۱. مدل مالی ═══════════════ -->
+<section class="section" id="finance">
+  <h2>۱۱. مدل درآمدی و اقتصاد کسب‌وکار</h2>
+  <p class="intro">مسیرهای درآمد مکمل و اصول انضباط مالی</p>
+
+  <div class="grid two">
+    <article class="panel">
+      <h3>منابع درآمد خدماتی</h3>
+      <ul>
+        <li>حق‌الزحمه مطالعات و امکان‌سنجی</li>
+        <li>کارمزد مدیریت پروژه</li>
+        <li>حق‌الزحمه مدیریت دارایی و بهره‌برداری</li>
+        <li>درآمد خدمات داده، گزارش و تحلیل مکانی</li>
+        <li>درآمد توسعه کسب‌وکار و هماهنگی پروژه</li>
+      </ul>
+    </article>
+    <article class="panel">
+      <h3>منابع درآمد معاملاتی</h3>
+      <ul>
+        <li>کارمزد معاملات یا معرفی طرفین (با مجوز)</li>
+        <li>خرید و فروش دارایی‌های متعلق به شرکت</li>
+        <li>درآمد توافق‌شده از ساختارهای مشارکت در معامله</li>
+      </ul>
+    </article>
+    <article class="panel">
+      <h3>منابع درآمد توسعه و بهره‌برداری</h3>
+      <ul>
+        <li>سهم قراردادی از منافع پروژه‌های مشارکتی</li>
+        <li>درآمد اجاره و بهره‌برداری از دارایی‌های تحت مالکیت یا مدیریت</li>
+        <li>درآمد توسعه، بهسازی یا بازتوسعه دارایی‌ها</li>
+      </ul>
+    </article>
+    <article class="panel">
+      <h3>منابع درآمد فناوری و اطلاعات</h3>
+      <ul>
+        <li>دسترسی قراردادی به گزارش‌ها و بانک‌های اطلاعاتی</li>
+        <li>خدمات تحلیل مکانی و ارزیابی فرصت‌ها</li>
+        <li>سامانه مدیریت پرتفوی و گزارش‌دهی</li>
+      </ul>
+    </article>
+  </div>
+
+  <div class="callout green">
+    <strong>اصل مالی:</strong> در شروع، شرکت یک مدل درآمد خدماتی با سرمایه ثابت محدود را در کنار تعداد کمی فرصت سرمایه‌گذاری منتخب توسعه دهد؛ سپس با ایجاد سابقه اجرایی و توان مالی، میزان سرمایه‌گذاری مستقیم را افزایش دهد.
+  </div>
+</section>
+
+<!-- ═══════════════ ۱۲. مدیریت ریسک ═══════════════ -->
+<section class="section" id="risk">
+  <h2>۱۲. مدیریت ریسک و کنترل داخلی</h2>
+  <p class="intro">ریسک‌های اصلی و اقدامات کنترلی</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>ریسک</th><th>اقدام کنترلی</th></tr></thead>
+      <tbody>
+        <tr><td>حقوقی و مالکیتی</td><td>بررسی اسناد، استعلام‌های لازم و اختیار قانونی طرف معامله پیش از تعهد</td></tr>
+        <tr><td>کاربری و مجوزها</td><td>بررسی ضوابط و امکان قانونی اجرای طرح پیش از قطعی‌کردن مدل اقتصادی</td></tr>
+        <tr><td>قیمت‌گذاری</td><td>مقایسه چند منبع معتبر، سناریوهای قیمت و تحلیل حساسیت</td></tr>
+        <tr><td>نقدینگی</td><td>برنامه جریان نقدی، ذخیره احتیاطی و کنترل سررسید تعهدات</td></tr>
+        <tr><td>ساخت و اجرا</td><td>قرارداد شفاف، کنترل پیمانکار، گزارش پیشرفت و مدیریت تغییرات</td></tr>
+        <tr><td>بازار و فروش</td><td>بررسی تقاضای واقعی، زمان فروش، هزینه بازاریابی و سناریوی رکود</td></tr>
+        <tr><td>شریک یا طرف قرارداد</td><td>ارزیابی توان مالی، سوابق، اختیارات و تعهدات طرف مقابل</td></tr>
+        <tr><td>داده و امنیت اطلاعات</td><td>سطح‌بندی دسترسی، نسخه پشتیبان و ثبت تغییرات اطلاعات</td></tr>
+        <tr><td>شهرت و اعتبار</td><td>پرهیز از ادعاهای تأییدنشده، وعده‌های غیرواقعی و تبلیغات گمراه‌کننده</td></tr>
+        <tr><td>تمرکز سرمایه</td><td>محدودکردن تعهدات بیش از ظرفیت و جلوگیری از وابستگی به یک پروژه</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>نظام کنترل داخلی</h3>
+  <ul style="padding-right:22px;font-size:13.5px;line-height:2;color:#2c3a48">
+    <li>تفکیک مسئول پیشنهاد پروژه از مسئول تأیید نهایی</li>
+    <li>تعیین سقف اختیارات مالی و قراردادی در مصوبه رسمی</li>
+    <li>ثبت مکتوب دلایل تصویب یا رد فرصت‌های مهم</li>
+    <li>نگهداری پرونده کامل قراردادها، پرداخت‌ها و مکاتبات</li>
+    <li>گزارش دوره‌ای نقدینگی، تعهدات، مطالبات و وضعیت پروژه‌ها</li>
+    <li>اعلام و مدیریت تعارض منافع</li>
+    <li>بازبینی مستقل برای پروژه‌های با ریسک یا سرمایه بالا</li>
+  </ul>
+</section>
+
+<!-- ═══════════════ ۱۳. داده و فناوری ═══════════════ -->
+<section class="section" id="digital">
+  <h2>۱۳. راهبرد داده و فناوری</h2>
+  <p class="intro">فناوری به‌عنوان ابزار حل مسئله، نه هدف</p>
+
+  <div class="grid">
+    <article class="tile">
+      <h3>بانک اطلاعات زمین و ملک</h3>
+      <p>پرونده یکتا برای هر دارایی شامل موقعیت، مشخصات، مالکیت، کاربری، مستندات، وضعیت بررسی، قیمت و سوابق پیگیری.</p>
+    </article>
+    <article class="tile">
+      <h3>سامانه اطلاعات مکانی (GIS)</h3>
+      <p>نمایش موقعیت دارایی‌ها و پروژه‌ها روی نقشه، بررسی دسترسی و زیرساخت، ترکیب داده مکانی با اطلاعات تحلیلی.</p>
+    </article>
+    <article class="tile">
+      <h3>سامانه مدیریت فرصت و پروژه</h3>
+      <p>ثبت سرنخ‌ها، تعیین مسئول پیگیری، مراحل ارزیابی، موعد اقدام بعدی، تصمیم کمیته و وضعیت اجرای پروژه.</p>
+    </article>
+    <article class="tile">
+      <h3>داشبورد مدیریت</h3>
+      <p>گزارش فرصت‌ها، سرمایه موردنیاز، هزینه واقعی در برابر بودجه، وضعیت قراردادها، درآمدها و مطالبات.</p>
+    </article>
+    <article class="tile">
+      <h3>سیاست کیفیت داده</h3>
+      <p>هر رکورد مهم دارای تاریخ ثبت، منبع، مسئول ثبت، وضعیت اعتبارسنجی و تاریخ آخرین بازبینی است.</p>
+    </article>
+    <article class="tile">
+      <h3>هوش مصنوعی</h3>
+      <p>استفاده از AI برای دسته‌بندی اسناد، خلاصه‌سازی پرونده، مقایسه فرصت‌ها و گزارش مقدماتی؛ با کنترل انسانی در تصمیم نهایی.</p>
+    </article>
+  </div>
+
+  <div class="callout">
+    <strong>رابطه با فناوری هلدینگ:</strong> در صورت وجود شرکت تخصصی فناوری در هلدینگ، می‌توان از خدمات مشترک آن برای زیرساخت، امنیت، داده و سامانه‌ها استفاده کرد؛ ولی مالکیت داده و سامانه‌های تخصصی این شرکت محفوظ می‌ماند.
+  </div>
+</section>
+
+<!-- ═══════════════ ۱۴. زیرمجموعه‌ها ═══════════════ -->
+<section class="section" id="subsidiaries">
+  <h2>۱۴. زیرمجموعه‌های تخصصی بالقوه</h2>
+  <p class="intro">پازل‌های تخصصی که در آینده می‌توانند زیر این شرکت ایجاد شوند</p>
+
+  <p>در صورت توجیه اقتصادی، ظرفیت مدیریتی و وجود تقاضای واقعی، این شرکت می‌تواند زیرمجموعه‌های تخصصی زیر را ایجاد کند. ولی ایجاد زیرمجموعه <strong>پیش‌فرض خودکار نیست</strong> — تصمیمی مرحله‌ای است که بر اساس شواهد و مدل اقتصادی گرفته می‌شود.</p>
+
+  <div class="grid">
+    <article class="tile">
+      <span class="num">زیرمجموعه ۰۱</span>
+      <h3>شرکت توسعه اراضی</h3>
+      <p>تمرکز بر شناسایی، تجمیع، آماده‌سازی و توسعه اراضی خام یا کم‌بازده.</p>
+    </article>
+    <article class="tile">
+      <span class="num">زیرمجموعه ۰۲</span>
+      <h3>شرکت املاک و مستغلات</h3>
+      <p>تمرکز بر خرید، فروش، اجاره، بهسازی و بازاریابی املاک.</p>
+    </article>
+    <article class="tile">
+      <span class="num">زیرمجموعه ۰۳</span>
+      <h3>شرکت مدیریت دارایی</h3>
+      <p>تمرکز بر مدیریت پرتفوی ملکی، بهره‌برداری، نگهداری و بهینه‌سازی بازده.</p>
+    </article>
+    <article class="tile">
+      <span class="num">زیرمجموعه ۰۴</span>
+      <h3>شرکت فناوری و داده مکانی</h3>
+      <p>تمرکز بر سامانه‌های GIS، داده مکانی، داشبورد و ابزارهای تحلیلی.</p>
+    </article>
+    <article class="tile">
+      <span class="num">زیرمجموعه ۰۵</span>
+      <h3>شرکت مسکن و ساختمان</h3>
+      <p>تمرکز بر توسعه پروژه‌های مسکن، ساخت، نظارت و تحویل.</p>
+    </article>
+    <article class="tile">
+      <span class="num">زیرمجموعه ۰۶</span>
+      <h3>شرکت معدن و اراضی معدنی</h3>
+      <p>تمرکز بر فرصت‌های معدنی و اراضی دارای پتانسیل معدنی، در چارچوب مجوزهای لازم.</p>
+    </article>
+  </div>
+
+  <div class="callout clay">
+    <strong>معیار ایجاد زیرمجموعه:</strong>
+    <ol style="margin:8px 0 0;padding-right:22px">
+      <li>حجم فعالیت و درآمد به سطحی رسیده باشد که مدیریت مستقل توجیه داشته باشد</li>
+      <li>بازار و مدل درآمدی مشخص و آزمون‌شده باشد</li>
+      <li>نیاز به هویت حقوقی، برند یا حساب مستقل واقعی باشد</li>
+      <li>تیم مدیریتی مستقل قابل تأمین باشد</li>
+      <li>سرمایه کافی برای راه‌اندازی و پایداری وجود داشته باشد</li>
+      <li>تصویب هلدینگ مادر جلب شده باشد</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ═══════════════ ۱۵. هم‌افزایی ═══════════════ -->
+<section class="section" id="ecosystem">
+  <h2>۱۵. هم‌افزایی با سایر پازل‌های هلدینگ</h2>
+  <p class="intro">چگونه این شرکت با سایر شرکت‌های هلدینگ همکاری می‌کند</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>پازل هلدینگ</th><th>نوع هم‌افزایی</th><th>جهت داده</th></tr></thead>
+      <tbody>
+        <tr><td>شرکت فناوری هلدینگ</td><td>استفاده از خدمات زیرساخت، امنیت، داده و سامانه‌ها</td><td>دوطرفه</td></tr>
+        <tr><td>شرکت مالی هلدینگ</td><td>تأمین مالی، مشاوره سرمایه‌گذاری، ساختاردهی مالی</td><td>دوطرفه</td></tr>
+        <tr><td>شرکت بازرگانی هلدینگ</td><td>تأمین مصالح، تجهیزات، صادرات/واردات</td><td>دوطرفه</td></tr>
+        <tr><td>شرکت عمرانی هلدینگ</td><td>اجرای پروژه‌های ساخت و تأسیسات</td><td>دوطرفه</td></tr>
+        <tr><td>شرکت گردشگری هلدینگ</td><td>توسعه پروژه‌های گردشگری و اقامتی روی اراضی این شرکت</td><td>دوطرفه</td></tr>
+        <tr><td>شرکت معدن هلدینگ</td><td>فرصت‌های معدنی مشترک و اراضی دارای پتانسیل</td><td>دوطرفه</td></tr>
+        <tr><td>سایر پازل‌ها</td><td>معرفی فرصت‌های مکمل بر اساس تخصص</td><td>یک‌طرفه</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout green">
+    <strong>اصل هم‌افزایی:</strong> هلدینگ مادر، هماهنگ‌کننده‌ی هم‌افزایی بین شرکت‌هاست. هر فرصت مکمل، به پازل مرتبط معرفی می‌شود و در قالب قرارداد شفاف بین شرکت‌ها پیگیری می‌شود.
+  </div>
+</section>
+
+<!-- ═══════════════ ۱۶. وب‌سایت ═══════════════ -->
+<section class="section" id="website">
+  <h2>۱۶. وب‌سایت، برند و تجربه کاربری</h2>
+  <p class="intro">حضور دیجیتال شرکت به‌عنوان پازل مستقل</p>
+
+  <h3>اصول حضور دیجیتال</h3>
+  <ul style="padding-right:22px;font-size:13.5px;line-height:2;color:#2c3a48">
+    <li><strong>استقلال برند:</strong> سایت، دامنه، هویت بصری و محتوای مستقل از هلدینگ</li>
+    <li><strong>ارجاع به هلدینگ:</strong> در فوتر یا صفحه «درباره»، اشاره به جایگاه در هلدینگ مادر</li>
+    <li><strong>تمرکز تخصصی:</strong> محتوای متمرکز بر زمین، ملک، مسکن و معدن</li>
+    <li><strong>واکنش‌گرا:</strong> موبایل، تبلت، دسکتاپ، منوی موبایل قابل استفاده</li>
+    <li><strong>دسترس‌پذیری:</strong> خوانایی فارسی، کنتراست کافی، ناوبری روشن</li>
+    <li><strong>سئو و سرعت:</strong> ساختار بهینه، بارگذاری سریع، محتوای ساختاریافته</li>
+  </ul>
+
+  <h3>ساختار پیشنهادی صفحات</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>بخش</th><th>کارکرد</th></tr></thead>
+      <tbody>
+        <tr><td>صفحه نخست</td><td>معرفی شرکت، مزیت اصلی، خدمات منتخب، مسیرهای ارتباط</td></tr>
+        <tr><td>درباره شرکت</td><td>هویت، مأموریت، چشم‌انداز، جایگاه در هلدینگ</td></tr>
+        <tr><td>راهبرد و مدل فعالیت</td><td>زنجیره ارزش، رویکرد سرمایه‌گذاری، چارچوب توسعه</td></tr>
+        <tr><td>خدمات</td><td>معرفی روشن خدمات و خروجی قابل تحویل هر خدمت</td></tr>
+        <tr><td>حوزه‌های فعالیت</td><td>هسته اصلی و حوزه‌های مکمل با اولویت مشخص</td></tr>
+        <tr><td>پروژه‌ها و فرصت‌ها</td><td>معرفی پروژه‌های واقعی و مجاز، با وضعیت مستند</td></tr>
+        <tr><td>سرمایه‌گذاری و مشارکت</td><td>شیوه همکاری و فرم دریافت پیشنهاد</td></tr>
+        <tr><td>اخبار و تحلیل‌ها</td><td>گزارش‌های تخصصی با منبع</td></tr>
+        <tr><td>تماس</td><td>اطلاعات ارتباطی معتبر و فرم پیگیری</td></tr>
+        <tr><td>حریم خصوصی</td><td>ضوابط جمع‌آوری اطلاعات و استفاده از محتوا</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>مسیر توسعه وب‌سایت</h3>
+  <div class="flow four">
+    <article><strong>فاز ۱</strong><span>سایت معرفی منسجم</span></article>
+    <article><strong>فاز ۲</strong><span>فرم ثبت فرصت و همکاری</span></article>
+    <article><strong>فاز ۳</strong><span>پنل داخلی مدیریت فرصت</span></article>
+    <article><strong>فاز ۴</strong><span>سامانه مکانی و داشبورد</span></article>
+  </div>
+</section>
+
+<!-- ═══════════════ ۱۷. نقشه راه ═══════════════ -->
+<section class="section" id="roadmap">
+  <h2>۱۷. نقشه راه اجرایی سه‌ساله</h2>
+  <p class="intro">مراحل توسعه شرکت با معیار عبور هر مرحله</p>
+
+  <div class="grid">
+    <article class="step">
+      <span class="num">ماه ۱ تا ۳</span>
+      <h3>تثبیت مبانی</h3>
+      <p>بررسی اسناد ثبتی، موضوع فعالیت، مجوزها، حدود اختیارات. تعیین هسته کسب‌وکار و اولویت‌های جغرافیایی. بررسی منابع مالی و ظرفیت تیم. تدوین الگوی ارزیابی فرصت و کنترل ریسک.</p>
+    </article>
+    <article class="step">
+      <span class="num">ماه ۴ تا ۶</span>
+      <h3>آزمون مدل کسب‌وکار</h3>
+      <p>انتخاب یک یا دو خدمت قابل عرضه. ایجاد بانک اولیه فرصت‌ها. مذاکره با مالکان، مشتریان و شرکای تخصصی. تهیه مطالعات امکان‌سنجی. اجرای همکاری آزمایشی.</p>
+    </article>
+    <article class="step">
+      <span class="num">ماه ۷ تا ۱۲</span>
+      <h3>ایجاد سابقه اجرایی</h3>
+      <p>توسعه خدمات موفق. مستندسازی فرایندها. ایجاد شبکه پایدار همکاران. توسعه گزارش‌های مدیریتی. انتخاب پروژه‌های سرمایه‌گذاری مستقیم پس از بررسی کامل.</p>
+    </article>
+    <article class="step">
+      <span class="num">سال دوم</span>
+      <h3>توسعه کنترل‌شده</h3>
+      <p>افزایش مشتریان و شرکای فعال. توسعه مدیریت دارایی. ایجاد سامانه داخلی. بررسی مشارکت‌های بزرگ‌تر بر اساس توان مالی. ارزیابی ورود محدود به حوزه‌های مکمل.</p>
+    </article>
+    <article class="step">
+      <span class="num">سال سوم</span>
+      <h3>تثبیت و گسترش</h3>
+      <p>تشکیل پرتفوی متناسب با سرمایه. توسعه نظام مدیریت دارایی. گسترش جغرافیایی یا تخصصی. توسعه خدمات داده‌محور. بازنگری راهبرد و تعیین اهداف دوره بعد.</p>
+    </article>
+    <article class="step">
+      <span class="num">معیار عبور</span>
+      <h3>هر فاز، پیش‌نیاز فاز بعد</h3>
+      <p>هیچ فازی بدون تثبیت کامل فاز پیشین آغاز نمی‌شود. رشد پرتفوی تابع بلوغ مدل است، نه برعکس.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ═══════════════ ۱۸. KPI ═══════════════ -->
+<section class="section" id="metrics">
+  <h2>۱۸. شاخص‌های کلیدی عملکرد (KPI)</h2>
+  <p class="intro">شاخص‌های سنجش عملکرد شرکت</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>حوزه</th><th>شاخص</th><th>روش ارزیابی</th></tr></thead>
+      <tbody>
+        <tr><td>توسعه بازار</td><td>فرصت‌های واجد شرایط</td><td>تعداد فرصت‌هایی که غربالگری اولیه را گذرانده‌اند</td></tr>
+        <tr><td>فروش</td><td>نرخ تبدیل فرصت به قرارداد</td><td>قراردادهای منعقدشده نسبت به فرصت‌های واجد شرایط</td></tr>
+        <tr><td>سرعت عملکرد</td><td>زمان چرخه فرصت تا تصمیم</td><td>میانگین مدت ثبت تا تصویب، رد یا تعلیق</td></tr>
+        <tr><td>کیفیت ارزیابی</td><td>درصد پرونده‌های دارای مستندات کافی</td><td>پرونده‌های کامل نسبت به بررسی‌شده</td></tr>
+        <tr><td>مالی</td><td>سود ناخالص هر خدمت یا پروژه</td><td>درآمد منهای هزینه مستقیم</td></tr>
+        <tr><td>نقدینگی</td><td>جریان نقدی عملیاتی</td><td>وجوه نقد حاصل از فعالیت‌های عملیاتی</td></tr>
+        <tr><td>انضباط مالی</td><td>انحراف از بودجه</td><td>تفاوت هزینه و درآمد واقعی با برنامه</td></tr>
+        <tr><td>اجرای پروژه</td><td>انحراف زمان و هزینه</td><td>مقایسه عملکرد واقعی با برنامه مصوب</td></tr>
+        <tr><td>مدیریت دارایی</td><td>درآمد خالص و هزینه نگهداری</td><td>سنجش عملکرد هر دارایی در دوره</td></tr>
+        <tr><td>مشتری</td><td>رضایت و تکرار همکاری</td><td>بازخورد مستند و نرخ تمدید یا همکاری مجدد</td></tr>
+        <tr><td>ریسک</td><td>تعهدات و مسائل حل‌نشده</td><td>تعداد، شدت و مدت باقی‌ماندن موارد پرریسک</td></tr>
+        <tr><td>فناوری</td><td>کیفیت و به‌روزبودن داده‌ها</td><td>کامل‌بودن، منبع‌داربودن و زمان آخرین بازبینی</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout green">
+    <strong>قاعده مدیریتی:</strong> هر شاخص باید دارای مسئول، دوره گزارش‌دهی، منبع داده، مقدار پایه و هدف مصوب باشد. گزارش ماهانه برای عملیات و گزارش فصلی برای بازبینی راهبردی.
+  </div>
+</section>
+
+<!-- ═══════════════ ۱۹. ملاحظات حقوقی ═══════════════ -->
+<section class="section" id="legal">
+  <h2>۱۹. ملاحظات حقوقی و انطباق</h2>
+
+  <ul style="padding-right:22px;font-size:13.5px;line-height:2;color:#2c3a48">
+    <li>موضوع فعالیت مندرج در اسناد ثبتی شرکت، حدود اختیارات مدیران و الزامات قانونی هر خدمت باید بررسی و تطبیق داده شود.</li>
+    <li>ارائه خدماتی مانند کارشناسی رسمی، خدمات حقوقی تخصصی، واسطه‌گری، جذب سرمایه عمومی و فعالیت‌های مالی، ممکن است به مجوز یا صلاحیت حرفه‌ای جداگانه نیاز داشته باشد.</li>
+    <li>استفاده از کارشناسان و مؤسسات دارای صلاحیت در امور تخصصی الزامی است.</li>
+    <li>رعایت الزامات مالیاتی، حسابداری، بیمه و مقررات قراردادها در همه فعالیت‌ها.</li>
+    <li>حفاظت از اطلاعات مشتریان، مالکان و شرکای تجاری در چارچوب قوانین حریم خصوصی.</li>
+    <li>بررسی محدودیت‌های قانونی، محیطی، شهرسازی و زیرساختی هر پروژه پیش از تعهد.</li>
+    <li>نگهداری سوابق و مستندات تصمیم‌گیری و معاملات برای بازرسی و پژوهش.</li>
+    <li>رابطه با هلدینگ مادر با قرارداد مشخص، قیمت‌گذاری شفاف و تفکیک مالی.</li>
+    <li>تفکیک کامل حساب، دارایی، بدهی و مسئولیت شرکت از هلدینگ و سایر پازل‌ها.</li>
+  </ul>
+
+  <div class="callout">
+    <strong>یادداشت:</strong> این بخش چارچوب مدیریتی است و جایگزین نظر حقوقی تخصصی یا استعلام از مراجع رسمی نیست. پیش از هر اقدام حقوقی مهم، باید آخرین اسناد ثبتی و نظر مشاور حقوقی متخصص بررسی شود.
+  </div>
+</section>
+
+<!-- ═══════════════ ۲۰. جمع‌بندی ═══════════════ -->
+<section class="section" id="summary">
+  <h2>۲۰. جمع‌بندی راهبردی</h2>
+
+  <p>شرکت راهبردی زمین و ملک ایرانیان، <strong>پازل تخصصی شماره‌ی ۰۱ هلدینگ مادر</strong> است. این شرکت با هویت، برند، تیم، حساب و قراردادهای مستقل، در چارچوب راهبرد و استانداردهای هلدینگ عمل می‌کند.</p>
+
+  <p>هسته کسب‌وکار این شرکت، زنجیره ارزش یکپارچه‌ی زمین، املاک، مسکن، معدن و مدیریت دارایی است. شرکت متناسب با سرمایه، مجوزها، تخصص و فرصت‌های موجود، در یک یا چند مرحله از چرخه عمر دارایی نقش‌آفرینی می‌کند.</p>
+
+  <div class="callout clay">
+    <strong>سه اصل تعیین‌کننده موفقیت شرکت:</strong>
+    <ol style="margin:8px 0 0;padding-right:22px">
+      <li><strong>انتخاب فرصت درست:</strong> هر دارایی صرفاً به دلیل قیمت جذاب، فرصت مناسبی نیست.</li>
+      <li><strong>ساختن فرایند قابل تکرار:</strong> ارزیابی، قرارداد، تأمین مالی و پایش باید استاندارد و مستند باشند.</li>
+      <li><strong>رشد متناسب با ظرفیت:</strong> دامنه، سرمایه‌گذاری و ساختار باید با منابع و نتایج واقعی هماهنگ بمانند.</li>
+    </ol>
+  </div>
+
+  <div class="callout green">
+    <strong>قاعده توسعه آینده:</strong> هر قابلیت، پروژه یا زیرمجموعه جدید باید جایگاه مشخصی در یکی از این شش محور داشته باشد — <strong>فرصت، ارزیابی، مدل اقتصادی، تأمین منابع، توسعه، مدیریت دارایی</strong>.
+  </div>
+
+  <div class="callout">
+    <strong>رابطه با هلدینگ مادر:</strong> این شرکت، پایلوت مدل راهبری هلدینگ است. پس از تثبیت این مدل، سایر شرکت‌های تخصصی هلدینگ بر اساس همین الگو ایجاد و راهبری خواهند شد.
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="footer">
+  <p>
+    <strong>شرکت راهبردی زمین و ملک ایرانیان</strong> · پازل تخصصی هلدینگ · نسخه ۱.۰
+  </p>
+  <p>
+    زیرمجموعه‌ی
+    <a href="arshad-iranian-holding-tarh.html">شرکت جامع راهبردی ارشد ایرانیان</a>
+    ·
+    <a href="plans.html">فهرست طرح‌ها</a>
+  </p>
+  <p style="margin-top:14px;color:#a5b0ab">
+    این سند، طرح راهبردی است و جایگزین اساسنامه، مشاوره حقوقی یا مصوبات رسمی نیست.
+  </p>
+</footer>
+
+</main>
+
+</body>
+</html>
