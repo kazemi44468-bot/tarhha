@@ -55,3 +55,26 @@
 .sp-sidebar:not(.menu-expanded) .sp-group:hover>.sp-sub,.sp-sidebar:not(.menu-expanded) .sp-group:focus-within>.sp-sub{opacity:0;visibility:hidden;pointer-events:none;transform:translateX(7px)}
 .sp-sidebar:not(.menu-expanded) .sp-group>.sp-sub.is-open{opacity:1;visibility:visible;pointer-events:auto;transform:none}
 .sp-sidebar .sp-item[aria-expanded],.sp-sidebar .sp-subitem[aria-expanded]{cursor:pointer}
+
+
+/* نشانگر کم‌حجم زیرمنو در انتهای چپ ردیف؛ بدون آیکن کنار متن */
+.sp-sidebar.menu-expanded .sp-item-wrap>.sp-item .sp-icon,
+.sp-sidebar.menu-expanded .sp-sub .sp-item-wrap>.sp-subitem .sp-icon{display:none!important}
+.sp-sidebar.menu-expanded .sp-item-wrap>.sp-item[aria-expanded],
+.sp-sidebar.menu-expanded .sp-sub .sp-item-wrap>.sp-subitem[aria-expanded]{position:relative;padding-left:25px}
+.sp-sidebar.menu-expanded .sp-item-wrap>.sp-item[aria-expanded]::after,
+.sp-sidebar.menu-expanded .sp-sub .sp-item-wrap>.sp-subitem[aria-expanded]::after{content:"";position:absolute;left:12px;top:50%;width:6px;height:6px;border-right:1.5px solid #788783;border-bottom:1.5px solid #788783;transform:translateY(-65%) rotate(135deg);transition:transform .2s ease,border-color .2s ease;pointer-events:none}
+.sp-sidebar.menu-expanded .sp-item-wrap>.sp-item[aria-expanded="true"]::after,
+.sp-sidebar.menu-expanded .sp-sub .sp-item-wrap>.sp-subitem[aria-expanded="true"]::after{transform:translateY(-65%) rotate(45deg);border-color:var(--sp-accent)}
+.sp-sidebar.menu-expanded .sp-item-wrap>.sp-item[aria-expanded]:hover::after,
+.sp-sidebar.menu-expanded .sp-sub .sp-item-wrap>.sp-subitem[aria-expanded]:hover::after{border-color:var(--sp-accent)}
+@media(max-width:850px){
+.sp-sidebar.menu-collapsed .sp-item-wrap>.sp-item .sp-icon,
+.sp-sidebar.menu-collapsed .sp-sub .sp-item-wrap>.sp-subitem .sp-icon{display:none!important}
+.sp-sidebar.menu-collapsed .sp-item-wrap>.sp-item[aria-expanded],
+.sp-sidebar.menu-collapsed .sp-sub .sp-item-wrap>.sp-subitem[aria-expanded]{position:relative;padding-left:25px}
+.sp-sidebar.menu-collapsed .sp-item-wrap>.sp-item[aria-expanded]::after,
+.sp-sidebar.menu-collapsed .sp-sub .sp-item-wrap>.sp-subitem[aria-expanded]::after{content:"";position:absolute;left:12px;top:50%;width:6px;height:6px;border-right:1.5px solid #788783;border-bottom:1.5px solid #788783;transform:translateY(-65%) rotate(135deg);transition:transform .2s ease,border-color .2s ease;pointer-events:none}
+.sp-sidebar.menu-collapsed .sp-item-wrap>.sp-item[aria-expanded="true"]::after,
+.sp-sidebar.menu-collapsed .sp-sub .sp-item-wrap>.sp-subitem[aria-expanded="true"]::after{transform:translateY(-65%) rotate(45deg);border-color:var(--sp-accent)}
+}
