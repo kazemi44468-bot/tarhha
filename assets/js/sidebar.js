@@ -9,7 +9,7 @@ const nav=[
 {id:'shahidbank',label:'بانک شهدا',href:'pages/shahidbank-tarh.html',icon:'۰۲-۲-۱'},
 {id:'will-bank',label:'بانک وصیت‌نامه',href:'pages/will-bank-tarh.html',icon:'۰۲-۲-۲'},
 {id:'patogh',label:'پاتوق شهدا',href:'pages/patugh-tarh.html',icon:'۰۲-۲-۳',children:[
-{id:'wdja',label:'ودجا',href:'pages/wdja-tarh.html',icon:'۰۳-۲-۳-۱'}
+{id:'wdja',label:'ودجا',href:'pages/wdja-tarh.html',icon:'۰۲-۲-۳-۱'}
 ]},
 {id:'narrative-bank',label:'بانک روایت',href:'pages/narrative-bank-tarh.html',icon:'۰۲-۲-۴'},
 {id:'calendar',label:'تقویم شهدا',href:'pages/calendar-tarh.html',icon:'۰۲-۲-۵'},
