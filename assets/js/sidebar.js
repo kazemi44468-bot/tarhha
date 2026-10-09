@@ -5,7 +5,7 @@ const nav=[
 {id:'home',label:'نخست',href:'index.html',icon:'۰۱'},
 {id:'intro',label:'معرفی',href:'pages/intro.html',icon:'۰۱-۱'},
 {id:'plan-catalog',label:'طرح‌ها',href:'pages/plans.html',icon:'۰۲',children:[
-{id:'company-arshad',label:'جامع راهبردی ارشد ایرانیان',href:'pages/arshad-iranian-company-tarh.html',icon:'۰۲-۱'},
+{id:'company-arshad',label:'جامع راهبردی ارشد ایرانیان',href:'pages/arshad-iranian-company-tarh.html',icon:'۰۲-۱',children:[\n{id:'company-arshad-plan',label:'طرح جامع راهبردی ارشد ایرانیان',href:'pages/arshad-iranian-company-tarh.html',icon:'۰۲-۱-۱'},\n{id:'land-property',label:'راهبردی زمین و ملک ایرانیان',href:'pages/strategic-land-property-tarh.html',icon:'۰۲-۱-۲'}\n]},
 {id:'shahidportal',label:'شهیدپورتال',href:'pages/shahidportal-tarh.html',icon:'۰۲-۲',children:[
 {id:'shahidportal-plan',label:'طرح شهیدپورتال',href:'pages/shahidportal-tarh.html',icon:'۰۲-۲-۰'},
 {id:'shahidbank',label:'بانک شهدا',href:'pages/shahidbank-tarh.html',icon:'۰۲-۲-۱'},
