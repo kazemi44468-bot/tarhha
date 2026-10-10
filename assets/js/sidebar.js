@@ -7,7 +7,7 @@ const nav=[
 {id:'plan-catalog',label:'طرح‌ها',href:'pages/plans.html',icon:'۰۲',children:[
 {id:'company-arshad',label:'جامع راهبردی ارشد ایرانیان',href:'pages/arshad-iranian-company-tarh.html',icon:'۰۲-۱',children:[
 {id:'company-arshad-plan',label:'طرح جامع راهبردی ارشد ایرانیان',href:'pages/arshad-iranian-company-tarh.html',icon:'۰۲-۱-۱'},
-{id:'land-property',label:'راهبردی زمین و ملک ایرانیان',href:'pages/strategic-land-property-tarh.html',icon:'۰۲-۱-۲',children:[{id:'land-property-plan',label:'طرح جامع زمین و ملک ایرانیان',href:'pages/strategic-land-property-tarh.html',icon:'۰۲-۱-۲-۰'},{id:'taavon-melk',label:'گروه تعاون ملک ایرانیان',href:'pages/taavon-melk-tarh.html',icon:'۰۲-۱-۲-۱'}]}
+{id:'land-property',label:'راهبردی زمین و ملک ایرانیان',href:'pages/strategic-land-property-tarh.html',icon:'۰۲-۱-۲',children:[{id:'land-property-plan',label:'طرح جامع زمین و ملک ایرانیان',href:'pages/strategic-land-property-tarh.html',icon:'۰۲-۱-۲-۰'},{id:'taavon-melk',label:'گروه تعاون ملک ایرانیان',href:'pages/taavon-melk-tarh.html',icon:'۰۲-۱-۲-۱',children:[{id:'taavon-melk-plan',label:'طرح گروه تعاون ملک ایرانیان',href:'pages/taavon-melk-tarh.html',icon:'۰۲-۱-۲-۱-۱'},{id:'aftab-ramsar',label:'پروژه آفتاب رامسر',href:'pages/aftab-ramsar-project-tarh.html',icon:'۰۲-۱-۲-۱-۲'}]}]}
 ]},
 {id:'shahidportal',label:'شهیدپورتال',href:'pages/shahidportal-tarh.html',icon:'۰۲-۲',children:[
 {id:'shahidportal-plan',label:'طرح شهیدپورتال',href:'pages/shahidportal-tarh.html',icon:'۰۲-۲-۰'},
