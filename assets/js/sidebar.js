@@ -16,7 +16,9 @@ const nav=[
 ]}
 ]},
 {id:'zbhf',label:'زیست‌بوم هوشمند فناوری',href:'pages/zb-hoshmand-tarh.html',icon:'۰۲-۱-۳',children:[
-{id:'zbhf-plan',label:'طرح جامع زیست‌بوم هوشمند فناوری',href:'pages/zb-hoshmand-tarh.html',icon:'۰۲-۱-۳-۱'}
+{id:'zbhf-plan',label:'طرح جامع زیست‌بوم هوشمند فناوری',href:'pages/zb-hoshmand-tarh.html',icon:'۰۲-۱-۳-۱'},
+{id:'smart-contract-builder',label:'سامانه هوشمند قراردادساز',href:'pages/smart-contract-builder-tarh.html',icon:'۰۲-۱-۳-۲'},
+{id:'contract-forms',label:'قرارداد فرم',href:'pages/gharardad-form-tarh.html',icon:'۰۲-۱-۳-۳'}
 ]}
 ]},
 {id:'shahidportal',label:'شهیدپورتال',href:'pages/shahidportal-tarh.html',icon:'۰۲-۲',children:[
