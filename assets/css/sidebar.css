@@ -89,3 +89,7 @@
 .sp-label-tooltip{position:fixed;z-index:2147483647;max-width:min(280px,calc(100vw - 28px));padding:8px 12px;border:1px solid rgba(255,255,255,.16);border-radius:10px;background:#183e3a;color:#fff;font:500 12px/1.8 TarhhaBody,sans-serif;box-shadow:0 8px 24px rgba(22,42,38,.2);direction:rtl;text-align:right;white-space:normal;pointer-events:none;opacity:0;visibility:hidden;transform:translateX(-4px);transition:opacity .15s ease,transform .15s ease,visibility .15s ease}
 .sp-label-tooltip.is-visible{opacity:1;visibility:visible;transform:none}
 @media(max-width:600px){.sp-back-top,.back-top{left:14px!important;bottom:14px!important;width:40px!important;height:40px!important;min-width:40px!important;border-radius:13px!important}}
+
+
+/* قاعده سراسری پروژه: متن لینک‌ها در هیچ صفحه‌ای زیرخط نداشته باشد. */
+a,a:hover,a:focus,a:active,a:visited{text-decoration:none!important}
