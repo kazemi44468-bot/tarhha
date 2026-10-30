@@ -19,7 +19,7 @@ const nav=[
 {id:'zbhf-plan',label:'طرح جامع زیست‌بوم هوشمند فناوری',href:'pages/zb-hoshmand-tarh.html',icon:'۰۲-۱-۳-۱'},
 {id:'smart-contract-builder',label:'پلتفرم هوشمند قراردادساز',href:'pages/smart-contract-builder-tarh.html',icon:'۰۲-۱-۳-۲'},
 {id:'contract-forms',label:'قرارداد فرم',href:'pages/gharardad-form-tarh.html',icon:'۰۲-۱-۳-۳'},
-{id:'yadamvat',label:'یاداموات',href:'pages/yadamvat-tarh.html',icon:'۰۲-۱-۳-۴'}
+{id:'yadamvat',label:'یاداموات',href:'pages/yadamvat-tarh.html',icon:'۰۲-۱-۳-۴'},\n{id:'tower-portal',label:'برج پورتال',href:'pages/tower-portal-tarh.html',icon:'۰۲-۱-۳-۵'}
 ]}
 ]},
 {id:'shahidportal',label:'شهیدپورتال',href:'pages/shahidportal-tarh.html',icon:'۰۲-۲',children:[
