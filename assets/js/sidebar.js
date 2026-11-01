@@ -20,7 +20,11 @@ const nav=[
 {id:'smart-contract-builder',label:'پلتفرم هوشمند قراردادساز',href:'pages/smart-contract-builder-tarh.html',icon:'۰۲-۱-۳-۲'},
 {id:'contract-forms',label:'قرارداد فرم',href:'pages/gharardad-form-tarh.html',icon:'۰۲-۱-۳-۳'},
 {id:'yadamvat',label:'یاداموات',href:'pages/yadamvat-tarh.html',icon:'۰۲-۱-۳-۴'},
-{id:'tower-portal',label:'برج پورتال',href:'pages/tower-portal-tarh.html',icon:'۰۲-۱-۳-۵'}
+{id:'tower-portal',label:'برج پورتال',href:'pages/tower-portal-tarh.html',icon:'۰۲-۱-۳-۵'},
+{id:'token-saz',label:'توکن‌ساز',href:'pages/token-saz-tarh.html',icon:'۰۲-۱-۳-۶',children:[
+{id:'token-saz-plan',label:'طرح توکن‌ساز',href:'pages/token-saz-tarh.html',icon:'۰۲-۱-۳-۶-۰'},
+{id:'saffron-token',label:'توکن زعفران',href:'pages/saffron-token-tarh.html',icon:'۰۲-۱-۳-۶-۱'}
+]}
 ]}
 ]},
 {id:'shahidportal',label:'شهیدپورتال',href:'pages/shahidportal-tarh.html',icon:'۰۲-۲',children:[
