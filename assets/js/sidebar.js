@@ -27,6 +27,7 @@ const nav=[
 ]}
 ]}
 ]},
+{id:'holding',label:'هلدینگ',href:'pages/holding-tarh.html',icon:'۰۲-۳',children:[{id:'holding-plan',label:'طرح مادر هلدینگ',href:'pages/holding-tarh.html',icon:'۰۲-۳-۰'}]},
 {id:'shahidportal',label:'شهیدپورتال',href:'pages/shahidportal-tarh.html',icon:'۰۲-۲',children:[
 {id:'shahidportal-plan',label:'طرح شهیدپورتال',href:'pages/shahidportal-tarh.html',icon:'۰۲-۲-۰'},
 {id:'shahidbank',label:'بانک شهدا',href:'pages/shahidbank-tarh.html',icon:'۰۲-۲-۱'},
