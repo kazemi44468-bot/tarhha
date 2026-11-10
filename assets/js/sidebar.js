@@ -27,7 +27,7 @@ const nav=[
 ]}
 ]}
 ]},
-{id:'holding',label:'هلدینگ',href:'pages/holding-tarh.html',icon:'۰۲-۳',children:[{id:'holding-plan',label:'طرح مادر هلدینگ',href:'pages/holding-tarh.html',icon:'۰۲-۳-۰'},{id:'holding-knowledge',label:'مرکز دانش و درس‌آموخته‌ها',href:'pages/holding-knowledge-center.html',icon:'۰۲-۳-۰۲'},{id:'holding-cooperative',label:'تعاونی مصرف و حمایت کارکنان و بازنشستگان',href:'pages/holding-employee-cooperative.html',icon:'۰۲-۳-۰۳'},{id:'holding-evaluation',label:'مرکز ارزیابی و کانون ارزیابی و ارزشیابی',href:'pages/holding-evaluation-center.html',icon:'۰۲-۳-۰۴'},{id:'holding-services',label:'معاونت ۱ | خدمات شهری',href:'pages/holding-services-deputy.html',icon:'۰۲-۳-۰۱'}]},
+{id:'holding',label:'هلدینگ',href:'pages/holding-tarh.html',icon:'۰۲-۳',children:[{id:'holding-plan',label:'طرح مادر هلدینگ',href:'pages/holding-tarh.html',icon:'۰۲-۳-۰'},{id:'holding-knowledge',label:'مرکز دانش و درس‌آموخته‌ها',href:'pages/holding-knowledge-center.html',icon:'۰۲-۳-۰۲'},{id:'holding-cooperative',label:'تعاونی مصرف و حمایت کارکنان و بازنشستگان',href:'pages/holding-employee-cooperative.html',icon:'۰۲-۳-۰۳'},{id:'holding-evaluation',label:'مرکز ارزیابی و کانون ارزیابی و ارزشیابی',href:'pages/holding-evaluation-center.html',icon:'۰۲-۳-۰۴'},{id:'holding-observatory',label:'مرکز رصد و اشراف',href:'pages/holding-observatory-center.html',icon:'۰۲-۳-۰۵'},{id:'holding-services',label:'معاونت ۱ | خدمات شهری',href:'pages/holding-services-deputy.html',icon:'۰۲-۳-۰۱'}]},
 {id:'shahidportal',label:'شهیدپورتال',href:'pages/shahidportal-tarh.html',icon:'۰۲-۲',children:[
 {id:'shahidportal-plan',label:'طرح شهیدپورتال',href:'pages/shahidportal-tarh.html',icon:'۰۲-۲-۰'},
 {id:'shahidbank',label:'بانک شهدا',href:'pages/shahidbank-tarh.html',icon:'۰۲-۲-۱'},
