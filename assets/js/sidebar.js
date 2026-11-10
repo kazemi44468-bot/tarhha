@@ -50,7 +50,7 @@ const nav=[
 ]}
 ]}
 ];
-const defaultOpen=new Set(['plan-catalog','company-arshad','zbhf','shahidportal']);
+const defaultOpen=new Set(); // فقط شاخه مرتبط با صفحه جاری باز می‌ماند؛ از اشغال فضای منو توسط شاخه‌های نامرتبط جلوگیری می‌شود.
 const current=b.dataset.sidebarPage||'home';
 const pathname=location.pathname;
 const pagesAt=pathname.indexOf('/pages/');
