@@ -1,0 +1,603 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.37,
+          35.5367
+        ]
+      },
+      "properties": {
+        "id": "PL-TEHRAN-BEHESHT",
+        "name": "بهشت زهرا (س)",
+        "layer": "golzar",
+        "type": "گلزار شهدا",
+        "province": "تهران",
+        "city": "تهران",
+        "uncertainty": "exact",
+        "year": 1350,
+        "source": "سازمان بهشت زهرا (س)",
+        "status": "فعال",
+        "desc": "بزرگ‌ترین آرامستان ایران و جای‌گاه گلزار شهدای انقلاب و دفاع مقدس."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.34,
+          38.05
+        ]
+      },
+      "properties": {
+        "id": "PL-TABRIZ-VADI",
+        "name": "گلزار شهدای وادی رحمت",
+        "layer": "golzar",
+        "type": "گلزار شهدا",
+        "province": "آذربایجان شرقی",
+        "city": "تبریز",
+        "uncertainty": "near",
+        "year": 1360,
+        "source": "آرشیوهای استانی و محلی",
+        "status": "فعال",
+        "desc": "گلزار شهدای تبریز و یادمان شهدای استان."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.7,
+          32.57
+        ]
+      },
+      "properties": {
+        "id": "PL-ISFAHAN-BAGH",
+        "name": "گلزار شهدای باغ رضوان",
+        "layer": "golzar",
+        "type": "گلزار شهدا",
+        "province": "اصفهان",
+        "city": "اصفهان",
+        "uncertainty": "near",
+        "year": 1360,
+        "source": "آرشیوهای استانی و محلی",
+        "status": "فعال",
+        "desc": "گلزار شهدای اصفهان."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          52.5,
+          29.59
+        ]
+      },
+      "properties": {
+        "id": "PL-SHIRAZ-DAR",
+        "name": "گلزار شهدای دارالرحمه",
+        "layer": "golzar",
+        "type": "گلزار شهدا",
+        "province": "فارس",
+        "city": "شیراز",
+        "uncertainty": "near",
+        "year": 1360,
+        "source": "آرشیوهای استانی و محلی",
+        "status": "فعال",
+        "desc": "گلزار شهدای شیراز."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.67,
+          31.35
+        ]
+      },
+      "properties": {
+        "id": "PL-AHVAZ-BEHESHT",
+        "name": "گلزار شهدای بهشت‌آباد",
+        "layer": "golzar",
+        "type": "گلزار شهدا",
+        "province": "خوزستان",
+        "city": "اهواز",
+        "uncertainty": "near",
+        "year": 1360,
+        "source": "آرشیوهای استانی و محلی",
+        "status": "فعال",
+        "desc": "گلزار شهدای اهواز."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          57.08,
+          30.283
+        ]
+      },
+      "properties": {
+        "id": "PL-KERMAN-GOLZAR",
+        "name": "گلزار شهدای کرمان",
+        "layer": "golzar",
+        "type": "گلزار شهدا",
+        "province": "کرمان",
+        "city": "کرمان",
+        "uncertainty": "exact",
+        "year": 1358,
+        "source": "آرشیوهای استانی و محلی",
+        "status": "فعال",
+        "desc": "گلزار شهدای کرمان؛ محل خاک‌سپاری سردار قاسم سلیمانی."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.51,
+          34.79
+        ]
+      },
+      "properties": {
+        "id": "PL-HAMEDAN-GOLZAR",
+        "name": "گلزار شهدای همدان",
+        "layer": "golzar",
+        "type": "گلزار شهدا",
+        "province": "همدان",
+        "city": "همدان",
+        "uncertainty": "near",
+        "year": 1360,
+        "source": "آرشیوهای استانی و محلی",
+        "status": "فعال",
+        "desc": "گلزار شهدای همدان."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.18,
+          30.44
+        ]
+      },
+      "properties": {
+        "id": "PL-KHORRAMSHAHR-GOLZAR",
+        "name": "گلزار شهدای خرمشهر",
+        "layer": "golzar",
+        "type": "گلزار شهدا",
+        "province": "خوزستان",
+        "city": "خرمشهر",
+        "uncertainty": "near",
+        "year": 1361,
+        "source": "آرشیوهای استانی و محلی",
+        "status": "فعال",
+        "desc": "زیارت‌گاه شهدای مقاومت خرمشهر."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.6157,
+          36.287
+        ]
+      },
+      "properties": {
+        "id": "PL-MASHHAD-REZA",
+        "name": "حرم امام رضا (ع)",
+        "layer": "tarikhi",
+        "type": "زیارتگاه تاریخی",
+        "province": "خراسان رضوی",
+        "city": "مشهد",
+        "uncertainty": "exact",
+        "year": 203,
+        "source": "تقویم رسمی کشور",
+        "status": "فعال",
+        "desc": "مهم‌ترین زیارتگاه ایران و مکان شهادت امام رضا (ع)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.879,
+          34.6417
+        ]
+      },
+      "properties": {
+        "id": "PL-QOM-MASOOMEH",
+        "name": "حرم حضرت معصومه (س)",
+        "layer": "tarikhi",
+        "type": "زیارتگاه تاریخی",
+        "province": "قم",
+        "city": "قم",
+        "uncertainty": "exact",
+        "year": 201,
+        "source": "تقویم رسمی کشور",
+        "status": "فعال",
+        "desc": "زیارتگاه حضرت معصومه (س) در قم."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.448,
+          35.605
+        ]
+      },
+      "properties": {
+        "id": "PL-REY-ABDOLAZIM",
+        "name": "حرم عبدالعظیم (ع)",
+        "layer": "tarikhi",
+        "type": "زیارتگاه تاریخی",
+        "province": "تهران",
+        "city": "شهرری",
+        "uncertainty": "exact",
+        "year": 250,
+        "source": "تقویم رسمی کشور",
+        "status": "فعال",
+        "desc": "زیارتگاه حضرت عبدالعظیم (ع) و گلزار شهدا در شهرری."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.42,
+          35.753
+        ]
+      },
+      "properties": {
+        "id": "PL-TEHRAN-MUSEUM",
+        "name": "موزه ملی انقلاب اسلامی و دفاع مقدس",
+        "layer": "yadman",
+        "type": "موزه و مرکز فرهنگی",
+        "province": "تهران",
+        "city": "تهران",
+        "uncertainty": "exact",
+        "year": 1391,
+        "source": "سازمان حفظ آثار و نشر ارزش‌های دفاع مقدس",
+        "status": "فعال",
+        "desc": "موزه و مرکز اسناد دفاع مقدس در تهران."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.074,
+          31.461
+        ]
+      },
+      "properties": {
+        "id": "PL-HOVEIZEH",
+        "name": "یادمان شهدای هویزه",
+        "layer": "shahadat",
+        "type": "یادمان شهادت",
+        "province": "خوزستان",
+        "city": "هویزه",
+        "uncertainty": "near",
+        "year": 1359,
+        "source": "دانشنامهٔ دفاع مقدس",
+        "status": "فعال",
+        "desc": "یادمان شهدای دانشجوی پیرو خط امام در هویزه."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.043,
+          30.514
+        ]
+      },
+      "properties": {
+        "id": "PL-SHALAMCHEH",
+        "name": "یادمان شلمچه",
+        "layer": "shahadat",
+        "type": "یادمان عملیات",
+        "province": "خوزستان",
+        "city": "شلمچه",
+        "uncertainty": "near",
+        "year": 1365,
+        "source": "مرکز اسناد و تحقیقات دفاع مقدس",
+        "status": "فعال",
+        "desc": "یادمان عملیات کربلای ۴ و ۵."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.25,
+          32.15
+        ]
+      },
+      "properties": {
+        "id": "PL-FATHOLMOBIN",
+        "name": "یادمان فتح‌المبین",
+        "layer": "shahadat",
+        "type": "یادمان عملیات",
+        "province": "خوزستان",
+        "city": "غرب شوش",
+        "uncertainty": "area",
+        "year": 1361,
+        "source": "مرکز اسناد و تحقیقات دفاع مقدس",
+        "status": "نیازمند پژوهش",
+        "desc": "محدوده یادمان عملیات فتح‌المبین."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.11,
+          30.61
+        ]
+      },
+      "properties": {
+        "id": "PL-TALAEIYEH",
+        "name": "یادمان طلائیه",
+        "layer": "shahadat",
+        "type": "یادمان عملیات",
+        "province": "خوزستان",
+        "city": "شرق بصره",
+        "uncertainty": "area",
+        "year": 1365,
+        "source": "مرکز اسناد و تحقیقات دفاع مقدس",
+        "status": "نیازمند پژوهش",
+        "desc": "محدوده یادمان عملیات کربلای ۴ و ۵."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.7,
+          34.18
+        ]
+      },
+      "properties": {
+        "id": "PL-MORSAAD",
+        "name": "یادمان عملیات مرصاد",
+        "layer": "shahadat",
+        "type": "یادمان عملیات",
+        "province": "کرمانشاه",
+        "city": "گردنه چهارزبر",
+        "uncertainty": "area",
+        "year": 1367,
+        "source": "مرکز اسناد و تحقیقات دفاع مقدس",
+        "status": "فعال",
+        "desc": "یادمان عملیات مرصاد در محور اسلام‌آباد غرب."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.13,
+          31.55
+        ]
+      },
+      "properties": {
+        "id": "PL-DEHLAVIEH",
+        "name": "دهلاویه؛ محل شهادت مصطفی چمران",
+        "layer": "shahadat",
+        "type": "محل شهادت",
+        "province": "خوزستان",
+        "city": "دهلاویه",
+        "uncertainty": "near",
+        "year": 1360,
+        "source": "دانشنامهٔ دفاع مقدس",
+        "status": "فعال",
+        "desc": "محل شهادت دکتر مصطفی چمران در جبهه دهلاویه."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.37,
+          36.155
+        ]
+      },
+      "properties": {
+        "id": "PL-SARDASHT",
+        "name": "سردشت؛ محل بمباران شیمیایی",
+        "layer": "shahadat",
+        "type": "محل رویداد",
+        "province": "آذربایجان غربی",
+        "city": "سردشت",
+        "uncertainty": "near",
+        "year": 1366,
+        "source": "خبرگزاری جمهوری اسلامی (ایرنا)",
+        "status": "فعال",
+        "desc": "نخستین حمله شیمیایی گسترده به یک شهر در جنگ."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.08,
+          33.64
+        ]
+      },
+      "properties": {
+        "id": "PL-KHOMEIN",
+        "name": "زادگاه امام خمینی (ره)",
+        "layer": "tavallod",
+        "type": "خانه و زادگاه",
+        "province": "مرکزی",
+        "city": "خمین",
+        "uncertainty": "near",
+        "year": 1281,
+        "source": "مؤسسه تنظیم و نشر آثار امام خمینی",
+        "status": "فعال",
+        "desc": "خانه تاریخی و زادگاه بنیان‌گذار انقلاب اسلامی."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.43,
+          35.81
+        ]
+      },
+      "properties": {
+        "id": "PL-JAMARAN",
+        "name": "بیت امام خمینی (ره)، جماران",
+        "layer": "tavallod",
+        "type": "خانه و زادگاه",
+        "province": "تهران",
+        "city": "تهران",
+        "uncertainty": "near",
+        "year": 1359,
+        "source": "مؤسسه تنظیم و نشر آثار امام خمینی",
+        "status": "فعال",
+        "desc": "محل سکونت و اقامت امام خمینی در جماران."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.86,
+          32.01
+        ]
+      },
+      "properties": {
+        "id": "PL-SHAHREZA",
+        "name": "شهرضا؛ زادگاه ابراهیم همت",
+        "layer": "tavallod",
+        "type": "شهر مرتبط با شخص",
+        "province": "اصفهان",
+        "city": "شهرضا",
+        "uncertainty": "near",
+        "year": 1334,
+        "source": "دانشنامهٔ دفاع مقدس",
+        "status": "نیازمند پژوهش",
+        "desc": "زادگاه شهید محمدابراهیم همت."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.88,
+          36.72
+        ]
+      },
+      "properties": {
+        "id": "PL-TONEKABON",
+        "name": "تنکابن؛ زادگاه علی‌اکبر شیرودی",
+        "layer": "tavallod",
+        "type": "روستا و زادگاه",
+        "province": "مازندران",
+        "city": "تنکابن",
+        "uncertainty": "area",
+        "year": 1334,
+        "source": "سپاه پاسداران انقلاب اسلامی",
+        "status": "نیازمند پژوهش",
+        "desc": "زادگاه خلبان شهید علی‌اکبر شیرودی."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.3,
+          30.75
+        ]
+      },
+      "properties": {
+        "id": "PL-MAJNOON",
+        "name": "جزایر مجنون؛ محل شهادت برادران باکری",
+        "layer": "shahadat",
+        "type": "محدوده عملیات",
+        "province": "خوزستان",
+        "city": "هورالعظیم",
+        "uncertainty": "area",
+        "year": 1363,
+        "source": "دانشنامهٔ دفاع مقدس",
+        "status": "نیازمند پژوهش",
+        "desc": "محل شهادت مهدی و حمید باکری (مفقودالاثر)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.893,
+          21.413
+        ]
+      },
+      "properties": {
+        "id": "PL-MINA",
+        "name": "منا؛ محل فاجعه منا",
+        "layer": "shahadat",
+        "type": "محل رویداد",
+        "province": "عربستان سعودی",
+        "city": "منا",
+        "uncertainty": "exact",
+        "year": 1394,
+        "source": "خبرگزاری جمهوری اسلامی (ایرنا)",
+        "status": "فعال",
+        "desc": "محل فاجعه منا در مراسم حج ۱۳۹۴."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.36,
+          35.04
+        ]
+      },
+      "properties": {
+        "id": "PL-PAVEH",
+        "name": "پاوه؛ رویداد سال ۱۳۵۸",
+        "layer": "shahadat",
+        "type": "شهر رویداد",
+        "province": "کرمانشاه",
+        "city": "پاوه",
+        "uncertainty": "near",
+        "year": 1358,
+        "source": "مرکز اسناد انقلاب اسلامی",
+        "status": "نیازمند پژوهش",
+        "desc": "صحنه درگیری نیروهای انقلابی با گروه‌های مسلح و حضور چمران."
+      }
+    }
+  ]
+}

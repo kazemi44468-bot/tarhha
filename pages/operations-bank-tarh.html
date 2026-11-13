@@ -1,0 +1,1105 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>بانک عملیات‌ها | طرح جامع، معماری و نقشه راه توسعه</title>
+<style>@font-face{font-family:TarhhaBody;src:url('../assets/fonts/Vazirmatn-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:TarhhaBody;src:url('../assets/fonts/Vazirmatn-Medium.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}@font-face{font-family:TarhhaBody;src:url('../assets/fonts/Vazirmatn-SemiBold.woff2') format('woff2');font-weight:600;font-style:normal;font-display:swap}@font-face{font-family:TarhhaBody;src:url('../assets/fonts/Vazirmatn-Bold.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
+
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f4f7f4;color:#172235;font-family:TarhhaBody;line-height:2}.wrap{max-width:1240px;margin:auto;padding:28px 20px 80px}
+.hero{position:relative;background:linear-gradient(135deg,#1e3a1e 0%,#3d5a3d 55%,#4a6b3a 100%);color:#fff;border-radius:24px;padding:48px 44px;margin-bottom:22px;box-shadow:0 22px 60px #1e3a1e33;overflow:hidden}
+.hero::after{content:"";position:absolute;left:-80px;bottom:-100px;width:280px;height:280px;border:1px solid #ffffff1c;border-radius:50%;box-shadow:0 0 0 40px #ffffff08,0 0 0 80px #ffffff05}
+.hero h1{margin:0 0 10px;font-size:36px;letter-spacing:-.4px;position:relative;z-index:1}
+.hero p{margin:6px 0;opacity:.94;font-size:14.5px;max-width:900px;position:relative;z-index:1}
+.hero .badge{display:inline-block;background:#ffffff1c;border:1px solid #ffffff44;border-radius:999px;padding:4px 14px;margin-top:16px;font-size:12.5px;position:relative;z-index:1}
+.nav{position:sticky;top:8px;z-index:5;background:#fffffff2;backdrop-filter:blur(14px);border:1px solid #dde8dd;border-radius:15px;padding:8px 12px;margin-bottom:20px;display:flex;flex-wrap:wrap;gap:3px;box-shadow:0 6px 18px #1e3a1e0a}
+.nav a{color:#3d5a3d;text-decoration:none;font-size:12px;padding:3px 9px;white-space:nowrap;border-radius:6px;transition:.2s}
+.nav a:hover{background:#e8f0e8;color:#1e3a1e}
+.card{background:#fff;border:1px solid #e2ece2;border-radius:20px;padding:30px 32px;margin:18px 0;box-shadow:0 8px 25px #1e3a1e08}
+.card h2{margin:0 0 16px;color:#1e3a1e;font-size:23px;letter-spacing:-.3px;padding-bottom:12px;border-bottom:2px solid #e8f0e8}
+.card h3{color:#3d5a3d;font-size:16.5px;margin:22px 0 10px}
+.card h4{color:#4a6b3a;font-size:14.5px;margin:18px 0 8px}
+.card p{margin:8px 0;font-size:14px;line-height:1.95;color:#2c3a48}
+.card ul{padding-right:22px;margin:10px 0}
+.card ul li{font-size:13.5px;line-height:1.9;margin-bottom:4px;color:#2c3a48}
+.card ol{padding-right:22px;margin:10px 0}
+.card ol li{font-size:13.5px;line-height:1.9;margin-bottom:4px;color:#2c3a48}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+.grid.four{grid-template-columns:repeat(4,1fr)}
+.mini{background:#f7fbf7;border:1px solid #e2ece2;border-radius:14px;padding:18px;transition:.25s}
+.mini:hover{border-color:#4a6b3a;transform:translateY(-2px)}
+.mini h3{margin:0 0 8px;font-size:14.5px;color:#1e3a1e}
+.mini h4{margin:0 0 6px;font-size:13.5px;color:#1e3a1e}
+.mini p{margin:0;font-size:12.5px;line-height:1.85;color:#5b6d79}
+.mini .num{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;border-radius:9px;background:#e8f0e8;color:#3d5a3d;font-weight:800;font-size:12px;margin-bottom:10px}
+.quote{border-right:4px solid #4a6b3a;background:linear-gradient(90deg,#f3f8f3,transparent);padding:16px 20px;border-radius:0 12px 12px 0;margin:18px 0;font-size:14px;line-height:1.95;color:#1e3a1e}
+.quote strong{color:#1e3a1e}
+.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:9px;margin:20px 0}
+.flow.five{grid-template-columns:repeat(5,1fr)}
+.flow.four{grid-template-columns:repeat(4,1fr)}
+.flow.seven{grid-template-columns:repeat(7,1fr)}
+.flow div{padding:14px 8px;text-align:center;border-radius:12px;background:linear-gradient(135deg,#e8f0e8,#f3f8f3);border:1px solid #dde8dd;color:#1e3a1e;font-weight:700;font-size:12.5px;line-height:1.5}
+.flow div.hi{background:linear-gradient(135deg,#3d5a3d,#4a6b3a);color:#fff;border-color:transparent;box-shadow:0 4px 12px #3d5a3d33}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13px}
+th,td{border:1px solid #e2ece2;padding:10px 12px;text-align:right;vertical-align:top;line-height:1.75}
+th{background:#e8f0e8;color:#1e3a1e;font-weight:700;font-size:12.5px}
+tr:nth-child(even) td{background:#f7fbf7}
+.tree{background:#f7fbf7;border:1px solid #e2ece2;border-radius:14px;padding:22px 26px;font-family:TarhhaBody;font-size:12px;direction:ltr;text-align:left;line-height:2;color:#1e3a1e;overflow-x:auto;white-space:pre}
+.tag{display:inline-block;background:#e8f0e8;color:#3d5a3d;border-radius:18px;padding:5px 12px;font-size:12px;margin:3px;font-weight:600}
+.code{background:#1e3a1e;color:#d5e8d5;border-radius:14px;padding:20px 24px;font-family:TarhhaBody;font-size:12.5px;direction:ltr;text-align:left;line-height:1.9;overflow-x:auto;white-space:pre;margin:14px 0}
+.code .k{color:#a8d8a8}.code .s{color:#e8c88a}.code .c{color:#7a9a7a}
+.footer{text-align:center;color:#7b8995;padding:30px 20px 10px;font-size:12px}
+.back-top{position:fixed;left:20px;bottom:20px;z-index:20;width:44px;height:44px;border:1px solid #dde8dd;border-radius:12px;background:#ffffffee;color:#3d5a3d;text-decoration:none;display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 8px 22px #1e3a1e18;transition:.2s}
+.back-top:hover{transform:translateY(-3px);background:#e8f0e8}
+code{background:#e8f0e8;border-radius:5px;padding:1px 6px;font-family:TarhhaBody;font-size:.9em;color:#3d5a3d;direction:ltr;display:inline-block}
+.appendix-marker{display:inline-block;background:linear-gradient(135deg,#3d5a3d,#4a6b3a);color:#fff;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700;margin:20px 0 10px;letter-spacing:.5px}
+.op-map{position:relative;background:linear-gradient(135deg,#e8f0e8,#d5e0d5);border:1.5px solid #c4d4c4;border-radius:14px;height:240px;margin:18px 0;overflow:hidden}
+.op-map::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,rgba(30,58,30,.05) 0,rgba(30,58,30,.05) 1px,transparent 1px,transparent 30px),repeating-linear-gradient(90deg,rgba(30,58,30,.05) 0,rgba(30,58,30,.05) 1px,transparent 1px,transparent 30px)}
+.op-map-dot{position:absolute;width:14px;height:14px;border-radius:50%;background:#3d5a3d;box-shadow:0 0 0 5px rgba(61,90,61,.2),0 0 0 1.5px #fff;animation:pulse 2.6s ease-in-out infinite}
+.op-map-dot.start{background:#c4903a;box-shadow:0 0 0 5px rgba(196,144,58,.25),0 0 0 1.5px #fff}
+.op-map-dot.end{background:#9c4a2e;box-shadow:0 0 0 5px rgba(156,74,46,.25),0 0 0 1.5px #fff}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.55;transform:scale(1.25)}}
+@media(max-width:800px){.grid,.grid.two,.grid.four{grid-template-columns:1fr}.flow,.flow.five,.flow.four,.flow.seven{grid-template-columns:repeat(2,1fr)}.hero{padding:32px 24px}.hero h1{font-size:26px}.card{padding:22px 18px}.nav{position:static}table{font-size:12px}}
+</style>
+<link rel="stylesheet" href="../assets/css/sidebar.css?v=20261009-20"><link rel="stylesheet" href="../assets/css/page-nav.css?v=20261009-1">
+  <link rel="stylesheet" href="../assets/css/page-visual.css">
+</head>
+<body id="top" data-sidebar-page="operations-bank" class="sp-main">
+<div class="wrap">
+
+<section class="hero">
+<h1>بانک عملیات</h1>
+<p>مرجع تخصصی ثبت، مستندسازی، تحلیل و ارائه‌ی عملیات‌های نظامی و رخدادهای بزرگ مرتبط با دفاع مقدس، انقلاب و دوران معاصر؛ با اتصال به شهدا، مکان، زمان، روایت و اسناد.</p>
+<p>محصولی مستقل در اکوسیستم شهیدپورتال. اگر بانک شهدا محور «چه کسی؟»، اطلس محور «کجا؟» و تقویم محور «چه زمانی؟» است، بانک عملیات محور <strong>«چه رویدادی؟»</strong> است.</p>
+<span class="badge">طرح جامع، معماری و نقشه راه توسعه | نسخه ۱.۰ — سند مادر محصول</span>
+</section>
+
+<nav class="page-nav" aria-label="ناوبری این صفحه">
+<a class="nav-home" href="#s1">خلاصه</a>
+<details><summary>کلیات طرح</summary><div class="page-subnav"><a href="#s2">تعریف</a><a href="#s3">جایگاه</a><a href="#s4">مسئله</a><a href="#s5">مأموریت</a><a href="#s6">اصول</a></div></details>
+<details><summary>شناخت و تحلیل عملیات</summary><div class="page-subnav"><a href="#s7">انواع عملیات</a><a href="#s8">هویت عملیات</a><a href="#s9">ساختار تحلیل</a><a href="#s10">مراحل و فازها</a><a href="#s11">محدوده جغرافیایی</a><a href="#s12">یگان‌ها و فرماندهی</a><a href="#s13">نتایج و پیامدها</a></div></details>
+<details><summary>شهدا، اسناد و اعتبار</summary><div class="page-subnav"><a href="#s14">شهدا و آزادگان</a><a href="#s15">منابع و اسناد</a><a href="#s16">اعتبارسنجی</a></div></details>
+<details><summary>محصول و تجربه</summary><div class="page-subnav"><a href="#s17">جست‌وجو و کشف</a><a href="#s18">تجربه کاربری</a><a href="#s19">ساختار محصول</a></div></details>
+<details><summary>داده و فناوری</summary><div class="page-subnav"><a href="#s20">مدل داده</a><a href="#s21">API</a></div></details>
+<details><summary>اکوسیستم و اجرا</summary><div class="page-subnav"><a href="#s22">اکوسیستم</a><a href="#s23">حکمرانی</a><a href="#s24">نقشه راه</a><a href="#s25">KPI</a></div></details>
+<details><summary>ضمائم</summary><div class="page-subnav"><a href="#appendix-a">ضمیمه الف</a><a href="#appendix-b">ضمیمه ب</a><a href="#appendix-c">ضمیمه پ</a><a href="#appendix-d">ضمیمه ت</a></div></details>
+<a class="nav-end" href="#s26">جمع‌بندی</a>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- بخش‌های اصلی -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+
+<section class="card" id="s1">
+<h2>۱. خلاصه مدیریتی</h2>
+<p>بانک عملیات، مرجع تخصصی <strong>رویدادهای نظامی و رخدادهای بزرگ تاریخی</strong> در اکوسیستم است. اگر اطلس شهدا محور «مکان»، تقویم شهدا محور «زمان» و بانک شهدا محور «هویت شخص» است، بانک عملیات محور <strong>«رخداد و عملیات»</strong> است.</p>
+
+<p>بانک عملیات نباید فقط یک صفحه‌ی توضیحی درباره‌ی عملیات‌ها باشد. هدف، ایجاد یک <strong>سامانه‌ی تخصصی رویدادمحور</strong> است که بتواند هر عملیات را با همه‌ی ابعادش — رمز، فرماندهی، یگان‌ها، محدوده، مراحل، نتایج، شهدا، آزادگان، اسناد و روایت‌ها — مدیریت و ارائه کند.</p>
+
+<div class="quote"><strong>تعریف مرکزی:</strong> سامانه‌ای برای ثبت، مستندسازی، تحلیل، اعتبارسنجی و ارائه‌ی عملیات‌های نظامی و رخدادهای بزرگ؛ با شناسه‌ی پایدار برای هر عملیات، پیوند ساختاریافته با شهدا، مکان، زمان، روایت و اسناد، و حفظ اصالت منابع.</div>
+
+<h3>تصمیم‌های کلیدی سند</h3>
+<table>
+<tr><th>موضوع</th><th>تصمیم تثبیت‌شده</th><th>اثر بر اجرا</th></tr>
+<tr><td>واحد پایه</td><td><code>Operation</code> به‌عنوان هسته؛ نه صفحه و نه رویداد تقویمی</td><td>هر عملیات شناسنامه‌ی مستقل دارد</td></tr>
+<tr><td>تفکیک از تقویم</td><td>عملیات، رویداد تخصصی است؛ تقویم فقط تاریخ را نگه می‌دارد</td><td>جلوگیری از تکرار داده</td></tr>
+<tr><td>ساختار تحلیلی</td><td>هر عملیات: رمز، فرماندهی، محدوده، مراحل، نتایج</td><td>ارائه‌ی منسجم و قابل پژوهش</td></tr>
+<tr><td>محدوده جغرافیایی</td><td>هندسه‌ی عملیات (نقطه، خط، محدوده) با ارجاع به اطلس</td><td>نمایش روی نقشه</td></tr>
+<tr><td>پیوند اکوسیستمی</td><td>اتصال به شهدا، مکان، روایت، اسناد از طریق شناسه</td><td>یکپارچگی با بقیه‌ی پروژه‌ها</td></tr>
+<tr><td>حفظ اختلاف روایت‌ها</td><td>روایت‌های متفاوت درباره‌ی یک عملیات ثبت می‌شوند</td><td>صداقت تاریخی و پژوهشی</td></tr>
+</table>
+
+<div class="quote"><strong>جمله‌ی محوری سند:</strong> «هر عملیات، یک هویت پایدار؛ هر عملیات، یک شبکه از مکان، زمان، یگان، شخص و روایت.»</div>
+</section>
+
+<section class="card" id="s2">
+<h2>۲. تعریف بانک عملیات</h2>
+<p>بانک عملیات عبارت است از:</p>
+<div class="quote"><strong>یک سامانه‌ی مستقل و توسعه‌پذیر برای ثبت، مستندسازی، تحلیل، اعتبارسنجی و ارائه‌ی عملیات‌های نظامی و رخدادهای بزرگ مرتبط با دفاع مقدس، انقلاب و دوران معاصر.</strong></div>
+
+<p>در این تعریف، عملیات می‌تواند:</p>
+<ul>
+<li>یک عملیات نظامی بزرگ باشد (مثل فتح‌المبین، بیت‌المقدس، کربلای ۵)؛</li>
+<li>یک عملیات کوچک یا محدود باشد؛</li>
+<li>یک رخداد تاریخی مرتبط با انقلاب یا دفاع مقدس باشد؛</li>
+<li>یک واقعه‌ی امنیتی یا مدافعان حرم باشد؛</li>
+<li>یک رویداد بین‌المللی مرتبط با ایران باشد؛</li>
+<li>ترکیبی از چند مرحله و فاز باشد.</li>
+</ul>
+
+<p>بانک عملیات تلاش نمی‌کند روایت‌ها را به «یک حقیقت واحد» تبدیل کند؛ بلکه تلاش می‌کند <strong>هر عملیات را با همه‌ی ابعاد، منابع و اختلافاتش حفظ کند.</strong></p>
+</section>
+
+<section class="card" id="s3">
+<h2>۳. جایگاه بانک عملیات در اکوسیستم</h2>
+<p>هفت محور اصلی اکوسیستم:</p>
+<table>
+<tr><th>سامانه</th><th>پرسش اصلی</th><th>لایه‌ی مسئولیت</th></tr>
+<tr><td><strong>بانک شهدا</strong></td><td>چه کسی؟</td><td>هویت شخص، پرونده‌ی شهید</td></tr>
+<tr><td><strong>اطلس شهدا</strong></td><td>کجا؟</td><td>مکان، موقعیت، مسیر</td></tr>
+<tr><td><strong>تقویم شهدا</strong></td><td>چه زمانی؟</td><td>تاریخ، مناسبت، رویداد</td></tr>
+<tr><td><strong>بانک روایت</strong></td><td>چه روایتی؟</td><td>روایت، راوی، ادعا</td></tr>
+<tr><td><strong>بانک وصیت‌نامه</strong></td><td>چه پیامی؟</td><td>سند مکتوب، مضمون</td></tr>
+<tr><td><strong>بانک عملیات</strong></td><td>چه رویدادی؟</td><td>عملیات، رخداد، یگان، فرماندهی</td></tr>
+<tr><td><strong>پاتوق شهدا</strong></td><td>چگونه تعامل کنیم؟</td><td>خدمت، شبکه، مشارکت</td></tr>
+</table>
+
+<div class="quote"><strong>اصل مالکیت:</strong> بانک عملیات مالک «رخداد نظامی و ساختار تحلیلی» است. هویت شخص نزد بانک شهدا، مکان نزد اطلس، تاریخ نزد تقویم، روایت نزد بانک روایت، وصیت‌نامه نزد بانک وصیت‌نامه باقی می‌ماند.</div>
+
+<h3>جدول ارتباط با پروژه‌ها</h3>
+<table>
+<tr><th>پروژه</th><th>نوع ارتباط</th><th>جهت داده</th></tr>
+<tr><td>شهیدپورتال</td><td>هویت، استاندارد و اتصال مادر</td><td>دوطرفه</td></tr>
+<tr><td>بانک شهدا</td><td>اتصال شهدای شرکت‌کننده یا شهیدشده در عملیات</td><td>دوطرفه</td></tr>
+<tr><td>اطلس شهدا</td><td>اتصال محدوده و مکان‌های عملیات</td><td>دوطرفه</td></tr>
+<tr><td>تقویم شهدا</td><td>اتصال به تاریخ شروع و پایان عملیات</td><td>دوطرفه</td></tr>
+<tr><td>بانک روایت</td><td>روایت‌های رزمندگان و فرماندهان درباره‌ی عملیات</td><td>دوطرفه</td></tr>
+<tr><td>بانک وصیت‌نامه</td><td>وصیت‌نامه‌های نگاشته‌شده پیش از عملیات</td><td>دوطرفه</td></tr>
+<tr><td>گنجینه</td><td>ارجاع به اسناد، نقشه‌ها و فیلم‌های عملیات</td><td>گنجینه ← عملیات</td></tr>
+<tr><td>پاتوق شهدا</td><td>ارائه‌ی محتوای عملیات به شبکه‌ی فرهنگی</td><td>عملیات ← پاتوق</td></tr>
+</table>
+</section>
+
+<section class="card" id="s4">
+<h2>۴. مسئله‌ای که بانک عملیات حل می‌کند</h2>
+
+<table>
+<tr><th>مسئله</th><th>اثر منفی</th><th>راهکار بانک عملیات</th></tr>
+<tr><td>پراکندگی اطلاعات</td><td>داده‌ی عملیات بین کتاب‌ها، آرشیوها و خاطرات پراکنده است</td><td>مرجع واحد با شناسه‌ی پایدار</td></tr>
+<tr><td>نبود ساختار تحلیلی</td><td>هر منبع بخشی از اطلاعات را دارد</td><td>ساختار تحلیلی منسجم</td></tr>
+<tr><td>نبود محدوده‌ی جغرافیایی</td><td>نقشه‌ی عملیات در دسترس نیست</td><td>هندسه‌ی عملیات با ارجاع به اطلس</td></tr>
+<tr><td>نبود اتصال به شهدا</td><td>نمی‌دانیم چه کسانی در عملیات شرکت داشتند</td><td>اتصال ساختاریافته به بانک شهدا</td></tr>
+<tr><td>نبود اتصال به یگان‌ها</td><td>ساختار فرماندهی نامشخص است</td><td>مدل یگان و فرماندهی</td></tr>
+<tr><td>نبود اتصال به روایت‌ها</td><td>روایت‌های رزمندگان از عملیات جدا می‌ماند</td><td>اتصال به بانک روایت</td></tr>
+<tr><td>اختلاف منابع</td><td>تاریخ یا نتایج عملیات متفاوت نقل می‌شود</td><td>ثبت اختلاف و نتیجه‌ی بررسی</td></tr>
+<tr><td>نبود تحلیل نتایج</td><td>پیامدهای عملیات ثبت نمی‌شود</td><td>مدل نتایج و پیامدها</td></tr>
+</table>
+
+<div class="quote"><strong>خطر اصلی:</strong> اگر عملیات به‌عنوان «موجودیت مستقل با شناسه» مدل نشود، هر منبع بخشی از داده را نگه می‌دارد و در آینده با چندین روایت متناقض و ناقص روبه‌رو خواهیم شد.</div>
+</section>
+
+<section class="card" id="s5">
+<h2>۵. مأموریت و چشم‌انداز</h2>
+
+<div class="grid two">
+<div class="mini"><h3>مأموریت</h3><p>ایجاد یک مرجع معتبر، مستند و توسعه‌پذیر برای ثبت، تحلیل و ارائه‌ی عملیات‌های نظامی و رخدادهای بزرگ؛ با حفظ اصالت منابع، احترام به شهدا و رزمندگان، و پیوند با اکوسیستم.</p></div>
+<div class="mini"><h3>چشم‌انداز</h3><p>تبدیل شدن به مرجع اصلی عملیات‌های دفاع مقدس و رخدادهای معاصر در اکوسیستم؛ جایی که پژوهشگر، رزمنده، خانواده و کاربر عمومی به یک اندازه از آن بهره ببرند.</p></div>
+</div>
+
+<div class="quote"><strong>ستاره‌ی شمالی:</strong> «هر عملیات، یک هویت پایدار؛ هر عملیات، یک شبکه از مکان، زمان، یگان، شخص و روایت.»</div>
+
+<h3>ارزش‌های عملیاتی</h3>
+<div>
+<span class="tag">صداقت تاریخی</span>
+<span class="tag">حفظ اختلاف روایت‌ها</span>
+<span class="tag">منبع‌مندی</span>
+<span class="tag">احترام به رزمندگان</span>
+<span class="tag">کرامت شهدا</span>
+<span class="tag">دسترس‌پذیری همگانی</span>
+<span class="tag">پیوند بدون تکثیر</span>
+<span class="tag">تحلیل مستند</span>
+</div>
+</section>
+
+<section class="card" id="s6">
+<h2>۶. اصول بنیادین</h2>
+
+<div class="grid">
+<div class="mini"><h3>۱) هویت یکتا</h3><p>هر عملیات یک شناسه‌ی پایدار و یک موجودیت اصلی دارد.</p></div>
+<div class="mini"><h3>۲) منبع‌مندی</h3><p>اطلاعات مهم هر عملیات باید منشأ و وضعیت اعتبار داشته باشد.</p></div>
+<div class="mini"><h3>۳) حفظ اختلاف روایت‌ها</h3><p>روایت‌های متفاوت درباره‌ی یک عملیات ثبت می‌شوند، نه حذف.</p></div>
+<div class="mini"><h3>۴) تفکیک داده از تحلیل</h3><p>داده، تحلیل و مضمون‌کاوی از هم جدا برچسب می‌خورند.</p></div>
+<div class="mini"><h3>۵) کرامت</h3><p>نمایش عملیات باید محترمانه و دور از سطحی‌نگری باشد.</p></div>
+<div class="mini"><h3>۶) اتصال بدون تکثیر</h3><p>پروژه‌ها به شناسه‌ی عملیات ارجاع دهند، نه اینکه داده را کپی کنند.</p></div>
+<div class="mini"><h3>۷) پیوند ساختاریافته</h3><p>هر عملیات می‌تواند به شهدا، مکان‌ها، روایت‌ها و اسناد متصل باشد.</p></div>
+<div class="mini"><h3>۸) تاریخچه‌پذیری</h3><p>اصلاح اطلاعات نباید سابقه‌ی تغییر را از بین ببرد.</p></div>
+<div class="mini"><h3>۹) تفکیک سطوح اطمینان</h3><p>هر ادعا (تاریخ، محدوده، نتایج) سطح اطمینان مستقل دارد.</p></div>
+<div class="mini"><h3>۱۰) بازبودن برای پژوهش</h3><p>پژوهشگران می‌توانند با ذکر منبع از داده‌ها استفاده کنند.</p></div>
+<div class="mini"><h3>۱۱) دسترس‌پذیری</h3><p>محتوای عملیات برای همه‌ی سنین، دستگاه‌ها و سطوح توانایی.</p></div>
+<div class="mini"><h3>۱۲) استقلال محصول</h3><p>توسعه‌ی مستقل، اتصال استاندارد از طریق API.</p></div>
+</div>
+</section>
+
+<section class="card" id="s7">
+<h2>۷. انواع عملیات و رخدادها</h2>
+
+<table>
+<tr><th>نوع</th><th>تعریف</th><th>نمونه</th></tr>
+<tr><td>عملیات نظامی بزرگ</td><td>عملیات با ابعاد وسیع و چند مرحله</td><td>فتح‌المبین، بیت‌المقدس، کربلای ۵</td></tr>
+<tr><td>عملیات نظامی محدود</td><td>عملیات کوچک‌تر با هدف مشخص</td><td>عملیات‌های ایذایی و شناسایی</td></tr>
+<tr><td>عملیات پدافندی</td><td>دفاع در برابر حمله‌ی دشمن</td><td>دفاع در خرمشهر، مقاومت در میمک</td></tr>
+<tr><td>عملیات آفندی</td><td>حمله با هدف آزادسازی یا تصرف</td><td>آزادسازی خرمشهر</td></tr>
+<tr><td>رخداد انقلابی</td><td>رویدادهای مرتبط با انقلاب</td><td>قیام ۱۹ دی قم، ۲۲ بهمن</td></tr>
+<tr><td>رخداد امنیتی</td><td>رویدادهای مرتبط با امنیت کشور</td><td>حادثه‌های مرزی، عملیات‌های ضدتروریستی</td></tr>
+<tr><td>رخداد مدافعان حرم</td><td>عملیات‌های برون‌مرزی معاصر</td><td>عملیات‌های سوریه و عراق</td></tr>
+<tr><td>رخداد مرتبط با سلامت</td><td>رویدادهای مرتبط با کادر سلامت</td><td>شهدای سلامت در بحران‌ها</td></tr>
+</table>
+
+<h3>دسته‌بندی بر اساس دوره</h3>
+<div class="grid">
+<div class="mini"><h3>پیش از انقلاب</h3><p>قیام‌ها، نهضت‌ها و رویدادهای منتهی به انقلاب.</p></div>
+<div class="mini"><h3>۱۳۵۷–۱۳۵۹</h3><p>انقلاب، آغاز جنگ، مقاومت‌های اولیه.</p></div>
+<div class="mini"><h3>۱۳۶۰–۱۳۶۲</h3><p>عملیات‌های بزرگ آفندی و آزادسازی.</p></div>
+<div class="mini"><h3>۱۳۶۳–۱۳۶۵</h3><p>عملیات‌های گسترده در جنوب و غرب.</p></div>
+<div class="mini"><h3>۱۳۶۶–۱۳۶۷</h3><p>سال‌های پایانی جنگ و قطعنامه.</p></div>
+<div class="mini"><h3>پس از جنگ</h3><p>رخدادهای معاصر و مدافعان حرم.</p></div>
+</div>
+</section>
+
+<section class="card" id="s8">
+<h2>۸. هویت عملیات</h2>
+<p>هر عملیات باید دارای شناسه‌ی پایدار باشد.</p>
+
+<h3>اطلاعات پایه</h3>
+<table>
+<tr><th>فیلد</th><th>توضیح</th><th>الزام</th></tr>
+<tr><td>شناسه</td><td>مثل <code>OP-1405-000123</code></td><td>✅</td></tr>
+<tr><td>نام</td><td>نام رسمی عملیات</td><td>✅</td></tr>
+<tr><td>رمز عملیات</td><td>رمز نظامی (مثل «یا زهرا (س)»)</td><td>⬜</td></tr>
+<tr><td>نوع</td><td>آفندی / پدافندی / ایذایی / شناسایی / رخداد</td><td>✅</td></tr>
+<tr><td>دوره</td><td>بازه‌ی تاریخی</td><td>✅</td></tr>
+<tr><td>تاریخ شروع</td><td>تاریخ دقیق یا تقریبی</td><td>✅</td></tr>
+<tr><td>تاریخ پایان</td><td>تاریخ دقیق یا تقریبی</td><td>✅</td></tr>
+<tr><td>محدوده</td><td>هندسه (نقطه / خط / محدوده) با ارجاع به اطلس</td><td>✅</td></tr>
+<tr><td>فرماندهی</td><td>فرمانده اصلی و ساختار</td><td>✅</td></tr>
+<tr><td>یگان‌های شرکت‌کننده</td><td>فهرست یگان‌ها و نقش‌ها</td><td>✅</td></tr>
+<tr><td>خلاصه</td><td>چکیده (۲۰۰ کلمه)</td><td>✅</td></tr>
+<tr><td>منابع اصلی</td><td>کتاب، سند، مصاحبه</td><td>✅</td></tr>
+<tr><td>وضعیت اعتبار</td><td>تأییدشده / در بررسی / متعارض</td><td>✅</td></tr>
+<tr><td>سطح دسترسی</td><td>عمومی / محدود / حساس</td><td>✅</td></tr>
+</table>
+
+<h3>وضعیت‌های عملیات</h3>
+<table>
+<tr><th>وضعیت</th><th>معنا</th></tr>
+<tr><td>تأییدشده</td><td>اطلاعات پایه با چند منبع معتبر تأیید شده</td></tr>
+<tr><td>در بررسی</td><td>بخشی از اطلاعات نیازمند بررسی</td></tr>
+<tr><td>متعارض</td><td>منابع در مورد تاریخ یا نتایج اختلاف دارند</td></tr>
+<tr><td>پیشنهادی</td><td>عملیات جدید با منابع محدود</td></tr>
+</table>
+</section>
+
+<section class="card" id="s9">
+<h2>۹. ساختار تحلیل عملیات</h2>
+<p>هر عملیات باید یک ساختار تحلیلی منسجم داشته باشد:</p>
+
+<div class="tree">عملیات
+├── ۱. زمینه و مقدمات
+│   ├── زمینه‌ی سیاسی
+│   ├── زمینه‌ی نظامی
+│   └── وضعیت منطقه پیش از عملیات
+│
+├── ۲. طراحی و اهداف
+│   ├── اهداف اصلی
+│   ├── اهداف فرعی
+│   └── فرماندهی و تصمیم‌گیری
+│
+├── ۳. نیروها و ساختار
+│   ├── یگان‌های درگیر
+│   ├── فرماندهان
+│   └── تجهیزات
+│
+├── ۴. محدوده و جغرافیا
+│   ├── منطقه‌ی عملیات
+│   ├── محورهای اصلی
+│   └── نقاط کلیدی
+│
+├── ۵. مراحل اجرا
+│   ├── مرحله ۱ (تاریخ، هدف، نتیجه)
+│   ├── مرحله ۲
+│   └── مرحله n
+│
+├── ۶. نتایج و پیامدها
+│   ├── نتایج نظامی
+│   ├── نتایج سیاسی
+│   └── پیامدهای بلندمدت
+│
+├── ۷. شهدا و آزادگان
+│   ├── شهدای عملیات
+│   ├── جانبازان
+│   └── آزادگان
+│
+└── ۸. منابع و اسناد
+    ├── کتاب‌ها
+    ├── اسناد
+    ├── مصاحبه‌ها
+    └── فیلم‌ها</div>
+</section>
+
+<section class="card" id="s10">
+<h2>۱۰. مراحل و فازها</h2>
+<p>عملیات‌های بزرگ معمولاً چند مرحله دارند. هر مرحله می‌تواند تاریخ، هدف، فرماندهی، نتیجه و شهدای مستقل داشته باشد.</p>
+
+<h3>نمونه: عملیات بیت‌المقدس</h3>
+<table>
+<tr><th>مرحله</th><th>تاریخ</th><th>هدف</th><th>نتیجه</th></tr>
+<tr><td>مرحله ۱</td><td>۱۰ اردیبهشت ۱۳۶۱</td><td>عبور از رود کارون و تصرف مواضع اولیه</td><td>تصرف بخشی از مواضع دشمن</td></tr>
+<tr><td>مرحله ۲</td><td>۱۶ اردیبهشت</td><td>پیشروی به سمت خرمشهر</td><td>محاصره‌ی دشمن در خرمشهر</td></tr>
+<tr><td>مرحله ۳</td><td>۲۰ اردیبهشت</td><td>آزادسازی جاده اهواز-خرمشهر</td><td>شکست حصر راهبردی</td></tr>
+<tr><td>مرحله ۴</td><td>۳ خرداد ۱۳۶۱</td><td>آزادسازی خرمشهر</td><td>فتح کامل خرمشهر</td></tr>
+</table>
+
+<div class="quote"><strong>قاعده:</strong> هر مرحله، یک موجودیت مستقل با شناسه، تاریخ، هدف، فرماندهی، منابع و شهدای مستقل است. اگرچه زیرمجموعه‌ی عملیات اصلی محسوب می‌شود.</div>
+</section>
+
+<section class="card" id="s11">
+<h2>۱۱. محدوده جغرافیایی</h2>
+<p>یکی از مهم‌ترین بخش‌های بانک عملیات، محدوده‌ی جغرافیایی است که به اطلس متصل می‌شود.</p>
+
+<h3>انواع هندسه</h3>
+<table>
+<tr><th>هندسه</th><th>کاربرد</th><th>مثال</th></tr>
+<tr><td>نقطه (Point)</td><td>نقطه‌ی شروع یا هدف اصلی</td><td>نقطه‌ی شروع عملیات</td></tr>
+<tr><td>خط (LineString)</td><td>محورهای اصلی پیشروی</td><td>محورهای عملیات بیت‌المقدس</td></tr>
+<tr><td>محدوده (Polygon)</td><td>منطقه‌ی عملیات</td><td>محدوده‌ی فتح‌المبین</td></tr>
+<tr><td>مجموعه (MultiPolygon)</td><td>چند منطقه‌ی جداگانه</td><td>عملیات در چند جبهه</td></tr>
+</table>
+
+<h3>نقشه‌ی نمونه</h3>
+<div class="op-map">
+<span class="op-map-dot start" style="top:30%;left:25%"></span>
+<span class="op-map-dot" style="top:45%;left:40%"></span>
+<span class="op-map-dot" style="top:55%;left:55%"></span>
+<span class="op-map-dot" style="top:40%;left:70%"></span>
+<span class="op-map-dot end" style="top:65%;left:80%"></span>
+</div>
+
+<div class="quote"><strong>اصل اتصال مکانی:</strong> محدوده‌ی عملیات با ارجاع به شناسه‌ی Location در اطلس ثبت می‌شود. بانک عملیات خودش مکان تازه نمی‌سازد.</div>
+</section>
+
+<section class="card" id="s12">
+<h2>۱۲. یگان‌ها و فرماندهی</h2>
+
+<h3>مدل یگان</h3>
+<table>
+<tr><th>فیلد</th><th>توضیح</th></tr>
+<tr><td>شناسه‌ی یگان</td><td>مثل <code>UNIT-14-IMAM-HOSSEIN</code></td></tr>
+<tr><td>نام</td><td>لشکر ۱۴ امام حسین (ع)</td></tr>
+<tr><td>نوع</td><td>لشکر / تیپ / گردان / گروهان</td></tr>
+<tr><td>نقش در عملیات</td><td>اصلی / پشتیبان / ذخیره</td></tr>
+<tr><td>فرمانده در زمان عملیات</td><td>ارجاع به Person در بانک شهدا</td></tr>
+</table>
+
+<h3>مدل فرماندهی</h3>
+<table>
+<tr><th>نقش</th><th>مسئولیت</th></tr>
+<tr><td>فرمانده کل</td><td>مسئولیت کلی عملیات</td></tr>
+<tr><td>فرمانده قرارگاه</td><td>هماهنگی بین یگان‌ها</td></tr>
+<tr><td>فرمانده محور</td><td>مسئولیت یک محور مشخص</td></tr>
+<tr><td>فرمانده یگان</td><td>مسئولیت یگان در عملیات</td></tr>
+</table>
+
+<div class="quote"><strong>قاعده:</strong> ساختار فرماندهی بخشی از هویت عملیات است و باید با منبع مستند ثبت شود. اختلاف در فرماندهی نیز قابل ثبت است.</div>
+</section>
+
+<section class="card" id="s13">
+<h2>۱۳. نتایج و پیامدها</h2>
+
+<h3>ابعاد نتایج</h3>
+<div class="grid">
+<div class="mini"><h3>نتایج نظامی</h3><p>آزادسازی، تصرف، عقب‌نشینی، تلفات.</p></div>
+<div class="mini"><h3>نتایج سیاسی</h3><p>تأثیر بر مذاکرات، افکار عمومی، روابط بین‌الملل.</p></div>
+<div class="mini"><h3>پیامدهای بلندمدت</h3><p>تأثیر بر ادامه‌ی جنگ، استراتژی آینده.</p></div>
+<div class="mini"><h3>تلفات و خسارات</h3><p>شهدا، جانبازان، آزادگان، خسارات مادی.</p></div>
+</div>
+
+<h3>الگوی ثبت نتایج</h3>
+<table>
+<tr><th>نوع نتیجه</th><th>ثبت</th></tr>
+<tr><td>تاریخ دقیق</td><td>روز، ماه، سال</td></tr>
+<tr><td>تاریخ تقریبی</td><td>بازه با سطح اطمینان</td></tr>
+<tr><td>آمار</td><td>عدد دقیق + منبع + سطح اطمینان</td></tr>
+<tr><td>ارزیابی</td><td>تحلیل مستند با ذکر منبع</td></tr>
+</table>
+</section>
+
+<section class="card" id="s14">
+<h2>۱۴. شهدا و آزادگان مرتبط</h2>
+<p>هر عملیات می‌تواند به شهدا، جانبازان و آزادگان مرتبط باشد.</p>
+
+<h3>انواع ارتباط</h3>
+<table>
+<tr><th>ارتباط</th><th>معنا</th></tr>
+<tr><td>شهید شرکت‌کننده</td><td>در عملیات حضور داشته و شهید شده</td></tr>
+<tr><td>شهید فرمانده</td><td>فرمانده‌ی یگان یا محور در عملیات</td></tr>
+<tr><td>جانباز</td><td>در عملیات مجروح شده</td></tr>
+<tr><td>آزاده</td><td>در عملیات به اسارت درآمده</td></tr>
+<tr><td>شاهد</td><td>شاهد عینی عملیات</td></tr>
+</table>
+
+<div class="quote"><strong>اصل اتصال:</strong> ارتباط عملیات با هر شخص از طریق شناسه‌ی Martyr در بانک شهدا ثبت می‌شود. بانک عملیات خودش پرونده‌ی شهید نمی‌سازد.</div>
+</section>
+
+<section class="card" id="s15">
+<h2>۱۵. منابع و اسناد</h2>
+
+<table>
+<tr><th>نوع منبع</th><th>نمونه</th><th>وزن اعتبار</th></tr>
+<tr><td>اسناد رسمی</td><td>پرونده‌های سازمانی، آرشیو سپاه و ارتش</td><td>بالا</td></tr>
+<tr><td>کتاب و پژوهش</td><td>کتاب، مقاله، پایان‌نامه</td><td>بالا</td></tr>
+<tr><td>مصاحبه‌ی فرماندهان</td><td>مصاحبه با فرماندهان عملیات</td><td>بالا</td></tr>
+<tr><td>مصاحبه‌ی رزمندگان</td><td>خاطرات همرزمان</td><td>متوسط</td></tr>
+<tr><td>رسانه</td><td>فیلم، عکس، گزارش</td><td>متوسط</td></tr>
+<tr><td>نقشه‌های نظامی</td><td>نقشه‌های عملیاتی</td><td>بالا (برای محدوده)</td></tr>
+<tr><td>مشارکت مردمی</td><td>ارسال اسناد از سوی خانواده‌ها</td><td>پایین (نیازمند تأیید)</td></tr>
+</table>
+
+<div class="quote"><strong>سیاست تعارض:</strong> در تعارض منابع درباره‌ی یک عملیات، بانک عملیات اختلاف را پنهان نمی‌کند. هر روایت با منبع خودش ثبت می‌شود و وضعیت اختلاف علامت می‌خورد.</div>
+</section>
+
+<section class="card" id="s16">
+<h2>۱۶. اعتبارسنجی و کیفیت</h2>
+
+<div class="flow seven">
+<div class="hi">دریافت</div>
+<div>منبع</div>
+<div>بررسی</div>
+<div>تطبیق</div>
+<div>مقایسه</div>
+<div>اعتبارسنجی</div>
+<div class="hi">انتشار</div>
+</div>
+
+<h3>وضعیت‌های اعتبار</h3>
+<table>
+<tr><th>وضعیت</th><th>معنا</th></tr>
+<tr><td>تأییدشده</td><td>اطلاعات پایه با چند منبع معتبر تأیید شده</td></tr>
+<tr><td>در بررسی</td><td>بخشی از اطلاعات نیازمند بررسی</td></tr>
+<tr><td>متعارض</td><td>منابع در مورد تاریخ یا نتایج اختلاف دارند</td></tr>
+<tr><td>پیشنهادی</td><td>عملیات جدید با منابع محدود</td></tr>
+<tr><td>ردشده</td><td>با شواهد معتبر رد شده</td></tr>
+</table>
+
+<h3>ابعاد کیفیت</h3>
+<div class="grid">
+<div class="mini"><h3>کامل بودن</h3><p>اطلاعات پایه‌ی الزامی ثبت شده.</p></div>
+<div class="mini"><h3>دقت تاریخ</h3><p>تاریخ‌های شروع و پایان با منبع.</p></div>
+<div class="mini"><h3>دقت محدوده</h3><p>هندسه‌ی عملیات با سطح اطمینان.</p></div>
+<div class="mini"><h3>منبع‌مندی</h3><p>هر ادعا با منبع قابل ردیابی.</p></div>
+<div class="mini"><h3>سازگاری</h3><p>عدم تعارض غیرقابل توضیح با داده‌های دیگر.</p></div>
+<div class="mini"><h3>تاریخچه</h3><p>تغییرات و مسئول آن‌ها.</p></div>
+</div>
+</section>
+
+<section class="card" id="s17">
+<h2>۱۷. جست‌وجو و کشف</h2>
+
+<table>
+<tr><th>نوع جست‌وجو</th><th>توضیح</th></tr>
+<tr><td>نام‌محور</td><td>جست‌وجو با نام یا رمز عملیات</td></tr>
+<tr><td>زمان‌محور</td><td>جست‌وجو در یک بازه‌ی تاریخی</td></tr>
+<tr><td>مکان‌محور</td><td>عملیات‌های یک منطقه یا محور</td></tr>
+<tr><td>یگان‌محور</td><td>عملیات‌های یک لشکر یا تیپ</td></tr>
+<tr><td>شخص‌محور</td><td>عملیات‌های مرتبط با یک شهید</td></tr>
+<tr><td>نوع‌محور</td><td>آفندی، پدافندی، ایذایی، ...</td></tr>
+<tr><td>ترکیبی</td><td>چند معیار همزمان</td></tr>
+</table>
+
+<h3>در آینده</h3>
+<ul>
+<li>جست‌وجوی معنایی بر اساس تحلیل</li>
+<li>کشف عملیات مشابه</li>
+<li>پیشنهاد ارتباطات خودکار</li>
+<li>تحلیل شبکه‌ی عملیات-شخص-مکان</li>
+</ul>
+</section>
+
+<section class="card" id="s18">
+<h2>۱۸. تجربه‌ی کاربری</h2>
+
+<div class="grid">
+<div class="mini"><h3>نمای کلی عملیات</h3><p>سربرگ با رمز، تاریخ، مکان، فرماندهی.</p></div>
+<div class="mini"><h3>نقشه</h3><p>نمایش محدوده، محورها و مراحل عملیات.</p></div>
+<div class="mini"><h3>خط زمانی</h3><p>مراحل و فازهای عملیات.</p></div>
+<div class="mini"><h3>شبکه‌ی روابط</h3><p>یگان‌ها، فرماندهان، شهدا، اسناد.</p></div>
+<div class="mini"><h3>منابع</h3><p>کتاب، سند، مصاحبه با وضعیت اعتبار.</p></div>
+<div class="mini"><h3>تولیدات</h3><p>کتاب، فیلم، پادکست مرتبط با عملیات.</p></div>
+</div>
+
+<h3>ساختار صفحه‌ی عملیات</h3>
+<div class="tree">┌──────────────────────────────────────────────┐
+│ Breadcrumb: خانه › عملیات › بیت‌المقدس        │
+├──────────────────────────────────────────────┤
+│ سربرگ:                                        │
+│  - رمز و نام عملیات (h1)                     │
+│  - نوع + تاریخ + وضعیت اعتبار + شناسه        │
+│  - خلاصه (۲۰۰ کلمه)                          │
+├──────────────────────────────────────────────┤
+│ تب‌ها:                                        │
+│ [خلاصه] [مراحل] [نیروها] [مکان]              │
+│ [شهدا] [اسناد] [منابع] [روایت‌ها]            │
+├──────────────────────────────────────────────┤
+│ ┌──────────────────┬──────────────────────┐ │
+│ │ نقشه‌ی عملیات    │ خط زمانی مراحل        │ │
+│ │ (محدوده + محورها)│ (با آیکون هر مرحله)   │ │
+│ └──────────────────┴──────────────────────┘ │
+├──────────────────────────────────────────────┤
+│ یگان‌های شرکت‌کننده + فرماندهان              │
+├──────────────────────────────────────────────┤
+│ شهدای عملیات (گرید کارت)                     │
+├──────────────────────────────────────────────┤
+│ منابع و اسناد                                │
+├──────────────────────────────────────────────┤
+│ نوار اقدام: اصلاح، مشارکت، اشتراک، چاپ        │
+└──────────────────────────────────────────────┘</div>
+</section>
+
+<section class="card" id="s19">
+<h2>۱۹. ساختار محصول</h2>
+<div class="tree">بانک عملیات
+├── خانه و جست‌وجو
+├── عملیات‌ها
+│   ├── فهرست عملیات‌ها
+│   ├── صفحه‌ی عملیات
+│   ├── عملیات‌های دفاع مقدس
+│   ├── رخدادهای انقلاب
+│   └── مدافعان حرم
+├── یگان‌ها
+├── فرماندهان
+├── نقشه‌ی عملیات
+├── خط زمانی جامع
+├── اسناد و آثار
+├── روایت‌ها (اتصال به بانک روایت)
+├── شهدا (اتصال به بانک شهدا)
+├── جست‌وجوی پیشرفته
+├── پژوهش و داده
+├── مشارکت
+├── درباره پروژه
+└── API و مستندات</div>
+</section>
+
+<section class="card" id="s20">
+<h2>۲۰. مدل داده‌ی پیشنهادی</h2>
+
+<h3>موجودیت‌های اصلی</h3>
+<table>
+<tr><th>موجودیت</th><th>نقش</th><th>کلید اصلی</th></tr>
+<tr><td><code>Operation</code></td><td>هویت پایدار عملیات</td><td>شناسه خوانا (OP-...)</td></tr>
+<tr><td><code>OperationPhase</code></td><td>مراحل عملیات</td><td>UUID</td></tr>
+<tr><td><code>OperationUnit</code></td><td>یگان‌های شرکت‌کننده</td><td>UUID</td></tr>
+<tr><td><code>OperationCommander</code></td><td>فرماندهان</td><td>UUID</td></tr>
+<tr><td><code>OperationGeometry</code></td><td>هندسه و محدوده</td><td>UUID + شناسه اطلس</td></tr>
+<tr><td><code>OperationPerson</code></td><td>اشخاص مرتبط (شهید، جانباز، آزاده)</td><td>UUID</td></tr>
+<tr><td><code>OperationResult</code></td><td>نتایج و پیامدها</td><td>UUID</td></tr>
+<tr><td><code>OperationSource</code></td><td>منابع</td><td>UUID</td></tr>
+<tr><td><code>OperationNarrativeRef</code></td><td>ارجاع به روایت‌ها</td><td>UUID</td></tr>
+<tr><td><code>OperationMedia</code></td><td>رسانه‌های مرتبط</td><td>UUID + گنجینه</td></tr>
+<tr><td><code>OperationClaim</code></td><td>ادعاهای قابل بررسی</td><td>UUID</td></tr>
+<tr><td><code>OperationReview</code></td><td>بررسی و اعتبارسنجی</td><td>UUID</td></tr>
+<tr><td><code>OperationChange</code></td><td>تاریخچه تغییرات</td><td>UUID</td></tr>
+</table>
+
+<p><strong>جزئیات کامل در «ضمیمه‌ی الف» آمده است.</strong></p>
+</section>
+
+<section class="card" id="s21">
+<h2>۲۱. API و اتصال فنی</h2>
+
+<table>
+<tr><th>نقطه‌ی پایانی</th><th>کارکرد</th><th>خروجی</th></tr>
+<tr><td><code>GET /v1/operations</code></td><td>فهرست عملیات‌ها</td><td>JSON + فراداده</td></tr>
+<tr><td><code>GET /v1/operations/{id}</code></td><td>پرونده‌ی کامل عملیات</td><td>JSON + مراحل + منابع</td></tr>
+<tr><td><code>GET /v1/operations/{id}/phases</code></td><td>مراحل عملیات</td><td>فهرست مراحل</td></tr>
+<tr><td><code>GET /v1/operations/{id}/units</code></td><td>یگان‌های شرکت‌کننده</td><td>فهرست یگان‌ها</td></tr>
+<tr><td><code>GET /v1/operations/{id}/commanders</code></td><td>فرماندهان</td><td>فهرست فرماندهان</td></tr>
+<tr><td><code>GET /v1/operations/{id}/persons</code></td><td>اشخاص مرتبط</td><td>شهدا، جانبازان، آزادگان</td></tr>
+<tr><td><code>GET /v1/operations/{id}/geometry</code></td><td>هندسه و محدوده</td><td>GeoJSON</td></tr>
+<tr><td><code>GET /v1/operations/{id}/results</code></td><td>نتایج و پیامدها</td><td>فهرست نتایج</td></tr>
+<tr><td><code>GET /v1/operations/{id}/sources</code></td><td>منابع</td><td>فهرست منابع</td></tr>
+<tr><td><code>GET /v1/operations/by-person/{personId}</code></td><td>عملیات‌های یک شهید</td><td>فهرست</td></tr>
+<tr><td><code>GET /v1/operations/by-place/{locationId}</code></td><td>عملیات‌های یک مکان</td><td>فهرست</td></tr>
+<tr><td><code>GET /v1/operations/by-period/{period}</code></td><td>عملیات‌های یک دوره</td><td>فهرست</td></tr>
+<tr><td><code>POST /v1/operations/suggestions</code></td><td>ثبت پیشنهاد</td><td>شناسه پیگیری</td></tr>
+<tr><td><code>GET /v1/schema</code></td><td>دریافت schema</td><td>JSON Schema</td></tr>
+</table>
+
+<p><strong>جزئیات کامل در «ضمیمه‌ی ب» آمده است.</strong></p>
+</section>
+
+<section class="card" id="s22">
+<h2>۲۲. ارتباط با اکوسیستم</h2>
+
+<table>
+<tr><th>پروژه</th><th>نوع ارتباط</th><th>جهت داده</th></tr>
+<tr><td>شهیدپورتال</td><td>هویت، استاندارد و اتصال مادر</td><td>دوطرفه</td></tr>
+<tr><td>بانک شهدا</td><td>اتصال شهدا، جانبازان، آزادگان عملیات</td><td>دوطرفه</td></tr>
+<tr><td>اطلس شهدا</td><td>اتصال محدوده، محورها و مکان‌های عملیات</td><td>دوطرفه</td></tr>
+<tr><td>تقویم شهدا</td><td>اتصال به تاریخ شروع، پایان و مراحل</td><td>دوطرفه</td></tr>
+<tr><td>بانک روایت</td><td>اتصال روایت‌های رزمندگان و فرماندهان</td><td>دوطرفه</td></tr>
+<tr><td>بانک وصیت‌نامه</td><td>اتصال وصیت‌نامه‌های نگاشته‌شده پیش از عملیات</td><td>دوطرفه</td></tr>
+<tr><td>گنجینه</td><td>ارجاع به اسناد، نقشه‌ها و فیلم‌ها</td><td>گنجینه ← عملیات</td></tr>
+<tr><td>پاتوق شهدا</td><td>ارائه محتوای عملیات به شبکه فرهنگی</td><td>عملیات ← پاتوق</td></tr>
+</table>
+
+<div class="quote"><strong>فرمول اکوسیستم (هفت محور):</strong> بانک شهدا = چه کسی؟ | اطلس = کجا؟ | تقویم = چه زمانی؟ | بانک روایت = چه روایتی؟ | بانک وصیت‌نامه = چه پیامی؟ | بانک عملیات = چه رویدادی؟ | پاتوق = چگونه تعامل کنیم؟</div>
+</section>
+
+<section class="card" id="s23">
+<h2>۲۳. حکمرانی و حریم خصوصی</h2>
+
+<table>
+<tr><th>سطح</th><th>توضیح</th></tr>
+<tr><td>عمومی</td><td>اطلاعات کلی عملیات برای انتشار عمومی</td></tr>
+<tr><td>محدود</td><td>اطلاعات نظامی با جزئیات محدودکننده</td></tr>
+<tr><td>حساس</td><td>اطلاعات دارای ملاحظات امنیتی</td></tr>
+</table>
+
+<h3>اصول حفاظتی</h3>
+<ul>
+<li>عدم انتشار جزئیات نظامی حساس</li>
+<li>حفاظت از اطلاعات شخصی رزمندگان زنده</li>
+<li>ثبت رخداد دسترسی به اسناد حساس</li>
+<li>پشتیبان‌گیری از داده‌های ساختاریافته</li>
+<li>تاریخچه تغییرات و مسئول هر تغییر</li>
+</ul>
+
+<div class="quote"><strong>اصل کمترین افشا:</strong> اگر انتشار عمومی یک اطلاعات ریسک ایجاد کند، با دقت کاهش‌یافته یا در سطح دسترسی محدودتر نمایش داده می‌شود.</div>
+</section>
+
+<section class="card" id="s24">
+<h2>۲۴. نقشه راه توسعه</h2>
+
+<table>
+<tr><th>فاز</th><th>تمرکز</th><th>خروجی</th><th>معیار عبور</th></tr>
+<tr><td>۱</td><td>تثبیت مدل داده</td><td>Schema کامل + واژه‌نامه</td><td>تأیید مدل + شناسه‌های استاندارد</td></tr>
+<tr><td>۲</td><td>هسته‌ی ثبت و پرونده</td><td>پنل ثبت + صفحه‌ی عملیات</td><td>ثبت موفق ۳۰ عملیات اصلی دفاع مقدس</td></tr>
+<tr><td>۳</td><td>نقشه و هندسه</td><td>نمایش محدوده و محورها روی نقشه</td><td>پوشش هندسی بالای ۸۰٪</td></tr>
+<tr><td>۴</td><td>اتصال به شهدا و روایت‌ها</td><td>اتصال به بانک شهدا و بانک روایت</td><td>اتصال موفق ۷۰٪ شهدای عملیات</td></tr>
+<tr><td>۵</td><td>جست‌وجو و تحلیل</td><td>موتور جست‌وجو + تحلیل نتایج</td><td>کشف عملیات مشابه</td></tr>
+<tr><td>۶</td><td>تولیدات و پژوهش</td><td>کتاب، فیلم، پادکست مرتبط</td><td>ثبت ۵۰ اقتباس مستند</td></tr>
+</table>
+
+<div class="quote"><strong>معیار عبور از هر فاز:</strong> هیچ فازی بدون تحقق کامل مدل داده و کیفیت پایه‌ی فاز پیشین آغاز نمی‌شود.</div>
+</section>
+
+<section class="card" id="s25">
+<h2>۲۵. شاخص‌های موفقیت</h2>
+
+<table>
+<tr><th>حوزه</th><th>شاخص</th><th>هدف</th></tr>
+<tr><td>پوشش</td><td>تعداد عملیات‌های ثبت‌شده</td><td>رشد پیوسته</td></tr>
+<tr><td>پوشش</td><td>پوشش عملیات‌های دفاع مقدس</td><td>بالای ۹۰٪</td></tr>
+<tr><td>کیفیت</td><td>درصد عملیات‌های دارای منبع</td><td>بالای ۹۵٪</td></tr>
+<tr><td>کیفیت</td><td>درصد عملیات‌های دارای هندسه</td><td>بالای ۷۰٪</td></tr>
+<tr><td>اتصال</td><td>درصد عملیات‌های متصل به شهدا</td><td>بالای ۸۰٪</td></tr>
+<tr><td>اتصال</td><td>درصد عملیات‌های متصل به روایت‌ها</td><td>بالای ۵۰٪</td></tr>
+<tr><td>کاربرد</td><td>بازدید ماهانه</td><td>۵۰٬۰۰۰</td></tr>
+<tr><td>پایداری</td><td>Uptime</td><td>۹۹.۵٪</td></tr>
+</table>
+
+<p><strong>جزئیات کامل در «ضمیمه‌ی پ» آمده است.</strong></p>
+</section>
+
+<section class="card" id="s26">
+<h2>۲۶. جمع‌بندی نهایی</h2>
+
+<div class="quote"><strong>بانک عملیات چیست؟</strong> یک محصول مستقل و تخصصی در اکوسیستم شهیدپورتال برای ثبت، مستندسازی، تحلیل، اعتبارسنجی و ارائه‌ی عملیات‌های نظامی و رخدادهای بزرگ؛ با شناسه‌ی پایدار برای هر عملیات، پیوند ساختاریافته با شهدا، مکان، زمان، روایت و اسناد، و حفظ اصالت منابع.</div>
+
+<p>بانک عملیات از یک سو محصولی مستقل با هویت و توسعه‌ی خودش است، و از سوی دیگر از طریق <strong>شناسه‌ی پایدار و API</strong> به بانک شهدا، اطلس، تقویم، بانک روایت، بانک وصیت‌نامه، گنجینه و پاتوق متصل می‌شود.</p>
+
+<div class="quote"><strong>قاعده‌ی توسعه‌ی آینده:</strong> هر قابلیت جدید در بانک عملیات باید جایگاه مشخصی در یکی از این شش محور داشته باشد — <strong>رخداد، مکان، زمان، یگان، نتایج، منبع</strong>.</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ضمیمه الف -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+
+<span class="appendix-marker" id="appendix-a">📎 ضمیمه الف — مدل داده‌ی کامل</span>
+
+<section class="card">
+<h2>ضمیمه الف: مدل داده‌ی کامل</h2>
+
+<h3>الف-۱. Operation (عملیات)</h3>
+<table>
+<tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
+<tr><td>id</td><td>string</td><td>PK</td><td>شناسه پایدار مثل OP-1405-000123</td></tr>
+<tr><td>name</td><td>string</td><td></td><td>نام عملیات</td></tr>
+<tr><td>codeName</td><td>string</td><td></td><td>رمز عملیات</td></tr>
+<tr><td>type</td><td>enum</td><td></td><td>offensive / defensive / reconnaissance / incident</td></tr>
+<tr><td>period</td><td>string</td><td></td><td>دوره تاریخی</td></tr>
+<tr><td>startDate</td><td>date</td><td></td><td></td></tr>
+<tr><td>startDatePrecision</td><td>enum</td><td></td><td>exact / approximate / range</td></tr>
+<tr><td>endDate</td><td>date</td><td></td><td></td></tr>
+<tr><td>endDatePrecision</td><td>enum</td><td></td><td></td></tr>
+<tr><td>summary</td><td>text</td><td></td><td>خلاصه ۲۰۰ کلمه</td></tr>
+<tr><td>objectives</td><td>text</td><td></td><td>اهداف اصلی</td></tr>
+<tr><td>mainGeometryId</td><td>uuid</td><td>FK</td><td>ارجاع به هندسه اصلی</td></tr>
+<tr><td>verificationStatus</td><td>enum</td><td></td><td>verified / reviewing / disputed / suggested</td></tr>
+<tr><td>accessLevel</td><td>enum</td><td></td><td>public / limited / sensitive</td></tr>
+<tr><td>version</td><td>int</td><td></td><td></td></tr>
+<tr><td>createdAt</td><td>datetime</td><td></td><td></td></tr>
+<tr><td>updatedAt</td><td>datetime</td><td></td><td></td></tr>
+</table>
+
+<h3>الف-۲. OperationPhase (مرحله‌ی عملیات)</h3>
+<table>
+<tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
+<tr><td>id</td><td>uuid</td><td>PK</td><td></td></tr>
+<tr><td>operationId</td><td>string</td><td>FK</td><td></td></tr>
+<tr><td>order</td><td>int</td><td></td><td>ترتیب مرحله</td></tr>
+<tr><td>name</td><td>string</td><td></td><td>نام مرحله</td></tr>
+<tr><td>phaseStartDate</td><td>date</td><td></td><td></td></tr>
+<tr><td>phaseEndDate</td><td>date</td><td></td><td></td></tr>
+<tr><td>objective</td><td>text</td><td></td><td>هدف مرحله</td></tr>
+<tr><td>result</td><td>text</td><td></td><td>نتیجه مرحله</td></tr>
+<tr><td>commanderId</td><td>string</td><td>FK</td><td>فرمانده مرحله</td></tr>
+<tr><td>sourceIds</td><td>uuid[]</td><td>FK</td><td>منابع</td></tr>
+</table>
+
+<h3>الف-۳. OperationUnit (یگان)</h3>
+<table>
+<tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
+<tr><td>id</td><td>uuid</td><td>PK</td><td></td></tr>
+<tr><td>operationId</td><td>string</td><td>FK</td><td></td></tr>
+<tr><td>unitId</td><td>string</td><td>FK</td><td>ارجاع به یگان</td></tr>
+<tr><td>unitName</td><td>string</td><td></td><td>نام یگان</td></tr>
+<tr><td>role</td><td>enum</td><td></td><td>main / support / reserve</td></tr>
+<tr><td>commanderId</td><td>string</td><td>FK</td><td>فرمانده یگان</td></tr>
+</table>
+
+<h3>الف-۴. OperationCommander (فرمانده)</h3>
+<table>
+<tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
+<tr><td>id</td><td>uuid</td><td>PK</td><td></td></tr>
+<tr><td>operationId</td><td>string</td><td>FK</td><td></td></tr>
+<tr><td>personId</td><td>string</td><td>FK</td><td>ارجاع به Martyr در بانک شهدا</td></tr>
+<tr><td>role</td><td>enum</td><td></td><td>overall / front / unit / axis</td></tr>
+<tr><td>note</td><td>text</td><td></td><td>توضیح نقش</td></tr>
+</table>
+
+<h3>الف-۵. OperationGeometry (هندسه)</h3>
+<table>
+<tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
+<tr><td>id</td><td>uuid</td><td>PK</td><td></td></tr>
+<tr><td>operationId</td><td>string</td><td>FK</td><td></td></tr>
+<tr><td>geometryType</td><td>enum</td><td></td><td>point / line / polygon / multi</td></tr>
+<tr><td>coordinates</td><td>geojson</td><td></td><td>مختصات</td></tr>
+<tr><td>atlasRefs</td><td>string[]</td><td>FK</td><td>ارجاع به Location در اطلس</td></tr>
+<tr><td>confidence</td><td>enum</td><td></td><td>exact / approximate / area / unknown</td></tr>
+</table>
+
+<h3>الف-۶. OperationPerson (اشخاص مرتبط)</h3>
+<table>
+<tr><th>فیلد</th><th>نوع</th><th>کلید</th><th>توضیح</th></tr>
+<tr><td>id</td><td>uuid</td><td>PK</td><td></td></tr>
+<tr><td>operationId</td><td>string</td><td>FK</td><td></td></tr>
+<tr><td>personId</td><td>string</td><td>FK</td><td>ارجاع به Martyr در بانک شهدا</td></tr>
+<tr><td>relationType</td><td>enum</td><td></td><td>martyr-participant / martyr-commander / wounded / captive / witness</td></tr>
+<tr><td>unitId</td><td>uuid</td><td>FK</td><td>یگان مرتبط</td></tr>
+<tr><td>phaseId</td><td>uuid</td><td>FK</td><td>مرحله مرتبط</td></tr>
+</table>
+
+<h3>الف-۷ تا الف-۱۳. سایر موجودیت‌ها</h3>
+<table>
+<tr><th>موجودیت</th><th>فیلدهای اصلی</th></tr>
+<tr><td><code>OperationResult</code></td><td>id, operationId, resultType (military/political/long-term/casualties), description, sourceIds, confidence</td></tr>
+<tr><td><code>OperationSource</code></td><td>id, operationId, title, sourceType, authority, reference, accessLevel</td></tr>
+<tr><td><code>OperationNarrativeRef</code></td><td>id, operationId, narrativeId, relation, confidence</td></tr>
+<tr><td><code>OperationMedia</code></td><td>id, operationId, mediaType, storagePath, museumRef, quality</td></tr>
+<tr><td><code>OperationClaim</code></td><td>id, operationId, fieldName, claimText, sourceId, confidence, status</td></tr>
+<tr><td><code>OperationReview</code></td><td>id, operationId, reviewerId, result, note, reviewedAt</td></tr>
+<tr><td><code>OperationChange</code></td><td>id, operationId, changeType, fieldChanged, oldValue, newValue, actor, timestamp</td></tr>
+</table>
+
+<h3>نمونه رکورد کامل عملیات (JSON)</h3>
+<div class="code">{
+  <span class="k">"id"</span>: <span class="s">"OP-1404-000012"</span>,
+  <span class="k">"name"</span>: <span class="s">"عملیات بیت‌المقدس"</span>,
+  <span class="k">"codeName"</span>: <span class="s">"یا زهرا (س)"</span>,
+  <span class="k">"type"</span>: <span class="s">"offensive"</span>,
+  <span class="k">"period"</span>: <span class="s">"1361"</span>,
+  <span class="k">"startDate"</span>: <span class="s">"1361-02-10"</span>,
+  <span class="k">"startDatePrecision"</span>: <span class="s">"exact"</span>,
+  <span class="k">"endDate"</span>: <span class="s">"1361-03-03"</span>,
+  <span class="k">"endDatePrecision"</span>: <span class="s">"exact"</span>,
+  <span class="k">"summary"</span>: <span class="s">"عملیات بیت‌المقدس، منجر به آزادسازی خرمشهر..."</span>,
+  <span class="k">"objectives"</span>: <span class="s">"آزادسازی خرمشهر و مناطق اشغالی جنوب"</span>,
+  <span class="k">"phases"</span>: [
+    {
+      <span class="k">"order"</span>: 1,
+      <span class="k">"name"</span>: <span class="s">"عبور از کارون"</span>,
+      <span class="k">"phaseStartDate"</span>: <span class="s">"1361-02-10"</span>,
+      <span class="k">"objective"</span>: <span class="s">"تصرف مواضع اولیه"</span>,
+      <span class="k">"result"</span>: <span class="s">"تثبیت در ساحل غربی"</span>
+    },
+    {
+      <span class="k">"order"</span>: 4,
+      <span class="k">"name"</span>: <span class="s">"آزادسازی خرمشهر"</span>,
+      <span class="k">"phaseStartDate"</span>: <span class="s">"1361-03-03"</span>,
+      <span class="k">"objective"</span>: <span class="s">"فتح کامل خرمشهر"</span>,
+      <span class="k">"result"</span>: <span class="s">"خرمشهر آزاد شد"</span>
+    }
+  ],
+  <span class="k">"geometry"</span>: {
+    <span class="k">"type"</span>: <span class="s">"polygon"</span>,
+    <span class="k">"atlasRefs"</span>: [<span class="s">"PL-KHZ-KHORRAMSHAHR"</span>],
+    <span class="k">"confidence"</span>: <span class="s">"approximate"</span>
+  },
+  <span class="k">"units"</span>: [
+    { <span class="k">"unitName"</span>: <span class="s">"لشکر ۱۴ امام حسین (ع)"</span>, <span class="k">"role"</span>: <span class="s">"main"</span> },
+    { <span class="k">"unitName"</span>: <span class="s">"لشکر ۲۷ محمد رسول‌الله (ص)"</span>, <span class="k">"role"</span>: <span class="s">"main"</span> }
+  ],
+  <span class="k">"commanders"</span>: [
+    { <span class="k">"personId"</span>: <span class="s">"MTR-1404-00045"</span>, <span class="k">"role"</span>: <span class="s">"front"</span> }
+  ],
+  <span class="k">"results"</span>: [
+    { <span class="k">"resultType"</span>: <span class="s">"military"</span>, <span class="k">"description"</span>: <span class="s">"آزادسازی خرمشهر"</span> }
+  ],
+  <span class="k">"ecosystemRefs"</span>: {
+    <span class="k">"atlas"</span>: [<span class="s">"PL-KHZ-KHORRAMSHAHR"</span>],
+    <span class="k">"calendar"</span>: [<span class="s">"EV-1361-02-10"</span>, <span class="s">"EV-1361-03-03"</span>],
+    <span class="k">"narratives"</span>: [<span class="s">"NAR-1404-00089"</span>],
+    <span class="k">"martyrs"</span>: [<span class="s">"MTR-1404-00045"</span>, <span class="s">"MTR-1404-00067"</span>]
+  },
+  <span class="k">"accessLevel"</span>: <span class="s">"public"</span>,
+  <span class="k">"verificationStatus"</span>: <span class="s">"verified"</span>,
+  <span class="k">"version"</span>: 4,
+  <span class="k">"createdAt"</span>: <span class="s">"1404-03-01T08:30:00Z"</span>,
+  <span class="k">"updatedAt"</span>: <span class="s">"1404-08-15T10:30:00Z"</span>
+}</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ضمیمه ب -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+
+<span class="appendix-marker" id="appendix-b">📎 ضمیمه ب — API کامل</span>
+
+<section class="card">
+<h2>ضمیمه ب: API کامل</h2>
+
+<h3>ب-۱. Operation API</h3>
+<table>
+<tr><th>نقطه‌ی پایانی</th><th>روش</th><th>توضیح</th><th>پارامترها</th></tr>
+<tr><td><code>/v1/operations</code></td><td>GET</td><td>فهرست عملیات‌ها</td><td>page, limit, type, period, status, accessLevel</td></tr>
+<tr><td><code>/v1/operations/{id}</code></td><td>GET</td><td>پرونده‌ی کامل</td><td>—</td></tr>
+<tr><td><code>/v1/operations</code></td><td>POST</td><td>ثبت عملیات جدید</td><td>body</td></tr>
+<tr><td><code>/v1/operations/{id}</code></td><td>PATCH</td><td>به‌روزرسانی</td><td>partial body</td></tr>
+<tr><td><code>/v1/operations/{id}/phases</code></td><td>GET</td><td>مراحل عملیات</td><td>—</td></tr>
+<tr><td><code>/v1/operations/{id}/units</code></td><td>GET</td><td>یگان‌های شرکت‌کننده</td><td>role</td></tr>
+<tr><td><code>/v1/operations/{id}/commanders</code></td><td>GET</td><td>فرماندهان</td><td>—</td></tr>
+<tr><td><code>/v1/operations/{id}/persons</code></td><td>GET</td><td>اشخاص مرتبط</td><td>relationType</td></tr>
+<tr><td><code>/v1/operations/{id}/geometry</code></td><td>GET</td><td>هندسه و محدوده</td><td>format (geojson)</td></tr>
+<tr><td><code>/v1/operations/{id}/results</code></td><td>GET</td><td>نتایج و پیامدها</td><td>resultType</td></tr>
+<tr><td><code>/v1/operations/{id}/sources</code></td><td>GET</td><td>منابع</td><td>—</td></tr>
+<tr><td><code>/v1/operations/{id}/media</code></td><td>GET</td><td>رسانه‌های مرتبط</td><td>type</td></tr>
+<tr><td><code>/v1/operations/{id}/versions</code></td><td>GET</td><td>تاریخچه‌ی نسخه‌ها</td><td>—</td></tr>
+</table>
+
+<h3>ب-۲. اتصال اکوسیستم</h3>
+<table>
+<tr><th>نقطه‌ی پایانی</th><th>روش</th><th>توضیح</th></tr>
+<tr><td><code>/v1/operations/by-person/{personId}</code></td><td>GET</td><td>عملیات‌های یک شهید (از بانک شهدا)</td></tr>
+<tr><td><code>/v1/operations/by-place/{locationId}</code></td><td>GET</td><td>عملیات‌های یک مکان (از اطلس)</td></tr>
+<tr><td><code>/v1/operations/by-event/{eventId}</code></td><td>GET</td><td>عملیات مرتبط با یک رویداد (از تقویم)</td></tr>
+<tr><td><code>/v1/operations/by-period/{period}</code></td><td>GET</td><td>عملیات‌های یک دوره</td></tr>
+<tr><td><code>/v1/operations/by-unit/{unitId}</code></td><td>GET</td><td>عملیات‌های یک یگان</td></tr>
+<tr><td><code>/v1/operations/by-commander/{personId}</code></td><td>GET</td><td>عملیات‌های فرماندهی یک شخص</td></tr>
+</table>
+
+<h3>ب-۳. جست‌وجو</h3>
+<table>
+<tr><th>نقطه‌ی پایانی</th><th>روش</th><th>توضیح</th></tr>
+<tr><td><code>/v1/search</code></td><td>GET</td><td>جست‌وجوی ترکیبی</td></tr>
+<tr><td><code>/v1/search/by-period</code></td><td>GET</td><td>جست‌وجو بر اساس دوره</td></tr>
+<tr><td><code>/v1/search/by-region</code></td><td>GET</td><td>جست‌وجو بر اساس منطقه</td></tr>
+</table>
+
+<h3>ب-۴. یگان‌ها و فرماندهان</h3>
+<table>
+<tr><th>نقطه‌ی پایانی</th><th>روش</th><th>توضیح</th></tr>
+<tr><td><code>/v1/units</code></td><td>GET</td><td>فهرست یگان‌ها</td></tr>
+<tr><td><code>/v1/units/{id}</code></td><td>GET</td><td>جزئیات یگان</td></tr>
+<tr><td><code>/v1/units/{id}/operations</code></td><td>GET</td><td>عملیات‌های یگان</td></tr>
+</table>
+
+<h3>ب-۵. مشارکت</h3>
+<table>
+<tr><th>نقطه‌ی پایانی</th><th>روش</th><th>توضیح</th></tr>
+<tr><td><code>/v1/operations/suggestions</code></td><td>POST</td><td>ثبت پیشنهاد عملیات</td></tr>
+<tr><td><code>/v1/operations/{id}/corrections</code></td><td>POST</td><td>ثبت اصلاح</td></tr>
+<tr><td><code>/v1/suggestions/{id}/status</code></td><td>GET</td><td>پیگیری وضعیت</td></tr>
+</table>
+
+<h3>ب-۶. Schema</h3>
+<table>
+<tr><th>نقطه‌ی پایانی</th><th>روش</th><th>توضیح</th></tr>
+<tr><td><code>/v1/schema</code></td><td>GET</td><td>schema نسخه‌دار</td></tr>
+<tr><td><code>/v1/schema/{entity}</code></td><td>GET</td><td>schema یک موجودیت</td></tr>
+</table>
+
+<h3>ب-۷. استاندارد پاسخ</h3>
+<div class="code">{
+  <span class="k">"status"</span>: <span class="s">"ok"</span>,
+  <span class="k">"data"</span>: { ... },
+  <span class="k">"meta"</span>: {
+    <span class="k">"page"</span>: 1,
+    <span class="k">"limit"</span>: 20,
+    <span class="k">"total"</span>: 245
+  }
+}</div>
+
+<h3>ب-۸. کدهای خطا</h3>
+<table>
+<tr><th>کد</th><th>HTTP</th><th>معنا</th></tr>
+<tr><td>BAD_REQUEST</td><td>400</td><td>درخواست نامعتبر</td></tr>
+<tr><td>UNAUTHORIZED</td><td>401</td><td>نیاز به احراز هویت</td></tr>
+<tr><td>FORBIDDEN</td><td>403</td><td>دسترسی مجاز نیست</td></tr>
+<tr><td>NOT_FOUND</td><td>404</td><td>منبع یافت نشد</td></tr>
+<tr><td>CONFLICT</td><td>409</td><td>تعارض داده</td></tr>
+<tr><td>RATE_LIMIT</td><td>429</td><td>تعداد درخواست زیاد</td></tr>
+<tr><td>SERVER_ERROR</td><td>500</td><td>خطای سرور</td></tr>
+</table>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ضمیمه پ -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+
+<span class="appendix-marker" id="appendix-c">📎 ضمیمه پ — شاخص‌های کلیدی عملکرد</span>
+
+<section class="card">
+<h2>ضمیمه پ: شاخص‌های کلیدی عملکرد</h2>
+
+<h3>پ-۱. پوشش</h3>
+<table>
+<tr><th>شاخص</th><th>سال اول</th><th>سال دوم</th><th>سال سوم</th></tr>
+<tr><td>تعداد عملیات‌های ثبت‌شده</td><td>۱۰۰</td><td>۳۰۰</td><td>۵۰۰</td></tr>
+<tr><td>پوشش عملیات‌های دفاع مقدس</td><td>۶۰٪</td><td>۸۵٪</td><td>۹۵٪</td></tr>
+<tr><td>عملیات‌های دارای هندسه</td><td>۴۰٪</td><td>۷۰٪</td><td>۸۵٪</td></tr>
+<tr><td>عملیات‌های دارای مراحل</td><td>۵۰٪</td><td>۸۰٪</td><td>۹۰٪</td></tr>
+</table>
+
+<h3>پ-۲. کیفیت</h3>
+<table>
+<tr><th>شاخص</th><th>هدف</th></tr>
+<tr><td>درصد عملیات‌های دارای منبع</td><td>بالای ۹۵٪</td></tr>
+<tr><td>درصد عملیات‌های دارای وضعیت اعتبار</td><td>بالای ۹۵٪</td></tr>
+<tr><td>درصد عملیات‌های دارای خلاصه</td><td>بالای ۹۰٪</td></tr>
+<tr><td>درصد عملیات‌های دارای یگان ثبت‌شده</td><td>بالای ۸۰٪</td></tr>
+</table>
+<h3>پ-۳. اتصال اکوسیستمی</h3>
+<table>
+<tr><th>شاخص</th><th>هدف</th></tr>
+<tr><td>درصد عملیات‌های متصل به شهدا</td><td>بالای ۸۰٪</td></tr>
+<tr><td>درصد عملیات‌های متصل به مکان (اطلس)</td><td>بالای ۷۰٪</td></tr>
+<tr><td>درصد عملیات‌های متصل به روایت</td><td>بالای ۵۰٪</td></tr>
+<tr><td>درصد عملیات‌های متصل به تقویم</td><td>بالای ۸۰٪</td></tr>
+</table>
+
+<h3>پ-۴. کاربرد</h3>
+<table>
+<tr><th>شاخص</th><th>هدف</th></tr>
+<tr><td>بازدید ماهانه</td><td>۵۰٬۰۰۰</td></tr>
+<tr><td>نرخ یافتن عملیات در کمتر از ۳ گام</td><td>بالای ۸۰٪</td></tr>
+<tr><td>استفاده‌های پژوهشی ثبت‌شده</td><td>۳۰۰ سال اول</td></tr>
+</table>
+
+<h3>پ-۵. پایداری</h3>
+<table>
+<tr><th>شاخص</th><th>هدف</th></tr>
+<tr><td>Uptime</td><td>۹۹.۵٪</td></tr>
+<tr><td>پاسخ API</td><td>کمتر از ۵۰۰ms</td></tr>
+<tr><td>پشتیبان موفق</td><td>۱۰۰٪</td></tr>
+</table>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ضمیمه ت -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+
+<span class="appendix-marker" id="appendix-d">📎 ضمیمه ت — UX و هویت بصری</span>
+
+<section class="card">
+<h2>ضمیمه ت: UX و هویت بصری</h2>
+
+<h3>ت-۱. پالت رنگی پیشنهادی</h3>
+<table>
+<tr><th>نقش</th><th>رنگ</th><th>کد</th></tr>
+<tr><td>رنگ اصلی (برند)</td><td>سبز زیتونی تیره</td><td><code>#3D5A3D</code></td></tr>
+<tr><td>رنگ ثانویه</td><td>سبز چمنی</td><td><code>#4A6B3A</code></td></tr>
+<tr><td>رنگ مکمل</td><td>آجری (برای نتایج و تلفات)</td><td><code>#9C4A2E</code></td></tr>
+<tr><td>رنگ تأکید</td><td>زعفرانی (برای مراحل)</td><td><code>#C4903A</code></td></tr>
+<tr><td>متن اصلی</td><td>مرکب کهنه</td><td><code>#2A2419</code></td></tr>
+<tr><td>پس‌زمینه</td><td>کرم روشن</td><td><code>#F5EFE2</code></td></tr>
+</table>
+
+<h3>ت-۲. تایپوگرافی</h3>
+<ul>
+<li>فونت اصلی: <strong>وزیرمتن</strong> یا <strong>ایران‌سنس</strong></li>
+<li>وزن‌ها: ۴۰۰ تا ۹۰۰</li>
+<li>ارتفاع خط: ۱.۸ برای متن، ۱.۲ برای تیتر</li>
+<li>مقیاس: ۱۲ / ۱۴ / ۱۶ / ۲۰ / ۲۶ / ۳۴ / ۴۸ / ۶۴</li>
+</ul>
+
+<h3>ت-۳. اصول طراحی</h3>
+<div class="grid">
+<div class="mini"><h3>نقشه‌محوری</h3><p>نقشه و محدوده‌ی عملیات عنصر کلیدی صفحه.</p></div>
+<div class="mini"><h3>خط زمانی محوری</h3><p>مراحل عملیات در خط زمانی.</p></div>
+<div class="mini"><h3>منبع‌محوری بصری</h3><p>وضعیت اعتبار هر اطلاعات همیشه دیده شود.</p></div>
+<div class="mini"><h3>کرامت</h3><p>نمایش محترمانه، دور از سطحی‌نگری.</p></div>
+<div class="mini"><h3>دسترس‌پذیری</h3><p>کنتراست کافی، صفحه‌کلید، متن جایگزین.</p></div>
+<div class="mini"><h3>حالت چاپ</h3><p>پرونده‌ی تمیز برای استفاده‌ی میدانی.</p></div>
+</div>
+
+<h3>ت-۴. Wireframe صفحه‌ی عملیات</h3>
+<div class="tree">┌──────────────────────────────────────────────┐
+│ Breadcrumb: خانه › عملیات › بیت‌المقدس        │
+├──────────────────────────────────────────────┤
+│ سربرگ:                                        │
+│  - رمز و نام عملیات (h1)                     │
+│  - نوع + تاریخ + وضعیت اعتبار + شناسه        │
+│  - خلاصه (۲۰۰ کلمه)                          │
+├──────────────────────────────────────────────┤
+│ تب‌ها:                                        │
+│ [خلاصه] [مراحل] [نیروها] [مکان]              │
+│ [شهدا] [اسناد] [منابع] [روایت‌ها]            │
+├──────────────────────────────────────────────┤
+│ ┌──────────────────┬──────────────────────┐ │
+│ │ نقشه‌ی عملیات    │ خط زمانی مراحل        │ │
+│ │ (محدوده + محورها)│ (با آیکون هر مرحله)   │ │
+│ └──────────────────┴──────────────────────┘ │
+├──────────────────────────────────────────────┤
+│ یگان‌های شرکت‌کننده + فرماندهان              │
+├──────────────────────────────────────────────┤
+│ شهدای عملیات (گرید کارت)                     │
+├──────────────────────────────────────────────┤
+│ نتایج و پیامدها                              │
+├──────────────────────────────────────────────┤
+│ منابع و اسناد                                │
+├──────────────────────────────────────────────┤
+│ نوار اقدام                                    │
+└──────────────────────────────────────────────┘</div>
+
+<h3>ت-۵. رنگ‌بندی وضعیت‌ها</h3>
+<table>
+<tr><th>وضعیت</th><th>رنگ</th></tr>
+<tr><td>تأییدشده</td><td>سبز</td></tr>
+<tr><td>در بررسی</td><td>نارنجی</td></tr>
+<tr><td>متعارض</td><td>قرمز ملایم</td></tr>
+<tr><td>پیشنهادی</td><td>بنفش ملایم</td></tr>
+</table>
+
+<h3>ت-۶. دسترس‌پذیری</h3>
+<ul>
+<li>کنتراست حداقل ۴.۵:۱</li>
+<li>پیمایش کامل با صفحه‌کلید</li>
+<li>متن جانشین برای نقشه‌ها</li>
+<li>ارائه‌ی متنی محدوده‌ی جغرافیایی</li>
+<li>پشتیبانی از حالت چاپ</li>
+<li>پشتیبانی از prefers-reduced-motion</li>
+</ul>
+</section>
+
+<footer class="footer">
+بانک عملیات | طرح جامع، معماری و نقشه راه توسعه | نسخه ۱.۰ — سند مادر محصول | با ۴ ضمیمه‌ی عملیاتی
+</footer>
+
+<a class="back-top" href="#top" title="بازگشت به بالا" aria-label="بازگشت به بالا">↑</a>
+
+</div>
+<script src="../assets/js/sidebar.js?v=20261009-23"></script>
+  <script src="../assets/js/page-visual.js"></script>
+</body>
+</html>

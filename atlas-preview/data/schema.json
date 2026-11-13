@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Place (اطلس شهدا)",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "layer",
+    "type",
+    "province",
+    "uncertainty",
+    "source"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "شناسه پایدار مکان، مثلا PL-TEHRAN-BEHESHT"
+    },
+    "name": {
+      "type": "string"
+    },
+    "altNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "نام‌های تاریخی/دیگر"
+    },
+    "layer": {
+      "enum": [
+        "golzar",
+        "yadman",
+        "shahadat",
+        "tavallod",
+        "tarikhi",
+        "khatar"
+      ]
+    },
+    "type": {
+      "type": "string"
+    },
+    "province": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "number",
+      "minimum": -90,
+      "maximum": 90
+    },
+    "lng": {
+      "type": "number",
+      "minimum": -180,
+      "maximum": 180
+    },
+    "uncertainty": {
+      "enum": [
+        "exact",
+        "near",
+        "area",
+        "unknown"
+      ],
+      "description": "نقطه دقیق/تقریبی/محدوده/نامعلوم"
+    },
+    "geometry": {
+      "type": "object",
+      "description": "GeoJSON Geometry برای محدوده‌ها"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "date": {
+      "type": "string",
+      "description": "تاریخ ساختاریافته مستقل از تقویم"
+    },
+    "source": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "فعال",
+        "نیازمند پژوهش",
+        "در خطر",
+        "آرشیو"
+      ]
+    },
+    "privacy": {
+      "enum": [
+        "عمومی",
+        "محدود",
+        "حساس",
+        "غیرقابل انتشار"
+      ]
+    },
+    "media": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "description": "پیوند به شخص/رویداد/مکان"
+    },
+    "desc": {
+      "type": "string"
+    }
+  }
+}
